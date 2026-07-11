@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أثر رصد | مراقبة الأوبئة عابرة الحدود — ليبيا</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A1120; --panel:#111B2E; --panel-alt:#16223A; --border:#223252;
+    --ink:#EAF1F8; --muted:#8CA0BE; --muted-2:#5D7196;
+    --brand:#12B3A0; --brand-dim:#0B6E63;
+    --low:#3FB68B; --medium:#E8A33D; --high:#E4572E; --critical:#C4293B; --neutral:#445068;
+    --font-display:'IBM Plex Sans Arabic','Segoe UI',sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(1200px 600px at 15% -10%, rgba(18,179,160,.10), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(228,87,46,.08), transparent 55%),
+      var(--bg);
+    color:var(--ink); font-family:var(--font-display); line-height:1.6; min-height:100vh; padding-bottom:4rem;
+  }
+  ::selection{background:var(--brand); color:#03110F;}
+  a{color:var(--brand);}
+  button{font-family:inherit; cursor:pointer;}
+  .num{font-family:var(--font-mono); font-variant-numeric:tabular-nums;}
+  .shell{max-width:1280px; margin:0 auto; padding:0 1.5rem;}
+
+  header.topbar{border-bottom:1px solid var(--border); background:rgba(10,17,32,.85); backdrop-filter:blur(10px); position:sticky; top:0; z-index:40;}
+  .topbar-inner{display:flex; align-items:center; justify-content:space-between; padding:1rem 1.5rem; max-width:1280px; margin:0 auto; gap:1rem; flex-wrap:wrap;}
+  .brand{display:flex; align-items:center; gap:.7rem;}
+  .brand-mark{width:38px; height:38px; border-radius:10px; background:conic-gradient(from 220deg, var(--brand), var(--brand-dim), var(--brand)); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.85rem; color:#031D19; box-shadow:0 0 0 1px rgba(18,179,160,.4), 0 6px 18px rgba(18,179,160,.25);}
+  .brand-text .title{font-weight:700; font-size:1.02rem;}
+  .brand-text .sub{font-size:.72rem; color:var(--muted);}
+  .topbar-actions{display:flex; align-items:center; gap:.6rem; flex-wrap:wrap;}
+  .pill-btn{border:1px solid var(--border); background:var(--panel-alt); color:var(--ink); padding:.5rem .9rem; border-radius:999px; font-size:.78rem; display:flex; align-items:center; gap:.4rem; transition:.15s;}
+  .pill-btn:hover{border-color:var(--brand); background:#132A28;}
+  .sync-dot{width:7px; height:7px; border-radius:50%; flex:none;}
+  .sync-ok{background:var(--low); box-shadow:0 0 0 3px rgba(63,182,139,.25); animation:pulse 2s infinite;}
+  .sync-err{background:var(--medium); box-shadow:0 0 0 3px rgba(232,163,61,.25);}
+  .sync-pending{background:var(--muted-2);}
+  @keyframes pulse{0%,100%{opacity:1;} 50%{opacity:.4;}}
+
+  .banner{background:rgba(232,163,61,.08); border:1px solid rgba(232,163,61,.3); border-radius:12px; padding:.85rem 1.1rem; font-size:.8rem; color:var(--medium); margin-top:1.2rem; display:flex; gap:.6rem; align-items:flex-start;}
+  .banner b{color:var(--ink);}
+  .banner.info{background:rgba(18,179,160,.07); border-color:rgba(18,179,160,.3); color:var(--brand);}
+
+  .hero{padding:1.6rem 0 1.2rem;}
+  .hero-grid{display:grid; grid-template-columns:1.3fr .9fr; gap:1.1rem;}
+  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} }
+  .card{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:1.4rem;}
+  .eyebrow{font-size:.7rem; letter-spacing:1.2px; color:var(--muted); text-transform:uppercase; font-family:var(--font-mono); margin-bottom:.4rem;}
+  .hero-title{font-size:1.6rem; font-weight:700; margin-bottom:.5rem;}
+  .hero-desc{color:var(--muted); font-size:.92rem; max-width:56ch;}
+  .risk-badge{display:inline-flex; align-items:center; gap:.5rem; padding:.45rem .9rem; border-radius:999px; font-size:.82rem; font-weight:600; margin-top:1rem; border:1px solid transparent;}
+  .risk-LOW{background:rgba(63,182,139,.12); color:var(--low); border-color:rgba(63,182,139,.35);}
+  .risk-MEDIUM{background:rgba(232,163,61,.12); color:var(--medium); border-color:rgba(232,163,61,.35);}
+  .risk-HIGH{background:rgba(228,87,46,.14); color:var(--high); border-color:rgba(228,87,46,.4);}
+  .risk-CRITICAL{background:rgba(196,41,59,.16); color:#FF6B7E; border-color:rgba(196,41,59,.5);}
+  .risk-UNKNOWN{background:rgba(93,113,150,.15); color:var(--muted); border-color:rgba(93,113,150,.35);}
+
+  .gauge-wrap{display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:.3rem;}
+  .gauge-value{font-family:var(--font-mono); font-size:2.2rem; font-weight:600; margin-top:.4rem;}
+  .gauge-label{font-size:.72rem; color:var(--muted);}
+
+  .kpi-row{display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:1.1rem 0;}
+  @media (max-width:900px){ .kpi-row{grid-template-columns:repeat(2,1fr);} }
+  .kpi{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:1.1rem 1.2rem;}
+  .kpi .v{font-family:var(--font-mono); font-size:1.6rem; font-weight:600;}
+  .kpi .l{font-size:.74rem; color:var(--muted); margin-top:.25rem;}
+
+  .section{margin-top:2rem;}
+  .section-head{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:.9rem; gap:1rem; flex-wrap:wrap;}
+  .section-title{font-size:1.1rem; font-weight:700;}
+  .section-note{font-size:.75rem; color:var(--muted-2);}
+
+  .radial-card{display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; align-items:center;}
+  @media (max-width:900px){ .radial-card{grid-template-columns:1fr;} }
+  .radial-svg-wrap{display:flex; justify-content:center;}
+  .radial-legend{display:flex; flex-direction:column; gap:.55rem;}
+  .legend-row{display:flex; align-items:center; gap:.6rem; font-size:.8rem; color:var(--muted);}
+  .legend-dot{width:10px; height:10px; border-radius:50%; flex:none;}
+  .node-label{font-size:10px; fill:var(--ink);}
+  .node-dist{font-size:9px; font-family:var(--font-mono); fill:var(--muted-2);}
+  .ring{fill:none; stroke:var(--border); stroke-dasharray:2 4;}
+  .ring-label{font-size:9px; font-family:var(--font-mono); fill:var(--muted-2);}
+  .country-node{cursor:pointer; transition:opacity .15s;}
+  .country-node:hover{opacity:.8;}
+
+  .table-wrap{background:var(--panel); border:1px solid var(--border); border-radius:16px; overflow:hidden;}
+  table{width:100%; border-collapse:collapse; font-size:.83rem;}
+  thead th{text-align:right; padding:.85rem 1rem; font-size:.68rem; letter-spacing:.6px; text-transform:uppercase; color:var(--muted-2); border-bottom:1px solid var(--border); font-family:var(--font-mono); font-weight:500;}
+  tbody td{padding:.85rem 1rem; border-bottom:1px solid var(--border); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:var(--panel-alt);}
+  .risk-chip{display:inline-flex; align-items:center; gap:.4rem; padding:.3rem .65rem; border-radius:8px; font-size:.72rem; font-weight:600; white-space:nowrap;}
+  .disease-name{font-weight:600;}
+  .country-tag{color:var(--muted); font-size:.78rem;}
+  .src-link{font-size:.72rem; display:inline-flex; align-items:center; gap:.25rem; margin-top:.3rem;}
+  .no-data-row td{color:var(--muted-2); font-size:.8rem; padding:1rem;}
+
+  .ports-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem;}
+  @media (max-width:900px){ .ports-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .ports-grid{grid-template-columns:1fr;} }
+  .port-card{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:1.1rem;}
+  .port-top{display:flex; justify-content:space-between; align-items:flex-start; gap:.5rem;}
+  .port-type{font-size:.66rem; font-family:var(--font-mono); color:var(--muted-2); border:1px solid var(--border); padding:.15rem .5rem; border-radius:6px; white-space:nowrap;}
+  .port-name{font-weight:600; margin-top:.5rem;}
+  .port-country{font-size:.78rem; color:var(--muted); margin-top:.15rem;}
+  .port-meta{display:flex; justify-content:space-between; margin-top:.9rem; font-size:.76rem;}
+  .approx-tag{font-size:.66rem; color:var(--muted-2);}
+
+  .filter-row{display:flex; gap:.5rem; margin-bottom:1rem; flex-wrap:wrap;}
+  .chip-btn{border:1px solid var(--border); background:var(--panel-alt); color:var(--muted); font-size:.78rem; padding:.4rem .8rem; border-radius:999px; transition:.15s;}
+  .chip-btn.active{border-color:var(--brand); color:var(--brand); background:rgba(18,179,160,.1);}
+  .alert-item{display:flex; gap:.9rem; padding:.9rem 1rem; border-bottom:1px solid var(--border); align-items:flex-start;}
+  .alert-item:last-child{border-bottom:none;}
+  .alert-bar{width:4px; align-self:stretch; border-radius:3px; flex:none;}
+  .alert-body{flex:1;}
+  .alert-top{display:flex; justify-content:space-between; gap:.6rem; align-items:baseline; flex-wrap:wrap;}
+  .alert-title{font-weight:600; font-size:.87rem;}
+  .alert-time{font-size:.71rem; color:var(--muted-2); font-family:var(--font-mono); white-space:nowrap;}
+  .alert-desc{font-size:.81rem; color:var(--muted); margin-top:.3rem;}
+
+  .sync-panel{display:flex; flex-wrap:wrap; gap:1.2rem; align-items:center; justify-content:space-between;}
+  .sync-status{display:flex; align-items:center; gap:.5rem; font-size:.8rem; color:var(--muted);}
+  .sync-log{font-size:.72rem; color:var(--muted-2); font-family:var(--font-mono); margin-top:.3rem;}
+
+  footer{margin-top:3rem; padding-top:1.6rem; border-top:1px solid var(--border); font-size:.76rem; color:var(--muted-2); display:flex; justify-content:space-between; flex-wrap:wrap; gap:.6rem;}
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important;} }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-mark">أر</div>
+      <div class="brand-text">
+        <div class="title" data-i18n="brandTitle">أثر رصد</div>
+        <div class="sub" data-i18n="brandSub">إنذار مبكر للأوبئة عابرة الحدود — ليبيا</div>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button class="pill-btn" id="syncBtn"><span class="sync-dot sync-pending" id="syncDot"></span><span id="syncLabel" data-i18n="syncPending">جارٍ الاتصال بمصادر WHO…</span></button>
+      <button class="pill-btn" id="langToggle" data-i18n="langToggle">English</button>
+    </div>
+  </div>
+</header>
+
+<main class="shell">
+
+  <div class="banner" id="dataBanner"></div>
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="card">
+        <div class="eyebrow" data-i18n="heroEyebrow">مركز العمليات · ليبيا</div>
+        <div class="hero-title" data-i18n="heroTitle">الحالة الوبائية على حدود ليبيا</div>
+        <p class="hero-desc" data-i18n="heroDesc">
+          يعرض هذا النظام حصراً بلاغات موثقة من منظمة الصحة العالمية (WHO Disease Outbreak News) تخص الدول المجاورة
+          لليبيا (تونس، الجزائر، مصر، السودان، تشاد، النيجر). لا تُعرض أي أرقام افتراضية أو تقديرية كحالات فعلية.
+        </p>
+        <div class="risk-badge" id="overallBadge">
+          <span>●</span> <span id="overallBadgeText"></span>
+        </div>
+      </div>
+      <div class="card gauge-wrap">
+        <div class="eyebrow" data-i18n="gaugeEyebrow">مؤشر الخطر الإجمالي</div>
+        <svg width="150" height="150" viewBox="0 0 150 150">
+          <circle cx="75" cy="75" r="62" fill="none" stroke="var(--panel-alt)" stroke-width="12"/>
+          <circle id="gaugeArc" cx="75" cy="75" r="62" fill="none" stroke="var(--neutral)" stroke-width="12" stroke-linecap="round" transform="rotate(-90 75 75)" stroke-dasharray="389.6" stroke-dashoffset="389.6"/>
+        </svg>
+        <div class="gauge-value" id="gaugeValue">—</div>
+        <div class="gauge-label" data-i18n="gaugeLabel">من ١٠٠ — مبني على البلاغات الموثقة فقط</div>
+      </div>
+    </div>
+    <div class="kpi-row" id="kpiRow"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div class="section-title" data-i18n="radialTitle">خريطة القرب الجغرافي من ليبيا</div>
+      <div class="section-note" data-i18n="radialNote">المسافات تقريبية (خط مستقيم) من الدولة إلى أقرب منفذ حدودي ليبي — للتوضيح البصري فقط</div>
+    </div>
+    <div class="card radial-card">
+      <div class="radial-svg-wrap"><svg id="radialSvg" width="420" height="420" viewBox="0 0 420 420"></svg></div>
+      <div class="radial-legend" id="radialLegend"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div class="section-title" data-i18n="threatsTitle">البلاغات الوبائية الموثقة</div>
+      <div class="section-note" id="threatsNoteText"></div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-i18n="thDisease">المرض / الحدث</th>
+            <th data-i18n="thCountry">الدولة</th>
+            <th data-i18n="thCases">الحالات / الوفيات</th>
+            <th data-i18n="thDate">تاريخ آخر بلاغ</th>
+            <th data-i18n="thRisk">التصنيف</th>
+          </tr>
+        </thead>
+        <tbody id="threatsBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div class="section-title" data-i18n="portsTitle">المنافذ الحدودية الليبية</div>
+      <div class="section-note" data-i18n="portsNote">أسماء ونوع المنافذ فعلية — أرقام الحركة اليومية تقديرية توضيحية فقط، بانتظار بيانات رسمية</div>
+    </div>
+    <div class="ports-grid" id="portsGrid"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div class="section-title" data-i18n="alertsTitle">سجل التنبيهات المشتقة من البلاغات الموثقة</div>
+      <div class="section-note"><span id="activeAlertsCount">0</span> <span data-i18n="alertsActive">تنبيه نشط</span></div>
+    </div>
+    <div class="filter-row" id="alertFilters"></div>
+    <div class="table-wrap" id="alertFeed"></div>
+  </section>
+
+  <section class="section">
+    <div class="card sync-panel">
+      <div>
+        <div class="section-title" style="font-size:.95rem; margin-bottom:.3rem;" data-i18n="syncTitle">حالة المزامنة الحية</div>
+        <div class="sync-status"><span class="sync-dot" id="syncDot2"></span><span id="syncLabel2"></span></div>
+        <div class="sync-log" id="syncLog"></div>
+      </div>
+      <button class="pill-btn" id="refreshNowBtn" data-i18n="refreshNow">مزامنة الآن</button>
+    </div>
+  </section>
+
+  <footer>
+    <span data-i18n="footerNote">يحاول هذا الموقع الاتصال مباشرة بواجهة WHO كل ٥ دقائق من متصفحك. إن مُنع الاتصال (سياسات CORS)، يبقى آخر بلاغ تم التحقق منه يدوياً ظاهراً مع تاريخه بوضوح.</span>
+    <span data-i18n="footerCredit">أثر رصد · نظام إنذار مبكر</span>
+  </footer>
+
+</main>
+
+<script>
+(function(){
+
+  /* ======================= i18n ======================= */
+  const DICT = {
+    brandTitle:{ar:'أثر رصد', en:'Athar Rasd'},
+    brandSub:{ar:'إنذار مبكر للأوبئة عابرة الحدود — ليبيا', en:'Cross-border Epidemic Early Warning — Libya'},
+    langToggle:{ar:'English', en:'العربية'},
+    syncPending:{ar:'جارٍ الاتصال بمصادر WHO…', en:'Connecting to WHO sources…'},
+    heroEyebrow:{ar:'مركز العمليات · ليبيا', en:'OPERATIONS CENTER · LIBYA'},
+    heroTitle:{ar:'الحالة الوبائية على حدود ليبيا', en:'Epidemic status at the Libyan borders'},
+    heroDesc:{ar:'يعرض هذا النظام حصراً بلاغات موثقة من منظمة الصحة العالمية (WHO Disease Outbreak News) تخص الدول المجاورة لليبيا (تونس، الجزائر، مصر، السودان، تشاد، النيجر). لا تُعرض أي أرقام افتراضية أو تقديرية كحالات فعلية.',
+                en:'This system shows only reports documented by WHO Disease Outbreak News concerning Libya\\'s neighbors (Tunisia, Algeria, Egypt, Sudan, Chad, Niger). No placeholder numbers are shown as real cases.'},
+    gaugeEyebrow:{ar:'مؤشر الخطر الإجمالي', en:'OVERALL RISK INDEX'},
+    gaugeLabel:{ar:'من ١٠٠ — مبني على البلاغات الموثقة فقط', en:'out of 100 — based only on documented reports'},
+    radialTitle:{ar:'خريطة القرب الجغرافي من ليبيا', en:'Geographic proximity map from Libya'},
+    radialNote:{ar:'المسافات تقريبية (خط مستقيم) من الدولة إلى أقرب منفذ حدودي ليبي — للتوضيح البصري فقط', en:'Straight-line distances are approximate, for visual reference only'},
+    threatsTitle:{ar:'البلاغات الوبائية الموثقة', en:'Documented epidemic reports'},
+    thDisease:{ar:'المرض / الحدث', en:'Disease / Event'},
+    thCountry:{ar:'الدولة', en:'Country'},
+    thCases:{ar:'الحالات / الوفيات', en:'Cases / Deaths'},
+    thDate:{ar:'تاريخ آخر بلاغ', en:'Last report date'},
+    thRisk:{ar:'التصنيف', en:'Classification'},
+    portsTitle:{ar:'المنافذ الحدودية الليبية', en:'Libyan border points'},
+    portsNote:{ar:'أسماء ونوع المنافذ فعلية — أرقام الحركة اليومية تقديرية توضيحية فقط، بانتظار بيانات رسمية', en:'Names and types are real; daily traffic figures are illustrative placeholders pending official data'},
+    alertsTitle:{ar:'سجل التنبيهات المشتقة من البلاغات الموثقة', en:'Alerts derived from documented reports'},
+    alertsActive:{ar:'تنبيه نشط', en:'active alerts'},
+    syncTitle:{ar:'حالة المزامنة الحية', en:'Live sync status'},
+    refreshNow:{ar:'مزامنة الآن', en:'Sync now'},
+    footerNote:{ar:'يحاول هذا الموقع الاتصال مباشرة بواجهة WHO كل ٥ دقائق من متصفحك. إن مُنع الاتصال (سياسات CORS)، يبقى آخر بلاغ تم التحقق منه يدوياً ظاهراً مع تاريخه بوضوح.',
+                en:'This site attempts to connect directly to the WHO API every 5 minutes from your browser. If blocked (CORS policy), the last manually verified report stays visible with its date clearly shown.'},
+    footerCredit:{ar:'أثر رصد · نظام إنذار مبكر', en:'Athar Rasd · Early Warning System'},
+    overallCRITICAL:{ar:'المستوى العام: حرج', en:'Overall level: CRITICAL'},
+    overallHIGH:{ar:'المستوى العام: مرتفع', en:'Overall level: HIGH'},
+    overallMEDIUM:{ar:'المستوى العام: متوسط', en:'Overall level: MEDIUM'},
+    overallLOW:{ar:'المستوى العام: منخفض', en:'Overall level: LOW'},
+    overallUNKNOWN:{ar:'لا توجد بلاغات كافية للتصنيف', en:'Not enough reports to classify'},
+    allFilter:{ar:'الكل', en:'All'},
+    kpiActiveAlerts:{ar:'تنبيهات نشطة', en:'Active alerts'},
+    kpiDiseases:{ar:'بلاغات موثقة', en:'Documented reports'},
+    kpiCountries:{ar:'دول بها بلاغات', en:'Countries with reports'},
+    kpiPorts:{ar:'منافذ حدودية معروضة', en:'Border points shown'},
+    daysAgo:{ar:'يوم مضى', en:'days ago'},
+    noReports:{ar:'لا توجد بلاغات دولية موثقة من WHO لهذه الدولة حالياً', en:'No WHO-documented international reports for this country currently'},
+    verifiedManually:{ar:'آخر تحقق يدوي', en:'Last manually verified'},
+    sourceLink:{ar:'مصدر WHO ↗', en:'WHO source ↗'},
+    syncOk:{ar:'متصل — آخر مزامنة ناجحة', en:'Connected — last sync succeeded'},
+    syncErr:{ar:'تعذّر الاتصال المباشر بخوادم WHO من هذا المتصفح (على الأرجح بسبب سياسة CORS) — المعروض هو آخر بيانات تم التحقق منها يدوياً', en:'Could not connect directly to WHO servers from this browser (likely a CORS policy) — showing the last manually verified data'},
+    bannerPorts:{ar:'تنبيه: أرقام حركة المنافذ الحدودية أدناه توضيحية وليست بيانات رسمية. البلاغات الوبائية في الجدول أعلاه فقط هي بيانات موثقة من WHO.',
+                 en:'Note: border-point traffic figures below are illustrative, not official. Only the epidemic reports table is WHO-documented data.'},
+  };
+  let LANG = 'ar';
+  function t(key){ return DICT[key] ? DICT[key][LANG] : key; }
+
+  const RISK_META = {
+    LOW:{ar:'منخفض', en:'Low', color:'var(--low)'},
+    MEDIUM:{ar:'متوسط', en:'Medium', color:'var(--medium)'},
+    HIGH:{ar:'مرتفع', en:'High', color:'var(--high)'},
+    CRITICAL:{ar:'حرج', en:'Critical', color:'var(--critical)'},
+    UNKNOWN:{ar:'غير مصنّف', en:'Unclassified', color:'var(--muted-2)'},
+  };
+  function riskLabel(l){ return RISK_META[l][LANG]; }
+  function riskColor(l){ return RISK_META[l].color; }
+
+  /* ======================= countries (real geography, approx distances) ======================= */
+  const COUNTRIES = [
+    { id:'tunisia', ar:'تونس',   en:'Tunisia', bearing:300, distanceKm:350, keywords:['tunisia'] },
+    { id:'algeria', ar:'الجزائر', en:'Algeria', bearing:255, distanceKm:250, keywords:['algeria'] },
+    { id:'egypt',   ar:'مصر',    en:'Egypt',   bearing:85,  distanceKm:300, keywords:['egypt'] },
+    { id:'sudan',   ar:'السودان', en:'Sudan',   bearing:140, distanceKm:600, keywords:['sudan'] },
+    { id:'chad',    ar:'تشاد',   en:'Chad',    bearing:185, distanceKm:550, keywords:['chad'] },
+    { id:'niger',   ar:'النيجر', en:'Niger',   bearing:230, distanceKm:450, keywords:['niger'] },
+  ];
+  const countryById = id => COUNTRIES.find(c=>c.id===id);
+
+  /* ======================= real, manually-verified seed reports (WHO-sourced) ======================= */
+  /* These are the only two Libya-neighbor reports confirmed via WHO/UN sources at build time.
+     Everything else stays empty until the live sync finds a real match, or is verified manually. */
+  const SEED_REPORTS = [
+    {
+      id:'seed-sudan-cholera-2026',
+      countryId:'sudan',
+      nameAr:'تفشٍّ جديد للكوليرا', nameEn:'New cholera outbreak',
+      confirmed:null, deaths:null,
+      note_ar:'تحذير صادر عن الأمم المتحدة/منظمة الصحة العالمية (١٠-١١ يوليو ٢٠٢٦) بشأن تفشٍّ جديد للكوليرا في السودان، مع قلق من انتشاره نحو الأبيّض في ولاية شمال كردفان. هذا يأتي بعد إعلان انتهاء تفشٍّ سابق (١٢٤,٤١٨ حالة، ٣,٥٧٣ وفاة) في ٣ مارس ٢٠٢٦.',
+      note_en:'UN/WHO alert (10-11 July 2026) on a new cholera outbreak in Sudan, with concern over spread toward El-Obeid, North Kordofan. This follows the declared end of a prior outbreak (124,418 cases, 3,573 deaths) on 3 March 2026.',
+      date:'2026-07-10',
+      source:'https://news.un.org/en/story/2026/07/1167913',
+      severity:'HIGH',
+    },
+    {
+      id:'seed-chad-cholera-2025',
+      countryId:'chad',
+      nameAr:'تفشٍّ الكوليرا (مستمر)', nameEn:'Cholera outbreak (ongoing)',
+      confirmed:776, deaths:53,
+      note_ar:'أعلنت تشاد رسمياً تفشٍّ الكوليرا في ٢٤ يوليو ٢٠٢٥، بعد أول حالة مشتبهة في ١٣ يوليو من معسكر دوقوي بمنطقة شوكويان، ولاية وداي، على الحدود مع السودان. تشاد مصنّفة ضمن الدول الأربع ذات "التفشي الرئيسي" حسب تحديث منظمة الصحة العالمية.',
+      note_en:'Chad officially declared a cholera outbreak on 24 July 2025, following the first suspected case on 13 July from Dougui Camp, Chokoyane, Ouaddaï province, on the border with Sudan. Chad is classified among four countries in "major outbreak" status per WHO.',
+      date:'2025-08-19',
+      source:'https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON579',
+      severity:'MEDIUM',
+    },
+  ];
+
+  /* live-fetched reports get merged in here */
+  let liveReports = [];
+  let syncState = 'pending'; // pending | ok | error
+  let lastSyncTime = null;
+  let lastSyncLog = '';
+
+  function allReports(){
+    // de-duplicate: prefer live reports over seeds for the same id
+    const map = new Map();
+    SEED_REPORTS.forEach(r=>map.set(r.id, r));
+    liveReports.forEach(r=>map.set(r.id, r));
+    return Array.from(map.values());
+  }
+
+  /* ======================= WHO live fetch (best effort, every 5 min) ======================= */
+  const WHO_ENDPOINT = 'https://www.who.int/api/news/diseaseoutbreaknews?$orderby=PublicationDateAndTime%20desc&$top=40';
+
+  async function fetchLiveData(){
+    syncState = 'pending';
+    renderSyncStatus();
+    try{
+      const res = await fetch(WHO_ENDPOINT, { headers:{ 'Accept':'application/json' } });
+      if(!res.ok) throw new Error('HTTP '+res.status);
+      const data = await res.json();
+      const items = (data && data.value) ? data.value : [];
+      const matches = [];
+      items.forEach(item=>{
+        const title = (item.Title||'') + ' ' + (item.OverrideTitle||'');
+        const lower = title.toLowerCase();
+        COUNTRIES.forEach(c=>{
+          if(c.keywords.some(kw=>lower.includes(kw))){
+            matches.push({
+              id:'live-'+item.Id,
+              countryId:c.id,
+              nameAr:item.Title, nameEn:item.Title,
+              confirmed:null, deaths:null,
+              note_ar:'بلاغ حي من واجهة WHO — راجع المصدر للتفاصيل الكاملة.',
+              note_en:item.Summary || 'Live WHO API match — see source for full details.',
+              date:(item.PublicationDateAndTime||'').slice(0,10),
+              source:'https://www.who.int'+(item.ItemDefaultUrl||''),
+              severity:'UNKNOWN',
+              isLive:true,
+            });
+          }
+        });
+      });
+      liveReports = matches;
+      syncState = 'ok';
+      lastSyncTime = new Date();
+      lastSyncLog = (LANG==='ar'?'تم العثور على ':'Found ') + matches.length + (LANG==='ar'?' بلاغ مطابق من أصل ':' matching reports out of ') + items.length + (LANG==='ar'?' بلاغ تم فحصه':' checked');
+    }catch(err){
+      syncState = 'error';
+      lastSyncTime = new Date();
+      lastSyncLog = (LANG==='ar'?'خطأ: ':'Error: ') + (err && err.message ? err.message : 'fetch failed');
+    }
+    renderAll();
+  }
+
+  /* ======================= risk / KPI helpers ======================= */
+  const RISK_RANK = {UNKNOWN:-1, LOW:0, MEDIUM:1, HIGH:2, CRITICAL:3};
+  function worstRiskForCountry(countryId){
+    const list = allReports().filter(r=>r.countryId===countryId);
+    if(!list.length) return null;
+    return list.reduce((worst,r)=> RISK_RANK[r.severity]>RISK_RANK[worst] ? r.severity : worst, 'UNKNOWN');
+  }
+  function overallRisk(){
+    const list = allReports();
+    if(!list.length) return null;
+    return list.reduce((worst,r)=> RISK_RANK[r.severity]>RISK_RANK[worst] ? r.severity : worst, 'UNKNOWN');
+  }
+
+  /* ======================= static border points (names/types real; traffic illustrative) ======================= */
+  const PORTS = [
+    { ar:'رأس اجدير', en:'Ras Jdir', type:{ar:'بري',en:'Land'}, countryId:'tunisia', traffic:'~3,000+' },
+    { ar:'وازن', en:'Wazin', type:{ar:'بري',en:'Land'}, countryId:'tunisia', traffic:'~800' },
+    { ar:'غدامس', en:'Ghadames', type:{ar:'بري',en:'Land'}, countryId:'algeria', traffic:'~400' },
+    { ar:'إمساعد', en:'Emsaad', type:{ar:'بري',en:'Land'}, countryId:'egypt', traffic:'~1,000+' },
+    { ar:'الكفرة', en:'Kufra Crossing', type:{ar:'بري',en:'Land'}, countryId:'sudan', traffic:'منخفضة / Low' },
+    { ar:'تُمُّو', en:'Toummo', type:{ar:'بري',en:'Land'}, countryId:'niger', traffic:'منخفضة / Low' },
+    { ar:'مطار معيتيقة الدولي', en:'Mitiga Intl. Airport', type:{ar:'جوي',en:'Air'}, countryId:null, traffic:'دولي / Intl' },
+    { ar:'ميناء طرابلس البحري', en:'Port of Tripoli', type:{ar:'بحري',en:'Sea'}, countryId:null, traffic:'دولي / Intl' },
+  ];
+
+  /* ======================= alerts derived only from real reports ======================= */
+  function buildAlerts(){
+    return allReports()
+      .filter(r=>r.severity!=='UNKNOWN' || r.isLive)
+      .map(r=>{
+        const c = countryById(r.countryId);
+        const days = lastSyncTime ? Math.max(0, Math.floor((Date.now()-new Date(r.date))/86400000)) : null;
+        return {report:r, country:c, level:r.severity, days};
+      })
+      .sort((a,b)=> RISK_RANK[b.level]-RISK_RANK[a.level]);
+  }
+  let currentAlertFilter = 'ALL';
+
+  /* ======================= rendering ======================= */
+  function applyStaticI18n(){
+    document.documentElement.lang = LANG;
+    document.documentElement.dir = LANG==='ar' ? 'rtl':'ltr';
+    document.querySelectorAll('[data-i18n]').forEach(el=>{
+      const key = el.getAttribute('data-i18n');
+      if(DICT[key]) el.textContent = DICT[key][LANG];
+    });
+  }
+
+  function renderBanner(){
+    document.getElementById('dataBanner').innerHTML =
+      `<span>⚠️</span><span>${t('bannerPorts')}</span>`;
+  }
+
+  function renderOverall(){
+    const level = overallRisk();
+    const badge = document.getElementById('overallBadge');
+    const badgeText = document.getElementById('overallBadgeText');
+    if(!level){
+      badge.className = 'risk-badge risk-UNKNOWN';
+      badgeText.textContent = t('overallUNKNOWN');
+      document.getElementById('gaugeValue').textContent = '—';
+      document.getElementById('gaugeArc').setAttribute('stroke-dashoffset','389.6');
+      document.getElementById('gaugeArc').style.stroke = 'var(--neutral)';
+      return;
+    }
+    badge.className = 'risk-badge risk-'+level;
+    badgeText.textContent = t('overall'+level);
+    const scoreMap = {LOW:22, MEDIUM:48, HIGH:72, CRITICAL:92, UNKNOWN:0};
+    const score = scoreMap[level];
+    document.getElementById('gaugeValue').textContent = score;
+    const circumference = 389.6;
+    const offset = circumference - (score/100)*circumference;
+    const arc = document.getElementById('gaugeArc');
+    arc.style.stroke = riskColor(level);
+    arc.setAttribute('stroke-dashoffset', offset);
+  }
+
+  function renderKPIs(){
+    const reports = allReports();
+    const alerts = buildAlerts();
+    const countriesWithReports = new Set(reports.map(r=>r.countryId)).size;
+    const items = [
+      {v:alerts.length, l:t('kpiActiveAlerts'), color:'var(--high)'},
+      {v:reports.length, l:t('kpiDiseases'), color:'var(--brand)'},
+      {v:countriesWithReports, l:t('kpiCountries'), color:'var(--medium)'},
+      {v:PORTS.length, l:t('kpiPorts'), color:'var(--muted)'},
+    ];
+    document.getElementById('kpiRow').innerHTML = items.map(k=>`
+      <div class="kpi"><div class="v num" style="color:${k.color}">${k.v}</div><div class="l">${k.l}</div></div>`).join('');
+    document.getElementById('activeAlertsCount').textContent = alerts.length;
+  }
+
+  function polar(cx,cy,r,angleDeg){
+    const rad=(angleDeg-90)*Math.PI/180;
+    return {x:cx+r*Math.cos(rad), y:cy+r*Math.sin(rad)};
+  }
+
+  function renderRadial(){
+    const svg = document.getElementById('radialSvg');
+    const cx=210, cy=210, maxR=175, maxDist=650;
+    const rings=[200,400,600];
+    let s='';
+    rings.forEach(dist=>{
+      const r=(dist/maxDist)*maxR;
+      s+=`<circle class="ring" cx="${cx}" cy="${cy}" r="${r}"/>`;
+      s+=`<text class="ring-label" x="${cx+6}" y="${cy-r-4}">${dist} ${LANG==='ar'?'كم':'km'}</text>`;
+    });
+    s+=`<circle cx="${cx}" cy="${cy}" r="9" fill="var(--brand)"/>`;
+    s+=`<circle cx="${cx}" cy="${cy}" r="14" fill="none" stroke="var(--brand)" stroke-width="1.4" opacity="0.5"/>`;
+    s+=`<text class="node-label" x="${cx}" y="${cy+28}" text-anchor="middle" font-weight="700">${LANG==='ar'?'ليبيا':'Libya'}</text>`;
+    COUNTRIES.forEach(c=>{
+      const r=(c.distanceKm/maxDist)*maxR;
+      const p=polar(cx,cy,r,c.bearing);
+      const risk = worstRiskForCountry(c.id);
+      const color = risk ? riskColor(risk) : 'var(--neutral)';
+      s+=`<g class="country-node" data-country="${c.id}">
+            <line x1="${cx}" y1="${cy}" x2="${p.x}" y2="${p.y}" stroke="${color}" stroke-opacity="0.25" stroke-width="1.5"/>
+            <circle cx="${p.x}" cy="${p.y}" r="8" fill="${color}" fill-opacity="0.85"/>
+            <text class="node-label" x="${p.x}" y="${p.y-14}" text-anchor="middle">${LANG==='ar'?c.ar:c.en}</text>
+          </g>`;
+    });
+    svg.innerHTML = s;
+    svg.querySelectorAll('.country-node').forEach(node=>{
+      node.addEventListener('click', ()=>{
+        document.getElementById('threatsBody').scrollIntoView({behavior:'smooth', block:'center'});
+      });
+    });
+    document.getElementById('radialLegend').innerHTML = ['LOW','MEDIUM','HIGH','CRITICAL','UNKNOWN'].map(level=>`
+      <div class="legend-row"><span class="legend-dot" style="background:${riskColor(level)}"></span>${riskLabel(level)}</div>
+    `).join('');
+  }
+
+  function renderThreats(){
+    const reports = allReports().sort((a,b)=> new Date(b.date) - new Date(a.date));
+    const covered = new Set(reports.map(r=>r.countryId));
+    document.getElementById('threatsNoteText').textContent =
+      (LANG==='ar' ? `آخر مزامنة: ` : `Last sync: `) + (lastSyncTime ? lastSyncTime.toLocaleString(LANG==='ar'?'ar-LY':'en-GB') : (LANG==='ar'?'لم تتم بعد':'not yet'));
+
+    let rows = reports.map(r=>{
+      const c = countryById(r.countryId);
+      const cases = (r.confirmed!=null || r.deaths!=null)
+        ? `${r.confirmed!=null?r.confirmed.toLocaleString():'—'} / ${r.deaths!=null?r.deaths.toLocaleString():'—'}`
+        : (LANG==='ar'?'راجع المصدر':'see source');
+      return `<tr data-country="${c.id}">
+        <td><div class="disease-name">${LANG==='ar'?r.nameAr:r.nameEn}</div>
+            <div style="font-size:.78rem; color:var(--muted); margin-top:.3rem; max-width:46ch;">${LANG==='ar'?r.note_ar:r.note_en}</div>
+            <a class="src-link" href="${r.source}" target="_blank" rel="noopener">${t('sourceLink')}</a>
+        </td>
+        <td><span class="country-tag">${LANG==='ar'?c.ar:c.en}</span></td>
+        <td class="num">${cases}</td>
+        <td class="num">${r.date}</td>
+        <td><span class="risk-chip" style="background:${riskColor(r.severity)}22; color:${riskColor(r.severity)};">● ${riskLabel(r.severity)}</span></td>
+      </tr>`;
+    }).join('');
+
+    COUNTRIES.filter(c=>!covered.has(c.id)).forEach(c=>{
+      rows += `<tr class="no-data-row"><td colspan="5">
+        <span class="country-tag" style="margin-left:.5rem;">${LANG==='ar'?c.ar:c.en}:</span> ${t('noReports')}
+      </td></tr>`;
+    });
+
+    document.getElementById('threatsBody').innerHTML = rows;
+  }
+
+  function renderPorts(){
+    document.getElementById('portsGrid').innerHTML = PORTS.map(p=>{
+      const c = p.countryId ? countryById(p.countryId) : null;
+      const risk = c ? worstRiskForCountry(c.id) : null;
+      const color = risk ? riskColor(risk) : 'var(--border)';
+      return `<div class="port-card" style="border-color: color-mix(in srgb, ${color} 35%, var(--border))">
+        <div class="port-top">
+          <div>
+            <div class="port-name">${LANG==='ar'?p.ar:p.en}</div>
+            <div class="port-country">${c ? (LANG==='ar'?c.ar:c.en) : (LANG==='ar'?'دولي':'International')}</div>
+          </div>
+          <span class="port-type">${LANG==='ar'?p.type.ar:p.type.en}</span>
+        </div>
+        <div class="port-meta">
+          <span class="num approx-tag">${p.traffic} ${LANG==='ar'?'/ يوم (تقديري)':'/ day (approx.)'}</span>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  function renderAlertFilters(){
+    const levels = ['ALL','LOW','MEDIUM','HIGH','CRITICAL','UNKNOWN'];
+    document.getElementById('alertFilters').innerHTML = levels.map(level=>{
+      const label = level==='ALL' ? t('allFilter') : riskLabel(level);
+      const active = currentAlertFilter===level;
+      const color = level==='ALL' ? 'var(--muted)' : riskColor(level);
+      return `<button class="chip-btn ${active?'active':''}" data-level="${level}"
+                style="${active?`border-color:${color}; color:${color}; background:${color}22;`:''}">${label}</button>`;
+    }).join('');
+    document.querySelectorAll('#alertFilters .chip-btn').forEach(btn=>{
+      btn.addEventListener('click', ()=>{ currentAlertFilter=btn.getAttribute('data-level'); renderAlertFilters(); renderAlertFeed(); });
+    });
+  }
+
+  function renderAlertFeed(){
+    let alerts = buildAlerts();
+    if(currentAlertFilter!=='ALL') alerts = alerts.filter(a=>a.level===currentAlertFilter);
+    const feed = document.getElementById('alertFeed');
+    if(!alerts.length){
+      feed.innerHTML = `<div style="padding:1.4rem; text-align:center; color:var(--muted-2); font-size:.85rem;">
+        ${LANG==='ar' ? 'لا توجد تنبيهات ضمن هذا المستوى حالياً' : 'No alerts at this level right now'}
+      </div>`;
+      return;
+    }
+    feed.innerHTML = alerts.map(a=>{
+      const r = a.report;
+      const daysText = a.days!=null ? `${a.days} ${t('daysAgo')}` : '';
+      return `<div class="alert-item">
+        <div class="alert-bar" style="background:${riskColor(a.level)}"></div>
+        <div class="alert-body">
+          <div class="alert-top">
+            <span class="alert-title">${LANG==='ar'?r.nameAr:r.nameEn} — ${LANG==='ar'?a.country.ar:a.country.en}</span>
+            <span class="alert-time">${daysText}</span>
+          </div>
+          <div class="alert-desc">${LANG==='ar'?r.note_ar:r.note_en}</div>
+          <a class="src-link" href="${r.source}" target="_blank" rel="noopener">${t('sourceLink')}</a>
+        </div>
+        <span class="risk-chip" style="background:${riskColor(a.level)}22; color:${riskColor(a.level)};">● ${riskLabel(a.level)}</span>
+      </div>`;
+    }).join('');
+  }
+
+  function renderSyncStatus(){
+    const dotIds = ['syncDot','syncDot2'];
+    const cls = syncState==='ok' ? 'sync-ok' : syncState==='error' ? 'sync-err' : 'sync-pending';
+    dotIds.forEach(id=>{ const el=document.getElementById(id); if(el) el.className='sync-dot '+cls; });
+    const label = syncState==='ok' ? t('syncOk') : syncState==='error' ? t('syncErr') : t('syncPending');
+    const l1 = document.getElementById('syncLabel'); if(l1) l1.textContent = label;
+    const l2 = document.getElementById('syncLabel2'); if(l2) l2.textContent = label;
+    const log = document.getElementById('syncLog');
+    if(log){
+      const timeStr = lastSyncTime ? lastSyncTime.toLocaleTimeString(LANG==='ar'?'ar-LY':'en-GB') : '—';
+      log.textContent = `[${timeStr}] ${lastSyncLog}`;
+    }
+  }
+
+  function renderAll(){
+    applyStaticI18n();
+    renderBanner();
+    renderOverall();
+    renderKPIs();
+    renderRadial();
+    renderThreats();
+    renderPorts();
+    renderAlertFilters();
+    renderAlertFeed();
+    renderSyncStatus();
+  }
+
+  document.getElementById('langToggle').addEventListener('click', ()=>{ LANG = LANG==='ar'?'en':'ar'; renderAll(); });
+  document.getElementById('refreshNowBtn').addEventListener('click', fetchLiveData);
+
+  renderAll();
+  fetchLiveData();
+  setInterval(fetchLiveData, 5*60*1000); // every 5 minutes
+})();
+</script>
+</body>
+</html>
