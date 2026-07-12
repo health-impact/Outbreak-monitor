@@ -367,46 +367,96 @@
     return Array.from(map.values());
   }
 
-  /* ======================= WHO live fetch (best effort, every 5 min) ======================= */
+  /* ======================= data sync (two tiers) =======================
+     Tier 1 (preferred): who_data.json — same-origin file kept fresh by a
+     GitHub Actions workflow (update-data.yml) that runs server-side, so it
+     never hits browser CORS restrictions. This is the reliable path.
+     Tier 2 (fallback): a direct browser fetch to the WHO API itself, which
+     may or may not succeed depending on WHO's CORS policy. */
+  const LOCAL_DATA_FILE = 'who_data.json';
   const WHO_ENDPOINT = 'https://www.who.int/api/news/diseaseoutbreaknews?$orderby=PublicationDateAndTime%20desc&$top=40';
+
+  function reportsFromWHOItems(items){
+    const matches = [];
+    items.forEach(item=>{
+      const title = (item.Title||'') + ' ' + (item.OverrideTitle||'');
+      const lower = title.toLowerCase();
+      COUNTRIES.forEach(c=>{
+        if(c.keywords.some(kw=>lower.includes(kw))){
+          matches.push({
+            id:'live-'+item.Id,
+            countryId:c.id,
+            nameAr:item.Title, nameEn:item.Title,
+            confirmed:null, deaths:null,
+            note_ar:'بلاغ حي من واجهة WHO — راجع المصدر للتفاصيل الكاملة.',
+            note_en:item.Summary || 'Live WHO API match — see source for full details.',
+            date:(item.PublicationDateAndTime||'').slice(0,10),
+            source:'https://www.who.int'+(item.ItemDefaultUrl||''),
+            severity:'UNKNOWN',
+            isLive:true,
+          });
+        }
+      });
+    });
+    return matches;
+  }
+
+  async function tryLocalDataFile(){
+    const res = await fetch(LOCAL_DATA_FILE + '?t=' + Date.now(), { cache:'no-store' });
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    if(data.status === 'error') throw new Error(data.error || 'update_who_data.py reported an error');
+    const reports = (data.reports||[]).map(r=>({
+      id:r.id, countryId:r.countryId,
+      nameAr:r.titleAr, nameEn:r.titleEn,
+      confirmed:null, deaths:null,
+      note_ar:'بلاغ مُحدَّث تلقائياً عبر GitHub Actions — راجع المصدر للتفاصيل.',
+      note_en:r.summary || 'Auto-updated via GitHub Actions — see source for full details.',
+      date:r.date, source:r.source, severity:'UNKNOWN', isLive:true,
+    }));
+    return { reports, generatedAt:data.generatedAt, checkedItems:data.checkedItems };
+  }
+
+  async function tryDirectWHOFetch(){
+    const res = await fetch(WHO_ENDPOINT, { headers:{ 'Accept':'application/json' } });
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    const items = (data && data.value) ? data.value : [];
+    return { reports: reportsFromWHOItems(items), checkedItems: items.length };
+  }
 
   async function fetchLiveData(){
     syncState = 'pending';
     renderSyncStatus();
+    // Tier 1: same-origin who_data.json kept fresh by GitHub Actions (no CORS issue)
     try{
-      const res = await fetch(WHO_ENDPOINT, { headers:{ 'Accept':'application/json' } });
-      if(!res.ok) throw new Error('HTTP '+res.status);
-      const data = await res.json();
-      const items = (data && data.value) ? data.value : [];
-      const matches = [];
-      items.forEach(item=>{
-        const title = (item.Title||'') + ' ' + (item.OverrideTitle||'');
-        const lower = title.toLowerCase();
-        COUNTRIES.forEach(c=>{
-          if(c.keywords.some(kw=>lower.includes(kw))){
-            matches.push({
-              id:'live-'+item.Id,
-              countryId:c.id,
-              nameAr:item.Title, nameEn:item.Title,
-              confirmed:null, deaths:null,
-              note_ar:'بلاغ حي من واجهة WHO — راجع المصدر للتفاصيل الكاملة.',
-              note_en:item.Summary || 'Live WHO API match — see source for full details.',
-              date:(item.PublicationDateAndTime||'').slice(0,10),
-              source:'https://www.who.int'+(item.ItemDefaultUrl||''),
-              severity:'UNKNOWN',
-              isLive:true,
-            });
-          }
-        });
-      });
-      liveReports = matches;
+      const {reports, generatedAt, checkedItems} = await tryLocalDataFile();
+      liveReports = reports;
+      syncState = 'ok';
+      lastSyncTime = generatedAt ? new Date(generatedAt) : new Date();
+      lastSyncLog = (LANG==='ar'
+        ? `مصدر: who_data.json (محدَّث عبر GitHub Actions) — ${reports.length} بلاغ مطابق من ${checkedItems||'?'}`
+        : `Source: who_data.json (GitHub Actions) — ${reports.length} matches of ${checkedItems||'?'}`);
+      renderAll();
+      return;
+    }catch(err){
+      // fall through to Tier 2
+    }
+    // Tier 2: direct browser fetch to WHO (may fail due to CORS)
+    try{
+      const {reports, checkedItems} = await tryDirectWHOFetch();
+      liveReports = reports;
       syncState = 'ok';
       lastSyncTime = new Date();
-      lastSyncLog = (LANG==='ar'?'تم العثور على ':'Found ') + matches.length + (LANG==='ar'?' بلاغ مطابق من أصل ':' matching reports out of ') + items.length + (LANG==='ar'?' بلاغ تم فحصه':' checked');
+      lastSyncLog = (LANG==='ar'
+        ? `مصدر: اتصال مباشر بمتصفحك بـ WHO — ${reports.length} بلاغ مطابق من ${checkedItems}`
+        : `Source: direct browser connection to WHO — ${reports.length} matches of ${checkedItems}`);
     }catch(err){
       syncState = 'error';
       lastSyncTime = new Date();
-      lastSyncLog = (LANG==='ar'?'خطأ: ':'Error: ') + (err && err.message ? err.message : 'fetch failed');
+      lastSyncLog = (LANG==='ar'
+        ? 'تعذّر الوصول لـ who_data.json (قد لا يكون منشوراً بعد على GitHub Pages) وتعذّر الاتصال المباشر بـ WHO أيضاً — المعروض هو آخر بيانات تم التحقق منها يدوياً'
+        : 'Could not reach who_data.json (may not be published on GitHub Pages yet) and direct WHO connection also failed — showing last manually verified data');
     }
     renderAll();
   }
