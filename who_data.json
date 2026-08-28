@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-28T08:19:23.224264+00:00",
+  "generatedAt": "2026-08-28T20:33:10.069493+00:00",
   "status": "ok",
   "checkedItems": 60,
-  "matchedReports": 4,
+  "matchedReports": 3,
   "reports": [
     {
       "id": "live-42cc5b42-7a88-4ab6-abab-a078fc0ac0cb",
@@ -33,16 +33,6 @@
       "date": "2025-02-21",
       "source": "https://www.who.int/2025-DON556",
       "donId": "2025-DON556"
-    },
-    {
-      "id": "live-dca8f16e-0837-415c-96be-d9682951e009",
-      "countryId": "sudan",
-      "titleAr": "Sudan virus disease – Uganda",
-      "titleEn": "Sudan virus disease – Uganda",
-      "summary": "On 30 January 2025, the Ministry of Health of Uganda declared an outbreak of Sudan virus disease (SVD) following confirmation from three national reference laboratories. The case presented with signs and symptoms between 20 and 21 January and died on 29 January at the National Referral Hospital in Kampala. \r\nAs of 30 January 2025, 45 contacts have been identified, including 34 healthcare workers and 11 family members. \r\nSudan virus disease belongs to the same family as Ebola virus disease. It is caused by Sudan virus (SUDV). It is a severe disease with high case fatality from 41% to 70% in past outbreaks. \r\nIn the absence of licensed vaccines and therapeutics for the prevention and treatment of SVD, the risk of potential serious public health impact is high.    \r\nEarly supportive patient care and treatment may increase the chance of survival from severe disease. \r\n",
-      "date": "2025-02-01",
-      "source": "https://www.who.int/2025-DON555",
-      "donId": "2025-DON555"
     }
   ]
 }
