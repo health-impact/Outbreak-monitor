@@ -18,8 +18,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Run Claude Action
-        uses: anthropic-experimental/claude-code-action@v1
+      - name: Run Claude
+        uses: anthropics/claude-code-action@v1
         with:
           anthropic_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
