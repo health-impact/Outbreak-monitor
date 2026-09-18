@@ -1,1 +1,28 @@
+name: Claude GitHub Action
 
+on:
+  issue_comment:
+    types: [created]
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  claude:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Claude Action
+        uses: anthropic-experimental/claude-code-action@v1
+        with:
+          anthropic_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            قم بقراءة طلب المستخدم بدقة.
+            إذا كان الطلب يتطلب تعديل الكود، قم بتعديل الملفات المناسبة وافتح Pull Request جديد بالتعديلات.
+            
