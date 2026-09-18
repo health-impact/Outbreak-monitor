@@ -10,6 +10,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  id-token: write
 
 jobs:
   claude:
@@ -21,7 +22,7 @@ jobs:
       - name: Run Claude
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
             قم بقراءة طلب المستخدم بدقة.
             إذا كان الطلب يتطلب تعديل الكود، قم بتعديل الملفات المناسبة وافتح Pull Request جديد بالتعديلات.
