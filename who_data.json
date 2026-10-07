@@ -1,28 +1,6 @@
 {
-  "generatedAt": "2026-10-07T08:02:26.932018+00:00",
-  "status": "ok",
-  "checkedItems": 60,
-  "matchedReports": 2,
-  "reports": [
-    {
-      "id": "live-42cc5b42-7a88-4ab6-abab-a078fc0ac0cb",
-      "countryId": "sudan",
-      "titleAr": "Sudan virus disease – Uganda",
-      "titleEn": "Sudan virus disease – Uganda",
-      "summary": "On 26 April 2025, the Ministry of Health (MoH) of Uganda declared the end of the Sudan virus disease (SVD) outbreak after two consecutive incubation periods (a total of 42 days) since the last person confirmed with SVD tested negative for the virus on 14 March 2025. A total of 14 SVD cases (including 12 confirmed cases and two probable cases) including four deaths (two confirmed and two probable) have been reported during this outbreak. WHO and partners provided technical, operational and financial support to the government to contain the outbreak. Although the outbreak has been declared over, health authorities are maintaining surveillance to rapidly identify and respond to any re-emergence. Risk communication and community engagement will also continue to ensure the community stay informed and stigma to those who were affected is minimized.  ",
-      "date": "2025-04-26",
-      "source": "https://www.who.int/2025-DON566",
-      "donId": "2025-DON566"
-    },
-    {
-      "id": "live-1efb6bc0-bade-4150-bf2d-e2e8c34d0eb7",
-      "countryId": "sudan",
-      "titleAr": "Sudan virus disease – Uganda",
-      "titleEn": "Sudan virus disease – Uganda",
-      "summary": "Since the outbreak of Sudan virus disease (SVD) was declared in Uganda on 30 January 2025, and as of 5 March 2025, a total of 14 cases (including 12 confirmed cases and two probable cases) including four deaths (two confirmed and two probable) have been reported.  On 1 March 2025, the Ministry of Health released a press statement confirming the tenth case. The patient was a child under 5 years old who presented and died in the Mulago hospital on 23 February 2025. As of 5 March, two additional confirmed cases and two probable deaths have been reported that are linked to this case. Both of these cases are currently admitted to treatment facilities. Eight confirmed cases received care at treatment centres in the capital Kampala and in Mbale and were discharged on 18 February 2025. As of 5 March 2025, 192 new contacts have been identified and are under follow-up in Kampala, Ntoroko and Wakiso.   \r\nIn the absence of licensed vaccines and therapeutics for the prevention and treatment of SVD, the risk of potential serious public health impact is high. ",
-      "date": "2025-03-08",
-      "source": "https://www.who.int/2025-DON558",
-      "donId": "2025-DON558"
-    }
-  ]
+  "generatedAt": "2026-10-07T15:57:05.083251+00:00",
+  "status": "error",
+  "error": "The read operation timed out",
+  "reports": []
 }
