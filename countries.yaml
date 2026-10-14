@@ -1,0 +1,10 @@
+countries:
+  - {id: LY, en: Libya,   ar: ليبيا,   role: home,     kw: [libya, libyan, ليبيا]}
+  - {id: TN, en: Tunisia, ar: تونس,    role: neighbor, kw: [tunisia, تونس]}
+  - {id: DZ, en: Algeria, ar: الجزائر, role: neighbor, kw: [algeria, الجزائر]}
+  - {id: EG, en: Egypt,   ar: مصر,     role: neighbor, kw: [egypt, مصر]}
+  - {id: SD, en: Sudan,   ar: السودان, role: neighbor, kw: [sudan, السودان]}
+  - {id: TD, en: Chad,    ar: تشاد,    role: neighbor, kw: [chad, تشاد]}
+  - {id: NE, en: Niger,   ar: النيجر,  role: neighbor, kw: [niger, النيجر]}
+  - {id: IT, en: Italy,   ar: إيطاليا, role: watch,    kw: [italy, إيطاليا]}
+  - {id: MT, en: Malta,   ar: مالطا,   role: watch,    kw: [malta, مالطا]}

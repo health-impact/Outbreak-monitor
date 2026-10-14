@@ -1,0 +1,20 @@
+# مصادر البيانات الرسمية. official=true يعني أن الخبر منها يُعتبر موثقاً بذاته.
+# org = الجهة المالكة (تُستخدم لفحص الاستقلالية عند التأكيد المزدوج).
+# enabled=false مصادر وطنية تحتاج تحديد رابط فعلي (راجع README).
+sources:
+  - {id: who_don,    name: "WHO Disease Outbreak News", org: WHO,       official: true, type: rss, enabled: true,
+     url: "https://www.who.int/feeds/entity/csr/don/en/rss.xml"}
+  - {id: who_news,   name: "WHO News",                  org: WHO,       official: true, type: rss, enabled: true,
+     url: "https://www.who.int/rss-feeds/news-english.xml"}
+  - {id: africa_cdc, name: "Africa CDC",                org: AfricaCDC, official: true, type: rss, enabled: true,
+     url: "https://africacdc.org/feed/"}
+  - {id: ecdc_news,  name: "ECDC News",                 org: ECDC,      official: true, type: rss, enabled: true,
+     url: "https://www.ecdc.europa.eu/en/taxonomy/term/1310/feed"}
+  # وطنية - تفعّل بعد تحديد الرابط الرسمي
+  - {id: libya_ncdc, name: "المركز الوطني لمكافحة الأمراض - ليبيا", org: NCDC-LY, official: true, type: rss, enabled: false, url: ""}
+  - {id: tunisia_moh, name: "Tunisia MoH / ONMNE", org: MoH-TN, official: true, type: rss, enabled: false, url: ""}
+  - {id: egypt_moh,   name: "Egypt MoHP",          org: MoH-EG, official: true, type: rss, enabled: false, url: ""}
+  - {id: algeria_moh, name: "Algeria MoH",         org: MoH-DZ, official: true, type: rss, enabled: false, url: ""}
+  # أخبار صحية غير رسمية: لا تُنشر إلا بتأكيد مصدرين مستقلين
+  - {id: promed,     name: "ProMED",   org: ISID,       official: false, type: rss, enabled: false, url: ""}
+  - {id: healthmap,  name: "HealthMap", org: HealthMap, official: false, type: rss, enabled: false, url: ""}
