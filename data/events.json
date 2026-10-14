@@ -1,0 +1,210 @@
+{
+ "generated_at": "2026-10-14T21:24:45.976683+00:00",
+ "count": 12,
+ "events": [
+  {
+   "id": "a3f78573815eff2a",
+   "title": "Ebola disease outbreak in the Democratic Republic of the Congo",
+   "summary": "Since May 2026, an Ebola virus disease outbreak caused by Bundibugyo virus has been ongoing in the Democratic Republic of the Congo (DRC).",
+   "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+   "published": "2026-10-14T15:36:21+00:00",
+   "source_id": "ecdc_news",
+   "source_name": "ECDC News",
+   "org": "ECDC",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "ECDC"
+   ]
+  },
+  {
+   "id": "96bbaebbd68b803b",
+   "title": "Cholera worldwide overview",
+   "summary": "A worldwide epidemiological summary of the countries most affected by cholera.",
+   "url": "https://www.ecdc.europa.eu/en/all-topics-z/cholera/surveillance-and-disease-data/cholera-monthly",
+   "published": "2026-09-28T11:56:33+00:00",
+   "source_id": "ecdc_news",
+   "source_name": "ECDC News",
+   "org": "ECDC",
+   "official": true,
+   "disease": "cholera",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "ECDC"
+   ]
+  },
+  {
+   "id": "a3d8267714835168",
+   "title": "Dengue worldwide overview",
+   "summary": "Every month ECDC provides detailed epidemiological overview of the worldwide transmission of dengue in its weekly threat report (Communicable Diseases Threat Report).",
+   "url": "https://www.ecdc.europa.eu/en/dengue-monthly",
+   "published": "2026-09-28T07:17:53+00:00",
+   "source_id": "ecdc_news",
+   "source_name": "ECDC News",
+   "org": "ECDC",
+   "official": true,
+   "disease": "dengue",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "ECDC"
+   ]
+  },
+  {
+   "id": "4aedb5044ae58d7a",
+   "title": "Mpox worldwide overview",
+   "summary": "Every month ECDC provides detailed epidemiological overview of the worldwide transmission of mpox in its weekly threat report.",
+   "url": "https://www.ecdc.europa.eu/en/mpox-worldwide-overview",
+   "published": "2026-05-13T10:26:15+00:00",
+   "source_id": "ecdc_news",
+   "source_name": "ECDC News",
+   "org": "ECDC",
+   "official": true,
+   "disease": "mpox",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "ECDC"
+   ]
+  },
+  {
+   "id": "83973afb43b95bf4",
+   "title": "Timor-Leste certified malaria-free by WHO",
+   "summary": "The World Health Organization (WHO) has certified Timor-Leste as malaria-free, a remarkable achievement for a country that prioritized the disease and embarked on a concerted, nation-wide response shortly after gaining independence in 2002. &ldquo;WHO congratulates the people and government of Timor-Leste on this significant milestone,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;Timor-Leste&rsquo;s success proves that malaria can be stopped in its tracks when strong political will, smart interventions, sustained domestic and external investment and dedicated health workers unite.&rdquo; With today&rsquo;s announcement, a total of 47 countries and 1 territory have been certified as malaria-free by WHO. Timor-Leste is the third country to be certified in the WHO South-East Asia region, joining Maldives and Sri Lanka which were certified in 2015 and 2016 respectively. Certification of malaria elimination is granted by WHO when a country has proven, beyond reasonable doubt, that the chain of indigenous transmission has been interrupted nationwide for at least the previous three consecutive years. &ldquo;We did it. Malaria has been one of our most relentless enemies &ndash; silent, persistent, and deadly. We lost too many lives to a disease that should be preventable. But our health workers never gave up, our communities held strong, and our partners, like WHO, walked beside us. From 223&nbsp;000 cases to zero &ndash; this elimination honours every life",
+   "url": "https://www.who.int/news/item/24-07-2025-timor-leste-certified-malaria-free-by-who",
+   "published": "2025-07-23T10:07:41+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "malaria",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "6a025c6261d08a5b",
+   "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
+   "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also highlighted Saudi Arabia’s ongoing commitment to global humanitarian efforts, reaffirming its leadership role in tackling some of the world’s pressing health crises.",
+   "url": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities",
+   "published": "2025-03-06T12:48:53+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "malaria",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "6a025c6261d08a5b",
+   "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
+   "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also highlighted Saudi Arabia’s ongoing commitment to global humanitarian efforts, reaffirming its leadership role in tackling some of the world’s pressing health crises.",
+   "url": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities",
+   "published": "2025-03-06T12:48:53+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "cholera",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "6a025c6261d08a5b",
+   "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
+   "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also highlighted Saudi Arabia’s ongoing commitment to global humanitarian efforts, reaffirming its leadership role in tackling some of the world’s pressing health crises.",
+   "url": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities",
+   "published": "2025-03-06T12:48:53+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "polio",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "7de84ec00ff6d648",
+   "title": "Signing ceremony for contribution agreements between WHO and France",
+   "summary": "Geneva 17 October 2024 &ndash; This afternoon, His Excellency Mr J&eacute;r&ocirc;me Bonnafont, Permanent Representative of France to the United Nations in Geneva, and WHO Director-General Dr Tedros Adhanom Ghebreyesus met in the WHO headquarters for the signing of seven contribution agreements. The contribution totalling &euro;24 million comes through the Ministry of Europe &amp; Foreign Affairs. It fits in the France&ndash;WHO Framework Agreement for 2020 to 2025, which provides both a strategic framework for engagement, aligned with WHO priorities, while providing legal, administrative and financial instruments for operationalizing collaboration. This latest contribution includes a generous &euro;4.5 million in fully flexible voluntary funds for the Core Voluntary Contributions Account (CVCA). Additionally, France will support key areas of WHO&rsquo;s work, addressing some of the most pressing health challenges, including non-communicable diseases (NCDs), urban health labs, One Health, funding for the WHO Contingency Fund for Emergencies (CFE), and several emergencies, such as the WHO response in Gaza, response to cholera outbreaks and mental health support in Ukraine. France will also continue to support the WHO emergencies centre in Lyon which is playing a crucial role in preparedness and response to epidemics. Ambassador J&eacute;r&ocirc;me Bonnafont underscored the importance of this collaboration: &ldquo;France remains deeply committed to supporting the World Health O",
+   "url": "https://www.who.int/news/item/17-10-2024-signing-ceremony-for-contribution-agreements-between-who-and-france",
+   "published": "2024-10-17T12:01:38+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "cholera",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "d696905207917fe0",
+   "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
+   "summary": "Governments of the world today agreed to continue working on a proposed pandemic agreement, and to further refine the draft, ahead of the Seventy-seventh World Health Assembly that starts 27 May 2024. Governments meeting at the World Health Organization headquarters in Geneva agreed to resume hybrid and in-person discussions over coming weeks to advance work on critical issues, including around a proposed new global system for pathogen access and benefits sharing (i.e. life-saving vaccines, treatments and diagnostics); pandemic prevention and One Health; and the financial coordination needed to scale up countries&rsquo; capacities to prepare for and respond to pandemics. \"During more than two years of intensive negotiations, WHO&rsquo;s Member States have shown unwavering commitment to forging a generational agreement to protect the world from a repeat of the horrors caused by the COVID-19 pandemic,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;I welcome the determination that all countries have shown to continue their work and fulfill the mission on which they embarked.&rdquo; The Member State-led Intergovernmental Negotiating Body (INB) was established over two years ago to take this effort forward. The Bureau of the INB, which is guiding the process, will submit its outcome for consideration at the World Health Assembly. INB Bureau Co-Chair Dr Precious Matsoso, from South Africa, said progress had been made during this latest round of discussions ",
+   "url": "https://www.who.int/news/item/10-05-2024-governments-agree-to-continue-their-steady-progress-on-proposed-pandemic-agreement-ahead-of-the-world-health-assembly",
+   "published": "2024-05-10T19:15:31+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "covid_flu",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "ff196fea23a9e733",
+   "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
+   "summary": "WHO welcomed Mr Javier Padilla Bern&aacute;ldez, Spain&rsquo;s Secretary of State for Health and his delegation on 23 and 24 April 2024 to discuss joint global health priorities. Amongst others, Spain's focus is on universal health coverage and health systems strengthening; pandemic response and emergency medical teams; organ and tissue transplantation; malaria and other tropical diseases; and polio. During the visit, participants focused on plans and on-going work across a number of areas, including WHO&rsquo;s Transplantation Program to increase availability; ethical access and oversight of transplantation of human cells; tissues and organs. They also discussed social determinants of health; tobacco and alcohol control; primary health care; access to medicines; universal health coverage; ensuring healthy lives at all ages; nutrition and food safety; health workforce; and emergencies. Mr Javier Padilla was accompanied by Ms Paola Cannata Molero, Director of the Cabinet of the Secretary of State for Health, Mr Jacobo Fern&aacute;ndez &Aacute;lvarez, Technical Secretary General, Mr H&eacute;ctor Tejero Franco, Advisor in the Cabinet of the Minister of Health and Responsible for Health and Climate Change, and Mr Roberto Carro V&aacute;zquez, Senior Technician of the Office of the Secretary of State for Health. The delegation also had representatives of Spain&rsquo;s Permanent Mission to the United Nations Office and Other International Organizations in Geneva, including H.E. Am",
+   "url": "https://www.who.int/news/item/25-04-2024-spain-s-secretary-of-state-for-health-discusses-joint-global-health-priorities-with-who",
+   "published": "2024-04-25T08:39:54+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "malaria",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "ff196fea23a9e733",
+   "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
+   "summary": "WHO welcomed Mr Javier Padilla Bern&aacute;ldez, Spain&rsquo;s Secretary of State for Health and his delegation on 23 and 24 April 2024 to discuss joint global health priorities. Amongst others, Spain's focus is on universal health coverage and health systems strengthening; pandemic response and emergency medical teams; organ and tissue transplantation; malaria and other tropical diseases; and polio. During the visit, participants focused on plans and on-going work across a number of areas, including WHO&rsquo;s Transplantation Program to increase availability; ethical access and oversight of transplantation of human cells; tissues and organs. They also discussed social determinants of health; tobacco and alcohol control; primary health care; access to medicines; universal health coverage; ensuring healthy lives at all ages; nutrition and food safety; health workforce; and emergencies. Mr Javier Padilla was accompanied by Ms Paola Cannata Molero, Director of the Cabinet of the Secretary of State for Health, Mr Jacobo Fern&aacute;ndez &Aacute;lvarez, Technical Secretary General, Mr H&eacute;ctor Tejero Franco, Advisor in the Cabinet of the Minister of Health and Responsible for Health and Climate Change, and Mr Roberto Carro V&aacute;zquez, Senior Technician of the Office of the Secretary of State for Health. The delegation also had representatives of Spain&rsquo;s Permanent Mission to the United Nations Office and Other International Organizations in Geneva, including H.E. Am",
+   "url": "https://www.who.int/news/item/25-04-2024-spain-s-secretary-of-state-for-health-discusses-joint-global-health-priorities-with-who",
+   "published": "2024-04-25T08:39:54+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "polio",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  }
+ ]
+}
