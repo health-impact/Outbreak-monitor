@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-15T10:38:18.017455+00:00",
+ "generated_at": "2026-10-15T15:25:44.403584+00:00",
  "national": {
-  "score": 37.0,
+  "score": 34.0,
   "level": "alert",
   "level_ar": "تنبيه",
   "level_en": "Alert",
@@ -21,36 +21,36 @@
   {
    "country": "GLOBAL",
    "disease": "vhf",
-   "score": 37.0,
+   "score": 34.0,
    "level": "alert",
    "level_ar": "تنبيه",
    "components": {
     "proximity": 6.0,
     "severity": 12.5,
-    "spread": 6.0,
+    "spread": 3.0,
     "mobility": 7.5,
     "readiness": 5.0
    },
-   "events_7d": 2,
-   "events_prev_7d": 4
+   "events_7d": 1,
+   "events_prev_7d": 5
   }
  ],
  "items": [
   {
    "country": "GLOBAL",
    "disease": "vhf",
-   "score": 37.0,
+   "score": 34.0,
    "level": "alert",
    "level_ar": "تنبيه",
    "components": {
     "proximity": 6.0,
     "severity": 12.5,
-    "spread": 6.0,
+    "spread": 3.0,
     "mobility": 7.5,
     "readiness": 5.0
    },
-   "events_7d": 2,
-   "events_prev_7d": 4
+   "events_7d": 1,
+   "events_prev_7d": 5
   }
  ],
  "tables_filled": false

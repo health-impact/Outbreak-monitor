@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T10:38:18.011131+00:00",
+ "generated_at": "2026-10-15T15:25:44.396432+00:00",
  "sources": [
   {
    "id": "who_don",
@@ -13,25 +13,25 @@
      "items": 50
     }
    ],
-   "checked_at": "2026-10-15T10:38:14.580297+00:00",
+   "checked_at": "2026-10-15T15:25:39.353255+00:00",
    "url_used": "https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=50",
-   "ms": 699
+   "ms": 1366
   },
   {
    "id": "who_news",
    "ok": true,
-   "items": 25,
+   "items": 207,
    "error": null,
    "tried": [
     {
      "url": "https://www.who.int/rss-feeds/news-english.xml",
      "content_type": "application/rss+xml",
-     "items": 25
+     "items": 207
     }
    ],
-   "checked_at": "2026-10-15T10:38:15.280226+00:00",
+   "checked_at": "2026-10-15T15:25:40.719877+00:00",
    "url_used": "https://www.who.int/rss-feeds/news-english.xml",
-   "ms": 155
+   "ms": 270
   },
   {
    "id": "africa_cdc",
@@ -51,9 +51,9 @@
      "items": 10
     }
    ],
-   "checked_at": "2026-10-15T10:38:15.435937+00:00",
+   "checked_at": "2026-10-15T15:25:40.990728+00:00",
    "url_used": "https://africacdc.org/news-item/feed/",
-   "ms": 2187
+   "ms": 2529
   },
   {
    "id": "ecdc_news",
@@ -67,9 +67,9 @@
      "items": 10
     }
    ],
-   "checked_at": "2026-10-15T10:38:17.623697+00:00",
+   "checked_at": "2026-10-15T15:25:43.520259+00:00",
    "url_used": "https://www.ecdc.europa.eu/en/taxonomy/term/1310/feed",
-   "ms": 318
+   "ms": 729
   }
  ]
 }
