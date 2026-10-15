@@ -1,0 +1,32 @@
+{
+ "generated_at": "2026-10-15T03:35:13.227854+00:00",
+ "national": {
+  "score": 37.0,
+  "level": "alert",
+  "level_ar": "تنبيه",
+  "level_en": "Alert",
+  "driver": {
+   "country": "GLOBAL",
+   "disease": "vhf"
+  }
+ },
+ "items": [
+  {
+   "country": "GLOBAL",
+   "disease": "vhf",
+   "score": 37.0,
+   "level": "alert",
+   "level_ar": "تنبيه",
+   "components": {
+    "proximity": 6.0,
+    "severity": 12.5,
+    "spread": 6.0,
+    "mobility": 7.5,
+    "readiness": 5.0
+   },
+   "events_7d": 2,
+   "events_prev_7d": 4
+  }
+ ],
+ "tables_filled": false
+}
