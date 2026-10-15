@@ -2,12 +2,12 @@
 # org = الجهة المالكة (تُستخدم لفحص الاستقلالية عند التأكيد المزدوج).
 # enabled=false مصادر وطنية تحتاج تحديد رابط فعلي (راجع README).
 sources:
-  - {id: who_don,    name: "WHO Disease Outbreak News", org: WHO,       official: true, type: rss, enabled: true,
-     url: "https://www.who.int/feeds/entity/csr/don/en/rss.xml"}
+  - {id: who_don,    name: "WHO Disease Outbreak News", org: WHO,       official: true, type: who_api, enabled: true,
+     urls: ["https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=50"]}
   - {id: who_news,   name: "WHO News",                  org: WHO,       official: true, type: rss, enabled: true,
      url: "https://www.who.int/rss-feeds/news-english.xml"}
   - {id: africa_cdc, name: "Africa CDC",                org: AfricaCDC, official: true, type: rss, enabled: true,
-     url: "https://africacdc.org/feed/"}
+     urls: ["https://africacdc.org/feed/", "https://africacdc.org/news-item/feed/", "https://africacdc.org/category/press-release/feed/"]}
   - {id: ecdc_news,  name: "ECDC News",                 org: ECDC,      official: true, type: rss, enabled: true,
      url: "https://www.ecdc.europa.eu/en/taxonomy/term/1310/feed"}
   # وطنية - تفعّل بعد تحديد الرابط الرسمي
@@ -18,3 +18,4 @@ sources:
   # أخبار صحية غير رسمية: لا تُنشر إلا بتأكيد مصدرين مستقلين
   - {id: promed,     name: "ProMED",   org: ISID,       official: false, type: rss, enabled: false, url: ""}
   - {id: healthmap,  name: "HealthMap", org: HealthMap, official: false, type: rss, enabled: false, url: ""}
+
