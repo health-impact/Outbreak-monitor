@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-15T00:12:42.592227+00:00",
- "count": 12,
+ "generated_at": "2026-10-15T03:13:46.859730+00:00",
+ "count": 50,
  "events": [
   {
    "id": "a3f78573815eff2a",
@@ -17,6 +17,91 @@
    "status": "verified",
    "confirmed_by": [
     "ECDC"
+   ]
+  },
+  {
+   "id": "08c52be46dd60a60",
+   "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+   "summary": "On 5 October 2026, WHO was informed about a laboratory-confirmed imported case of Bundibugyo virus disease (BVD) in Kenya with travel history from the Democratic Republic of the Congo. The patient travelled from the Democratic Republic of the Congo to Kenya through Uganda. The patient was hospitalized and treated in Kenya but subsequently died on 5 October. Public health response measures have been initiated in Kenya and Uganda, including contact tracing. Since the last Disease Outbreak News was published on 25 September 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded to one additional health zone, Alimbongo health zone in North Kivu, adding to the geographic footprint of an outbreak that remains concentrated in the eastern part of the country. As of 6 October 2026, the country has recorded 8728 confirmed cases and 4205 confirmed deaths, corresponding to a crude case fatality ratio (CFR) of 48.2%. The cases have been reported from 64 health zones across seven provinces out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, Sud Ubangi and Tshopo. At the national level, transmission remains intense, although the burden is unevenly distributed. In some areas, there are clear signs that the epidemic is slowing down, although in others it continues to grow. Over the past three completed epidemiological weeks, new weekly cases nationwide have increased by 2.5% from 475 to 487, while new weekly deaths remain s",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON619",
+   "published": "2026-10-08T15:16:26+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "9553afba05cf49bb",
+   "title": "Africa CDC exprime sa solidarité avec le Kenya et appelle à renforcer la préparation régionale face à Ebola",
+   "summary": "Addis-Abeba, Éthiopie, 6 octobre 2026 Les Centres africains de contrôle et de prévention des maladies (Africa CDC) ont réaffirmé leur soutien au Kenya à la suite de la confirmation du premier cas importé de maladie à virus Ebola de souche Bundibugyo dans le pays et du décès du patient. S.E. Dr Jean Kaseya, Directeur général [&#8230;] The post Africa CDC exprime sa solidarité avec le Kenya et appelle à renforcer la préparation régionale face à Ebola appeared first on Africa CDC .",
+   "url": "https://africacdc.org/news-item/africa-cdc-exprime-sa-solidarite-avec-le-kenya-et-appelle-a-renforcer-la-preparation-regionale-face-a-ebola/",
+   "published": "2026-10-06T12:54:12+00:00",
+   "source_id": "africa_cdc",
+   "source_name": "Africa CDC",
+   "org": "AfricaCDC",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "AfricaCDC"
+   ]
+  },
+  {
+   "id": "71c20ee152a5d91b",
+   "title": "Africa CDC Expresses Solidarity with Kenya and Calls for Stronger Regional Ebola Preparedness",
+   "summary": "Addis Ababa, Ethiopia, 6 October 2026 The Africa Centres for Disease Control and Prevention (Africa CDC) has reaffirmed its support to Kenya following confirmation of the country’s first imported case of Bundibugyo Ebola Virus Disease and the subsequent death of the patient. H.E. Dr Jean Kaseya, Director General of Africa CDC, spoke with Kenyan authorities [&#8230;] The post Africa CDC Expresses Solidarity with Kenya and Calls for Stronger Regional Ebola Preparedness appeared first on Africa CDC .",
+   "url": "https://africacdc.org/news-item/africa-cdc-expresses-solidarity-with-kenya-and-calls-for-stronger-regional-ebola-preparedness/",
+   "published": "2026-10-06T12:51:23+00:00",
+   "source_id": "africa_cdc",
+   "source_name": "Africa CDC",
+   "org": "AfricaCDC",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "AfricaCDC"
+   ]
+  },
+  {
+   "id": "57e71a3efb94cc4a",
+   "title": "Africa CDC soutient le Gouvernement de la République démocratique du Congo dans le renforcement de la transparence et de la redevabilité du financement de la riposte à Ebola",
+   "summary": "Kinshasa, République démocratique du Congo, le 4 octobre 2026 Le Centre africain de contrôle et de prévention des maladies (Africa CDC) salue et soutient la position du Gouvernement de la République démocratique du Congo, exprimée par l’intermédiaire du Ministère de la Santé publique, de l’Hygiène et de la Prévoyance sociale, visant à renforcer la transparence, [&#8230;] The post Africa CDC soutient le Gouvernement de la République démocratique du Congo dans le renforcement de la transparence et de la redevabilité du financement de la riposte à Ebola appeared first on Africa CDC .",
+   "url": "https://africacdc.org/news-item/africa-cdc-soutient-le-gouvernement-de-la-republique-democratique-du-congo-dans-le-renforcement-de-la-transparence-et-de-la-redevabilite-du-financement-de-la-riposte-a-ebola/",
+   "published": "2026-10-04T09:01:26+00:00",
+   "source_id": "africa_cdc",
+   "source_name": "Africa CDC",
+   "org": "AfricaCDC",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "AfricaCDC"
+   ]
+  },
+  {
+   "id": "97b4fa3cbb227620",
+   "title": "Africa CDC Supports the Government of the Democratic Republic of the Congo in Strengthening Transparency and Accountability in Ebola Response Funding",
+   "summary": "Kinshasa, Democratic Republic of the Congo, 4 October 2026 The Africa Centres for Disease Control and Prevention (Africa CDC) welcomes and supports the position of the Government of the Democratic Republic of the Congo, expressed through the Ministry of Public Health, Hygiene and Social Welfare, to strengthen transparency, traceability and accountability in the management of [&#8230;] The post Africa CDC Supports the Government of the Democratic Republic of the Congo in Strengthening Transparency and Accountability in Ebola Response Funding appeared first on Africa CDC .",
+   "url": "https://africacdc.org/news-item/africa-cdc-supports-the-government-of-the-democratic-republic-of-the-congo-in-strengthening-transparency-and-accountability-in-ebola-response-funding/",
+   "published": "2026-10-04T08:52:18+00:00",
+   "source_id": "africa_cdc",
+   "source_name": "Africa CDC",
+   "org": "AfricaCDC",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "AfricaCDC"
    ]
   },
   {
@@ -54,6 +139,227 @@
    ]
   },
   {
+   "id": "932c6df3f6d69793",
+   "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+   "summary": "Since the last Disease Outbreak News was published on 11 September 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded further, with two additional health zones affected. These include Bulu health zone in a new province, Sud Ubangi, located on the north-west part of the country and Dungu health zone in Haut-Uélé province, bordering South Sudan. This brings the total number of affected health zones to 63 across seven provinces out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, Sud Ubangi and Tshopo. This latest geographic expansion increases the risk of cross-border transmission. As of 23 September 2026, the Democratic Republic of the Congo has reported 7890 confirmed cases, including 3799 deaths, resulting in a crude case fatality ratio (CFR) of 48.1%. At the national level, the number of new cases reported each day remains high. However, the situation varies across the country, with some provinces and health zones experiencing much higher levels of transmission than others. The continuously high CFR, and especially the continuous high rate of deaths occurring in communities, highlights the seriousness of the disease and the persistent challenges in timely case detection and access to early and adequate patient care. These delays can contribute to preventable illness and deaths among people in affected and newly affected areas, while also allowing transmission to continue within households, communities,",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON618",
+   "published": "2026-09-25T15:16:26+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "SD",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "e84e604c462036d4",
+   "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+   "summary": "Since the last Disease Outbreak News was published on 28 August 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded to one additional health zone, Kayna, in North Kivu. This increase brings the total number of affected health zones to 61 across six out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, and Tshopo. As of 7 September 2026, the Democratic Republic of the Congo has reported 6757 confirmed cases, including 3267 deaths, resulting in a crude case fatality ratio (CFR) of 48.3%. The transmission dynamics remain variable across affected locations, with evidence of ongoing geographical expansion and sustained increase in cases in some health zones. The continuously high CFR highlights the seriousness of the disease and persistent challenges in timely case detection, access to early and adequate patient care, and effective interruption of transmission. Delayed detection of cases continues to increase the risk of further spread within households, communities, and healthcare settings.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON617",
+   "published": "2026-09-10T08:16:08+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "64a54143ce459fc5",
+   "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+   "summary": "Since the last Disease Outbreak News was published on 14 August 2026, the outbreak has spread from 54 to 60 health zones. The number of affected provinces stands at six out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, and Tshopo. Six additional health zones reported cases since the last update - Ganga and Viadana health zones in Bas-Uélé province, Biena, Manguredjipa, and Mutwanga in North Kivu, and Tshopo health zone in Tshopo province. As of 26 August 2026, a total of 5794 confirmed cases, including 2786 deaths, have been reported, corresponding to a crude case fatality ratio (CFR) of 48.1%. These figures demonstrate a substantial increase in the scale and geographic extent of the outbreak over the past three months. The crude case fatality ratio of 48% underscores the severity of the disease and ongoing challenges related to timely case detection, access to and quality of clinical care, and effective interruption of viral transmission. Delays in recognizing cases increase the likelihood of onward transmission within households, communities and healthcare facilities. The outbreak remains a public health emergency of international concern, following the advice of Emergency Committee meeting convened on 18 August.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON616",
+   "published": "2026-08-28T15:28:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "654c8e1fb7fdf694",
+   "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+   "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is in a phase of intense transmission. It is the largest Ebola outbreak ever reported in the country and expanding faster than any previous Ebola outbreak. The epidemic is increasingly characterized by sustained transmission within interconnected geographic clusters. Initially confined to the Mongbwalu health zone in Ituri Province, the outbreak has now expanded to 54 health zones across six provinces (Ituri, North Kivu, South Kivu, Haut-Uélé, Tshopo, and Bas-Uélé). The most recently affected Bas-Uélé province recorded one confirmed case in Buta health zone with travel history to Haut-Uélé and onset of symptoms on 4 August. As of 12 August 2026, a total of 4665 confirmed cases, including 2184 deaths, have been reported, corresponding to a crude case fatality ratio (CFR) of 46.8%. The ongoing rise in cases, broader geographic spread, and continued high mortality demonstrate the rapidly changing scope of this public health emergency of international concern. During the most recent reporting week (epidemiological week 32, 3 to 9 August 2026), the highest weekly number of reported cases (579) and deaths (304) were recorded, highlighting the exceptional pace of transmission. The ongoing humanitarian crisis, compounded by insecurity, population displacement and mobility, and cross-border movements, continues to pose significant challenges to response efforts and increase the risk of further geograph",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON615",
+   "published": "2026-08-14T15:38:29+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "ffec7465bf96f2e8",
+   "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+   "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is intensifying, with sustained transmission and continued increases in reported cases and deaths. Initially confined to the Mongbwalu health zone in Ituri Province, over the last two months, the outbreak has expanded to five provinces (Ituri, North Kivu, South Kivu, Haut-Uélé and Tshopo), now affecting 49 health zones. The outbreak is now the largest Ebola outbreak ever reported in the Democratic Republic of the Congo. As of 30 July 2026, a total of 3605 confirmed cases, including 1587 deaths, have been reported, corresponding to a crude case fatality ratio (CFR) of 44%. The continued increase in cases, expanding geographic spread, and persistently high mortality underscore the rapidly evolving nature of this public health emergency. During the most recent complete reporting week (epidemiological week 30), the highest weekly number of reported cases (567) and deaths (296) to date were recorded, underscoring the exceptional pace of transmission. The convergence of insecurity, population displacement and mobility, and cross-border movements complicate response operations and increase the risk of further geographical spread. National authorities in the Democratic Republic of the Congo, in collaboration with WHO and partners, continue to implement extensive response measures, however, a substantial scaling up of response activities is needed to get ahead of the outbreak. A regional preparedness a",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON614",
+   "published": "2026-08-01T10:13:28+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "ffec7c34541f3d95",
+   "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+   "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo remains active, with sustained transmission driving increases in reported cases and deaths. As of 15 July 2026, a cumulative total of 2124 confirmed cases, including 828 deaths, have been reported from the Democratic Republic of the Congo. On 13 July 2026, German authorities informed WHO of a laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a humanitarian worker from the United States of America who was medically evacuated from the Democratic Republic of the Congo. This is the second United States citizen to be treated in Germany, reflecting the ongoing international response efforts. In Uganda no new cases have been reported since 21 June 2026. The most recent case was discharged from the treatment centre on 16 July after two negative tests results. The country has therefore begun the 42-day period of enhanced surveillance required before the end of the outbreak can be declared. National authorities in Uganda and the Democratic Republic of the Congo, in collaboration with WHO and partners, continue to implement extensive response measures. A regional preparedness and prioritization framework continues to guide readiness activities across the African Region.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON613",
+   "published": "2026-07-17T16:13:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "9608f401ef92d8c1",
+   "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+   "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with sustained transmission and increasing numbers of reported cases. As of 1 July, a cumulative of 1460 confirmed cases, including 452 deaths, have been reported from the Democratic Republic of the Congo. As of 2 July, Uganda has reported 20 confirmed cases including two deaths, as well as one probable case who has died. In addition, on 24 June 2026, French authorities notified WHO of a laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a medical doctor returning from the Democratic Republic of the Congo. In Uganda, the outbreak remains epidemiologically linked to transmission originating in the Democratic Republic of the Congo, with evidence of both imported infections and secondary transmission among contacts and healthcare workers. Uganda has not reported any new cases since 21 June 2026. National authorities in the two affected countries, in collaboration with WHO and partners, are implementing an extensive set of response measures. A regional preparedness and prioritization framework continues to guide readiness activities across the African Region.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON612",
+   "published": "2026-07-03T15:13:57+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "a1c91cdad787d372",
+   "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+   "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with sustained transmission and increasing numbers of reported cases. As of 17 June, a cumulative of 896 confirmed cases, including 232 deaths, have been reported from the Democratic Republic of the Congo. As of 18 June, Uganda has reported 19 confirmed cases including two deaths, as well as one probable case who has died. In Uganda, the outbreak remains epidemiologically linked to transmission originating in the Democratic Republic of the Congo, with evidence of both imported infections and secondary transmission among contacts and healthcare workers. Uganda has not reported any new cases since 5 June 2026. National authorities in the two affected countries, in collaboration with WHO and partners, are implementing an extensive set of response measures. A regional preparedness and prioritization framework continues to guide readiness activities across the African Region.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON608",
+   "published": "2026-06-19T12:10:23+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "8fc55d0b348d5ebb",
+   "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+   "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with increasing case numbers and geographic spread. As of 10 June, a cumulative of 676 confirmed cases, including 136 deaths, have been reported from the Democratic Republic of the Congo. As of 11 June, Uganda has reported 19 confirmed cases including two deaths, as well as one probable case who has died. In Uganda, the outbreak remains epidemiologically linked to transmission originating in the Democratic Republic of the Congo, with evidence of both imported infections and secondary transmission among contacts and healthcare workers. Uganda has not reported any new cases in the past six days. National authorities in the two affected countries, in collaboration with WHO and partners, are implementing a comprehensive package of response measures. A regional preparedness and prioritization framework continues to guide readiness activities across the African Region.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON607",
+   "published": "2026-06-13T08:06:15+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "b38ac35fa67d3d8f",
+   "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+   "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with increasing case numbers, geographic spread, and cross-border transmission to Uganda. As of 6 June, a total of 515 confirmed cases, with 91 deaths among these confirmed cases, have been reported from the Democratic Republic of the Congo; Uganda has reported 19 confirmed cases including two deaths, as well as one probable case who has died. In Uganda, the outbreak remains epidemiologically linked to transmission originating in the Democratic Republic of the Congo, with evidence of both imported infections and secondary transmission among contacts and healthcare workers. National authorities, in collaboration with WHO and partners, are undertaking a wide-ranging package of response measures. On 5 June, the Africa Centres for Disease Control and Prevention (Africa CDC) and WHO, together with partners, launched a joint Ebola continental preparedness and response plan, with an ask of US$ 518 million to support African countries to prepare for, rapidly detect and respond to the outbreak.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON606",
+   "published": "2026-06-08T12:35:09+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "9c7f7ea75349952f",
+   "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+   "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo and Uganda continues to evolve rapidly, with increasing case numbers, geographic spread, and ongoing cross-border transmission. As of 27 May, a total of 906 suspected cases and 223 deaths among suspected cases have been reported in the Democratic Republic of the Congo. As of 29 May, a total of 134 confirmed cases, including nine in Uganda, with 18 deaths among the confirmed cases, have been reported across both countries. This is an additional 49 confirmed cases, eight confirmed deaths, 160 suspected cases and 47 suspected deaths since the last update on 21 May. In addition, there is one confirmed case, an individual from the United States of America, who had treated patients in the Democratic Republic of the Congo and is currently receiving care in Germany. In the Democratic Republic of the Congo, transmission is concentrated in Ituri, as well as North Kivu and South Kivu provinces, with challenges in contact tracing and follow-up, insecurity, inadequate isolation, care, and referral systems for patients complicating response efforts. National authorities, in collaboration with WHO and partners, are implementing response measures including deployment of rapid response teams, delivery of medical supplies, strengthened surveillance, laboratory confirmation, infection prevention and control, the set-up of safe and optimized treatment centers, and community engagement.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON605",
+   "published": "2026-05-29T15:58:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "f9782fb0123bcf03",
+   "title": "Ebola disease caused by Bundibugyo virus – Democratic Republic of the Congo",
+   "summary": "On 15 May 2026, the Ministry of Public Health, Hygiene and Social Welfare, Democratic Republic of the Congo (DRC), and the Ministry of Health of Uganda declared an outbreak of Ebola Disease following the confirmation of Bundibugyo virus disease (BVD) in both countries. On 17 May 2026, the World Health Organization (WHO) Director-General determined that the Ebola disease caused by Bundibugyo virus in DRC and Uganda constitutes a public health emergency of international concern (PHEIC), as defined in the provisions of IHR. On 19 May 2026, the Director-General of WHO convened the first meeting of the IHR Emergency Committee, and temporary recommendations were issued to State Parties. As of 21 May, 746 suspected cases and 176 deaths among suspected cases were reported in DRC. So far 85 confirmed cases, including two in Uganda, and ten deaths, with one in Uganda, among confirmed cases were reported across both countries. In DRC, transmission is concentrated in Ituri, North Kivu and South Kivu provinces, with challenges in contact follow-up, insecure conditions, and inadequate isolation and referral systems complicating response efforts. Uganda has reported two imported cases with no confirmed local transmission. An American national who was working in DRC has also been confirmed positive and transferred to Germany for care. National authorities, in collaboration with WHO and partners, are implementing response measures including deployment of rapid response teams, delivery of medi",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON603",
+   "published": "2026-05-21T22:00:47+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "574f7936be6edf62",
+   "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+   "summary": "On 5 May 2026, the World Health Organization (WHO) was alerted of a high-mortality outbreak of unknown illness in Mongbwalu Health Zone, Ituri Province, Democratic Republic of the Congo (DRC), including deaths among health workers. On 14 May 2026, the Institut national de recherche biomédicale (INRB) Kinshasa analyzed 13 blood samples from Rwampara Health Zone, Ituri Province. Laboratory analysis confirmed Bundibugyo virus disease (BVD) in eight of these samples on 15 May, a species of Ebola. The case fatality rates in the past two BVD outbreaks have ranged from 30% to 50%. Unlike Ebola virus disease, there is no licensed vaccine or specific therapeutics against Bundibugyo virus, though early supportive care is lifesaving. On 15 May 2026, the Ministry of Public Health, Hygiene and Social Welfare, DRC, officially declared the 17th Ebola Disease outbreak in DRC. Concurrently, the Uganda Ministry of Health confirmed an outbreak of BVD following the identification of one imported case from DRC, a Congolese man who died in the capital city of Kampala. On 17 May 2026, WHO Director-General, after having consulted the States Parties where the event is known to be currently occurring, determined that the Ebola disease caused by Bundibugyo virus in DRC and Uganda constitutes a public health emergency of international concern (PHEIC), as defined in the provisions of IHR. Response measures include deployment of rapid response teams, delivery of medical supplies, strengthened surveillance",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON602",
+   "published": "2026-05-16T22:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "4aedb5044ae58d7a",
    "title": "Mpox worldwide overview",
    "summary": "Every month ECDC provides detailed epidemiological overview of the worldwide transmission of mpox in its weekly threat report.",
@@ -71,6 +377,278 @@
    ]
   },
   {
+   "id": "3c04428973524a44",
+   "title": "Measles - Bangladesh",
+   "summary": "On 4 April 2026, the National International Health Regulations (IHR) Focal Point for Bangladesh notified WHO of a nationwide increase in measles cases, geographically affecting 58 out of 64 districts across all eight divisions in Bangladesh. A total of 19 161 suspected measles cases and 2897 laboratory-confirmed measles cases have been reported between 15 March and 14 April 2026, including 166 measles related deaths (CFR 0.9%). The majority (79%) of the reported cases are children aged under 5 years. A targeted measles-rubella (MR) vaccination campaign started on 5 April, and various outbreak response measures are ongoing including strengthening nationwide surveillance and epidemiological analysis to enhance case detection and reporting. Based on currently available information, WHO assesses the risk at the national level as high due to ongoing transmission across multiple divisions, the large number of susceptible children, documented immunity gaps, and the occurrence of suspected measles-related deaths.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON598",
+   "published": "2026-04-23T12:58:07+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "measles",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "02a016457b6615d2",
+   "title": "Avian Influenza A(H9N2) - Italy",
+   "summary": "On 21 March 2026, the National International Health Regulations (IHR) Focal Point for Italy notified the World Health Organization (WHO) of the identification of a human case of avian influenza A(H9) in an adult male returning from Senegal. Next generation sequencing confirmed Influenza A(H9N2). According to epidemiological investigations, the patient had no known history of exposure to poultry or any person with similar symptoms prior to the onset of symptoms. Authorities in Italy have implemented a series of measures aimed at monitoring, preventing and controlling the situation. According to the IHR (2005), a human infection caused by a novel influenza A virus subtype is an event that has the potential for high public health impact and must be notified to the WHO. This is the first imported human case of avian Influenza A(H9N2) reported in the European Region. Based on currently available information, WHO assesses the current risk to the general population posed by A(H9N2) viruses as low but continues to monitor these viruses and the situation globally.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON597",
+   "published": "2026-04-10T13:51:44+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "covid_flu",
+   "country": "IT",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "a699d330e0f83f5a",
+   "title": "Mpox: recombinant virus with genomic elements of clades Ib and IIb – Global situation",
+   "summary": "Recombination of monkeypox virus (MPXV) strains has been documented in recent months, with two cases of a recombinant strain comprising clade Ib and IIb MPXV reported. Recombination is a known natural process that can occur when two related viruses infecting the same individual exchange genetic material, producing a new virus. The first case was detected in the United Kingdom of Great Britain and Northern Ireland (hereafter “United Kingdom”), with travel history to a country in South-East Asia, and the second in India, with travel history to a country in the Arabian Peninsula. Detailed analysis of the virus genomes shows that the two individuals fell ill several weeks apart with the same recombinant strain, suggesting that there may be further cases than are currently reported. Both cases had similar clinical presentation to that observed for other clades. Neither patient experienced severe outcomes. Contact tracing for both cases in the reporting countries has been completed; no secondary cases were detected. Based on available information, the overall WHO public health risk assessment for mpox remains unchanged: the risk is assessed as moderate for men who have sex with men with new and/or multiple partners and for sex workers or others with multiple casual sexual partners, and low for the general population without specific risk factors.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON595",
+   "published": "2026-02-14T19:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "mpox",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "f44b5ca70c6c5c07",
+   "title": "Marburg virus disease- Ethiopia",
+   "summary": "On 26 January 2026, the Ministry of Health of Ethiopia declared the end of the Marburg virus disease (MVD) outbreak. This declaration came after two consecutive incubation periods (a total of 42 days) since the last person confirmed with MVD died and was given a safe and dignified burial, in accordance with WHO recommendations on 14 December 2025. As of 25 January 2026, a cumulative total of 19 cases, including 14 confirmed (including nine deaths) and five probable cases (all deaths), were reported. A total of 857 contacts listed for monitoring all had completed their 21-day follow-up as of 25 January 2026. WHO, through its country office and partners, provided technical, operational and financial support to the government to contain this outbreak.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON592",
+   "published": "2026-01-26T19:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "d1fc5d889decf4e3",
+   "title": "Seasonal influenza - Global situation",
+   "summary": "Seasonal influenza (‘the flu’) is an acute respiratory infection caused by influenza viruses that circulate globally and year-round. It can cause illness ranging from mild to severe, sometimes resulting in hospitalization or death. Seasonal influenza activity has increased globally in recent months, with an increased proportion of seasonal influenza A(H3N2) viruses being detected. This rise coincides with the onset of winter in the northern hemisphere and an increase in acute respiratory infections caused by influenza and other respiratory viruses typically observed at this time of year. Although global activity remains within expected seasonal ranges, early increases and higher activity than typical at this time of year have been observed in some regions. Seasonal influenza viruses, including A(H3N2) viruses, continually evolve over time. Since August 2025, there has been a rapid increase of A(H3N2) J.2.4.1 alias K subclade viruses detected from several countries based on available genetic sequence data. These subclade K viruses have several changes from related A(H3N2) viruses. Current epidemiological data do not indicate an increase in disease severity, although this subclade marks a notable evolution in influenza A(H3N2) viruses. Early estimates suggest that the influenza vaccine continues to provide protection against hospital attendance in both children and adults, even though its effectiveness against clinical disease during the current season remains uncertain. Vaccin",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON586",
+   "published": "2025-12-10T19:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "covid_flu",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "273ca61029f824ac",
+   "title": "Broader transmission of mpox due to clade Ib MPXV – Global situation",
+   "summary": "The purpose of this report is to raise awareness about the local transmission of clade Ib monkeypox virus (MPXV) among men who have sex with men (MSM) in countries previously unaffected or to date reporting only cases linked to travel. This report summarizes recent epidemiological developments, response activities, and the associated global public health risk. The second declaration of a public health emergency of international concern (PHEIC) for mpox was lifted on 5 September 2025. As both MPXV clades I and II and their subclades continue to circulate globally, leading to substantial outbreaks in African countries, WHO continues to advise emergency preparedness and response activities. Multiple modes of transmission underlie ongoing virus circulation, with sexual contact remaining the primary amplifier of transmission in most settings. Since 5 September 2025, several countries across four of six WHO regions have confirmed clade Ib MPXV infection in individuals with no recent travel reported (WHO African Region, Region of the Americas, the European Region and the Western Pacific Region), most of which are being detected among men who have sex with men, suggesting local transmission, particularly given that infections often manifest with few or no symptoms (paucisymptomatic or asymptomatic cases) leading to undetected onward transmission. Overall, the surveillance data in most countries is sufficient to detect and respond effectively to mpox outbreaks. However, thorough epide",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON587",
+   "published": "2025-12-05T19:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "mpox",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "e00ae337773fb681",
+   "title": "Avian Influenza A(H5N5)- United States of America",
+   "summary": "On 15 November 2025, WHO was notified of the 71st confirmed human case with influenza A(H5) since early 2024 in the United States of America— the first human case reported in the United States of America since February 2025. On 20 November, U.S. Centers for Disease Control and Prevention (CDC) laboratory sequencing verified the virus as influenza A(H5N5), representing the first globally reported human case caused by an influenza A(H5N5) virus. The investigation by health authorities in the United States of America is ongoing. Contact tracing identified no further cases amongst contacts, and there is currently no evidence of human-to-human transmission. Due to the constantly evolving nature of influenza viruses, WHO continues to stress the importance of global surveillance to detect and monitor virological (including genomics), epidemiological and clinical changes associated with emerging or circulating influenza viruses that may affect human health and timely virus sharing for risk assessment. Based on available information, the WHO currently assesses the overall public health risk posed by A(H5) viruses as low. However, for individuals with occupational risk of exposure, the risk of infection is considered low to moderate.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON590",
+   "published": "2025-12-05T16:36:27+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "covid_flu",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "784e9349c011f9cf",
+   "title": "Ebola virus disease – Democratic Republic of the Congo",
+   "summary": "On 1 December 2025, the Ministry of Health (MoH) of the Democratic Republic of the Congo (DRC) declared the end of the Ebola virus disease (EVD) outbreak which had been declared on 4 September 2025. The end was declared after two consecutive incubation periods (a total of 42 days) since the last person confirmed with EVD tested negative for the virus and was discharged on 19 October 2025. A total of 64 cases (53 confirmed, 11 probable), including 45 deaths (CFR 70.3%), were reported from six health areas in Bulape Health Zone, Kasai Province. WHO and partners provided technical, operational and financial support to the government to contain the outbreak. This is the country’s 16th outbreak of Ebola. Although the outbreak has been declared over, health authorities are maintaining surveillance to rapidly identify and respond to any re-emergence. Risk communication and community engagement activities will continue to provide accurate information, monitor and address community feedback and rumours, and support efforts to reduce stigma toward individuals affected by the outbreak.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON589",
+   "published": "2025-12-01T19:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "01207ee4959772a5",
+   "title": "Marburg virus disease- Ethiopia",
+   "summary": "On 12 November 2025, WHO noted a press release from the Ethiopian Ministry of Health (MoH), and the Ethiopian Public Health Institute (EPHI), announcing suspected viral hemorrhagic viral fever (VHF) in Jinka town, South Ethiopia Regional State, Ethiopia. On 14 November 2025, the Ministry of Health of Ethiopia confirmed that the cases previously reported as suspected VHF were Marburg virus disease (MVD). Molecular testing conducted by the National Reference Laboratory at EPHI identified Marburg virus (MARV) in patient samples. As of 20 November 2025, 33 laboratory tests have been conducted, of which six confirmed cases, including three deaths, have been reported. Of the six confirmed cases, three are currently alive and on treatment. In addition to the lab-confirmed cases, a further three epidemiologically linked cases could not be tested; all three are deceased and recorded as probable cases. A total of 206 contacts have been identified, and contacts are under active follow-up. The number of contacts will continue to change as the response evolves. The source of the infection has not yet been identified. This marks the first confirmed outbreak of MVD in the country. Initial investigation by the one health team in Ethiopia show the presence of the natural host of the virus, fruit bats, in the area. MVD is a severe, often fatal illness, transmitted from bats to humans, and clinically similar to Ebola virus diseases. The disease has a case fatality ratio of up to 88%, but it can",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON585",
+   "published": "2025-11-21T16:00:11+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "cbd72a8af6a116d6",
+   "title": "Rift Valley fever- Mauritania and Senegal",
+   "summary": "Between 20 September and 30 October 2025, a total of 404 confirmed human cases of Rift Valley fever (RVF), including 42 deaths, were reported by national health authorities in two West African countries: Mauritania and Senegal. RVF is a zoonotic disease, which mainly affects animals, but can also infect humans. The majority of human infections result from contact with the blood or organs of infected animals, but human infections have also resulted from the bites of infected mosquitoes. To date, no human-to-human transmission of RVF has been documented. While RVF often leads to severe illness in animals, its impact in humans varies, ranging from mild flu-like symptoms to severe hemorrhagic fever that can be fatal. RVF is endemic in both countries, where recurrent outbreaks have been previously reported in both livestock and humans. The risk of further spread remains high, especially with environmental conditions favorable to the proliferation of mosquitoes, periods of heavy rains and increased mosquito activity, as well as movements of livestock within country and towards Mali and Gambia for grazing and trade. The response to RVF outbreaks requires a One Health approach, based on enhanced collaboration between the human health, animal health and environmental sectors, in both countries and at the regional level. WHO, in collaboration with the World Organization for Animal Health (WOAH), and the Food and Agriculture Organization of the United Nations (FAO), currently assesses t",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON584",
+   "published": "2025-11-05T15:07:26+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "cbd72a8af6a116d6",
+   "title": "Rift Valley fever- Mauritania and Senegal",
+   "summary": "Between 20 September and 30 October 2025, a total of 404 confirmed human cases of Rift Valley fever (RVF), including 42 deaths, were reported by national health authorities in two West African countries: Mauritania and Senegal. RVF is a zoonotic disease, which mainly affects animals, but can also infect humans. The majority of human infections result from contact with the blood or organs of infected animals, but human infections have also resulted from the bites of infected mosquitoes. To date, no human-to-human transmission of RVF has been documented. While RVF often leads to severe illness in animals, its impact in humans varies, ranging from mild flu-like symptoms to severe hemorrhagic fever that can be fatal. RVF is endemic in both countries, where recurrent outbreaks have been previously reported in both livestock and humans. The risk of further spread remains high, especially with environmental conditions favorable to the proliferation of mosquitoes, periods of heavy rains and increased mosquito activity, as well as movements of livestock within country and towards Mali and Gambia for grazing and trade. The response to RVF outbreaks requires a One Health approach, based on enhanced collaboration between the human health, animal health and environmental sectors, in both countries and at the regional level. WHO, in collaboration with the World Organization for Animal Health (WOAH), and the Food and Agriculture Organization of the United Nations (FAO), currently assesses t",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON584",
+   "published": "2025-11-05T15:07:26+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "rvf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "adb957acb9430927",
+   "title": "Ebola virus disease – Democratic Republic of the Congo",
+   "summary": "On 1 September 2025, WHO received an alert from the Ministry of Health of the Democratic Republic of the Congo (DRC) regarding suspected cases of Ebola virus disease (EVD) in the Bulape Health Zone, Kasai Province, DRC. The first known index case was a pregnant woman who presented at Bulape General Reference Hospital on 20 August 2025 with symptoms of high fever, bloody diarrhoea, haemorrhage and extreme weakness. She died on 25 August from multiple organ failure. On 4 September 2025, following confirmatory laboratory testing, the Ministry of Health declared an outbreak of EVD. Ebola virus disease is a serious, often fatal illness in humans. The virus is transmitted to humans through close contact with the blood or secretions of infected wildlife and then spreads through human-to-human transmission. As of 4 September 2025, 28 suspected cases, including 15 deaths (case fatality ratio (CFR): 54%), have been reported from three areas of the Bulape health zone (Bulape, Bulape Com and Dikolo) and Mweka health zone. Among the deaths, four are health-care workers. About 80% of the suspected cases are aged 15 years and older. Six samples were collected from five suspected cases and one probable death from Bulape health zone and arrived on 3 September at the National Public Health Laboratory (INRB) in Kinshasa for confirmation testing. All five samples tested positive for Ebola virus (EBOV) through GeneXpert and Polymerase Chain Reaction (PCR) assays on 3 September 2025. The Ministry ",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON580",
+   "published": "2025-09-05T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "f97f085fbf2adcb0",
+   "title": "Cholera – Multi-country with a focus on countries experiencing current surges",
+   "summary": "The global cholera situation continues to deteriorate, driven by conflict and poverty, posing a significant public health challenge across multiple WHO regions. Between 1 January and 17 August 2025, a total of 409 222 cholera/Acute Watery Diarrhoea (AWD) cases and 4738 deaths were reported globally, from 31 countries, with six of the 31 countries reporting case fatality rates above 1%, indicating serious gaps in case management and delayed access to care. Cholera is resurging in a number of countries, including some that had not reported substantial case numbers in years, like Chad and the Republic of Congo, while other countries, such as the Democratic Republic of the Congo, South Sudan, and Sudan, are experiencing outbreaks that are continuing from 2024, with significant geographic expansion. This complicates containment efforts and strains fragile health systems. Conflict, mass displacement, disasters from natural hazards, and climate change have intensified outbreaks, particularly in rural and flood-affected areas, where poor infrastructure and limited healthcare access delay treatment. These cross-border factors have made cholera outbreaks increasingly complex and harder to control. Safe drinking water, sanitation and hygiene are the only long-term and sustainable solutions to ending this cholera emergency and preventing future ones. Given the scale, severity, and interconnected nature of these outbreaks, the risk of further spread within and between countries is conside",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON579",
+   "published": "2025-08-29T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "cholera",
+   "country": "SD",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "f97f085fbf2adcb0",
+   "title": "Cholera – Multi-country with a focus on countries experiencing current surges",
+   "summary": "The global cholera situation continues to deteriorate, driven by conflict and poverty, posing a significant public health challenge across multiple WHO regions. Between 1 January and 17 August 2025, a total of 409 222 cholera/Acute Watery Diarrhoea (AWD) cases and 4738 deaths were reported globally, from 31 countries, with six of the 31 countries reporting case fatality rates above 1%, indicating serious gaps in case management and delayed access to care. Cholera is resurging in a number of countries, including some that had not reported substantial case numbers in years, like Chad and the Republic of Congo, while other countries, such as the Democratic Republic of the Congo, South Sudan, and Sudan, are experiencing outbreaks that are continuing from 2024, with significant geographic expansion. This complicates containment efforts and strains fragile health systems. Conflict, mass displacement, disasters from natural hazards, and climate change have intensified outbreaks, particularly in rural and flood-affected areas, where poor infrastructure and limited healthcare access delay treatment. These cross-border factors have made cholera outbreaks increasingly complex and harder to control. Safe drinking water, sanitation and hygiene are the only long-term and sustainable solutions to ending this cholera emergency and preventing future ones. Given the scale, severity, and interconnected nature of these outbreaks, the risk of further spread within and between countries is conside",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON579",
+   "published": "2025-08-29T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "cholera",
+   "country": "TD",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "38ad581964db4e23",
+   "title": "Circulating vaccine-derived poliovirus type 1- Israel",
+   "summary": "On 4 August 2025, Israel notified WHO of a circulating vaccine-derived poliovirus type 1 (cVDPV1) outbreak. Between February and July 2025, nine genetically linked virus isolates were found in environmental samples from seven sites, mainly in Jerusalem and the Central Region. No human cases of paralytic polio have been reported. Israel discontinued routine use of the bivalent oral polio vaccine in March 2025 but continues using inactivated polio vaccine (IPV) as part of the country’s routine immunization schedule. WHO and partners of the Global Polio Eradication Initiative are supporting national and subnational authorities. WHO assesses the risk of international spread of this cVDPV1 outbreak in Israel as low, due to strong overall immunity, surveillance, and response systems. However, the virus is circulating in under-vaccinated, vaccine-sceptic communities with ties to similar groups abroad, posing a potential risk for further spread.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON578",
+   "published": "2025-08-20T16:06:59+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "polio",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "a973ae71682d674c",
+   "title": "Rabies - Timor-Leste",
+   "summary": "On 17 May 2025, the Timor-Leste government reported to the World Health Organization (WHO) a fatal human case of rabies from Ermera Municipality. Between May and mid-June 2025, Timor-Leste confirmed four human rabies deaths in the municipalities of Bobonaro (n=2), Ermera (n=1) and Oecusse (n=1). All cases involved individuals exposed to dogs' bites months prior to symptom onset, with rabies virus confirmed via Reverse Transcription Polymerase Chain Reaction (RT-PCR) testing. Since March 2024, a total of 106 animal rabies cases—mostly in dogs—have been reported, and over 1400 dog bites or scratches have occurred, with a total of six fatalities. Access to and completion of post-exposure prophylaxis remains limited. The spread of rabies into non-border areas like Ermera signals a growing public health concern. The public health response is ongoing and includes vaccination of dogs, risk communication, training of healthcare workers on Post-Exposure Prophylaxis (PEP) and case management, active surveillance, and ensuring the availability of rabies vaccines and human rabies immunoglobulin. Based on the current available information, the WHO assesses the risk posed by this event as high at the national level, moderate at the regional level, and low at the global level.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON576",
+   "published": "2025-07-24T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "rabies",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "83973afb43b95bf4",
    "title": "Timor-Leste certified malaria-free by WHO",
    "summary": "The World Health Organization (WHO) has certified Timor-Leste as malaria-free, a remarkable achievement for a country that prioritized the disease and embarked on a concerted, nation-wide response shortly after gaining independence in 2002. &ldquo;WHO congratulates the people and government of Timor-Leste on this significant milestone,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;Timor-Leste&rsquo;s success proves that malaria can be stopped in its tracks when strong political will, smart interventions, sustained domestic and external investment and dedicated health workers unite.&rdquo; With today&rsquo;s announcement, a total of 47 countries and 1 territory have been certified as malaria-free by WHO. Timor-Leste is the third country to be certified in the WHO South-East Asia region, joining Maldives and Sri Lanka which were certified in 2015 and 2016 respectively. Certification of malaria elimination is granted by WHO when a country has proven, beyond reasonable doubt, that the chain of indigenous transmission has been interrupted nationwide for at least the previous three consecutive years. &ldquo;We did it. Malaria has been one of our most relentless enemies &ndash; silent, persistent, and deadly. We lost too many lives to a disease that should be preventable. But our health workers never gave up, our communities held strong, and our partners, like WHO, walked beside us. From 223&nbsp;000 cases to zero &ndash; this elimination honours every life",
@@ -81,6 +659,91 @@
    "org": "WHO",
    "official": true,
    "disease": "malaria",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "23e446b6303aaea2",
+   "title": "Avian Influenza A(H5N1) - Cambodia",
+   "summary": "Between 1 January and 1 July 2025, the World Health Organization (WHO) was notified by Cambodia’s International Health Regulations (IHR) National Focal Point (NFP) of 11 laboratory-confirmed cases of human infection with avian influenza A(H5N1) virus. Seven of the 11 cases were reported in June, an unusual monthly increase. Avian influenza A(H5N1) was first detected in Cambodia, in December 2003, initially affecting wild birds. Since then, 83 cases of human infection with influenza A(H5N1), including 49 deaths (case fatality ratio [CFR] of 59%), have been reported in the country. While the virus continued to circulate in avian species, no human cases were reported between 2014 and 2022, after which, the virus re-emerged in humans in February 2023. Since the re-emergence of human A(H5N1) infections in Cambodia in 2023, a total of 27 cases have been reported (six in 2023, 10 in 2024, and 11 to date in 2025), of which 12 were fatal (CFR 44%). Seventeen of the cases occurred in children under 18 years old. Avian influenza A(H5N1) is circulating in wild birds, poultry and some mammals around the world, and occasional human infections following exposure to infected animals or contaminated environments are expected to occur. In cases detected in Cambodia, exposure to sick poultry, often poultry kept in backyards, has been reported. According to the IHR, a human infection caused by a novel influenza A virus subtype is an event that has the potential for high public health impact and ",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON575",
+   "published": "2025-07-05T05:41:27+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "covid_flu",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "063009f48fcfc2e9",
+   "title": "COVID-19 - Global Situation",
+   "summary": "Since mid-February 2025, according to data available from sentinel sites, global SARS-CoV-2 activity has been increasing, with the test positivity rate reaching 11%, levels that have not been observed since July 2024. This rise is primarily observed in countries in the Eastern Mediterranean, South-East Asia, and Western Pacific regions. Since early 2025, global SARS-CoV-2 variant trends have slightly shifted. Circulation of LP.8.1 has been declining, and reporting of NB.1.8.1, a Variant Under Monitoring (VUM), is increasing, reaching 10.7% of global sequences reported as of mid-May. Recent increases in SARS-CoV-2 activity are broadly consistent with levels observed during the same period last year, however, there still lacks a clear seasonality in SARS-CoV-2 circulation, and surveillance is limited. Continued monitoring is essential. WHO advises all Member States to continue applying a risk-based, integrated approach to managing COVID-19 as outlined in the Director-General’s Standing Recommendations [1]. As part of comprehensive COVID-19 control programmes, vaccination remains a key intervention for preventing severe disease and death from COVID-19, particularly among at risk groups.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON572",
+   "published": "2025-05-28T09:21:09+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "covid_flu",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "d0ff1c60edec7c7e",
+   "title": "Circulating vaccine-derived poliovirus type 2 (cVDPV2) - Papua New Guinea",
+   "summary": "On 9 May 2025, the International Health Regulations (IHR) National Focal Point (NFP) for Papua New Guinea (PNG) notified WHO of the detection of circulating vaccine-derived poliovirus type 2 (cVDPV2) from stool specimens of two healthy children from Morobe province, Papua New Guinea (PNG). The detection of wild poliovirus (WPV) or vaccine-derived poliovirus (VDPV), including from samples taken from healthy children, is considered a serious public health event. Given the country's suboptimal routine immunization coverage, especially at the subnational level, the risk of potential spread locally is considered high. WHO advises all countries—especially those with frequent travel and connections to polio-affected areas—should strengthen acute flaccid paralysis (AFP) and environmental surveillance while maintaining high level of immunization coverage to quickly detect and respond to virus importation and prevent further spread by closing immunity gaps.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON571",
+   "published": "2025-05-20T13:26:10+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "polio",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "fa216d3c90b9ef4b",
+   "title": "Measles - Morocco",
+   "summary": "Since late 2023, Morocco has been experiencing a widespread measles outbreak. Cases have been recorded across all regions of the country, particularly among children and people who are unvaccinated. In response, the Ministry of Health and Social Protection (MOHSP), in collaboration with relevant sectors, activated the National Center for Public Health Emergency Operations, launched urgent catch-up vaccination campaigns, and strengthened surveillance, case management, and risk communication and community engagement efforts. Measles is a highly transmissible viral disease that can lead to severe complications and death. While Morocco has made significant progress toward measles elimination, the disease remains endemic in the country. The overall risk is assessed as moderate at the national level and moderate at the regional level, particularly given the risk of cross-border transmission in areas with low vaccination coverage.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON568",
+   "published": "2025-05-13T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "measles",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "6a025c6261d08a5b",
+   "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
+   "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also highlighted Saudi Arabia’s ongoing commitment to global humanitarian efforts, reaffirming its leadership role in tackling some of the world’s pressing health crises.",
+   "url": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities",
+   "published": "2025-03-06T12:48:53+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "polio",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -115,23 +778,6 @@
    "org": "WHO",
    "official": true,
    "disease": "cholera",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "6a025c6261d08a5b",
-   "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
-   "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also highlighted Saudi Arabia’s ongoing commitment to global humanitarian efforts, reaffirming its leadership role in tackling some of the world’s pressing health crises.",
-   "url": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities",
-   "published": "2025-03-06T12:48:53+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "polio",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -182,7 +828,7 @@
    "source_name": "WHO News",
    "org": "WHO",
    "official": true,
-   "disease": "malaria",
+   "disease": "polio",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -199,7 +845,7 @@
    "source_name": "WHO News",
    "org": "WHO",
    "official": true,
-   "disease": "polio",
+   "disease": "malaria",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
