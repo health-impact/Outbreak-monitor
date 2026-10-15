@@ -1,7 +1,24 @@
 {
- "generated_at": "2026-10-15T15:25:44.396432+00:00",
- "count": 165,
+ "generated_at": "2026-10-15T19:35:56.673898+00:00",
+ "count": 166,
  "events": [
+  {
+   "id": "f1a7f73db6825d09",
+   "title": "Communiqué d’Africa CDC sur le financement de la riposte à l’épidémie d’Ebola en RDC.",
+   "summary": "Addis-Abeba, 15 octobre 2026 À la suite de la conférence de presse tenue le 14 octobre 2026 à Kinshasa par son Directeur Général, Son Excellence Dr Jean Kaseya, Africa CDC souhaite réaffirmer et clarifier les messages qu&#8217;il a clairement exprimés concernant la transparence et la redevabilité dans le financement de la riposte à l’épidémie d’Ebola [&#8230;] The post Communiqué d’Africa CDC sur le financement de la riposte à l’épidémie d’Ebola en RDC. appeared first on Africa CDC .",
+   "url": "https://africacdc.org/news-item/communique-dafrica-cdc-sur-le-financement-de-la-riposte-a-lepidemie-debola-en-rdc/",
+   "published": "2026-10-15T17:35:59+00:00",
+   "source_id": "africa_cdc",
+   "source_name": "Africa CDC",
+   "org": "AfricaCDC",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "AfricaCDC"
+   ]
+  },
   {
    "id": "a3f78573815eff2a",
    "title": "Ebola disease outbreak in the Democratic Republic of the Congo",
