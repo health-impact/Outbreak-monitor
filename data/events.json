@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-15T19:35:56.673898+00:00",
- "count": 166,
+ "generated_at": "2026-10-15T22:01:59.100424+00:00",
+ "count": 202,
  "events": [
   {
    "id": "f1a7f73db6825d09",
@@ -34,6 +34,23 @@
    "status": "verified",
    "confirmed_by": [
     "ECDC"
+   ]
+  },
+  {
+   "id": "d51b1a1daf3d0a2c",
+   "title": "Pneumonia of undetermined etiology - the Russian Federation",
+   "summary": "On 2 October 2026, WHO became aware through media reports of the death of an employee of the Irkutsk Antiplague Research Institute (APRI) of Siberia and the Far East, the Russian Federation. According to these reports, the individual died on 2 October following hospitalization for severe pneumonia on 29 September, and pneumonic plague was suspected as the cause of death, following occupational exposure in laboratory settings. Following requests for verification from WHO, the National Focal Point for the International Health Regulations (2005) (NFP) of the Russian Federation confirmed the death and informed WHO that no case of plague had been registered recently in Irkutsk Oblast, that preventive and control measures had been implemented in accordance with national sanitary legislation, and that the laboratory testing of contacts detected no high-threat pathogens. The authorities also reported that no biosecurity incidents had occurred in the laboratory, contrary to reports in the media, and that there were no further case of severe pneumonia linked to this case. The NFP informed WHO that the case and all contacts had been tested for a range of microorganisms, including high-threat pathogens. Test results were negative for the tested high-threat pathogens. All contacts had been medically followed up in healthcare facilities or at home, and all remained asymptomatic throughout. Quarantine measures were instituted in the hospital where the patient was being treated. Based on the",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON620",
+   "published": "2026-10-10T15:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "plague",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
    ]
   },
   {
@@ -88,6 +105,23 @@
    ]
   },
   {
+   "id": "00e062786d39b920",
+   "title": "Chikungunya virus disease worldwide overview",
+   "summary": "Every month ECDC provides detailed epidemiological overview of the worldwide transmission of chikungunya virus disease in its weekly threat report (Communicable Diseases Threat Report).",
+   "url": "https://www.ecdc.europa.eu/en/chikungunya-monthly",
+   "published": "2026-10-05T14:05:05+00:00",
+   "source_id": "ecdc_news",
+   "source_name": "ECDC News",
+   "org": "ECDC",
+   "official": true,
+   "disease": "chikungunya",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "ECDC"
+   ]
+  },
+  {
    "id": "57e71a3efb94cc4a",
    "title": "Africa CDC soutient le Gouvernement de la République démocratique du Congo dans le renforcement de la transparence et de la redevabilité du financement de la riposte à Ebola",
    "summary": "Kinshasa, République démocratique du Congo, le 4 octobre 2026 Le Centre africain de contrôle et de prévention des maladies (Africa CDC) salue et soutient la position du Gouvernement de la République démocratique du Congo, exprimée par l’intermédiaire du Ministère de la Santé publique, de l’Hygiène et de la Prévoyance sociale, visant à renforcer la transparence, [&#8230;] The post Africa CDC soutient le Gouvernement de la République démocratique du Congo dans le renforcement de la transparence et de la redevabilité du financement de la riposte à Ebola appeared first on Africa CDC .",
@@ -119,6 +153,23 @@
    "status": "verified",
    "confirmed_by": [
     "AfricaCDC"
+   ]
+  },
+  {
+   "id": "b3d6c1435fda737a",
+   "title": "MERS-CoV worldwide overview",
+   "summary": "Summary Since the beginning of 2026, and as of 31 August 2026, two MERS cases, including one fatality, have been reported in Saudi Arabia.",
+   "url": "https://www.ecdc.europa.eu/en/middle-east-respiratory-syndrome-coronavirus-mers-cov-situation-update",
+   "published": "2026-09-29T12:20:22+00:00",
+   "source_id": "ecdc_news",
+   "source_name": "ECDC News",
+   "org": "ECDC",
+   "official": true,
+   "disease": "mers",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "ECDC"
    ]
   },
   {
@@ -207,6 +258,23 @@
    ]
   },
   {
+   "id": "0e7b211e4e036cdb",
+   "title": "Epidemiological update – 11 August 2026: Imported case of Andes hantavirus in the EU/EEA",
+   "summary": "On 6 August 2026, French public health authorities reported an imported case of Andes hantavirus infection in a traveller from Argentina.&nbsp;",
+   "url": "https://www.ecdc.europa.eu/en/news-events/epidemiological-update-11-august-2026-imported-case-andes-hantavirus-eueea",
+   "published": "2026-08-20T11:39:42+00:00",
+   "source_id": "ecdc_news",
+   "source_name": "ECDC News",
+   "org": "ECDC",
+   "official": true,
+   "disease": "hantavirus",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "ECDC"
+   ]
+  },
+  {
    "id": "654c8e1fb7fdf694",
    "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
    "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is in a phase of intense transmission. It is the largest Ebola outbreak ever reported in the country and expanding faster than any previous Ebola outbreak. The epidemic is increasingly characterized by sustained transmission within interconnected geographic clusters. Initially confined to the Mongbwalu health zone in Ituri Province, the outbreak has now expanded to 54 health zones across six provinces (Ituri, North Kivu, South Kivu, Haut-Uélé, Tshopo, and Bas-Uélé). The most recently affected Bas-Uélé province recorded one confirmed case in Buta health zone with travel history to Haut-Uélé and onset of symptoms on 4 August. As of 12 August 2026, a total of 4665 confirmed cases, including 2184 deaths, have been reported, corresponding to a crude case fatality ratio (CFR) of 46.8%. The ongoing rise in cases, broader geographic spread, and continued high mortality demonstrate the rapidly changing scope of this public health emergency of international concern. During the most recent reporting week (epidemiological week 32, 3 to 9 August 2026), the highest weekly number of reported cases (579) and deaths (304) were recorded, highlighting the exceptional pace of transmission. The ongoing humanitarian crisis, compounded by insecurity, population displacement and mobility, and cross-border movements, continues to pose significant challenges to response efforts and increase the risk of further geograph",
@@ -268,6 +336,57 @@
    "org": "WHO",
    "official": true,
    "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "e77b31c990b3dde1",
+   "title": "Hantavirus outbreak linked to cruise ship travel, Multi-locations",
+   "summary": "This is the fifth Disease Outbreak News posting on the Andes hantavirus (ANDV) outbreak linked to the cruise ship M/V Hondius. The outbreak identification followed the notification to the World Health Organization (WHO) on 2 May 2026 of severe acute respiratory illness cases onboard. Since the previous Disease Outbreak News was published on 28 May 2026, one of the probable cases from Tristan da Cunha, an Overseas Territory of the United Kingdom of Great Britain and Northern Ireland (hereafter referred to as the United Kingdom), was laboratory confirmed. As of 2 July, a total of 13 cases, including three deaths, have been notified (case fatality ratio 23%). Twelve cases have been laboratory-confirmed for ANDV infection, and one is a probable case. All confirmed cases are among individuals who travelled onboard the M/V Hondius. Among the ten cases admitted to hospitals, eight have recovered and have been discharged, while two are still undergoing medical treatment. All identified contacts have completed the 42 day follow-up period by local health authorities in line with WHO guidance. The completion of the contact follow up without detection of additional secondary cases demonstrates effective interruption of transmission and confirms outbreak containment. This outbreak no longer poses a public health risk and no further related transmission is expected.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON611",
+   "published": "2026-07-02T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "hantavirus",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "51834ef22a30005b",
+   "title": "Nipah virus disease - India",
+   "summary": "On 11 June 2026, the Kerala State Health Department confirmed one laboratory confirmed case of Nipah virus (NiV) infection in Kozhikode district, Kerala State, India. The case is an adult male who developed symptoms on 30 May 2026 and was hospitalized on 10 June 2026. He presented with neurological manifestations and at the time of reporting is on ventilatory support in an intensive care unit (ICU). As of 18 June 2026, a total of 104 contacts had been identified and were under monitoring, including health and care workers, with no reported secondary cases to date. NiV is a zoonotic disease transmitted to humans through infected animals, or through consumption of fruits or fruit products, such as raw date palm juice contaminated with the saliva, urine, or excreta of infected bats, as well as close contact with infected individuals. The current event involves a single confirmed case, with no secondary transmission identified to date. Public health measures are in place, including isolation, contact tracing, and enhanced surveillance. However, as the source of infection has not yet been identified and given the known presence of animal reservoirs, additional cases cannot be excluded.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON609",
+   "published": "2026-06-25T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "nipah",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "9ef0a1f0260f1386",
+   "title": "Yellow fever - Global",
+   "summary": "Yellow fever is a viral disease found in areas of Africa and the Americas, spread by infected mosquitoes. Following an increase of cases in the Americas in 2025, transmission activity remained into 2026. From 1 January to 26 May 2026, six countries reported a total of 79 human infections along with multiple epizootics, indicating active sylvatic circulation. In Africa, sustained activity continued across parts of the region, affecting 13 high-risk countries (as per classification in the Eliminate Yellow fever Epidemics (EYE) Strategy). From January to May 2026, three countries in Africa reported 16 confirmed human cases, with an additional 32 suspected cases under investigation in five other countries. The recent rapid risk assessment assessed geographical variations in vaccination coverage, evidence of viral circulation, and the presence of competent vectors, concluding that unvaccinated populations in countries or areas with a history of yellow fever transmission remain at greatest risk. Transmission dynamics are further influenced by seasonal ecological factors, particularly rainfall, temperature, and mosquito abundance. Outbreaks reported from October 2025 through May 2026 in countries or areas with a history of yellow fever transmission were generally consistent with seasonal patterns or reflected gaps in immunization coverage. In contrast, cases detected in previously unaffected areas suggest viral introduction and an increased risk of urban transmission. No imported ca",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON610",
+   "published": "2026-06-24T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "yellow_fever",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -343,6 +462,40 @@
    ]
   },
   {
+   "id": "a054891405570d1a",
+   "title": "Hantavirus outbreak linked to cruise ship travel, Multi-locations",
+   "summary": "This is the fourth Disease Outbreak News report on the Andes hantavirus outbreak linked to cruise ship travel, following the notification to the World Health Organization (WHO) on 2 May 2026 of severe respiratory illness cases aboard M/V Hondius, a cruise ship. Since the last DON was published on 13 May, three additional confirmed cases were reported, from Canada, the Netherlands, and Spain. The previously reported inconclusive case from the United States of America was subsequently determined to be negative following further laboratory testing and has been removed from the total case count. All cases to date have been passengers or crew members on the ship. As of 27 May, a total of 13 cases, including three deaths, have been reported (case fatality ratio 23%). Eleven cases have been laboratory-confirmed for Andes virus (ANDV) infection, and two are probable cases. Given the long incubation period of up to six weeks, it is not unexpected that cases continue to be reported until the end of the six weeks since last exposure. Through the International Health Regulations (2005) (IHR) channels, National IHR Focal Points (NFPs) have all been informed and are supporting international contact tracing and monitoring efforts. WHO has assessed the risk posed by this event to the global population as low and will continue to monitor the epidemiological situation and update the risk assessment as needed.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON604",
+   "published": "2026-05-28T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "hantavirus",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "3691f4a914201d4e",
+   "title": "Andes hantavirus outbreak in cruise ship",
+   "summary": "ECDC was notified on 2 May 2026 of a cluster of severe respiratory illness on MV Hondius, a Dutch-flagged cruise ship with passengers and crew from 23 countries, including nine EU/EEA countries. The virus has been identified as Andes hantavirus.",
+   "url": "https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak",
+   "published": "2026-05-26T15:56:17+00:00",
+   "source_id": "ecdc_news",
+   "source_name": "ECDC News",
+   "org": "ECDC",
+   "official": true,
+   "disease": "hantavirus",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "ECDC"
+   ]
+  },
+  {
    "id": "f9782fb0123bcf03",
    "title": "Ebola disease caused by Bundibugyo virus – Democratic Republic of the Congo",
    "summary": "On 15 May 2026, the Ministry of Public Health, Hygiene and Social Welfare, Democratic Republic of the Congo (DRC), and the Ministry of Health of Uganda declared an outbreak of Ebola Disease following the confirmation of Bundibugyo virus disease (BVD) in both countries. On 17 May 2026, the World Health Organization (WHO) Director-General determined that the Ebola disease caused by Bundibugyo virus in DRC and Uganda constitutes a public health emergency of international concern (PHEIC), as defined in the provisions of IHR. On 19 May 2026, the Director-General of WHO convened the first meeting of the IHR Emergency Committee, and temporary recommendations were issued to State Parties. As of 21 May, 746 suspected cases and 176 deaths among suspected cases were reported in DRC. So far 85 confirmed cases, including two in Uganda, and ten deaths, with one in Uganda, among confirmed cases were reported across both countries. In DRC, transmission is concentrated in Ituri, North Kivu and South Kivu provinces, with challenges in contact follow-up, insecure conditions, and inadequate isolation and referral systems complicating response efforts. Uganda has reported two imported cases with no confirmed local transmission. An American national who was working in DRC has also been confirmed positive and transferred to Germany for care. National authorities, in collaboration with WHO and partners, are implementing response measures including deployment of rapid response teams, delivery of medi",
@@ -360,6 +513,23 @@
    ]
   },
   {
+   "id": "87465658e8d05c3a",
+   "title": "Epidemiological update: Spread of multidrug-resistant and extensively-drug resistant Shigella in Europe",
+   "summary": "Since 2023, 14 countries have reported more than 2 300 infections caused by multidrug-resistant (MDR) or extensively drug-resistant (XDR) Shigella sonnei and Shigella flexneri to ECDC. Seven genetically distinct MDR/XDR clusters, some with prolonged circulation and others more recent, have been reported.",
+   "url": "https://www.ecdc.europa.eu/en/news-events/epidemiological-update-spread-multidrug-resistant-and-extensively-drug-resistant",
+   "published": "2026-05-20T11:16:59+00:00",
+   "source_id": "ecdc_news",
+   "source_name": "ECDC News",
+   "org": "ECDC",
+   "official": true,
+   "disease": "foodborne",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "ECDC"
+   ]
+  },
+  {
    "id": "574f7936be6edf62",
    "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
    "summary": "On 5 May 2026, the World Health Organization (WHO) was alerted of a high-mortality outbreak of unknown illness in Mongbwalu Health Zone, Ituri Province, Democratic Republic of the Congo (DRC), including deaths among health workers. On 14 May 2026, the Institut national de recherche biomédicale (INRB) Kinshasa analyzed 13 blood samples from Rwampara Health Zone, Ituri Province. Laboratory analysis confirmed Bundibugyo virus disease (BVD) in eight of these samples on 15 May, a species of Ebola. The case fatality rates in the past two BVD outbreaks have ranged from 30% to 50%. Unlike Ebola virus disease, there is no licensed vaccine or specific therapeutics against Bundibugyo virus, though early supportive care is lifesaving. On 15 May 2026, the Ministry of Public Health, Hygiene and Social Welfare, DRC, officially declared the 17th Ebola Disease outbreak in DRC. Concurrently, the Uganda Ministry of Health confirmed an outbreak of BVD following the identification of one imported case from DRC, a Congolese man who died in the capital city of Kampala. On 17 May 2026, WHO Director-General, after having consulted the States Parties where the event is known to be currently occurring, determined that the Ebola disease caused by Bundibugyo virus in DRC and Uganda constitutes a public health emergency of international concern (PHEIC), as defined in the provisions of IHR. Response measures include deployment of rapid response teams, delivery of medical supplies, strengthened surveillance",
@@ -370,6 +540,23 @@
    "org": "WHO",
    "official": true,
    "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "9a720c99f632f8bc",
+   "title": "Hantavirus cluster linked to cruise ship travel, Multi-country",
+   "summary": "This is the third Disease Outbreak News report on the hantavirus cluster, following the notification to the World Health Organization (WHO) on 2 May 2026 of severe respiratory illness cases aboard MV Hondius, a cruise ship. Since the last DON was published on 8 May, two additional confirmed cases were reported from France and Spain. In addition, there is one inconclusive result for a case in the United States of America. All were passengers on the ship. As of 13 May, a total of 11 cases, including three deaths, have been reported (case fatality ratio 27%). Eight cases were laboratory-confirmed for Andes virus (ANDV) infection, two are probable, and one case remains inconclusive and undergoing further testing. Through the International Health Regulations (2005) (IHR) channels, National IHR Focal Points (NFPs) have all been informed and are supporting international contact tracing efforts. WHO has assessed the risk posed by this event to the global population as low and will continue to monitor the epidemiological situation and update the risk assessment as needed.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON601",
+   "published": "2026-05-13T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "hantavirus",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -391,6 +578,40 @@
    "status": "verified",
    "confirmed_by": [
     "ECDC"
+   ]
+  },
+  {
+   "id": "212466c6ead2481e",
+   "title": "Hantavirus cluster linked to cruise ship travel, Multi-country",
+   "summary": "On 2 May 2026, a cluster of passengers with severe respiratory illness aboard a cruise ship was reported to the World Health Organization (WHO). At that time, according to the ship operator, 147 passengers and crew were onboard, and 34 passengers and crew had previously disembarked. Since the last Disease Outbreak News published on 4 May, three of the suspected cases were confirmed, and one additional confirmed case was reported. As of 8 May, a total of eight cases, including three deaths (case fatality ratio 38%), have been reported. Six cases have been laboratory-confirmed as hantavirus infections, with all identified as Andes virus (ANDV). Through the International Health Regulations (2005) (IHR) channel, National IHR Focal Points (NFPs) have all been informed and are supporting international contact tracing. WHO assesses the risk to the global population posed by this event as low and will continue to monitor the epidemiological situation and update the risk assessment. The risk for passengers and crew on the ship is considered moderate.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON600",
+   "published": "2026-05-08T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "hantavirus",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "309eb1825af4807a",
+   "title": "Hantavirus cluster linked to cruise ship travel, Multi-country",
+   "summary": "On 2 May 2026, a cluster of passengers with severe respiratory illness aboard a cruise ship was reported to the World Health Organization. The ship is carrying 147 passengers and crew. As of 4 May 2026, seven cases (two laboratory confirmed cases of hantavirus and five suspected cases) have been identified, including three deaths, one critically ill patient and three individuals reporting mild symptoms. Illness onset occurred between 6 and 28 April 2026 and was characterized by fever, gastrointestinal symptoms, rapid progression to pneumonia, acute respiratory distress syndrome and shock. Further investigations are ongoing. The outbreak is being managed through coordinated international response, and includes in-depth investigations, case isolation and care, medical evacuation and laboratory investigations. Human hantavirus infection is primarily acquired through contact with the urine, faeces, or saliva of infected rodents. It is a rare but severe disease that can be deadly. Although uncommon, limited human to human transmission has been reported in previous outbreaks of Andes virus (a specific species of hantavirus). WHO currently assesses the risk to the global population from this event as low and will continue to monitor the epidemiological situation and update the risk assessment.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON599",
+   "published": "2026-05-04T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "hantavirus",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
    ]
   },
   {
@@ -445,6 +666,40 @@
    ]
   },
   {
+   "id": "0e5ea64a8baac463",
+   "title": "Nipah virus infection - Bangladesh",
+   "summary": "On 3 February 2026, the International Health Regulations National Focal Point (IHR NFP) for Bangladesh notified WHO of one confirmed case of Nipah virus (NiV) infection in Rajshahi Division. The patient developed fever and neurological symptoms on 21 January. Nipah virus infection was laboratory-confirmed on 29 January. The patient reported no travel history but had a history of consuming raw date palm sap. All 35 contact-persons are being monitored and have tested negative for NiV and no further cases have been detected to date. Bangladesh regularly has small NiV outbreaks, with cases reported at different times of the year, though outbreaks tend to occur between December and April corresponding with the harvesting and consumption of date palm sap. The Ministry of Health and Family Welfare in Bangladesh has implemented several public health measures. WHO assesses the overall public health risk posed by NiV to be low at the national, the regional and global level. The risk of international disease spread is considered low.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON594",
+   "published": "2026-02-06T19:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "nipah",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "f6850b4f28d9e457",
+   "title": "Nipah virus disease - India",
+   "summary": "On 26 January 2026, the National IHR Focal Point for India notified WHO of two laboratory‑confirmed cases of Nipah virus (NiV) infection in West Bengal State. Both are healthcare workers at the same private hospital in Barasat (North 24 Parganas district). NiV infection was confirmed at the National Institute of Virology in Pune on 13 January. One case remains on mechanical ventilation as of 21 January, the other case experienced severe neurological illness but has since improved. Authorities have identified and tested over 190 contacts, who all tested negative for NiV with support from a mobile BSL‑3 laboratory deployed by the National Institute of Virology, Pune. No further cases have been detected to date. This event represents the third NiV infection outbreak reported in West Bengal (previous outbreaks reported in Siliguri in 2001 and Nadia in 2007). Enhanced surveillance and infection prevention and control (IPC) measures are in place while investigations into the source of exposure are ongoing. NiV infection is a serious but rare zoonotic disease transmitted to humans through infected animals (such as bats), or food contaminated with saliva, urine, and excreta of infected animals. It can also be transmitted directly from person to person through close contact with an infected person. There are currently no licensed medicines or vaccines for NiV infection, however early supportive care can improve survival. WHO assesses the risk posed by Nipah to be moderate at the sub-n",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2026-DON593",
+   "published": "2026-01-30T19:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "nipah",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "f44b5ca70c6c5c07",
    "title": "Marburg virus disease- Ethiopia",
    "summary": "On 26 January 2026, the Ministry of Health of Ethiopia declared the end of the Marburg virus disease (MVD) outbreak. This declaration came after two consecutive incubation periods (a total of 42 days) since the last person confirmed with MVD died and was given a safe and dignified burial, in accordance with WHO recommendations on 14 December 2025. As of 25 January 2026, a cumulative total of 19 cases, including 14 confirmed (including nine deaths) and five probable cases (all deaths), were reported. A total of 857 contacts listed for monitoring all had completed their 21-day follow-up as of 25 January 2026. WHO, through its country office and partners, provided technical, operational and financial support to the government to contain this outbreak.",
@@ -455,6 +710,23 @@
    "org": "WHO",
    "official": true,
    "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "273e0d6af8c169a8",
+   "title": "Middle East respiratory syndrome coronavirus - Global update",
+   "summary": "Since the beginning of 2025 and as of 21 December 2025, a total of 19 cases of Middle East respiratory syndrome coronavirus (MERS- CoV), including four deaths have been reported to WHO globally. Of the 19 cases, 17 were reported by the Kingdom of Saudi Arabia (KSA), and two were reported from France. Between 4 June and 21 December 2025, the Ministry of Health (MoH) of KSA reported a total of seven cases of MERS-CoV infection, including two deaths. In addition, at the beginning of December 2025, the National IHR Focal Point (IHR NFP) for France also reported two MERS-CoV travel – associated cases; involving individuals with recent travel to countries in the Arabian Peninsula. The notification of these latest cases does not change the overall risk assessment, which remains moderate at both the global and regional levels. These cases show that the virus continues to pose a threat in countries where it is circulating in dromedary camels, with regular spillover into the human population. WHO recommends implementation of targeted infection, prevention and control (IPC) measures to prevent the spread of health care-associated infections of MERS-CoV and onward human transmission.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON591",
+   "published": "2025-12-24T05:38:07+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "mers",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -530,6 +802,57 @@
    ]
   },
   {
+   "id": "0bc0e04a40ecf648",
+   "title": "Diphtheria - African Region (AFRO)",
+   "summary": "From 1 January to 2 November 2025, a total of 20 412 suspected diphtheria cases, including 1 252 deaths (an average case fatality ratio [CFR] - 6 %) have been reported across eight Member States in the WHO African Region (Algeria, Chad, Guinea, Mali, Mauritania, Niger, Nigeria, and South Africa). Several of these countries have been experiencing ongoing outbreaks since 2023. Children and young adults represent the majority of the cases, with females accounting for a slightly greater proportion. Case confirmation and management remain constrained. Laboratory confirmation remains low due to shortages of diagnostic supplies and limited testing capacity. At the same time, the global shortage of diphtheria antitoxin (DAT), and uneven clinical capacity to provide this essential treatment, pose significant challenges for effective case management. Diphtheria is a vaccine-preventable bacterial disease which can lead to severe systemic complications, including myocarditis, kidney failure, and neurological damage. Many of the affected countries are fragile, conflict-affected or have system vulnerabilities where health systems are overstretched, routine services are disrupted and access to essential services is limited. These settings are characterized by high population mobility, and crowded living conditions, especially among displaced populations. WHO continues to work across all levels of the organization to identify and implement the most appropriate mechanisms to support affected ",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/DON588",
+   "published": "2025-11-21T19:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "diphtheria",
+   "country": "DZ",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "0bc0e04a40ecf648",
+   "title": "Diphtheria - African Region (AFRO)",
+   "summary": "From 1 January to 2 November 2025, a total of 20 412 suspected diphtheria cases, including 1 252 deaths (an average case fatality ratio [CFR] - 6 %) have been reported across eight Member States in the WHO African Region (Algeria, Chad, Guinea, Mali, Mauritania, Niger, Nigeria, and South Africa). Several of these countries have been experiencing ongoing outbreaks since 2023. Children and young adults represent the majority of the cases, with females accounting for a slightly greater proportion. Case confirmation and management remain constrained. Laboratory confirmation remains low due to shortages of diagnostic supplies and limited testing capacity. At the same time, the global shortage of diphtheria antitoxin (DAT), and uneven clinical capacity to provide this essential treatment, pose significant challenges for effective case management. Diphtheria is a vaccine-preventable bacterial disease which can lead to severe systemic complications, including myocarditis, kidney failure, and neurological damage. Many of the affected countries are fragile, conflict-affected or have system vulnerabilities where health systems are overstretched, routine services are disrupted and access to essential services is limited. These settings are characterized by high population mobility, and crowded living conditions, especially among displaced populations. WHO continues to work across all levels of the organization to identify and implement the most appropriate mechanisms to support affected ",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/DON588",
+   "published": "2025-11-21T19:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "diphtheria",
+   "country": "TD",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "0bc0e04a40ecf648",
+   "title": "Diphtheria - African Region (AFRO)",
+   "summary": "From 1 January to 2 November 2025, a total of 20 412 suspected diphtheria cases, including 1 252 deaths (an average case fatality ratio [CFR] - 6 %) have been reported across eight Member States in the WHO African Region (Algeria, Chad, Guinea, Mali, Mauritania, Niger, Nigeria, and South Africa). Several of these countries have been experiencing ongoing outbreaks since 2023. Children and young adults represent the majority of the cases, with females accounting for a slightly greater proportion. Case confirmation and management remain constrained. Laboratory confirmation remains low due to shortages of diagnostic supplies and limited testing capacity. At the same time, the global shortage of diphtheria antitoxin (DAT), and uneven clinical capacity to provide this essential treatment, pose significant challenges for effective case management. Diphtheria is a vaccine-preventable bacterial disease which can lead to severe systemic complications, including myocarditis, kidney failure, and neurological damage. Many of the affected countries are fragile, conflict-affected or have system vulnerabilities where health systems are overstretched, routine services are disrupted and access to essential services is limited. These settings are characterized by high population mobility, and crowded living conditions, especially among displaced populations. WHO continues to work across all levels of the organization to identify and implement the most appropriate mechanisms to support affected ",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/DON588",
+   "published": "2025-11-21T19:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "diphtheria",
+   "country": "NE",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "01207ee4959772a5",
    "title": "Marburg virus disease- Ethiopia",
    "summary": "On 12 November 2025, WHO noted a press release from the Ethiopian Ministry of Health (MoH), and the Ethiopian Public Health Institute (EPHI), announcing suspected viral hemorrhagic viral fever (VHF) in Jinka town, South Ethiopia Regional State, Ethiopia. On 14 November 2025, the Ministry of Health of Ethiopia confirmed that the cases previously reported as suspected VHF were Marburg virus disease (MVD). Molecular testing conducted by the National Reference Laboratory at EPHI identified Marburg virus (MARV) in patient samples. As of 20 November 2025, 33 laboratory tests have been conducted, of which six confirmed cases, including three deaths, have been reported. Of the six confirmed cases, three are currently alive and on treatment. In addition to the lab-confirmed cases, a further three epidemiologically linked cases could not be tested; all three are deceased and recorded as probable cases. A total of 206 contacts have been identified, and contacts are under active follow-up. The number of contacts will continue to change as the response evolves. The source of the infection has not yet been identified. This marks the first confirmed outbreak of MVD in the country. Initial investigation by the one health team in Ethiopia show the presence of the natural host of the virus, fruit bats, in the area. MVD is a severe, often fatal illness, transmitted from bats to humans, and clinically similar to Ebola virus diseases. The disease has a case fatality ratio of up to 88%, but it can",
@@ -574,6 +897,40 @@
    "org": "WHO",
    "official": true,
    "disease": "rvf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "b6a7fdf49f11df3f",
+   "title": "Chikungunya virus disease- Global situation",
+   "summary": "In 2025, a resurgence of chikungunya virus (CHIKV) disease was noted in a number of countries, including some that had not reported substantial case numbers in recent years. Between 1 January and 30 September 2025, a total of 445 271 suspected and confirmed CHIKV disease cases and 155 deaths were reported globally from 40 countries, including autochthonous and travel imported cases. Some WHO Regions are experiencing significant increases in case numbers compared to 2024, although others are currently reporting lower case numbers. This uneven distribution of cases across regions makes it challenging to characterize the situation as a global rise, however, given the ongoing outbreaks reported globally in 2025, the potential for further spread remains significant. CHIKV disease can be introduced into new areas by infected travelers and local transmission may be established if there is the presence of Aedes mosquito and a susceptible population. The risk is heightened by limited population immunity in previously unaffected areas, favorable environmental conditions for vector breeding, gaps in surveillance and diagnostic capacity, and increased human mobility and trade. Strengthening disease surveillance, enhancing vector surveillance and control, and improving public health preparedness are essential to mitigate the risk of further transmission. Prior to 2025, current or previous autochthonous transmission of CHIKV has been reported from 119 countries and territories. A total of ",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON581",
+   "published": "2025-10-03T11:25:30+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "chikungunya",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "e8af7db3cf3c4185",
+   "title": "Nipah virus infection - Bangladesh",
+   "summary": "Between 1 January and 29 August 2025, the International Health Regulations National Focal Point (IHR NFP) for Bangladesh notified WHO of four confirmed fatal Nipah virus (NiV) infection cases, temporally unrelated, reported from four different districts across three separated geographical divisions (Barisal, Dhaka, and Rajshahi) in Bangladesh. NiV infection is a zoonotic disease transmitted to humans through infected animals (such as bats or pigs), or food contaminated with saliva, urine, and excreta of infected animals. It can also be transmitted directly from person to person through close contact with an infected person. Fruit bats or flying foxes (Pteropus species) are the natural hosts for the virus. Human NiV infection is an epidemic-prone disease that can cause severe disease in humans and animals, with a high mortality rate, and outbreaks primarily occurring in South and South-East Asia. Since the first recognized outbreak in Bangladesh in 2001, human infections have been detected almost every year. To date, Bangladesh has documented 347 NiV cases through its Nipah surveillance system established to detect and respond to outbreaks promptly, with a case fatality rate of 71.7% There are currently no specific drugs or vaccines for NiV infection; intensive supportive care is recommended to treat severe respiratory and neurologic complications. Public health efforts should focus on raising awareness of risk factors, promoting preventive measures to reduce exposure to the v",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON582",
+   "published": "2025-09-18T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "nipah",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -649,6 +1006,23 @@
    ]
   },
   {
+   "id": "6b52fe45467a41c7",
+   "title": "Nipah Virus Infection - India",
+   "summary": "Between 17 May and 12 July 2025, the Information and Public Relations Department, Government of Kerala informed through a series of official press releases about four confirmed cases, including two deaths, due to Nipah virus (NiV) infection in two districts of Kerala State. NiV infection is a bat-borne disease transmitted to humans through infected animals (such as bats or pigs), contaminated food or, less commonly, through close contact with infected individuals. Since 1998 NiV outbreaks have been reported in Bangladesh, India, Malaysia, the Philippines, and Singapore. In India, NiV infections have occurred multiple times since 2001 with outbreaks in West Bengal State in 2001 and 2007, and in Kerala State regularly since 2018. Since 2018, Kerala has reported a total of nine NiV outbreaks. While the state has a strong healthcare system and improved infection control measures since 2023, it is advisable to maintain strong preparedness and surveillance efforts while ensuring continued care for patients. At the same time, States that may be at risk should be encouraged to continue strengthen their detection systems and response capacities. With no licensed vaccine or treatment available, public health efforts should focus on raising awareness of risk factors and promoting preventive measures to reduce exposure to the virus, and on early case detection supported by adequate intensive supportive care. Currently, the risk of international disease spread is considered low. There is ",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON577",
+   "published": "2025-08-06T10:48:42+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "nipah",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "a973ae71682d674c",
    "title": "Rabies - Timor-Leste",
    "summary": "On 17 May 2025, the Timor-Leste government reported to the World Health Organization (WHO) a fatal human case of rabies from Ermera Municipality. Between May and mid-June 2025, Timor-Leste confirmed four human rabies deaths in the municipalities of Bobonaro (n=2), Ermera (n=1) and Oecusse (n=1). All cases involved individuals exposed to dogs' bites months prior to symptom onset, with rabies virus confirmed via Reverse Transcription Polymerase Chain Reaction (RT-PCR) testing. Since March 2024, a total of 106 animal rabies cases—mostly in dogs—have been reported, and over 1400 dog bites or scratches have occurred, with a total of six fatalities. Access to and completion of post-exposure prophylaxis remains limited. The spread of rabies into non-border areas like Ermera signals a growing public health concern. The public health response is ongoing and includes vaccination of dogs, risk communication, training of healthcare workers on Post-Exposure Prophylaxis (PEP) and case management, active surveillance, and ensuring the availability of rabies vaccines and human rabies immunoglobulin. Based on the current available information, the WHO assesses the risk posed by this event as high at the national level, moderate at the regional level, and low at the global level.",
@@ -700,6 +1074,23 @@
    ]
   },
   {
+   "id": "0a14a5e7a21c7949",
+   "title": "Anthrax – Thailand",
+   "summary": "In early May 2025, the International Health Regulations National Focal Point (IHR NFP) for Thailand notified WHO of four cases of cutaneous anthrax. One of the affected individuals died as a result of disease complications, while the remaining three cases were hospitalized and received appropriate medical care. All reported cases had direct contact with cattle suspected to be infected with anthrax. A rapid field investigation and response was conducted by the national health authorities. All potentially exposed individuals were identified, and all high-risk contacts received post-exposure prophylaxis. On 28 May, an additional case was announced who was associated with the slaughtering of cattle. Disease control measures, including animal quarantine, and vaccination campaign targeting cattle withing five km radius, public awareness campaigns, and enhanced surveillance, were implemented in the affected area. Anthrax is a life-threatening zoonotic disease caused by the spore-forming bacterium Bacillus anthracis. Humans can get anthrax from infected animals or contaminated animal products. It generally does not spread between people. Currently, due to the robust public health measures implemented by Thailand, the risk of international disease spread through animal movement remains low.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON573",
+   "published": "2025-05-29T16:05:07+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "anthrax",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "063009f48fcfc2e9",
    "title": "COVID-19 - Global Situation",
    "summary": "Since mid-February 2025, according to data available from sentinel sites, global SARS-CoV-2 activity has been increasing, with the test positivity rate reaching 11%, levels that have not been observed since July 2024. This rise is primarily observed in countries in the Eastern Mediterranean, South-East Asia, and Western Pacific regions. Since early 2025, global SARS-CoV-2 variant trends have slightly shifted. Circulation of LP.8.1 has been declining, and reporting of NB.1.8.1, a Variant Under Monitoring (VUM), is increasing, reaching 10.7% of global sequences reported as of mid-May. Recent increases in SARS-CoV-2 activity are broadly consistent with levels observed during the same period last year, however, there still lacks a clear seasonality in SARS-CoV-2 circulation, and surveillance is limited. Continued monitoring is essential. WHO advises all Member States to continue applying a risk-based, integrated approach to managing COVID-19 as outlined in the Director-General’s Standing Recommendations [1]. As part of comprehensive COVID-19 control programmes, vaccination remains a key intervention for preventing severe disease and death from COVID-19, particularly among at risk groups.",
@@ -727,6 +1118,23 @@
    "org": "WHO",
    "official": true,
    "disease": "polio",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "69e79d3cc0d6c658",
+   "title": "Yellow fever - Region of the Americas",
+   "summary": "From 29 December 2024 and as of 26 April 2025 (with data for Ecuador updated as of 2 May 2025), a total of 212 confirmed human cases of yellow fever, including 85 deaths, have been reported to WHO by five countries in the Region of the Americas (case fatality rate (CFR) 40%). The cases have been reported in the Plurinational State of Bolivia, Brazil, Colombia, Ecuador and Peru. The 212 confirmed yellow fever cases reported so far in 2025 represent a threefold increase compared to the 61 confirmed cases reported in 2024. WHO is supporting affected countries in implementing coordinated actions to respond to the yellow fever cases and outbreaks. This includes enhancing preventive measures, strengthening surveillance and case management, improving risk communication and community engagement, and implementing immunization activities. The current yellow fever situation in the Americas is driven by increased sylvatic transmission cycles. The occurrence of yellow fever cases outside of the Amazon basin, combined with high fatality, varying vaccination coverage across affected countries, and limited vaccine supply, contributes to the overall classification of yellow fever risk in the Region of the Americas, especially in endemic countries, as high. WHO emphasizes the importance of active surveillance, timely laboratory testing, cross-border coordination, and information sharing. Vaccination remains the primary means for the prevention and control of yellow fever. WHO continues to supp",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON570",
+   "published": "2025-05-16T18:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "yellow_fever",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -1017,6 +1425,40 @@
    "official": true,
    "disease": "vhf",
    "country": "LY",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "384352e3edfc48ea",
+   "title": "Top donor Germany signs major contribution to WHO for health emergencies; signs host agreement for WHO pandemic hub",
+   "summary": "Germany deepened its longstanding engagement with WHO on Thursday with two new agreements: one to contribute a further &euro;40 million to WHO&rsquo;s work in health emergencies, and a second to host the Berlin-based WHO Hub for Pandemic and Epidemic Intelligence. With the new contribution, Germany has provided &euro;53.5 million so far this year to support WHO&rsquo;s response to more than 50 active health emergencies. &ldquo;This is important because climate disasters, conflicts, and the ongoing pandemic demand urgent action,&rdquo; said Susanne Baumann, State Secretary of the Federal Foreign Office for Germany (GFFO), whose delegation met with WHO Director-General Dr Tedros Adhanom Ghebreyesus. &ldquo;Our support is flexible and vital for saving lives around the globe.&rdquo; Through the GFFO, the country provides substantial funding to humanitarian crises in Afghanistan, Libya, Ukraine, Yemen, and to Ebola responses in Africa. Germany is an all-time top donor to WHO&rsquo;s Contingency Fund for Emergencies (CFE), having contributed &euro;115 million since the CFE&rsquo;s inception in 2015. The contributions have made a significant impact on the health of people caught up in humanitarian crises; this year alone, CFE funding allowed WHO to bring immediate, lifesaving support to victims of floods in Libya, conflict in Sudan, cholera and diphtheria outbreaks, and earthquakes in T&uuml;rkiye and Syria. Of the new &euro;40 million contribution, &euro;20 million goes to the WHO ",
+   "url": "https://www.who.int/news/item/28-09-2023-top-donor-germany-signs-major-contribution-to-who-for-health-emergencies--signs-host-agreement-for-who-pandemic-hub",
+   "published": "2023-09-28T17:03:41+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "diphtheria",
+   "country": "LY",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "384352e3edfc48ea",
+   "title": "Top donor Germany signs major contribution to WHO for health emergencies; signs host agreement for WHO pandemic hub",
+   "summary": "Germany deepened its longstanding engagement with WHO on Thursday with two new agreements: one to contribute a further &euro;40 million to WHO&rsquo;s work in health emergencies, and a second to host the Berlin-based WHO Hub for Pandemic and Epidemic Intelligence. With the new contribution, Germany has provided &euro;53.5 million so far this year to support WHO&rsquo;s response to more than 50 active health emergencies. &ldquo;This is important because climate disasters, conflicts, and the ongoing pandemic demand urgent action,&rdquo; said Susanne Baumann, State Secretary of the Federal Foreign Office for Germany (GFFO), whose delegation met with WHO Director-General Dr Tedros Adhanom Ghebreyesus. &ldquo;Our support is flexible and vital for saving lives around the globe.&rdquo; Through the GFFO, the country provides substantial funding to humanitarian crises in Afghanistan, Libya, Ukraine, Yemen, and to Ebola responses in Africa. Germany is an all-time top donor to WHO&rsquo;s Contingency Fund for Emergencies (CFE), having contributed &euro;115 million since the CFE&rsquo;s inception in 2015. The contributions have made a significant impact on the health of people caught up in humanitarian crises; this year alone, CFE funding allowed WHO to bring immediate, lifesaving support to victims of floods in Libya, conflict in Sudan, cholera and diphtheria outbreaks, and earthquakes in T&uuml;rkiye and Syria. Of the new &euro;40 million contribution, &euro;20 million goes to the WHO ",
+   "url": "https://www.who.int/news/item/28-09-2023-top-donor-germany-signs-major-contribution-to-who-for-health-emergencies--signs-host-agreement-for-who-pandemic-hub",
+   "published": "2023-09-28T17:03:41+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "diphtheria",
+   "country": "SD",
    "status": "verified",
    "confirmed_by": [
     "WHO"
@@ -1526,6 +1968,23 @@
    "org": "WHO",
    "official": true,
    "disease": "polio",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "8c935c8c4283253c",
+   "title": "A tribute to Dr LEE Jong-wook, Director-General of WHO",
+   "summary": "Dr LEE Jong-wook, Director-General of the World Health Organization, died this morning following a short illness.&nbsp; Dr Lee, a national of the Republic of Korea, was a world leader in public health. He tackled every challenge with passion, dedication and professionalism. He was unfalteringly committed to WHO's mission, to help all people to attain \"the highest possible level of health.\"&nbsp; Throughout his 23-year career at WHO, he made a difference in every programme he managed - whether by leading the charge to eradicate polio from the Western Pacific, or to launch a cutting edge Global Drug Facility so people would have access to tuberculosis medicines. \" The world has lost a great man today. LEE Jong-wook was a man of conviction and passion. He was a strong voice for the right of every man, woman and child to health prevention and care, and advocated on behalf of the very poorest people,\" said United Nations Secretary-General Kofi Annan. \"He tackled the most difficult problems head on, while upholding the highest principles. He will be very gravely missed, but history will mark LEE Jong-wook's many contributions to public health.\" While personally a modest man, Dr LEE was a bold leader. When he became Director-General, he took a risk and announced that WHO would work with partners to achieve \"3 by 5\" - to ensure three million people with HIV/AIDS would have access to the medicines they needed by the end of 2005. \"3 by 5\" transformed the way leaders thought about AIDS ",
+   "url": "https://www.who.int/news/item/22-05-2006-a-tribute-to-dr-lee-jong-wook-director-general-of-who",
+   "published": "2020-10-15T14:11:30+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "tb",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -2094,6 +2553,23 @@
    ]
   },
   {
+   "id": "6ad0da36ec0df0f4",
+   "title": "At least 80 million children under one at risk of diseases such as diphtheria, measles and polio as COVID-19 disrupts routine vaccination efforts, warn Gavi, WHO and UNICEF",
+   "summary": "COVID 19 is disrupting life-saving immunization services around the world, putting millions of children &ndash; in rich and poor countries alike &ndash; at risk of diseases like diphtheria, measles and polio. This stark warning comes from the World Health Organization, UNICEF and Gavi, the Vaccine Alliance ahead of the Global Vaccine Summit on 4 June, at which world leaders will come together to help maintain immunization programmes and mitigate the impact of the pandemic in lower-income countries. According to data collected by the World Health Organization, UNICEF, Gavi and the Sabin Vaccine Institute, provision of routine immunization services is substantially hindered in at least 68 countries and is likely to affect approximately 80 million children under the age of 1 living in these countries. Since March 2020, routine childhood immunization services have been disrupted on a global scale that may be unprecedented since the inception of expanded programs on immunization (EPI) in the 1970s. More than half (53%) of the 129 countries where data were available reported moderate-to-severe disruptions, or a total suspension of vaccination services during March-April 2020.&nbsp; &ldquo;Immunization is one of the most powerful and fundamental disease prevention tools in the history of public health,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;Disruption to immunization programmes from the COVID-19 pandemic threatens to unwind decades of progress agains",
+   "url": "https://www.who.int/news/item/22-05-2020-at-least-80-million-children-under-one-at-risk-of-diseases-such-as-diphtheria-measles-and-polio-as-covid-19-disrupts-routine-vaccination-efforts-warn-gavi-who-and-unicef",
+   "published": "2020-05-22T14:59:57+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "diphtheria",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "a8a34ebe278e0b7e",
    "title": "Smithsonian Science Education Center With Support of the World Health Organization Launches New COVID-19 Guide for Youth",
    "summary": "The Smithsonian Science Education Center, in collaboration with the World Health Organization&nbsp;(WHO) and the InterAcademy Partnership (IAP)&mdash;a partnership of 140 national academies of science, engineering and medicine&mdash;has developed &ldquo;COVID-19! How can I protect myself and others?,&rdquo; a new rapid-response guide for youth ages 8&ndash;17. The guide, which is based on the UN Sustainable Development Goals, aims to help young people understand the science and social science of COVID-19 as well as help them take actions to keep themselves, their families and communities safe. Through a set of seven cohesive student-led tasks, participants engage in the activities to answer questions previously defined by their peers. The questions explore the impact of COVID-19 on the world, how to practice hand and respiratory hygiene and physical distancing, and how to research more information about COVID-19. The final task teaches youth how they can take action on the new scientific knowledge they learn to improve their health and the health of others. Each task is designed to be completed at home. The guide includes updated research, activities, quotes from scientists and frontline public health officials, and physical and emotional safety tips on COVID-19. It also integrates inquiry-based science education with social and emotional learning and civic engagement. &ldquo;We are immensely grateful to WHO, the IAP, our colleagues at the Smithsonian and other senior project",
@@ -2434,6 +2910,23 @@
    ]
   },
   {
+   "id": "e930b3143b5718ad",
+   "title": "WHO releases guidelines to help countries maintain essential health services during the COVID-19 pandemic",
+   "summary": "The COVID-19 pandemic is straining health systems worldwide. The rapidly increasing demand on health facilities and health care workers threatens to leave some health systems overstretched and unable to operate effectively. Previous outbreaks have demonstrated that when health systems are overwhelmed, mortality from vaccine-preventable and other treatable conditions can also increase dramatically. During the 2014-2015 Ebola outbreak, the increased number of deaths caused by measles, malaria, HIV/AIDS, and tuberculosis attributable to health system failures exceeded deaths from Ebola [1,2] .&nbsp; &ldquo;The best defense against any outbreak is a strong health system,&rdquo; stressed WHO Director-General Tedros Adhanom Ghebreyesus. &ldquo;COVID-19 is revealing how fragile many of the world&rsquo;s health systems and services are, forcing countries to make difficult choices on how to best meet the needs of their people.&rdquo; To help countries navigate through these challenges, the World Health Organization (WHO) has updated operational planning guidelines in balancing the demands of responding directly to COVID-19 while maintaining essential health service delivery, and mitigating the risk of system collapse. This includes a set of targeted immediate actions that countries should consider at national, regional, and local level to reorganize and maintain access to high-quality essential health services for all. Countries should identify essential services that will be prioriti",
+   "url": "https://www.who.int/news/item/30-03-2020-who-releases-guidelines-to-help-countries-maintain-essential-health-services-during-the-covid-19-pandemic",
+   "published": "2020-03-30T15:17:53+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "tb",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "e7327222f6adf76d",
    "title": "Iraq needs $325 million for emergency health care, says World Health Organization",
    "summary": "The people of Iraq are in urgent need of better health care and their situation is deteriorating by the day. The UN has today appealed for at least $325 million in emergency funds to meet the immediate health, nutrition, water and sanitation needs of the most vulnerable populations. Out of this amount, the World Health Organization urgently appeals for $185 million. This request is part of the wider United Nations humanitarian appeal for $2.1 billion to provide assistance to the people of Iraq over the next six months. This appeal is being launched jointly by all the UN humanitarian agencies in New York and Geneva. WHO is already working in Iraq to provide badly needed medical assistance. The health status of the Iraqi people has been seriously affected by more than two decades of war and economic sanctions. Child death rates today are more than twice as high as they were in 1990: one in eight children dies before the age of five, one in three children is malnourished and one in four begins life as an underweight baby. \"Overall, the health of people in Iraq is poor and likely to get worse,\" said Dr Gro Harlem Brundtland, Director General of the World Health Organization. \"This appeal is not an optional extra. It is the only way of stabilising the situation, and indeed improving it.\" The three biggest child killers in Iraq are acute respiratory infection, diarrhoeal diseases and measles. Almost half of the country's 24.5 million people are children whose future depends on a ma",
@@ -2468,6 +2961,23 @@
    ]
   },
   {
+   "id": "848aa8b02a7972cc",
+   "title": "Statue commemorates smallpox eradication",
+   "summary": "A statue commemorating the 30th anniversary of the eradication of smallpox is being unveiled today in front of the World Health Organization (WHO) headquarters by the Director-General of the World Health Organization, Dr Margaret Chan. Prior to eradication, smallpox epidemics were common in many countries, leaving death, blindness and disfigurement behind. The eradication of this devastating, infectious disease has been called one of the greatest achievements in public health. A reminder of the value of smallpox eradication \"The eradication of smallpox shows that with strong mutual resolve, teamwork and an international spirit of solidarity, ambitious global public health goals can be attained,\" says Dr Margaret Chan, Director-General, WHO. \"The statue stands as a reminder of the significance of such an achievement, and shows the power of international health cooperation to do great and lasting good.\" The cast bronze and stone statue depicts four persons, one of whom is a girl about to be vaccinated in the arm. The statue pays homage to all those who were involved in the eradication drive, including governments, health care workers, donor agencies, non-governmental organizations, commercial firms, and village leaders who supported the vaccination of their residents and provided food and shelter on many occasions to vaccination teams. Plaques surrounding the statue, written in the six official languages of WHO, state that this victory was made possible by all nations working t",
+   "url": "https://www.who.int/news/item/17-05-2010-statue-commemorates-smallpox-eradication",
+   "published": "2020-03-26T12:08:56+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "smallpox",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "58741e59e5277d30",
    "title": "Ensuring continuity of TB services during the COVID-19 pandemic",
    "summary": "GENEVA &nbsp;As the world comes together to tackle the COVID-19 pandemic, it is important to ensure that essential health services and operations are continued to protect the lives of people with TB and other diseases or health conditions. Health services, including national programmes to combat TB, need to be actively engaged in ensuring an effective and rapid response to COVID-19 while ensuring that TB services are maintained. &nbsp; In the lead- up to World TB Day, Dr Tedros Adhanom Ghebreyesus, WHO Director-General emphasized in a news release, &ldquo;COVID-19 is highlighting just how vulnerable people with lung diseases and weakened immune systems can be. The world committed to end TB by 2030; improving prevention is key to making this happen.&rdquo; &nbsp; The World Health Organization (WHO) Global TB Programme, along with WHO regional and country offices, has developed an information note , in collaboration with stakeholders. This note is intended to assist national TB programmes and health personnel to urgently maintain continuity of essential services for people affected with TB during the COVID-19 pandemic, driven by innovative people-centred approaches, as well as maximizing joint support to tackle both diseases. &nbsp; &ldquo;We stand in solidarity with those affected by COVID-19 and those at the frontlines of the fight to combat the disease,&rdquo; said Dr Tereza Kasaeva, Director of the WHO Global TB Programme. &ldquo;We need to act with urgency to ensure that i",
@@ -2495,6 +3005,40 @@
    "org": "WHO",
    "official": true,
    "disease": "malaria",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "cf89623f4c8abd23",
+   "title": "Hope for 11 million children facing death from illnesses",
+   "summary": "The World Health Assembly has given a powerful endorsement to new strategic directions for child and adolescent health. The strategy brings together crucial elements to reduce childhood deaths and long term disability. It also aims to reduce the 1.4 million adolescent deaths each year. Last year, the number of children and adolescents who died was double the total number of adult deaths from AIDS, tuberculosis and malaria combined. In 2000 10.8 million children under five years old died, over half of them from just five preventable communicable diseases and malnutrition. 99% of these deaths are in developing countries. &ldquo;This strong support and reinforced commitment by the Member States to strengthen child and adolescent health comes at a crucial time in our efforts to save the lives of millions of children&ldquo; says Dr Tomris Turmen, Executive Director of Family and Community Health at WHO. &ldquo;In recent years there has been a decrease in funding for child heath. This must be reversed. This expression of political will must be backed by more money and more human resources to accelerate development and scaling-up of effective child and adolescent health interventions at both global and country levels.\" In addition to highlighting the urgent need to reduce child mortality the strategy also focuses on adolescents. There are 1.2 billion adolescents world wide who face specific health threats such as HIV/AIDS, tobacco and alcohol use, depression, suicide and violence. T",
+   "url": "https://www.who.int/news/item/26-05-2003-efdef5c2-0e18-435f-a4d3-37757f7b178f",
+   "published": "2020-03-19T09:17:06+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "tb",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "d7a70cc31475c87f",
+   "title": "SARS outbreak contained worldwide",
+   "summary": "Today, the World Health Organization is removing Taiwan, China, from the list of areas with recent local transmission of severe acute respiratory syndrome (SARS). Taiwan is the last area to be removed from the list. It has been 20 days, or two consecutive 10-day incubation periods, since the last case on June 15. Based on country surveillance reports, the human chains of SARS virus transmission appear to have been broken everywhere in the world. However, due to the many questions remaining about SARS and the possibility that cases may have slipped through the surveillance net, WHO warns that continued global vigilance for SARS is crucial for the foreseeable future. The world is not yet SARS-free. &ldquo;We do not mark the end of SARS today, but we observe a milestone: the global SARS outbreak has been contained,&rdquo; said Dr. Gro Harlem Brundtland, Director-General of the World Health Organization. &ldquo;At this moment, we should all pause and give thanks to scientists, public health and hospital workers who took risks in the face of a new and unknown disease. And, we must remember those frontline workers who died of SARS. Their daily dedication, courage and vigilance averted a global catastrophe.&rdquo; From the Guangdong province in China, the SARS virus travelled in humans to 30 countries and areas of the world but it became deeply embedded in just six. In these areas, the pattern of transmission was the same: An imported hospitalized SARS case infected health care work",
+   "url": "https://www.who.int/news/item/05-07-2003-sars-outbreak-contained-worldwide",
+   "published": "2020-03-18T07:47:43+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "unknown",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -2740,6 +3284,23 @@
    ]
   },
   {
+   "id": "88c7a7f70be5b7d4",
+   "title": "WHO moves to improve access to lifesaving medicines for hepatitis C, drug-resistant TB and cancers",
+   "summary": "&nbsp; WHO today published the new edition of its Model List of Essential Medicines which includes ground-breaking new treatments for hepatitis C, a variety of cancers (including breast cancer and leukaemia) and multi-drug resistant tuberculosis (TB), among others. The move opens the way to improve access to innovative medicines that show clear clinical benefits and could have enormous public health impact globally. &ldquo;When new effective medicines emerge to safely treat serious and widespread diseases, it is vital to ensure that everyone who needs them can obtain them,&rdquo; said WHO Director-General, Dr Margaret Chan. &ldquo;Placing them on the WHO Essential Medicines List is a first step in that direction.&rdquo; Increasingly, governments and institutions around the world are using the WHO list to guide the development of their own essential medicines lists, because they know that every medicine listed has been vetted for efficacy, safety and quality, and that there has been a comparative cost-effectiveness evaluation with other alternatives in the same class of medicines. The list is updated every two years by an Expert Committee, made up of recognized specialists from academia, research and the medical and pharmaceutical professions. This year, the Committee underscored the urgent need to take action to promote equitable access and use of several new highly effective medicines, some of which are currently too costly even for high-income countries. New medicines to tr",
+   "url": "https://www.who.int/news/item/08-05-2015-who-moves-to-improve-access-to-lifesaving-medicines-for-hepatitis-c-drug-resistant-tb-and-cancers",
+   "published": "2018-06-02T02:21:00+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "tb",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "779ab731860c7548",
    "title": "Ebola vaccine efficacy trial ready to launch in Guinea",
    "summary": "Based on promising data from initial clinical trials in late 2014, WHO with the Health Ministry of Guinea, M&eacute;decins Sans Fronti&egrave;res (MSF), Epicentre and The Norwegian Institute of Public Health (NIPH), will launch a Phase III trial in Guinea on 7 March to test the VSV-EBOV vaccine for efficacy and effectiveness to prevent Ebola. The vaccine was developed by the Public Health Agency of Canada. A second vaccine will be tested in a sequential study, as supply becomes available. &ldquo;We have worked hard to reach this point,&rdquo; said WHO Director-General, Dr Margaret Chan. &ldquo;There has been massive mobilization on the part of the affected countries and all partners to accelerate the development and availability of proven interventions. If a vaccine is found effective, it will be the first preventive tool against Ebola in history.&rdquo; Vaccination will take place in areas of Basse Guin&eacute;e, the region that currently has the highest number of cases in the country. The trial strategy adopted will be &ldquo;ring vaccination&rdquo;, based on the approach used to eradicate smallpox in the 1970s. This involves the identification of a newly diagnosed Ebola case &ndash; the &ldquo;index case&rdquo; &ndash; and the tracing of all his/her contacts. The contacts are vaccinated if they give their consent. &ldquo;The Ebola epidemic shows signs of receding but we cannot let down our guard until we reach zero cases,&rdquo; said Assistant Director-General Marie-Paule ",
@@ -2750,6 +3311,23 @@
    "org": "WHO",
    "official": true,
    "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "779ab731860c7548",
+   "title": "Ebola vaccine efficacy trial ready to launch in Guinea",
+   "summary": "Based on promising data from initial clinical trials in late 2014, WHO with the Health Ministry of Guinea, M&eacute;decins Sans Fronti&egrave;res (MSF), Epicentre and The Norwegian Institute of Public Health (NIPH), will launch a Phase III trial in Guinea on 7 March to test the VSV-EBOV vaccine for efficacy and effectiveness to prevent Ebola. The vaccine was developed by the Public Health Agency of Canada. A second vaccine will be tested in a sequential study, as supply becomes available. &ldquo;We have worked hard to reach this point,&rdquo; said WHO Director-General, Dr Margaret Chan. &ldquo;There has been massive mobilization on the part of the affected countries and all partners to accelerate the development and availability of proven interventions. If a vaccine is found effective, it will be the first preventive tool against Ebola in history.&rdquo; Vaccination will take place in areas of Basse Guin&eacute;e, the region that currently has the highest number of cases in the country. The trial strategy adopted will be &ldquo;ring vaccination&rdquo;, based on the approach used to eradicate smallpox in the 1970s. This involves the identification of a newly diagnosed Ebola case &ndash; the &ldquo;index case&rdquo; &ndash; and the tracing of all his/her contacts. The contacts are vaccinated if they give their consent. &ldquo;The Ebola epidemic shows signs of receding but we cannot let down our guard until we reach zero cases,&rdquo; said Assistant Director-General Marie-Paule ",
+   "url": "https://www.who.int/news/item/05-03-2015-ebola-vaccine-efficacy-trial-ready-to-launch-in-guinea",
+   "published": "2018-06-02T02:20:17+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "smallpox",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -2808,6 +3386,23 @@
    ]
   },
   {
+   "id": "ef342d90b4eea9b4",
+   "title": "WHO encourages countries to act now to reduce deaths from viral hepatitis",
+   "summary": "Ahead of World Hepatitis Day, 28 July 2016, WHO is urging countries to take rapid action to improve knowledge about the disease, and to increase access to testing and treatment services. Today, only 1 in 20 people with viral hepatitis know they have it. And just 1 in 100 with the disease is being treated. \"The world has ignored hepatitis at its peril,&rdquo; said Dr Margaret Chan, WHO Director-General. &ldquo;It is time to mobilize a global response to hepatitis on the scale similar to that generated to fight other communicable diseases like HIV/AIDS and tuberculosis.&ldquo; Around the world 400 million people are infected with hepatitis B and C, more than 10 times the number of people living with HIV. An estimated 1.45 million people died of the disease in 2013 &ndash; up from less than a million in 1990. In May 2016, at the World Health Assembly, 194 governments adopted the first-ever Global Health Sector Strategy on viral hepatitis and agreed to the first-ever global targets. The strategy includes a target to treat 8 million people for hepatitis B or C by 2020. The longer term aim is to reduce new viral hepatitis infections by 90% and to reduce the number of deaths due to viral hepatitis by 65% by 2030 from 2016 figures. The strategy is ambitious, but the tools to achieve the targets are already in hand. An effective vaccine and treatment for hepatitis B exists. There is no vaccine for hepatitis C but there has been dramatic progress on treatment for the disease in the pas",
+   "url": "https://www.who.int/news/item/20-07-2016-who-encourages-countries-to-act-now-to-reduce-deaths-from-viral-hepatitis",
+   "published": "2018-06-02T02:18:56+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "tb",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "4217a6b2d158b3e9",
    "title": "Cholera update in Yemen",
    "summary": "The Ministry of Public Health and Population in Yemen has confirmed additional cases of cholera and cholera-related deaths in the country. As of today, a total of 644 suspected cases of cholera, including 3 deaths, have been reported. 31 cases have been laboratory-confirmed so far. Among the deaths, 2 occurred in Sanaa and 1 death occurred in Aden governorate. Read the news update by Regional Office for the Eastern Mediterranean &nbsp;",
@@ -2818,6 +3413,23 @@
    "org": "WHO",
    "official": true,
    "disease": "cholera",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "3d857fc3921c0b62",
+   "title": "Dr Halfdan T. Mahler, WHO’s third Director-General, dies at 93",
+   "summary": "WHO is saddened by the death of Dr Halfdan T. Mahler on 14 December 2016. Dr Mahler served as Director-General of WHO from 1973-1988. As WHO's third Director-General, Dr Mahler will be remembered as a champion for primary care. He played a key leadership role shaping the 1978 Alma Ata Declaration that defined the Health for All by the Year 2000 strategy. Under his leadership, WHO and UNICEF jointly produced the report, Alternative Approaches to Meeting Basic Health Needs in Developing Countries , which examined successful primary health care in various countries. Dr Mahler began his career at WHO in 1951 as senior officer for the National Tuberculosis Programme in India. Among his other roles in the Organization were Chief of the Tuberculosis Unit in Geneva, Director Project Systems Analysis and Assistant Director-General. After retiring from WHO in 1988, Dr Mahler directed the International Planned Parenthood Federation until 1995. A frequent visitor to WHO, even after retirement, Dr Mahler maintained his close connection with staff, and cheered the Organization&rsquo;s progress as it expanded its work in primary care. He will be deeply missed by the global health community.",
+   "url": "https://www.who.int/news/item/15-12-2016-dr-halfdan-t-mahler-who-s-third-director-general-dies-at-93",
+   "published": "2018-06-02T02:10:08+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "tb",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
