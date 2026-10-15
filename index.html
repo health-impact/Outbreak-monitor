@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>منظومة الإنذار المبكر للأوبئة | Libya EWS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap">
+<style>
+:root{--bg:#f2f6f7;--surface:#fff;--ink:#12313a;--muted:#5b7279;--line:#d5e0e3;--accent:#0e7c86;
+--monitor:#2f8f5b;--alert:#c98f0a;--preparedness:#dd6b1c;--emergency:#c62f3b;
+font-family:"IBM Plex Sans Arabic",Tahoma,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1a1f;--surface:#15262c;--ink:#e5f0f2;--muted:#93aab0;--line:#264048;--accent:#4cc3cf;
+--monitor:#4cc388;--alert:#e5b53d;--preparedness:#f08a45;--emergency:#f0606c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:1100px;margin:0 auto;padding:16px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--line)}
+h1{font-size:1.15rem;margin:0}
+.meta{color:var(--muted);font-size:.85rem}
+button{font:inherit;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:6px 14px;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.note{margin:12px 0;padding:10px 12px;border-inline-start:4px solid var(--alert);background:var(--surface);font-size:.9rem}
+.hero{padding:22px 0 10px}
+.hero .lbl{color:var(--muted);font-size:.95rem}
+.score{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.score b{font-size:4rem;line-height:1;font-weight:700}
+.score span{font-size:1.5rem;font-weight:700}
+.bar{position:relative;display:flex;height:12px;margin:14px 0 6px;border-radius:6px;overflow:hidden;direction:ltr}
+.bar i{flex:1}.bar i:nth-child(1){background:var(--monitor)}.bar i:nth-child(2){background:var(--alert)}.bar i:nth-child(3){background:var(--preparedness)}.bar i:nth-child(4){background:var(--emergency)}
+.mark{position:absolute;top:-4px;width:4px;height:20px;background:var(--ink);border-radius:2px;transform:translateX(-2px)}
+.ticks{display:flex;justify-content:space-between;color:var(--muted);font-size:.75rem;direction:ltr}
+.driver{margin-top:8px}
+.grid{display:grid;gap:22px;margin-top:22px}
+@media (min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+h2{font-size:1.05rem;margin:0 0 4px}
+.hint{color:var(--muted);font-size:.8rem;margin:0 0 10px}
+.map{direction:ltr;display:grid;gap:6px;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(4,76px);
+grid-template-areas:"IT IT MT MT" "DZ TN LY EG" "DZ NE LY SD" "GLOBAL NE TD SD"}
+.cell{border:2px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--surface);text-align:center;display:flex;flex-direction:column;justify-content:center;font-size:.8rem;cursor:pointer;color:var(--ink)}
+.cell b{font-size:1.25rem}
+.cell[data-l=monitor]{border-color:var(--monitor)}.cell[data-l=alert]{border-color:var(--alert);background:color-mix(in srgb,var(--alert) 14%,var(--surface))}
+.cell[data-l=preparedness]{border-color:var(--preparedness);background:color-mix(in srgb,var(--preparedness) 18%,var(--surface))}
+.cell[data-l=emergency]{border-color:var(--emergency);background:color-mix(in srgb,var(--emergency) 22%,var(--surface))}
+.cell.sel{outline:3px solid var(--accent)}
+#detail{margin-top:10px;font-size:.9rem;min-height:2.4em}
+ul{list-style:none;margin:0;padding:0}
+li{padding:10px 0;border-bottom:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.pill{font-weight:700;padding:1px 10px;border-radius:12px;color:#fff;font-size:.85rem;white-space:nowrap}
+.pill[data-l=monitor]{background:var(--monitor)}.pill[data-l=alert]{background:var(--alert)}.pill[data-l=preparedness]{background:var(--preparedness)}.pill[data-l=emergency]{background:var(--emergency)}
+a{color:var(--accent)}
+.sub{color:var(--muted);font-size:.8rem}
+footer{margin-top:30px;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}
+@media (prefers-reduced-motion:no-preference){.mark{transition:left .6s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+ <div><h1 id="t-title"></h1><div class="meta" id="updated"></div></div>
+ <button id="lang" type="button"></button>
+</header>
+<div id="prov" class="note" hidden></div>
+<main>
+<section class="hero" aria-live="polite">
+ <div class="lbl" id="t-head"></div>
+ <div class="score"><b id="score">–</b><span id="level"></span></div>
+ <div class="bar"><i></i><i></i><i></i><i></i><div class="mark" id="mark" style="left:0"></div></div>
+ <div class="ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+ <div class="driver" id="driver"></div>
+</section>
+<div class="grid">
+ <section><h2 id="t-map"></h2><p class="hint" id="t-maphint"></p><div class="map" id="map"></div><div id="detail"></div></section>
+ <section><h2 id="t-top"></h2><p class="hint" id="t-tophint"></p><ul id="top"></ul></section>
+ <section><h2 id="t-glob"></h2><p class="hint" id="globhint"></p><ul id="glob"></ul></section>
+ <section><h2 id="t-ev"></h2><p class="hint" id="t-evhint"></p><ul id="events"></ul></section>
+</div>
+</main>
+<footer id="foot"></footer>
+</div>
+<script>
+const LV={monitor:['مراقبة','Monitoring'],alert:['تنبيه','Alert'],preparedness:['تأهب','Preparedness'],emergency:['طوارئ','Emergency']};
+const CT={LY:['ليبيا','Libya'],TN:['تونس','Tunisia'],DZ:['الجزائر','Algeria'],EG:['مصر','Egypt'],SD:['السودان','Sudan'],TD:['تشاد','Chad'],NE:['النيجر','Niger'],IT:['إيطاليا','Italy'],MT:['مالطا','Malta'],GLOBAL:['باقي العالم','Rest of world']};
+const DS={cholera:['الكوليرا','Cholera'],measles:['الحصبة','Measles'],covid_flu:['كورونا / الإنفلونزا','COVID-19 / Influenza'],vhf:['الحمى النزفية','Haemorrhagic fever'],polio:['شلل الأطفال','Polio'],malaria:['الملاريا','Malaria'],dengue:['حمى الضنك','Dengue'],rvf:['حمى الوادي المتصدع','Rift Valley fever'],rabies:['داء الكلب','Rabies'],mpox:['جدري القردة','Mpox'],meningitis:['التهاب السحايا','Meningitis'],amr:['مقاومة المضادات','Antimicrobial resistance'],yellow_fever:['الحمى الصفراء','Yellow fever'],zika:['زيكا','Zika'],chikungunya:['شيكونغونيا','Chikungunya'],west_nile:['حمى غرب النيل','West Nile fever'],nipah:['فيروس نيباه','Nipah virus'],mers:['كورونا الشرق الأوسط','MERS'],plague:['الطاعون','Plague'],anthrax:['الجمرة الخبيثة','Anthrax'],smallpox:['الجدري','Smallpox'],typhoid:['التيفوئيد','Typhoid'],hepatitis:['التهاب الكبد A/E','Hepatitis A/E'],diphtheria:['الخناق','Diphtheria'],pertussis:['السعال الديكي','Pertussis'],tb:['السل','Tuberculosis'],leishmaniasis:['اللشمانيا','Leishmaniasis'],brucellosis:['الحمى المالطية','Brucellosis'],legionellosis:['داء الفيالقة','Legionellosis'],foodborne:['عدوى غذائية بكتيرية','Foodborne infection'],botulism:['التسمم الوشيقي','Botulism'],hantavirus:['هانتا فيروس','Hantavirus'],unknown:['مرض غير معروف','Unknown pathogen']};
+const T={ar:{title:'منظومة الإنذار المبكر للأوبئة — ليبيا',head:'مؤشر الخطر: ليبيا ودول الجوار',upd:'آخر تحديث',lang:'English',
+ prov:'الدرجات تقريبية: جداول التنقل والجاهزية لم تُعبّأ بعد.',none:'لا توجد أحداث موثقة عن ليبيا أو دول الجوار حالياً.',top:'أعلى المخاطر القريبة',
+ tophint:'أحداث موثقة خلال آخر 14 يوماً (ليبيا والجوار وإيطاليا ومالطا).',emptyTop:'لا توجد مخاطر قريبة مسجلة.',map:'خريطة المخاطر',maphint:'مخطط تقريبي للمواقع، اللون حسب أعلى درجة لكل دولة. اضغط دولة للتفاصيل.',
+ glob:'مراقبة عالمية',globhint:'أخبار موثقة لا تذكر دولة ضمن قائمة المراقبة. المؤشر شاملاً العالم:',emptyGlob:'لا توجد أخبار عالمية موثقة.',
+ ev:'آخر الأحداث الموثقة',evhint:'كل خبر منشور من مصدر رسمي أو بتأكيد مصدرين مستقلين.',emptyEv:'لا توجد أحداث.',driver:'الأعلى خطراً:',ev7:'أخبار آخر 7 أيام',score:'الدرجة',
+ foot:'أداة دعم قرار، والإعلان الرسمي للطوارئ من اختصاص الجهات الصحية. المصادر: WHO وECDC وAfrica CDC.',err:'تعذر تحميل البيانات. تأكد من وجود ملفي risk.json وevents.json في مجلد data.',noev:'لا أحداث موثقة'},
+en:{title:'Epidemic Early Warning System — Libya',head:'Risk index: Libya and neighbours',upd:'Last update',lang:'العربية',
+ prov:'Scores are provisional: mobility and readiness tables are not filled in yet.',none:'No verified events for Libya or its neighbours right now.',top:'Highest nearby risks',
+ tophint:'Verified events in the last 14 days (Libya, neighbours, Italy, Malta).',emptyTop:'No nearby risks recorded.',map:'Risk map',maphint:'Schematic layout. Colour follows each country\'s highest score. Tap a country for details.',
+ glob:'Global watch',globhint:'Verified news that names no monitored country. Index including the world:',emptyGlob:'No verified global news.',
+ ev:'Latest verified events',evhint:'Every item comes from an official source or two independent sources.',emptyEv:'No events.',driver:'Highest risk:',ev7:'items in last 7 days',score:'Score',
+ foot:'A decision-support tool. Declaring an emergency is up to the health authorities. Sources: WHO, ECDC, Africa CDC.',err:'Could not load data. Make sure risk.json and events.json exist in the data folder.',noev:'No verified events'}};
+let lang='ar',risk=null,evs=null,sel=null;
+try{lang=localStorage.getItem('ews-lang')||'ar'}catch(e){}
+const $=id=>document.getElementById(id),i=lang=>lang==='ar'?0:1;
+const name=(m,k)=>(m[k]||[k,k])[i(lang)];
+function el(tag,txt,cls){const n=document.createElement(tag);if(txt!=null)n.textContent=txt;if(cls)n.className=cls;return n}
+function pill(lv,score){const p=el('span',LV[lv][i(lang)]+' '+score,'pill');p.dataset.l=lv;return p}
+function fmt(d){try{return new Date(d).toLocaleString(lang==='ar'?'ar-LY':'en-GB',{dateStyle:'medium',timeStyle:'short'})}catch(e){return d}}
+function item(it){const li=el('li');const r=el('div',null,'row');
+ r.append(el('b',name(DS,it.disease)+' — '+name(CT,it.country)),pill(it.level,it.score));
+ li.append(r,el('div',T[lang].ev7+': '+it.events_7d,'sub'));return li}
+function render(){
+ const t=T[lang];document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+ ['title','head','map','maphint','top','tophint','glob','ev','evhint'].forEach(k=>{const n=$('t-'+({maphint:'maphint',tophint:'tophint',evhint:'evhint'}[k]?k:k));if(n)n.textContent=t[k]});
+ $('lang').textContent=t.lang;$('foot').textContent=t.foot;document.title=t.title;
+ if(!risk){$('score').textContent='–';$('driver').textContent=t.err;return}
+ const nl=risk.national_local||risk.national,lv=nl.level;
+ $('updated').textContent=t.upd+': '+fmt(risk.generated_at);
+ $('prov').hidden=!!risk.tables_filled;$('prov').textContent=t.prov;
+ $('score').textContent=nl.score;const L=$('level');L.textContent=LV[lv][i(lang)];L.style.color='var(--'+lv+')';
+ $('mark').style.left=Math.min(100,nl.score)+'%';
+ $('driver').textContent=nl.driver?t.driver+' '+name(DS,nl.driver.disease)+' — '+name(CT,nl.driver.country):t.none;
+ const best={};(risk.items||[]).forEach(x=>{if(!best[x.country]||x.score>best[x.country].score)best[x.country]=x});
+ const map=$('map');map.replaceChildren();
+ Object.keys(CT).forEach(c=>{const b=best[c],btn=el('button',null,'cell'+(sel===c?' sel':''));btn.type='button';btn.style.gridArea=c;btn.dataset.l=b?b.level:'monitor';
+  btn.append(el('span',name(CT,c)),el('b',b?b.score:'–'));btn.onclick=()=>{sel=c;render()};map.append(btn)});
+ const d=$('detail');d.replaceChildren();
+ if(sel){const rows=(risk.items||[]).filter(x=>x.country===sel);d.append(el('b',name(CT,sel)+': '));
+  if(!rows.length)d.append(t.noev);else rows.slice(0,4).forEach(x=>d.append(item(x)))}
+ const top=$('top');top.replaceChildren();const local=(risk.items||[]).filter(x=>x.country!=='GLOBAL').slice(0,8);
+ if(!local.length)top.append(el('li',t.emptyTop,'sub'));local.forEach(x=>top.append(item(x)));
+ const g=$('glob');g.replaceChildren();$('globhint').textContent=t.globhint+' '+risk.national.score;
+ const gw=risk.global_watch||[];if(!gw.length)g.append(el('li',t.emptyGlob,'sub'));gw.slice(0,8).forEach(x=>g.append(item(x)));
+ const ev=$('events');ev.replaceChildren();
+ const list=((evs&&evs.events)||[]).filter(e=>e.status==='verified').slice(0,12);
+ if(!list.length)ev.append(el('li',t.emptyEv,'sub'));
+ list.forEach(e=>{const li=el('li');
+  if(/^https?:\/\//.test(e.url)){const a=el('a',e.title);a.href=e.url;a.target='_blank';a.rel='noopener noreferrer';li.append(a)}else li.append(el('span',e.title));
+  li.append(el('div',name(CT,e.country)+' · '+name(DS,e.disease)+' · '+e.source_name+' · '+fmt(e.published),'sub'));ev.append(li)})}
+async function load(){
+ try{const[a,b]=await Promise.all([fetch('data/risk.json?'+Date.now()).then(r=>r.json()),fetch('data/events.json?'+Date.now()).then(r=>r.json())]);risk=a;evs=b}catch(e){risk=null}
+ render()}
+$('lang').onclick=()=>{lang=lang==='ar'?'en':'ar';try{localStorage.setItem('ews-lang',lang)}catch(e){}render()};
+load();setInterval(load,600000);
+</script>
+</body>
+</html>
