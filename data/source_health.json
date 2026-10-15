@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-10-14T21:24:45.976683+00:00",
+ "generated_at": "2026-10-15T00:12:42.592227+00:00",
  "sources": [
   {
    "id": "who_don",
    "ok": false,
    "items": 0,
    "error": "HTTPError: HTTP Error 404: Not Found",
-   "checked_at": "2026-10-14T21:24:43.145437+00:00",
-   "ms": 422
+   "checked_at": "2026-10-15T00:12:40.813597+00:00",
+   "ms": 168
   },
   {
    "id": "who_news",
    "ok": true,
    "items": 25,
    "error": null,
-   "checked_at": "2026-10-14T21:24:43.568292+00:00",
-   "ms": 218
+   "checked_at": "2026-10-15T00:12:40.982104+00:00",
+   "ms": 175
   },
   {
    "id": "africa_cdc",
    "ok": true,
    "items": 0,
    "error": null,
-   "checked_at": "2026-10-14T21:24:43.786689+00:00",
-   "ms": 1248
+   "checked_at": "2026-10-15T00:12:41.157617+00:00",
+   "ms": 805
   },
   {
    "id": "ecdc_news",
    "ok": true,
    "items": 10,
    "error": null,
-   "checked_at": "2026-10-14T21:24:45.035277+00:00",
-   "ms": 930
+   "checked_at": "2026-10-15T00:12:41.963073+00:00",
+   "ms": 609
   }
  ]
 }
