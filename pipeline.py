@@ -24,6 +24,7 @@ def run():
         events += to_events(it, diseases, countries)
     events = verify(events)
     events.sort(key=lambda e: e['published'] or '', reverse=True)
+    now = datetime.now(timezone.utc).isoformat()
     out = ROOT / 'data'; out.mkdir(exist_ok=True)
     (out / 'events.json').write_text(json.dumps(
         {'generated_at': now, 'count': len(events), 'events': events[:2000]},
