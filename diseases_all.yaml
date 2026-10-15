@@ -1,0 +1,35 @@
+# قائمة الأمراض المراقبة (طبقتان: core و extended). لإضافة مرض: أضف سطراً هنا وسطراً في severity داخل risk.yaml.
+diseases:
+  - {id: cholera, en: "Cholera", ar: "الكوليرا", tier: core, kw: ["cholera", "كوليرا"]}
+  - {id: measles, en: "Measles", ar: "الحصبة", tier: core, kw: ["measles", "حصبة"]}
+  - {id: covid_flu, en: "COVID-19 / Influenza", ar: "كورونا / الإنفلونزا", tier: core, kw: ["covid", "sars-cov-2", "influenza", "avian influenza", "h5n1", "h7n9", "إنفلونزا", "كورونا"]}
+  - {id: vhf, en: "Viral haemorrhagic fever", ar: "الحمى النزفية", tier: core, kw: ["ebola", "marburg", "lassa", "crimean-congo", "haemorrhagic", "hemorrhagic", "إيبولا", "ماربورغ", "نزفية"]}
+  - {id: polio, en: "Polio", ar: "شلل الأطفال", tier: core, kw: ["polio", "poliovirus", "شلل الأطفال"]}
+  - {id: malaria, en: "Malaria", ar: "الملاريا", tier: extended, kw: ["malaria", "ملاريا"]}
+  - {id: dengue, en: "Dengue", ar: "حمى الضنك", tier: extended, kw: ["dengue", "ضنك"]}
+  - {id: rvf, en: "Rift Valley fever", ar: "حمى الوادي المتصدع", tier: extended, kw: ["rift valley", "الوادي المتصدع"]}
+  - {id: rabies, en: "Rabies", ar: "داء الكلب", tier: extended, kw: ["rabies", "داء الكلب"]}
+  - {id: mpox, en: "Mpox", ar: "جدري القردة", tier: extended, kw: ["mpox", "monkeypox", "جدري القرود", "جدري القردة"]}
+  - {id: meningitis, en: "Meningitis", ar: "التهاب السحايا", tier: extended, kw: ["meningitis", "meningococcal", "سحايا"]}
+  - {id: amr, en: "Antimicrobial resistance", ar: "مقاومة المضادات", tier: extended, kw: ["antimicrobial resistance", "amr", "carbapenem", "candida auris", "مقاومة المضادات"]}
+  - {id: yellow_fever, en: "Yellow fever", ar: "الحمى الصفراء", tier: extended, kw: ["yellow fever", "الحمى الصفراء"]}
+  - {id: zika, en: "Zika", ar: "زيكا", tier: extended, kw: ["zika", "زيكا"]}
+  - {id: chikungunya, en: "Chikungunya", ar: "شيكونغونيا", tier: extended, kw: ["chikungunya", "شيكونغونيا"]}
+  - {id: west_nile, en: "West Nile fever", ar: "حمى غرب النيل", tier: extended, kw: ["west nile", "غرب النيل"]}
+  - {id: nipah, en: "Nipah virus", ar: "فيروس نيباه", tier: extended, kw: ["nipah", "نيباه"]}
+  - {id: mers, en: "MERS", ar: "متلازمة الشرق الأوسط التنفسية", tier: extended, kw: ["mers", "middle east respiratory", "كورونا الشرق الأوسط"]}
+  - {id: plague, en: "Plague", ar: "الطاعون", tier: extended, kw: ["plague", "bubonic", "الطاعون"]}
+  - {id: anthrax, en: "Anthrax", ar: "الجمرة الخبيثة", tier: extended, kw: ["anthrax", "الجمرة الخبيثة"]}
+  - {id: smallpox, en: "Smallpox", ar: "الجدري", tier: extended, kw: ["smallpox", "variola", "الجدري"]}
+  - {id: typhoid, en: "Typhoid", ar: "التيفوئيد", tier: extended, kw: ["typhoid", "التيفوئيد", "حمى التيفويد"]}
+  - {id: hepatitis, en: "Hepatitis A/E", ar: "التهاب الكبد A/E", tier: extended, kw: ["hepatitis a", "hepatitis e", "التهاب الكبد"]}
+  - {id: diphtheria, en: "Diphtheria", ar: "الخناق (الدفتيريا)", tier: extended, kw: ["diphtheria", "الدفتيريا", "الخناق"]}
+  - {id: pertussis, en: "Pertussis", ar: "السعال الديكي", tier: extended, kw: ["pertussis", "whooping cough", "السعال الديكي"]}
+  - {id: tb, en: "Tuberculosis", ar: "السل", tier: extended, kw: ["tuberculosis", "السل"]}
+  - {id: leishmaniasis, en: "Leishmaniasis", ar: "اللشمانيا", tier: extended, kw: ["leishmaniasis", "اللشمانيا"]}
+  - {id: brucellosis, en: "Brucellosis", ar: "الحمى المالطية", tier: extended, kw: ["brucellosis", "الحمى المالطية", "البروسيلا"]}
+  - {id: legionellosis, en: "Legionellosis", ar: "داء الفيالقة", tier: extended, kw: ["legionnaires", "legionellosis", "legionella"]}
+  - {id: foodborne, en: "Foodborne bacterial infection", ar: "عدوى غذائية بكتيرية", tier: extended, kw: ["shigella", "salmonella", "e. coli", "escherichia", "listeria"]}
+  - {id: botulism, en: "Botulism", ar: "التسمم الوشيقي", tier: extended, kw: ["botulism", "التسمم الوشيقي"]}
+  - {id: hantavirus, en: "Hantavirus", ar: "هانتا فيروس", tier: extended, kw: ["hantavirus", "هانتا"]}
+  - {id: unknown, en: "Unknown / novel pathogen", ar: "مرض غير معروف / مستجد", tier: extended, kw: ["disease x", "unknown disease", "undiagnosed", "novel virus", "cluster of unknown", "unknown cause", "مرض غامض"]}
