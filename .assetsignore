@@ -1,0 +1,8 @@
+*.py
+*.yaml
+*.yml
+.github
+README.md
+wrangler.jsonc
+.assetsignore
+__pycache__
