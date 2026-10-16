@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-16T19:09:53.007260+00:00",
- "count": 199,
+ "generated_at": "2026-10-16T22:21:58.905894+00:00",
+ "count": 198,
  "events": [
   {
    "id": "f1a7f73db6825d09",
@@ -1254,23 +1254,6 @@
    "org": "WHO",
    "official": true,
    "disease": "polio",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "e2c356557bf4f414",
-   "title": "Addressing Global Health Challenges: Irish Taoiseach Varadkar and WHO Director-General in Dublin Talks",
-   "summary": "Ireland&rsquo;s Taoiseach (Prime Minister) Leo Varadkar welcomed Dr Tedros Adhanom Ghebreyesus, WHO Director-General, to Dublin today, to discuss strengthening the partnership between Ireland and the WHO across a range of global and domestic health areas. Dr Tedros also met with Michael Higgins, the President of Ireland. The meetings underscores Ireland's commitment to actively address pressing health issues on both national and global fronts. The discussions delved into strategies for tackling health emergencies, enhancing healthcare infrastructure, and fostering collaborative research initiatives. The leaders also discussed the worsening humanitarian situation in Gaza and agreed on the need for an immediate humanitarian ceasefire. Taoiseach Leo Varadkar said: &ldquo;The COVID-19 pandemic demonstrated in no uncertain terms how important the World Health Organization is, and how central a role it plays in promoting and securing health and well-being for all, on a global scale. This visit is an important opportunity to affirm and strengthen Ireland&rsquo;s partnership with the WHO.&rdquo; The leaders discussed the importance of learning from the experience of the COVID-19 pandemic to be prepared for any future outbreaks. They agreed on the importance of moving forward with the instrument on pandemic preparedness to be ready for such events. They also discussed the vital need for increased medical supplies to be allowed into humanitarian settings and the disproportionate impact",
-   "url": "https://www.who.int/news/item/18-12-2023-addressing-global-health-challenges--irish-taoiseach-varadkar-and-who-director-general-in-dublin-talks",
-   "published": "2023-12-19T13:30:46+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
