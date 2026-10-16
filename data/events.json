@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T10:25:23.291133+00:00",
+ "generated_at": "2026-10-16T12:14:43.063888+00:00",
  "count": 198,
  "events": [
   {
@@ -17,6 +17,23 @@
    "status": "verified",
    "confirmed_by": [
     "AfricaCDC"
+   ]
+  },
+  {
+   "id": "7a23eddf960f762c",
+   "title": "Middle East respiratory syndrome coronavirus - Kingdom of Saudi Arabia",
+   "summary": "Between 1 January and 5 October 2026, the Kingdom of Saudi Arabia reported eight laboratory-confirmed cases of Middle East Respiratory Syndrome Coronavirus (MERS-CoV) infection, including one death. Cases were detected across six locations: Al Jouf (1), Arar (1), Hafr Al-Batin (1), Riyadh (2), Tabuk (1) and Taif (2). No epidemiological links were identified between any of the cases. All eight cases were symptomatic, most commonly presenting with fever (6/8), dyspnea (5/8), and cough (4/8). None were health and care workers. Infection was confirmed by RT-PCR testing. MERS is a zoonotic viral respiratory disease for which dromedary camels serve as the primary animal reservoir and two cases reported direct contact with camels while six reported no known camel exposure. Seven of eight cases had underlying comorbidities, recognized risk factors for severe MERS-CoV disease. The cases appear to represent sporadic infections related to zoonotic spillover rather than a single outbreak cluster.",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/middle-east-respiratory-syndrome-coronavirus---kingdom-of-saudi-arabia",
+   "published": "2026-10-15T16:00:00+00:00",
+   "source_id": "who_don",
+   "source_name": "WHO Disease Outbreak News",
+   "org": "WHO",
+   "official": true,
+   "disease": "mers",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
    ]
   },
   {
@@ -1135,23 +1152,6 @@
    "org": "WHO",
    "official": true,
    "disease": "yellow_fever",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "fa216d3c90b9ef4b",
-   "title": "Measles - Morocco",
-   "summary": "Since late 2023, Morocco has been experiencing a widespread measles outbreak. Cases have been recorded across all regions of the country, particularly among children and people who are unvaccinated. In response, the Ministry of Health and Social Protection (MOHSP), in collaboration with relevant sectors, activated the National Center for Public Health Emergency Operations, launched urgent catch-up vaccination campaigns, and strengthened surveillance, case management, and risk communication and community engagement efforts. Measles is a highly transmissible viral disease that can lead to severe complications and death. While Morocco has made significant progress toward measles elimination, the disease remains endemic in the country. The overall risk is assessed as moderate at the national level and moderate at the regional level, particularly given the risk of cross-border transmission in areas with low vaccination coverage.",
-   "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON568",
-   "published": "2025-05-13T18:00:00+00:00",
-   "source_id": "who_don",
-   "source_name": "WHO Disease Outbreak News",
-   "org": "WHO",
-   "official": true,
-   "disease": "measles",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
