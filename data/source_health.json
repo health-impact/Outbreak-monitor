@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T00:57:21.486536+00:00",
+ "generated_at": "2026-10-16T05:20:37.865216+00:00",
  "sources": [
   {
    "id": "who_don",
@@ -13,25 +13,25 @@
      "items": 50
     }
    ],
-   "checked_at": "2026-10-16T00:55:05.183379+00:00",
+   "checked_at": "2026-10-16T05:19:04.926598+00:00",
    "url_used": "https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=50",
-   "ms": 271
+   "ms": 1046
   },
   {
    "id": "who_news",
    "ok": true,
-   "items": 204,
+   "items": 207,
    "error": null,
    "tried": [
     {
      "url": "https://www.who.int/rss-feeds/news-english.xml",
      "content_type": "application/rss+xml",
-     "items": 204
+     "items": 207
     }
    ],
-   "checked_at": "2026-10-16T00:55:05.455363+00:00",
+   "checked_at": "2026-10-16T05:19:05.973283+00:00",
    "url_used": "https://www.who.int/rss-feeds/news-english.xml",
-   "ms": 866
+   "ms": 251
   },
   {
    "id": "africa_cdc",
@@ -41,19 +41,19 @@
    "tried": [
     {
      "url": "https://africacdc.org/feed/",
-     "error": "TimeoutError: The read operation timed out"
+     "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
      "url": "https://africacdc.org/news-item/feed/",
-     "error": "TimeoutError: The read operation timed out"
+     "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
      "url": "https://africacdc.org/category/press-release/feed/",
-     "error": "TimeoutError: The read operation timed out"
+     "error": "URLError: <urlopen error timed out>"
     }
    ],
-   "checked_at": "2026-10-16T00:55:06.321817+00:00",
-   "ms": 134368
+   "checked_at": "2026-10-16T05:19:06.225002+00:00",
+   "ms": 90806
   },
   {
    "id": "ecdc_news",
@@ -67,9 +67,9 @@
      "items": 10
     }
    ],
-   "checked_at": "2026-10-16T00:57:20.690836+00:00",
+   "checked_at": "2026-10-16T05:20:37.031626+00:00",
    "url_used": "https://www.ecdc.europa.eu/en/taxonomy/term/1310/feed",
-   "ms": 577
+   "ms": 436
   }
  ]
 }

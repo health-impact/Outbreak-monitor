@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-16T00:57:21.486536+00:00",
- "count": 194,
+ "generated_at": "2026-10-16T05:20:37.865216+00:00",
+ "count": 197,
  "events": [
   {
    "id": "a3f78573815eff2a",
@@ -1159,6 +1159,40 @@
    ]
   },
   {
+   "id": "ff196fea23a9e733",
+   "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
+   "summary": "WHO welcomed Mr Javier Padilla Bern&aacute;ldez, Spain&rsquo;s Secretary of State for Health and his delegation on 23 and 24 April 2024 to discuss joint global health priorities. Amongst others, Spain's focus is on universal health coverage and health systems strengthening; pandemic response and emergency medical teams; organ and tissue transplantation; malaria and other tropical diseases; and polio. During the visit, participants focused on plans and on-going work across a number of areas, including WHO&rsquo;s Transplantation Program to increase availability; ethical access and oversight of transplantation of human cells; tissues and organs. They also discussed social determinants of health; tobacco and alcohol control; primary health care; access to medicines; universal health coverage; ensuring healthy lives at all ages; nutrition and food safety; health workforce; and emergencies. Mr Javier Padilla was accompanied by Ms Paola Cannata Molero, Director of the Cabinet of the Secretary of State for Health, Mr Jacobo Fern&aacute;ndez &Aacute;lvarez, Technical Secretary General, Mr H&eacute;ctor Tejero Franco, Advisor in the Cabinet of the Minister of Health and Responsible for Health and Climate Change, and Mr Roberto Carro V&aacute;zquez, Senior Technician of the Office of the Secretary of State for Health. The delegation also had representatives of Spain&rsquo;s Permanent Mission to the United Nations Office and Other International Organizations in Geneva, including H.E. Am",
+   "url": "https://www.who.int/news/item/25-04-2024-spain-s-secretary-of-state-for-health-discusses-joint-global-health-priorities-with-who",
+   "published": "2024-04-25T08:39:54+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "polio",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "ff196fea23a9e733",
+   "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
+   "summary": "WHO welcomed Mr Javier Padilla Bern&aacute;ldez, Spain&rsquo;s Secretary of State for Health and his delegation on 23 and 24 April 2024 to discuss joint global health priorities. Amongst others, Spain's focus is on universal health coverage and health systems strengthening; pandemic response and emergency medical teams; organ and tissue transplantation; malaria and other tropical diseases; and polio. During the visit, participants focused on plans and on-going work across a number of areas, including WHO&rsquo;s Transplantation Program to increase availability; ethical access and oversight of transplantation of human cells; tissues and organs. They also discussed social determinants of health; tobacco and alcohol control; primary health care; access to medicines; universal health coverage; ensuring healthy lives at all ages; nutrition and food safety; health workforce; and emergencies. Mr Javier Padilla was accompanied by Ms Paola Cannata Molero, Director of the Cabinet of the Secretary of State for Health, Mr Jacobo Fern&aacute;ndez &Aacute;lvarez, Technical Secretary General, Mr H&eacute;ctor Tejero Franco, Advisor in the Cabinet of the Minister of Health and Responsible for Health and Climate Change, and Mr Roberto Carro V&aacute;zquez, Senior Technician of the Office of the Secretary of State for Health. The delegation also had representatives of Spain&rsquo;s Permanent Mission to the United Nations Office and Other International Organizations in Geneva, including H.E. Am",
+   "url": "https://www.who.int/news/item/25-04-2024-spain-s-secretary-of-state-for-health-discusses-joint-global-health-priorities-with-who",
+   "published": "2024-04-25T08:39:54+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "malaria",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
    "id": "767e002c78046898",
    "title": "Digital payments to health workers boost retention, motivation, and impact",
    "summary": "An immunization worker gets set up to receive her wages on her mobile wallet in the Democratic Republic of the Congo. Credit:&nbsp; WHO Campaigns in Africa to stop polio and other diseases have a more stable, better-motivated workforce thanks to WHO&rsquo;s collaboration with countries and partners to pay frontline health workers through their mobile phones instead of in cash. &ldquo;Over 80 percent of workers are saying they prefer the digital payments,&rdquo; said Ahmed Hamani Djibo, head of WHO&rsquo;s Digital Finance Team. WHO has been leading among international organizations in moving away from the unwieldy, less-secure practice of disbursing salaries in cash. Over the past few years, the Organization launched its Digital Finance Team and joined the Better Than Cash Alliance, an 80-member United Nations partnership with a mandate to develop the digitization of payments and expand financial inclusion &ndash; activities that support the UN Sustainable Development Goals. Since it was established in 2020, WHO&rsquo;s Digital Finance Team has designed and implemented digital payment solutions in 24 countries in Africa, including, last year, in Benin, Botswana, Madagascar, Rwanda, Togo and Zimbabwe. &ldquo;WHO has successfully digitized payments for more than two million health workers across Africa,&rdquo; said Tidhar Wald, Managing Director, a.i., at the Better Than Cash Alliance. &ldquo;With these inspiring results, WHO is taking a clear leadership role in accelerating the",
@@ -1215,6 +1249,23 @@
    "summary": "In a full day of meetings on 20 November, WHO leaders and a Canadian government delegation reflected on their decades-long cooperation and sought to sharpen their strategic engagement on shared global health priorities, notably, health-systems strengthening, universal health coverage, embedding gender equality, equity and rights across WHO&rsquo;s programmes, sustainable financing, health emergencies and pandemic preparedness. The delegation was led by Mr Jean-Bernard Parenteau, Director General, Health and Nutrition Bureau of Global Affairs Canada and Patricia McCullagh, Deputy Permanent Representative of Canada to the United Nations in Geneva. WHO representatives from across the Organization gave presentations on health emergencies, sexual and reproductive health and research; gender, equity and rights; primary health care as a foundation for universal health coverage; vaccine manufacturing; the International Health Regulations; and the work of the Intergovernmental Negotiating Body, which is drafting a pandemic treaty for consideration by the World Health Assembly next May. Canada is currently the eighth largest contributor to WHO, and the fifth largest Member State contributor. For the 2022-23 biennium, Canada has contributed nearly US$ 175 million. &ldquo;Canada remains committed to the WHO as the centre of the global health ecosystem and deeply appreciates its pivotal role in helping the world prevent, prepare for, and respond to health emergencies, including the COVID-",
    "url": "https://www.who.int/news/item/20-11-2023-canada-and-who-pursue-closer-engagement-on-gender--equity--universal-health-coverage-and-more",
    "published": "2023-11-28T11:46:34+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "covid_flu",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "a71e46c754cee556",
+   "title": "WHO and ECHO discuss the way forward in strengthening their partnership and innovative ways of cooperation",
+   "summary": "WHO Director-General Dr Tedros greets EU Civil Protection and Humanitarian Aid Operations Director-General Maciej Popowski. &copy; WHO/Chris Black Top representatives of WHO and its Health Emergency Programme (WHE) and the European Commission&rsquo;s Directorate General for Civil Protection and Humanitarian Aid Operations (ECHO) met today in Geneva for their annual high-level dialogue. The EU team was led by Mr Michael K&ouml;hler, Deputy Director-General of DG ECHO, who was accompanied by Ms Susanne Mallaun, Head of Unit, Strategic Partnerships with Humanitarian Organizations, and Ms Dana Le Roy, WHO desk officer at ECHO, with representatives of the EU Delegation to the United Nations in Geneva. Exchange on health emergency preparedness and response topped the agenda, as delegates discussed shared global health priorities and partnership in health emergencies and humanitarian response. The partners also brainstormed about strategic developments related to the WHO fourteenth General Programme of Work (GPW14), which is presently under development, and also discussed the negotiations underway for a Pandemic Accord, the European Humanitarian response capacity, progress with key partnership projects, including on mental health and nutrition, joint health emergency and epidemic response in humanitarian settings. While the COVID-19 pandemic has brought both organizations closer together, at strategic, technical and operational levels, the high-level dialogue participants agree that",
+   "url": "https://www.who.int/news/item/20-10-2023-who-and-echo-discuss-the-way-forward-in-strengthening-their-partnership-and-innovative-ways-of-cooperation",
+   "published": "2023-10-20T09:31:19+00:00",
    "source_id": "who_news",
    "source_name": "WHO News",
    "org": "WHO",
