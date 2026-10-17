@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-17T16:46:16.172782+00:00",
- "count": 198,
+ "generated_at": "2026-10-17T18:57:57.849574+00:00",
+ "count": 197,
  "events": [
   {
    "id": "f1a7f73db6825d09",
@@ -3311,23 +3311,6 @@
    "org": "WHO",
    "official": true,
    "disease": "vhf",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "ef342d90b4eea9b4",
-   "title": "WHO encourages countries to act now to reduce deaths from viral hepatitis",
-   "summary": "Ahead of World Hepatitis Day, 28 July 2016, WHO is urging countries to take rapid action to improve knowledge about the disease, and to increase access to testing and treatment services. Today, only 1 in 20 people with viral hepatitis know they have it. And just 1 in 100 with the disease is being treated. \"The world has ignored hepatitis at its peril,&rdquo; said Dr Margaret Chan, WHO Director-General. &ldquo;It is time to mobilize a global response to hepatitis on the scale similar to that generated to fight other communicable diseases like HIV/AIDS and tuberculosis.&ldquo; Around the world 400 million people are infected with hepatitis B and C, more than 10 times the number of people living with HIV. An estimated 1.45 million people died of the disease in 2013 &ndash; up from less than a million in 1990. In May 2016, at the World Health Assembly, 194 governments adopted the first-ever Global Health Sector Strategy on viral hepatitis and agreed to the first-ever global targets. The strategy includes a target to treat 8 million people for hepatitis B or C by 2020. The longer term aim is to reduce new viral hepatitis infections by 90% and to reduce the number of deaths due to viral hepatitis by 65% by 2030 from 2016 figures. The strategy is ambitious, but the tools to achieve the targets are already in hand. An effective vaccine and treatment for hepatitis B exists. There is no vaccine for hepatitis C but there has been dramatic progress on treatment for the disease in the pas",
-   "url": "https://www.who.int/news/item/20-07-2016-who-encourages-countries-to-act-now-to-reduce-deaths-from-viral-hepatitis",
-   "published": "2018-06-02T02:18:56+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "tb",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
