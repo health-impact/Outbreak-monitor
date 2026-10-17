@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T00:57:28.795142+00:00",
+ "generated_at": "2026-10-17T05:15:35.415075+00:00",
  "sources": [
   {
    "id": "who_don",
@@ -13,9 +13,9 @@
      "items": 50
     }
    ],
-   "checked_at": "2026-10-17T00:55:53.340533+00:00",
+   "checked_at": "2026-10-17T05:15:30.636080+00:00",
    "url_used": "https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=50",
-   "ms": 2941
+   "ms": 1279
   },
   {
    "id": "who_news",
@@ -29,31 +29,31 @@
      "items": 198
     }
    ],
-   "checked_at": "2026-10-17T00:55:56.281858+00:00",
+   "checked_at": "2026-10-17T05:15:31.915966+00:00",
    "url_used": "https://www.who.int/rss-feeds/news-english.xml",
-   "ms": 575
+   "ms": 198
   },
   {
    "id": "africa_cdc",
-   "ok": false,
-   "items": 0,
-   "error": "no items from any url",
+   "ok": true,
+   "items": 10,
+   "error": null,
    "tried": [
     {
      "url": "https://africacdc.org/feed/",
-     "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
+     "content_type": "application/rss+xml; charset=UTF-8",
+     "items": 0,
+     "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><rss version=\"2.0\"\n\txmlns:content=\"http://purl.org/rss/1.0/modules/content/\"\n\txmlns:wfw=\"http://wellformedweb.org/CommentAPI/\"\n\txmlns:dc=\"http://purl.org/dc/eleme"
     },
     {
      "url": "https://africacdc.org/news-item/feed/",
-     "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
-    },
-    {
-     "url": "https://africacdc.org/category/press-release/feed/",
-     "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
+     "content_type": "application/rss+xml; charset=UTF-8",
+     "items": 10
     }
    ],
-   "checked_at": "2026-10-17T00:55:56.857775+00:00",
-   "ms": 91223
+   "checked_at": "2026-10-17T05:15:32.114575+00:00",
+   "url_used": "https://africacdc.org/news-item/feed/",
+   "ms": 2610
   },
   {
    "id": "ecdc_news",
@@ -67,9 +67,9 @@
      "items": 10
     }
    ],
-   "checked_at": "2026-10-17T00:57:28.081686+00:00",
+   "checked_at": "2026-10-17T05:15:34.725202+00:00",
    "url_used": "https://www.ecdc.europa.eu/en/taxonomy/term/1310/feed",
-   "ms": 424
+   "ms": 295
   }
  ]
 }
