@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T13:27:34.626390+00:00",
+ "generated_at": "2026-10-17T16:46:16.181832+00:00",
  "national": {
   "score": 49.5,
   "level": "alert",
@@ -53,18 +53,18 @@
   {
    "country": "GLOBAL",
    "disease": "plague",
-   "score": 44.5,
+   "score": 38.5,
    "level": "alert",
    "level_ar": "تنبيه",
    "components": {
     "proximity": 6.0,
     "severity": 20.0,
-    "spread": 6.0,
+    "spread": 0.0,
     "mobility": 7.5,
     "readiness": 5.0
    },
-   "events_7d": 1,
-   "events_prev_7d": 0
+   "events_7d": 0,
+   "events_prev_7d": 1
   },
   {
    "country": "GLOBAL",
@@ -119,18 +119,18 @@
   {
    "country": "GLOBAL",
    "disease": "plague",
-   "score": 44.5,
+   "score": 38.5,
    "level": "alert",
    "level_ar": "تنبيه",
    "components": {
     "proximity": 6.0,
     "severity": 20.0,
-    "spread": 6.0,
+    "spread": 0.0,
     "mobility": 7.5,
     "readiness": 5.0
    },
-   "events_7d": 1,
-   "events_prev_7d": 0
+   "events_7d": 0,
+   "events_prev_7d": 1
   },
   {
    "country": "GLOBAL",
