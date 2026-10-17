@@ -1,7 +1,24 @@
 {
- "generated_at": "2026-10-17T18:57:57.849574+00:00",
+ "generated_at": "2026-10-17T21:15:39.545943+00:00",
  "count": 197,
  "events": [
+  {
+   "id": "cb865e3177a4f7f6",
+   "title": "Africa CDC Reaffirms Support to Kenya Following Confirmation of Four Additional Ebola Cases",
+   "summary": "Addis Ababa, Ethiopia, 17 October 2026 The Africa Centres for Disease Control and Prevention (Africa CDC) acknowledges the announcement by the Ministry of Health of the Republic of Kenya confirming four additional cases of Ebola Virus Disease (Bundibugyo virus), bringing the total number of confirmed cases in the country to seven, including one death. According [&#8230;] The post Africa CDC Reaffirms Support to Kenya Following Confirmation of Four Additional Ebola Cases appeared first on Africa CDC .",
+   "url": "https://africacdc.org/news-item/africa-cdc-reaffirms-support-to-kenya-following-confirmation-of-four-additional-ebola-cases/",
+   "published": "2026-10-17T19:22:30+00:00",
+   "source_id": "africa_cdc",
+   "source_name": "Africa CDC",
+   "org": "AfricaCDC",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "AfricaCDC"
+   ]
+  },
   {
    "id": "f1a7f73db6825d09",
    "title": "Communiqué d’Africa CDC sur le financement de la riposte à l’épidémie d’Ebola en RDC.",
@@ -144,23 +161,6 @@
    "summary": "Kinshasa, République démocratique du Congo, le 4 octobre 2026 Le Centre africain de contrôle et de prévention des maladies (Africa CDC) salue et soutient la position du Gouvernement de la République démocratique du Congo, exprimée par l’intermédiaire du Ministère de la Santé publique, de l’Hygiène et de la Prévoyance sociale, visant à renforcer la transparence, [&#8230;] The post Africa CDC soutient le Gouvernement de la République démocratique du Congo dans le renforcement de la transparence et de la redevabilité du financement de la riposte à Ebola appeared first on Africa CDC .",
    "url": "https://africacdc.org/news-item/africa-cdc-soutient-le-gouvernement-de-la-republique-democratique-du-congo-dans-le-renforcement-de-la-transparence-et-de-la-redevabilite-du-financement-de-la-riposte-a-ebola/",
    "published": "2026-10-04T09:01:26+00:00",
-   "source_id": "africa_cdc",
-   "source_name": "Africa CDC",
-   "org": "AfricaCDC",
-   "official": true,
-   "disease": "vhf",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "AfricaCDC"
-   ]
-  },
-  {
-   "id": "97b4fa3cbb227620",
-   "title": "Africa CDC Supports the Government of the Democratic Republic of the Congo in Strengthening Transparency and Accountability in Ebola Response Funding",
-   "summary": "Kinshasa, Democratic Republic of the Congo, 4 October 2026 The Africa Centres for Disease Control and Prevention (Africa CDC) welcomes and supports the position of the Government of the Democratic Republic of the Congo, expressed through the Ministry of Public Health, Hygiene and Social Welfare, to strengthen transparency, traceability and accountability in the management of [&#8230;] The post Africa CDC Supports the Government of the Democratic Republic of the Congo in Strengthening Transparency and Accountability in Ebola Response Funding appeared first on Africa CDC .",
-   "url": "https://africacdc.org/news-item/africa-cdc-supports-the-government-of-the-democratic-republic-of-the-congo-in-strengthening-transparency-and-accountability-in-ebola-response-funding/",
-   "published": "2026-10-04T08:52:18+00:00",
    "source_id": "africa_cdc",
    "source_name": "Africa CDC",
    "org": "AfricaCDC",
