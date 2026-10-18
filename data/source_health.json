@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T02:24:26.293015+00:00",
+ "generated_at": "2026-10-18T07:39:29.131802+00:00",
  "sources": [
   {
    "id": "who_don",
@@ -13,47 +13,47 @@
      "items": 50
     }
    ],
-   "checked_at": "2026-10-18T02:24:21.271310+00:00",
+   "checked_at": "2026-10-18T07:37:46.407365+00:00",
    "url_used": "https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=50",
-   "ms": 964
+   "ms": 1217
   },
   {
    "id": "who_news",
    "ok": true,
-   "items": 193,
+   "items": 173,
    "error": null,
    "tried": [
     {
      "url": "https://www.who.int/rss-feeds/news-english.xml",
      "content_type": "application/rss+xml",
-     "items": 193
+     "items": 173
     }
    ],
-   "checked_at": "2026-10-18T02:24:22.235818+00:00",
+   "checked_at": "2026-10-18T07:37:47.625019+00:00",
    "url_used": "https://www.who.int/rss-feeds/news-english.xml",
-   "ms": 287
+   "ms": 595
   },
   {
    "id": "africa_cdc",
-   "ok": true,
-   "items": 10,
-   "error": null,
+   "ok": false,
+   "items": 0,
+   "error": "no items from any url",
    "tried": [
     {
      "url": "https://africacdc.org/feed/",
-     "content_type": "application/rss+xml; charset=UTF-8",
-     "items": 0,
-     "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><rss version=\"2.0\"\n\txmlns:content=\"http://purl.org/rss/1.0/modules/content/\"\n\txmlns:wfw=\"http://wellformedweb.org/CommentAPI/\"\n\txmlns:dc=\"http://purl.org/dc/eleme"
+     "error": "TimeoutError: The read operation timed out"
     },
     {
      "url": "https://africacdc.org/news-item/feed/",
-     "content_type": "application/rss+xml; charset=UTF-8",
-     "items": 10
+     "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
+    },
+    {
+     "url": "https://africacdc.org/category/press-release/feed/",
+     "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     }
    ],
-   "checked_at": "2026-10-18T02:24:22.523320+00:00",
-   "url_used": "https://africacdc.org/news-item/feed/",
-   "ms": 3034
+   "checked_at": "2026-10-18T07:37:48.220173+00:00",
+   "ms": 99926
   },
   {
    "id": "ecdc_news",
@@ -67,9 +67,9 @@
      "items": 10
     }
    ],
-   "checked_at": "2026-10-18T02:24:25.557629+00:00",
+   "checked_at": "2026-10-18T07:39:28.146331+00:00",
    "url_used": "https://www.ecdc.europa.eu/en/taxonomy/term/1310/feed",
-   "ms": 348
+   "ms": 633
   }
  ]
 }
