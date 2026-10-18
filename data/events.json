@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-18T12:20:40.285627+00:00",
- "count": 196,
+ "generated_at": "2026-10-18T16:16:47.943520+00:00",
+ "count": 181,
  "events": [
   {
    "id": "cb865e3177a4f7f6",
@@ -81,6 +81,23 @@
    "org": "WHO",
    "official": true,
    "disease": "plague",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "WHO"
+   ]
+  },
+  {
+   "id": "a6ce6c799899740d",
+   "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond",
+   "summary": "Today, as part of its commitment to strengthening health information systems and improving health[1], especially in the context of the COVID-19 pandemic, WHO announced a new approach to improving access to life-saving data: the SCORE for Health Data Technical Package. The COVID-19 pandemic has highlighted the urgent need for timely and reliable data to drive strategic health action. Too many countries still lack both the infrastructure to routinely gather health data and the analytical capacity to use these data for effective health actions and emergency response. &ldquo;Countries must be able to measure progress to make progress,&rdquo; said WHO Director-General Dr Tedros Adhanom Ghebreyesus. &ldquo;Particularly during COVID-19, reliable data is the best way to coordinate response efforts and improve health in all areas.&rdquo; Accurate health data are necessary to understand specific country needs in order to improve health and save lives. Data also helps direct scarce resources to where they are needed most. The SCORE (Survey, Count, Optimize, Review, Enable) Technical Package aims to improve the availability of timely, reliable, validated, and comparable health data. For the first time in a single, harmonized package, it represents all the key elements for optimized health information system performance. Simply put, SCORE will help governments around the globe set benchmarks and improve standards in healthcare. In response to the challenges of data availability highlighte",
+   "url": "https://www.who.int/news/item/27-08-2020-new-who-technical-package-health-data-for-covid-19-response",
+   "published": "2026-10-10T07:49:45+00:00",
+   "source_id": "who_news",
+   "source_name": "WHO News",
+   "org": "WHO",
+   "official": true,
+   "disease": "covid_flu",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -1431,96 +1448,11 @@
    ]
   },
   {
-   "id": "543b85c04863bf59",
-   "title": "New Zealand and WHO: partnering for a healthier future",
-   "summary": "Geneva, 25 February 2022 &ndash; On the occasion of the Human Rights Council, Minister of Foreign Affairs of New Zealand, Honourable Nanaia Mahuta, met for the first time with Dr Tedros Adhanom Ghebreyesus, WHO Director-General. The objective of the meeting, which took place at the WHO headquarters, was to discuss New Zealand&rsquo;s continued strategic, technical and financial support to the Organization. &ldquo;It is an honor to welcome the Honourable Nanaia Mahuta to WHO and to express my deep gratitude to New Zealand for its leadership in public health and invaluable support to WHO, including the pandemic treaty and increase in assessed contributions,&rdquo; said Dr Tedros. &ldquo;Not only has New Zealand helped to achieve great strides in the Pacific region, but also during the global COVID-19 pandemic, as one of the first COVAX funders and first dose donors. New Zealand may be a small country but it is big in heart, and an important player in the global health arena.&rdquo; As one of the founding members of WHO, New Zealand has been a long-standing and highly valued partner. During today&rsquo;s meeting, the Honourable Minister and Dr Tedros discussed collaboration in the Pacific Region, including the COVID-19 response, with both re-affirming their commitment to partner for a healthier future. WHO is grateful for New Zealand&rsquo;s technical, financial and human resources support in a number of key areas, including the prevention and control of noncommunicable diseases",
-   "url": "https://www.who.int/news/item/28-02-2022-new-zealand-and-who-partnering-for-a-healthier-future",
-   "published": "2022-02-28T17:47:33+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "76154b3979189b89",
-   "title": "Donors and WHO discuss the transformative impact of the Contingency Fund for Emergencies",
-   "summary": "The Ministry of Health and health authorities respond to Ebola outbreak in North Kivu in the Democratic Republic of the Congo with WHO support. &copy;WHO/AFRO Geneva, 2 February 2022 - Contributors to the WHO's Contingency Fund for Emergencies (CFE) met today with WHO representatives to reflect on the impact that has been achieved through the Fund, and to discuss how to further strengthen it. The CFE, created in 2015, is one of WHO's most powerful tools for responding immediately to acute health emergencies. During the dialogue, participants acknowledged the agility and rapidness of the Fund, emphasizing that in an emergency \"every hour and every dollar count\",&nbsp;and highlighting CFE's role in promoting global health security. Simply put, the CFE has transformed the way in which WHO responds to emergencies. Whereas before we were left to scramble for start-up funding in the face of disease outbreaks or humanitarian crises, the CFE has now turned us very much into first responders, and at times, also providers of the last resort. - Dr Mike Ryan, Executive Directory of the WHO Health Emergencies Programme Jane Ellison, WHO Executive Director for External Relations and Governance said that \"in many cases the CFE saves us the need to go after additional resources to respond to acute events. The CFE saves us time, and most importantly, it saves lives.\" From 2015-2021, donors to the CFE provided more than US$ 200 million. During this period more than 50 countries and territories",
-   "url": "https://www.who.int/news/item/02-02-2022-Contingency-Fund-for-Emergencies",
-   "published": "2022-02-03T14:19:19+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "vhf",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "5d77be21ff9051c4",
-   "title": "COVAX delivers its 1 billionth COVID-19 vaccine dose",
-   "summary": "On 15 January 2022, a shipment of 1.1 million COVID-19 vaccines to Rwanda included the billionth dose supplied via COVAX. Together with our partners, COVAX is leading the largest vaccine procurement and supply operation in history, with deliveries to 144 countries to date. But the work that has gone into this milestone is only a reminder of the work that remains. As of 13 January 2022, out of 194 Member States, 36 WHO Member States have vaccinated less than 10% of their population, and 88 less than 40%. COVAX&rsquo;s ambition was compromised by hoarding/stockpiling in rich countries, catastrophic outbreaks leading to borders and supply being locked. And a lack of sharing of licenses, technology and know how by pharmaceutical companies meant manufacturing capacity went unused. COVAX is working with governments, manufacturers and partners to ensure that when countries receive vaccines they can get them to people quickly. &nbsp; With updated vaccines in the pipeline, now is the moment for all citizens to demand that governments &amp; pharmaceutical companies share health tools globally &amp; bring an end to the death &amp; destruction cycles of this pandemic, limit new variants and drive a global economic recovery. COVAX is the vaccines pillar of the Access to COVID-19 Tools (ACT) Accelerator . &nbsp;",
-   "url": "https://www.who.int/news/item/16-01-2022-covax-delivers-its-1-billionth-covid-19-vaccine-dose",
-   "published": "2022-01-16T11:12:40+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "1f2645a07f05577c",
-   "title": "WHO recommends two new drugs to treat COVID-19",
-   "summary": "WHO has recommended two new drugs for COVID-19, providing yet more options for treating the disease. The extent to which these medicines will save lives depends on how widely available and affordable they will be. The first drug, baricitinib, is strongly recommended for patients with severe or critical COVID-19. It is part of a class of drugs called Janus kinase (JAK) inhibitors that suppress the overstimulation of the immune system. WHO recommends that it is given with corticosteroids. Baricitinib is an oral drug, used in the treatment of rheumatoid arthritis. It provides an alternative to other arthritis drugs called Interleukin-6 receptor blockers, recommended by WHO in July 2021. WHO has also conditionally recommended the use of a monoclonal antibody drug, sotrovimab, for treating mild or moderate COVID-19 in patients who are at high risk of hospitalization. This includes patients who are older, immunocompromised, having underlying conditions like diabetes, hypertension, and obesity, and those unvaccinated. Sotrovimab is an alternative to casirivimab-imdevimab, a monoclonal antibody cocktail recommended by WHO in September 2021. Studies are ongoing on the effectiveness of monoclonal antibodies against Omicron but early laboratory studies show that sotrovimab retains its activity. The panel of experts developing the guidelines also looked at two other drugs for severe and critical COVID-19: ruxolitinib and tofacitinib. Given their uncertain effects, WHO made a conditional ",
-   "url": "https://www.who.int/news/item/14-01-2022-who-recommends-two-new-drugs-to-treat-covid-19",
-   "published": "2022-01-14T08:21:44+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
    "id": "e538982eb7ae06b7",
    "title": "Belgium and WHO sign new agreement to increase global equitable access to essential health products and technologies",
    "summary": "On 16 December 2021 the Government of Belgium and WHO signed a new &euro;8 million multiyear contribution agreement for the period 2021-2025, to support increasing global equitable access to health products and health technologies globally. This contribution will focus on equitable access for health products related to the current pandemic, and health products related to other communicable and non-communicable diseases. Through this support, the Belgium government will facilitate technology transfer through the mRNA vaccine technology transfer hub and work on increasing regulatory capacity and fair pricing. &rdquo;WHO is very grateful to the Government of Belgium for their continued commitment to ensuring universal health coverage,\" said Ms Leen Meulenbergs, Director of WHO&rsquo;s Department of Strategic Engagement. &rdquo;Throughout its partnership with WHO and the programmes it supports, Belgium has taken a leading role in supporting technology transfer and in improve regulatory capacity which are essential to achieve equitable access to health care for all.\" Belgium is already a co-sponsor of the Solidarity Call to Action. Its support for the COVID Technology Access Pool (C-TAP) and the mRNA vaccine technology transfer hub comes at a critical juncture. Engaging support for innovative approaches to increasing access to health products is challenging given the complexity of the global health landscape. By leading the way in developing new ways to deliver health equity, Belg",
    "url": "https://www.who.int/news/item/16-12-2021-belgium-and-who-sign-new-agreement-to-increase-global-equitable-access-to-essential-health-products-and-technologies",
    "published": "2021-12-17T18:08:41+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "581a4a39c4dbd01a",
-   "title": "Looking to the future: The Rockefeller Foundation and WHO identify priorities for global health collaboration",
-   "summary": "On 8-10 November 2021, Dr Naveen Rao, Senior Vice President, Health and other senior representatives from The Rockefeller Foundation joined World Health Organization (WHO) representatives to review the strategic directions of collaboration between the two Organizations. Notably they discussed support for the WHO Health Emergencies Programme and the Science Division, including the WHO Hub on for Pandemic and Epidemic Intelligence, genomic surveillance, infodemiology, vaccine equity and demand generation and WHO&rsquo;s ongoing work with philanthropic organizations. &rdquo;The Rockefeller Foundation and WHO have worked together to address global health challenges since WHO was first established,&rdquo; said Ms Jane Ellison, Executive Director, External Relations and Governance. &rdquo;The support of the Foundation has been &ndash; and will continue to be - fundamental, helping WHO to make major advances in providing equitable health outcomes for all.&rdquo; The Rockefeller Foundation&rsquo;s collaboration with WHO dates back to when the WHO constitution was first created. Over the past two decades, The Rockefeller Foundation has continued to be a key collaborator, providing over US$ 25.3 million in support to WHO programmes. Recent collaboration has focused on digital health building capacity in data and innovation to protect and promote health and well-being. Throughout the COVID-19 pandemic, the two Organizations worked together towards the goal of maintaining essential healt",
-   "url": "https://www.who.int/news/item/28-11-2021-looking-to-the-future-the-rockefeller-foundation-and-who-identify-priorities-for-global-health-collaboration",
-   "published": "2021-11-29T10:32:50+00:00",
    "source_id": "who_news",
    "source_name": "WHO News",
    "org": "WHO",
@@ -1555,23 +1487,6 @@
    "summary": "The heads of the International Monetary Fund, World Bank Group, World Health Organization and World Trade Organization held on 9 November the 2nd High-Level Consultations with the CEOs of leading COVID-19 vaccine manufacturing companies. At the meeting, all participants agreed on the urgency of delivering more vaccine doses to low-income countries, where less than 2.5% of the population has been fully vaccinated.",
    "url": "https://www.who.int/news/item/10-11-2021-international-organizations-vaccine-manufacturers-take-stock-of-covid-19-vaccine-roll-out-share-views-for-2022",
    "published": "2021-11-10T08:16:41+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "d26f7e06e4aa7775",
-   "title": "New ACT-Accelerator strategy calls for US$ 23.4 billion international investment to solve inequities in global access to COVID-19 vaccines, tests & treatments",
-   "summary": "New ACT-Accelerator strategic plan sets out urgent actions to address crucial gaps in access to COVID-19 tests, treatments, vaccines and personal protective equipment in low- and middle-income countries, using the latest epidemiological, supply and market information. &nbsp; Delivering this plan is crucial to reaching globally agreed targets for COVID-19 tools, to help prevent at least 5 million potential additional deaths, save the global economy more than US$ 5.3 trillion, and accelerate the end of the pandemic everywhere. The ACT-Accelerator needs US$ 23.4 billion until September 2022 to implement this plan, reflecting a fresh scope, advances in science and supply, and new actors joining the pandemic response. The new plan also responds to the recent independent Strategic Review&rsquo;s key recommendations and will be implemented alongside global health, government, civil society and private sector partners. The Access to COVID-19 Tools (ACT) Accelerator has today launched its strategic plan and budget for the next 12 months, outlining the urgent actions and funding needed to address deep inequities in the COVID-19 response, save millions of lives and end the acute phase of the pandemic. The Access to COVID-19 Tools (ACT) Accelerator has today launched its strategic plan and budget for the next 12 months, outlining the urgent actions and funding needed to address deep inequities in the COVID-19 response, save millions of lives and end the acute phase of the pandemic. Inequ",
-   "url": "https://www.who.int/news/item/28-10-2021-new-act-accelerator-strategy-calls-investment",
-   "published": "2021-10-28T13:25:13+00:00",
    "source_id": "who_news",
    "source_name": "WHO News",
    "org": "WHO",
@@ -1652,57 +1567,6 @@
    ]
   },
   {
-   "id": "18dbf75dad0a3831",
-   "title": "Social and behavioural insights COVID-19 data collection tool for Africa",
-   "summary": "The pandemic continues to highlight a pressing need to use social and behavioural data alongside biomedical data to mount an effective response. Timely data and insights into&nbsp;people&rsquo;s changing&nbsp;knowledge, attitudes and behaviours helps to ensure that the response is tailored and adapted to the needs of the population. Due to the rapidly evolving situation, many countries are facing challenges in the availability of accurate and up-to-date social and behavioural data. In response to this situation, WHO has developed the&nbsp;&ldquo;Social and Behavioural Insights COVID-19 Data Collection Tool for Africa&rdquo;. The tool can be used by WHO Country Offices, NGOs, universities or other groups interested in capturing quantitative and qualitative social and behavioural data. Access the Tool",
-   "url": "https://www.who.int/news/item/25-08-2021-social-and-behavioural-insights-covid-19-data-collection-tool-for-africa",
-   "published": "2021-08-27T07:34:38+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "6da478fcbd95370e",
-   "title": "Fraudulent “COVID-19 Compensation Lottery Prize” scam, falsely alleges association with WHO and others",
-   "summary": "The World Health Organization (WHO) has been made aware of correspondences being circulated by scammers (acting under the name of Capital Finance, Inc. London), falsely notifying recipients of such correspondences that they have been selected as a beneficiary/winner of a US$1 million lottery compensation prize payment for losses and damages suffered as a result of the COVID-19 pandemic.&nbsp; These fraudulent correspondences falsely allege that the so-called &ldquo;COVID-19 Lottery Compensation Prize&rdquo; is brought to you by WHO, in association with the International Monetary Fund (IMF) and Bill &amp; Melinda Gates Foundation (BMGF).&nbsp; &nbsp; These scammers&mdash;who claim to be a financial management firm in London&mdash;falsely state that they have been appointed by WHO to process payment of the &ldquo;COVID-19 Lottery Compensation Prize&rdquo;.&nbsp; In addition, these scams seek to obtain personal details and, in some cases, money from the recipients of such fraudulent correspondences, including (but not limited to) by requesting recipients to urgently send the scammers: (1) a copy of the recipient&rsquo;s passport or proof of identification, (2) his/her nationality, (3) his/her occupation, and (4) the recipient&rsquo;s mailing address, email address and telephone number, in order to enable the scammers to process the fraudulent lottery compensation prize payment. WHO seeks to warn the public at large that the &ldquo;COVID-19 Lottery Compensation Prize&rdquo; is a ",
-   "url": "https://www.who.int/news/item/06-08-2021-fraudulent-covid-19-compensation-lottery-prize-scam-falsely-alleges-association-with-who-and-others",
-   "published": "2021-08-06T18:56:35+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "8a989f65de876038",
-   "title": "UN report: Pandemic year marked by spike in world hunger",
-   "summary": "There was a dramatic worsening of world hunger in 2020, the United Nations said today &ndash; much of it likely related to the fallout of COVID-19. While the pandemic&rsquo;s impact has yet to be fully mapped, a multi-agency report estimates that around a tenth of the global population &ndash; up to 811 million people &ndash; were undernourished last year. The number suggests it will take a tremendous effort for the world to honour its pledge to end hunger by 2030. &nbsp; This year&rsquo;s edition ofThe State of Food Security and Nutrition in the World is the first global assessment of its kind in the pandemic era. The report is jointly published by the Food and Agriculture Organization of the United Nations (FAO), the International Fund for Agricultural Development (IFAD), the United Nations Children&rsquo;s Fund (UNICEF), the UN World Food Programme (WFP) and the World Health Organization (WHO). Previous editions had already put the world on notice that the food security of millions &ndash; many children among them &ndash; was at stake. &ldquo;Unfortunately, the pandemic continues to expose weaknesses in our food systems, which threaten the lives and livelihoods of people around the world,&rdquo; the heads of the five UN agencies write in this year&rsquo;s Foreword. They go on to warn of a &ldquo;critical juncture,&rdquo; even as they pin fresh hopes on increased diplomatic momentum. &ldquo;This year offers a unique opportunity for advancing food security and nutrition thro",
-   "url": "https://www.who.int/news/item/12-07-2021-un-report-pandemic-year-marked-by-spike-in-world-hunger",
-   "published": "2021-07-09T08:28:06+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
    "id": "90760846ead929da",
    "title": "WHO and Switzerland launch global BioHub for pathogen storage, sharing and analysis",
    "summary": "The World Health Organization (WHO) and the Swiss Confederation today signed a Memorandum of Understanding to launch the first WHO BioHub Facility as part of the WHO BioHub System, which was announced in November 2020. This facility will enhance the rapid sharing of viruses and other pathogens between laboratories and partners globally. Based in Spiez, Switzerland, the facility will serve as a centre for the safe receipt, sequencing, storage and preparation of biological materials for distribution to other laboratories, in order to inform risk assessments, and sustain global preparedness against these pathogens. &ldquo;Close international collaboration to ensure the timely sharing of epidemiological and clinical data as well as biological materials is of utmost importance. Switzerland supports the WHO BioHub initiative in its initial phase by providing the necessary infrastructure of a Swiss biosafety laboratory in Spiez. With this, we hope to contribute to the establishment of an international exchange system for SARS-CoV-2 and other emerging pathogens,&rdquo; said Swiss Federal Councillor Alain Berset. Currently, most pathogen sharing is done bilaterally between countries and on an ad hoc basis, which can be slow, and leave some countries without access to the benefits and tools. The BioHub will enable Member States to share biological materials with and via the BioHub under pre-agreed conditions, including biosafety, biosecurity, and other applicable regulations. This will",
@@ -1713,40 +1577,6 @@
    "org": "WHO",
    "official": true,
    "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "056964b8621a88fb",
-   "title": "WHO and the International Organisation of the Francophonie (IOF) sign Memorandum of Understanding to strengthen access to health in Francophone countries",
-   "summary": "The World Health Organization and the International Organisation of the Francophonie&nbsp;(IOF) today signed a memorandum of understanding to scale up collaboration and boost access to health services in Francophone countries.&nbsp; The agreement, finalized at a ceremony held at the WHO Headquarters in Geneva, focuses on advancing universal health coverage, fighting malaria and collaborating on the development of the WHO Academy, which aims to train millions of health workers worldwide. It will also support COVID-19 response efforts, including on promoting equitable access to vaccines. \"Our actions, supported by this memorandum of understanding, must contribute to the development of social protection and universal access to public health services in the French-speaking countries,&rdquo; said Ms. Louise Mushikiwabo, IOF Secretary General. &ldquo;This is a fundamental right for individuals and an essential condition for the socio-economic progress of our countries.&rdquo; Ms Mushikiwabo added: &ldquo;This memorandum of understanding aims to bring IOF political and diplomatic support to some of WHO&rsquo;s priorities.&rdquo; WHO Director-General Dr Tedros Adhanom Ghebreyesus said the MoU signing further bolstered an already strong partnership with IOF, and would play a vital role in promoting and protecting people&rsquo;s health, including in the response to COVID-19. &ldquo;Strengthening the relationship between WHO and the IOF comes at a crucial time, when the world needs even",
-   "url": "https://www.who.int/news/item/14-04-2021-who-and-the-international-organisation-of-the-francophonie-(iof)-sign-memorandum-of-understanding-to-strengthen-access-to-health-in-francophone-countries",
-   "published": "2021-04-13T16:59:06+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "056964b8621a88fb",
-   "title": "WHO and the International Organisation of the Francophonie (IOF) sign Memorandum of Understanding to strengthen access to health in Francophone countries",
-   "summary": "The World Health Organization and the International Organisation of the Francophonie&nbsp;(IOF) today signed a memorandum of understanding to scale up collaboration and boost access to health services in Francophone countries.&nbsp; The agreement, finalized at a ceremony held at the WHO Headquarters in Geneva, focuses on advancing universal health coverage, fighting malaria and collaborating on the development of the WHO Academy, which aims to train millions of health workers worldwide. It will also support COVID-19 response efforts, including on promoting equitable access to vaccines. \"Our actions, supported by this memorandum of understanding, must contribute to the development of social protection and universal access to public health services in the French-speaking countries,&rdquo; said Ms. Louise Mushikiwabo, IOF Secretary General. &ldquo;This is a fundamental right for individuals and an essential condition for the socio-economic progress of our countries.&rdquo; Ms Mushikiwabo added: &ldquo;This memorandum of understanding aims to bring IOF political and diplomatic support to some of WHO&rsquo;s priorities.&rdquo; WHO Director-General Dr Tedros Adhanom Ghebreyesus said the MoU signing further bolstered an already strong partnership with IOF, and would play a vital role in promoting and protecting people&rsquo;s health, including in the response to COVID-19. &ldquo;Strengthening the relationship between WHO and the IOF comes at a crucial time, when the world needs even",
-   "url": "https://www.who.int/news/item/14-04-2021-who-and-the-international-organisation-of-the-francophonie-(iof)-sign-memorandum-of-understanding-to-strengthen-access-to-health-in-francophone-countries",
-   "published": "2021-04-13T16:59:06+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "malaria",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
@@ -1805,23 +1635,6 @@
    ]
   },
   {
-   "id": "11a3db60f8608546",
-   "title": "FIFA and WHO #ACTogether to tackle COVID-19",
-   "summary": "Star footballers, competing team captains will promote equitable global access to vaccines, treatments and diagnostics Monday 1 February 2021, Geneva: FIFA is teaming up with the World Health Organization (WHO) to promote the need for fair access to COVID-19 vaccines, treatments and diagnostics, and to encourage people to keep practicing life-saving, everyday public health measures to prevent the spread of the coronavirus and to protect health. In conjunction with the FIFA Club World Cup 2020, being held in Qatar from 4 to 11 February 2021, FIFA and WHO are launching a public awareness campaign involving star footballers, through TV and in-stadium messaging, to further promote the Access to COVID-19 Tools (ACT) Accelerator initiative launched in April 2020, and to urge people to practice mask wearing, physical distancing and hand hygiene. &ldquo;We all have to play our part in the battle against the coronavirus. We are also calling on the international community to #ACTogether to ensure a level playing field in relation to access to vaccines, treatments and diagnostic tests across the globe,&rdquo; FIFA President Gianni Infantino said during a video conference prior to the kick-off of the FIFA Club World Cup. Dr Tedros Adhanom Ghebreyesus, WHO Director-General, thanked FIFA and the players for helping raise awareness on life saving interventions that all people can follow, and of the importance of intensified global support for the ACT Accelerator to ramp up development and e",
-   "url": "https://www.who.int/news/item/01-02-2021-fifa-and-who-actogether-to-tackle-covid-19",
-   "published": "2021-02-01T16:04:53+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
    "id": "08d6e83741c3dfea",
    "title": "COVAX Announces new agreement, plans for first deliveries",
    "summary": "COVAX announced the signing of an advance purchase agreement for up to 40 million doses of the Pfizer-BioNTech vaccine; rollout to commence with successful execution of supply agreements. Additionally, COVAX announced that, pending WHO emergency use listings, nearly 150 million doses of the AstraZeneca/Oxford candidate are anticipated to be available in Q1 2021, via existing agreements with the Serum Institute of India (SII) and AstraZeneca. COVAX is therefore on track to deliver at least 2 billion doses by the end of the year, including at least 1.3 billion doses to 92 lower income economies in the Gavi COVAX AMC. Click here for the latest COVAX supply forecast &nbsp; Geneva/Oslo 22 January 2021 &ndash; COVAX, the global initiative to ensure rapid and equitable access to COVID-19 vaccines for all countries, regardless of income level, today announced the signing of an advance purchase agreement with Pfizer for up to 40 million doses of the Pfizer-BioNTech vaccine candidate, which has already received WHO emergency use listing. Rollout will commence with the successful negotiation and execution of supply agreements. In further support of its mission to expedite early availability of vaccines to lower-income countries and help bring a rapid end to the acute stage of the COVID-19 pandemic, COVAX also confirmed today that it will exercise an option &ndash; via an existing agreement with Serum Institute of India (SII) &ndash; to receive its first 100 million doses of the AstraZen",
@@ -1832,74 +1645,6 @@
    "org": "WHO",
    "official": true,
    "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "bce3b095aafcbe0a",
-   "title": "WHO, IFRC sign memorandum of understanding on emergency medical teams",
-   "summary": "The World Health Organization and the International Federation of Red Cross and Red Crescent Societies (IFRC) today launched a new collaboration to strengthen the delivery of emergency medical and health services during humanitarian crises. WHO Director-General Dr Tedros Adhanom Ghebreyesus and IFRC Secretary-General Mr Jagan Chapagain signed a memorandum of understanding to cooperate on implementing the Emergency Medical Team (EMT) initiative. &ldquo;We thank the IFRC for their support from the onset of the EMT Initiative and we look forward to this continued partnership in improving the quality of care in emergencies,&rdquo; said Dr Tedros. &ldquo;With the COVID-19 pandemic and the significant increase in emergencies around the world, this agreement could not come at a better time.&rdquo; Mr Chapagain said IFRC was committed to working side-by-side with WHO in providing life-saving health services to communities affected by humanitarian emergencies. &ldquo;This MoU will allow us to standardize our emergency health response work and provide increased support for National Red Cross and Red Crescent Societies which play such a crucial role in emergency response,&rdquo; Mr Chapagain said. &ldquo;We are very committed to working together with WHO to provide quality emergency health services that communities desperately need in times of crisis.&rdquo; The MoU, also known as the Red Channel Agreement, is the culmination of years of collaboration between IFRC and the WHO Emergency ",
-   "url": "https://www.who.int/news/item/11-12-2020-who-ifrc-sign-memorandum-of-understanding-on-emergency-medical-teams",
-   "published": "2020-12-11T15:05:54+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "502b5456b65a219b",
-   "title": "OUT NOW: Special edition cover of \"We Are Family\" available for download in Support of WHO Foundation!",
-   "summary": "Re-recorded by Kim Sledge, part of the legendary multi-Gold and Platinum recording music group Sister Sledge, and presented by Natasha Mudhar, Founder of the global social impact enterprise The World We Want , a special edition cover of the classic We Are Family song will be accompanied by a crowdsourced music video, with members of the public joining frontline health heroes and a host of A-list celebrities, such as global superstar Rita Ora, in a spectacular sing-along video, out in December.&nbsp; Individuals and families can submit their sing-along video clips for a chance to star in the official music video until 30 November. Proceeds from the download of the new cover are being donated to the WHO Foundation , with the support of the World Health Organization , to address global health challenges such as COVID-19. 9 November 2020, LONDON/GENEVA : The special edition cover of the timeless hit We Are Family , re-recorded by one member of the iconic multi-Gold and Platinum recording music group Sister Sledge, Kim Sledge, presented by Natasha Mudhar, Founder of the global social impact enterprise The World We Want , and supported by the &nbsp; World Health Organization , is now officially available for download worldwide from leading digital music stores such as iTunes, Spotify and Amazon Music. The song, an upbeat cover of the classic anthem that saw the group rise to stardom in 1979, is being released as an inspiring call for global solidarity to respond to the COVID-19 pan",
-   "url": "https://www.who.int/news/item/09-11-2020-out-now-special-edition-cover-of-we-are-family-available-for-download-in-support-of-who-foundation!",
-   "published": "2020-11-09T12:13:12+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "covid_flu",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "8c935c8c4283253c",
-   "title": "A tribute to Dr LEE Jong-wook, Director-General of WHO",
-   "summary": "Dr LEE Jong-wook, Director-General of the World Health Organization, died this morning following a short illness.&nbsp; Dr Lee, a national of the Republic of Korea, was a world leader in public health. He tackled every challenge with passion, dedication and professionalism. He was unfalteringly committed to WHO's mission, to help all people to attain \"the highest possible level of health.\"&nbsp; Throughout his 23-year career at WHO, he made a difference in every programme he managed - whether by leading the charge to eradicate polio from the Western Pacific, or to launch a cutting edge Global Drug Facility so people would have access to tuberculosis medicines. \" The world has lost a great man today. LEE Jong-wook was a man of conviction and passion. He was a strong voice for the right of every man, woman and child to health prevention and care, and advocated on behalf of the very poorest people,\" said United Nations Secretary-General Kofi Annan. \"He tackled the most difficult problems head on, while upholding the highest principles. He will be very gravely missed, but history will mark LEE Jong-wook's many contributions to public health.\" While personally a modest man, Dr LEE was a bold leader. When he became Director-General, he took a risk and announced that WHO would work with partners to achieve \"3 by 5\" - to ensure three million people with HIV/AIDS would have access to the medicines they needed by the end of 2005. \"3 by 5\" transformed the way leaders thought about AIDS ",
-   "url": "https://www.who.int/news/item/22-05-2006-a-tribute-to-dr-lee-jong-wook-director-general-of-who",
-   "published": "2020-10-15T14:11:30+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "polio",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "WHO"
-   ]
-  },
-  {
-   "id": "8c935c8c4283253c",
-   "title": "A tribute to Dr LEE Jong-wook, Director-General of WHO",
-   "summary": "Dr LEE Jong-wook, Director-General of the World Health Organization, died this morning following a short illness.&nbsp; Dr Lee, a national of the Republic of Korea, was a world leader in public health. He tackled every challenge with passion, dedication and professionalism. He was unfalteringly committed to WHO's mission, to help all people to attain \"the highest possible level of health.\"&nbsp; Throughout his 23-year career at WHO, he made a difference in every programme he managed - whether by leading the charge to eradicate polio from the Western Pacific, or to launch a cutting edge Global Drug Facility so people would have access to tuberculosis medicines. \" The world has lost a great man today. LEE Jong-wook was a man of conviction and passion. He was a strong voice for the right of every man, woman and child to health prevention and care, and advocated on behalf of the very poorest people,\" said United Nations Secretary-General Kofi Annan. \"He tackled the most difficult problems head on, while upholding the highest principles. He will be very gravely missed, but history will mark LEE Jong-wook's many contributions to public health.\" While personally a modest man, Dr LEE was a bold leader. When he became Director-General, he took a risk and announced that WHO would work with partners to achieve \"3 by 5\" - to ensure three million people with HIV/AIDS would have access to the medicines they needed by the end of 2005. \"3 by 5\" transformed the way leaders thought about AIDS ",
-   "url": "https://www.who.int/news/item/22-05-2006-a-tribute-to-dr-lee-jong-wook-director-general-of-who",
-   "published": "2020-10-15T14:11:30+00:00",
-   "source_id": "who_news",
-   "source_name": "WHO News",
-   "org": "WHO",
-   "official": true,
-   "disease": "tb",
    "country": "GLOBAL",
    "status": "verified",
    "confirmed_by": [
