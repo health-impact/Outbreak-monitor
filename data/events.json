@@ -1,7 +1,24 @@
 {
- "generated_at": "2026-10-19T11:43:11.918521+00:00",
+ "generated_at": "2026-10-19T18:04:03.571461+00:00",
  "count": 159,
  "events": [
+  {
+   "id": "a3f78573815eff2a",
+   "title": "Ebola disease outbreak in the Democratic Republic of the Congo",
+   "summary": "Since May 2026, an Ebola virus disease outbreak caused by Bundibugyo virus has been ongoing in the Democratic Republic of the Congo (DRC).",
+   "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+   "published": "2026-10-19T15:36:21+00:00",
+   "source_id": "ecdc_news",
+   "source_name": "ECDC News",
+   "org": "ECDC",
+   "official": true,
+   "disease": "vhf",
+   "country": "GLOBAL",
+   "status": "verified",
+   "confirmed_by": [
+    "ECDC"
+   ]
+  },
   {
    "id": "cb865e3177a4f7f6",
    "title": "Africa CDC Reaffirms Support to Kenya Following Confirmation of Four Additional Ebola Cases",
@@ -51,23 +68,6 @@
    "status": "verified",
    "confirmed_by": [
     "WHO"
-   ]
-  },
-  {
-   "id": "a3f78573815eff2a",
-   "title": "Ebola disease outbreak in the Democratic Republic of the Congo",
-   "summary": "Since May 2026, an Ebola virus disease outbreak caused by Bundibugyo virus has been ongoing in the Democratic Republic of the Congo (DRC).",
-   "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
-   "published": "2026-10-14T15:36:21+00:00",
-   "source_id": "ecdc_news",
-   "source_name": "ECDC News",
-   "org": "ECDC",
-   "official": true,
-   "disease": "vhf",
-   "country": "GLOBAL",
-   "status": "verified",
-   "confirmed_by": [
-    "ECDC"
    ]
   },
   {

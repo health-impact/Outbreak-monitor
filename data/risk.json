@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T11:43:11.928845+00:00",
+ "generated_at": "2026-10-19T18:04:03.579191+00:00",
  "national": {
   "score": 52.5,
   "level": "preparedness",
@@ -81,22 +81,6 @@
    },
    "events_7d": 0,
    "events_prev_7d": 1
-  },
-  {
-   "country": "GLOBAL",
-   "disease": "chikungunya",
-   "score": 31.0,
-   "level": "alert",
-   "level_ar": "تنبيه",
-   "components": {
-    "proximity": 6.0,
-    "severity": 12.5,
-    "spread": 0.0,
-    "mobility": 7.5,
-    "readiness": 5.0
-   },
-   "events_7d": 0,
-   "events_prev_7d": 1
   }
  ],
  "items": [
@@ -157,22 +141,6 @@
    "components": {
     "proximity": 6.0,
     "severity": 17.5,
-    "spread": 0.0,
-    "mobility": 7.5,
-    "readiness": 5.0
-   },
-   "events_7d": 0,
-   "events_prev_7d": 1
-  },
-  {
-   "country": "GLOBAL",
-   "disease": "chikungunya",
-   "score": 31.0,
-   "level": "alert",
-   "level_ar": "تنبيه",
-   "components": {
-    "proximity": 6.0,
-    "severity": 12.5,
     "spread": 0.0,
     "mobility": 7.5,
     "readiness": 5.0
