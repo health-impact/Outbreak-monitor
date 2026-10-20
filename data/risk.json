@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-20T12:31:00.571153+00:00",
+ "generated_at": "2026-10-20T17:40:34.065852+00:00",
  "national": {
-  "score": 52.5,
+  "score": 58.5,
   "level": "preparedness",
   "level_ar": "تأهب",
   "level_en": "Preparedness",
@@ -21,18 +21,18 @@
   {
    "country": "GLOBAL",
    "disease": "vhf",
-   "score": 52.5,
+   "score": 58.5,
    "level": "preparedness",
    "level_ar": "تأهب",
    "components": {
     "proximity": 6.0,
     "severity": 25.0,
-    "spread": 9.0,
+    "spread": 15.0,
     "mobility": 7.5,
     "readiness": 5.0
    },
    "events_7d": 3,
-   "events_prev_7d": 3
+   "events_prev_7d": 1
   },
   {
    "country": "GLOBAL",
@@ -87,18 +87,18 @@
   {
    "country": "GLOBAL",
    "disease": "vhf",
-   "score": 52.5,
+   "score": 58.5,
    "level": "preparedness",
    "level_ar": "تأهب",
    "components": {
     "proximity": 6.0,
     "severity": 25.0,
-    "spread": 9.0,
+    "spread": 15.0,
     "mobility": 7.5,
     "readiness": 5.0
    },
    "events_7d": 3,
-   "events_prev_7d": 3
+   "events_prev_7d": 1
   },
   {
    "country": "GLOBAL",
