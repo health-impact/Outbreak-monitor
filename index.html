@@ -25,7 +25,6 @@
   --text-muted: #829ea8;
   --accent: #00b4d8;
 
-  /* مستويات الإنذار المعتمدة */
   --c-green: #10b981;
   --c-yellow: #f59e0b;
   --c-orange: #f97316;
@@ -37,7 +36,6 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: var(--bg-base); color: var(--text-main); min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; }
 
-/* الشريط العلوي */
 header {
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
@@ -78,7 +76,6 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
-/* شريط الإحصائيات السريعة */
 .kpi-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -98,7 +95,6 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 .kpi-value { font-size: 1.5rem; font-weight: 700; display: flex; align-items: baseline; gap: 6px; }
 .kpi-sub { font-size: 0.75rem; color: var(--text-muted); }
 
-/* شبكة العمليات الرئيسية */
 .main-layout {
   display: grid;
   grid-template-columns: 1fr 380px;
@@ -131,7 +127,6 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 }
 #map { flex: 1; width: 100%; min-height: 480px; background: #12191d; }
 
-/* وسيلة إيضاح الخريطة */
 .map-legend {
   position: absolute;
   bottom: 20px;
@@ -150,7 +145,6 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 .legend-item { display: flex; align-items: center; gap: 8px; }
 .legend-color { width: 12px; height: 12px; border-radius: 3px; }
 
-/* الشريط الجانبي */
 .sidebar { display: flex; flex-direction: column; gap: 16px; }
 .card {
   background: var(--bg-surface);
@@ -197,7 +191,6 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 .bg-yellow { background: var(--c-yellow); color: #000; }
 .bg-green { background: var(--c-green); }
 
-/* نافذة البلاغ الفوري للرصد */
 .dispatch-box {
   background: rgba(239, 68, 68, 0.08);
   border-inline-start: 4px solid var(--c-red);
@@ -229,7 +222,6 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 }
 .btn-dispatch:hover { opacity: 0.9; }
 
-/* جدول الأمراض */
 .registry-section { padding: 0 24px 24px; }
 .table-box {
   background: var(--bg-surface);
@@ -303,7 +295,6 @@ tr:hover { background: var(--bg-card-hover); }
 </div>
 
 <div class="main-layout">
-  <!-- الخريطة المكانية -->
   <div class="map-container-box">
     <div class="map-header">
       <div style="font-weight:600; font-size:0.9rem;">الخريطة الوبائية المكانية والحرارية لمنافذ العبور</div>
@@ -318,7 +309,6 @@ tr:hover { background: var(--bg-card-hover); }
     </div>
   </div>
 
-  <!-- الشريط الجانبي -->
   <div class="sidebar">
     <div class="card">
       <div class="card-title">
@@ -339,7 +329,6 @@ tr:hover { background: var(--bg-card-hover); }
   </div>
 </div>
 
-<!-- جدول الأمراض الـ 48 -->
 <div class="registry-section">
   <div class="table-box">
     <div class="table-header">
@@ -366,7 +355,6 @@ tr:hover { background: var(--bg-card-hover); }
 </div>
 
 <script>
-// 1. قاعدة بيانات الأمراض الـ 48 كاملة (19 فوري + 29 أسبوعي)
 const ALL_DISEASES = [
   {code:"IMM-01", ar:"الشلل الرخو الحاد", en:"Acute Flaccid Paralysis", tier:"فوري (24h)", mode:"معوي / برازي فموي", inc:"35 يوم", bench:"5% CFR"},
   {code:"IMM-02", ar:"الجمرة الخبيثة", en:"Anthrax", tier:"فوري (24h)", mode:"حيواني المنشأ / ماشية", inc:"7 أيام", bench:"20% CFR"},
@@ -418,7 +406,6 @@ const ALL_DISEASES = [
   {code:"WKL-29", ar:"كوفيد-19", en:"COVID-19", tier:"أسبوعي", mode:"تنفسي سريع الانتشار", inc:"14 يوم", bench:"1% CFR"}
 ];
 
-// 2. إعداد الخريطة الليلية الرسمية (Esri Dark Canvas) بدون علامات مائية
 const map = L.map('map', { zoomControl: false }).setView([27.2, 17.5], 5.4);
 L.control.zoom({ position: 'topleft' }).addTo(map);
 
@@ -430,7 +417,6 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_D
 let heatLayer = null;
 let markersGroup = L.layerGroup().addTo(map);
 
-// 3. جلب البيانات وتحديث الواجهة
 async function initDashboard() {
   renderDiseasesTable(ALL_DISEASES);
   
@@ -442,19 +428,12 @@ async function initDashboard() {
       return;
     }
   } catch (e) {
-    console.log("استخدام البيانات المحلية");
+    console.log("استخدام البيانات الاحتياطية");
   }
 
-  // الاحتياط المحلي في حال عدم توفر الاتصال
   applyData({
     national_score: 58.4,
-    flash_report: "🚨 بلاغ عاجل لغرفة عمليات رصد:
-المرض: الهيضة (الكوليرا) IMM-03
-القطاع: قطاع السودان (الجنوب الشرقي)
-المنافذ المستهدفة: منفذ العوينات البري — مطار الكفرة
-البلديات المهددة: الكفرة، تازربو، ربيانة
-مؤشر التهديد المحسوب: 82.4% (طوارئ قصوى)
-التوجيه: تفعيل بروتوكول الفحص الإلزامي للوافدين وتوفير أملاح التروية ومحاليل Ringer Lactate فوراً بمستشفى الكفرة العام.",
+    flash_report: "🚨 بلاغ عاجل لغرفة عمليات رصد:\nالمرض: الهيضة (الكوليرا) IMM-03\nالقطاع: قطاع السودان (الجنوب الشرقي)\nالمنافذ المستهدفة: منفذ العوينات البري — مطار الكفرة\nالبلديات المهددة: الكفرة، تازربو، ربيانة\nمؤشر التهديد المحسوب: 82.4% (طوارئ قصوى)\nالتوجيه: تفعيل بروتوكول الفحص الإلزامي للوافدين وتوفير أملاح التروية ومحاليل Ringer Lactate فوراً بمستشفى الكفرة العام.",
     sectors: [
       { id: "SD", name: "قطاع السودان (الجنوب الشرقي)", ports: "منفذ العوينات البري — مطار الكفرة", municipalities: ["الكفرة"], threat: "الهيضة (الكوليرا) IMM-03", score: 82.4, level: "red", coords: [24.18, 23.30] },
       { id: "TD", name: "قطاع تشاد (الجنوب)", ports: "منفذ التوم البري — القطرون", municipalities: ["مرزق", "القطرون"], threat: "البرداء (الملاريا) WKL-15", score: 64.0, level: "orange", coords: [24.93, 14.64] },
@@ -528,7 +507,6 @@ function applyData(data) {
   }).addTo(map);
 }
 
-// 4. تعبئة وبحث جدول الأمراض
 function renderDiseasesTable(data) {
   const tbody = document.getElementById('table-body');
   tbody.innerHTML = '';
