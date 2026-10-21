@@ -409,6 +409,23 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_D
   maxZoom: 16
 }).addTo(map);
 
+// رسم حدود ليبيا كمتجهات حتى تظهر الخريطة واضحة إذا انقطع الإنترنت
+const libyaBorders = [
+  [33.15, 11.57], [32.90, 13.20], [32.30, 15.10], [31.20, 16.60], 
+  [30.80, 19.80], [32.10, 20.00], [32.90, 22.20], [31.58, 25.05], 
+  [25.00, 25.00], [22.00, 25.00], [22.00, 19.00], [23.50, 16.00], 
+  [23.00, 15.00], [23.50, 12.00], [24.96, 10.18], [26.00, 9.40], 
+  [30.13, 9.50], [30.25, 10.10], [32.00, 10.60], [33.15, 11.57]
+];
+
+L.polygon(libyaBorders, {
+  color: '#213742',
+  weight: 2,
+  fillColor: '#10191e',
+  fillOpacity: 0.8
+}).addTo(map);
+  
+
 let heatLayer = null;
 let markersGroup = L.layerGroup().addTo(map);
 
