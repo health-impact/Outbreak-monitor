@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>منظومة الإنذار المبكر والتنبؤ بالأوبئة العابرة للحدود | NCDC Libya</title>
+<title>منظومة رصد | الإنذار المبكر والتنبؤ بالأوبئة العابرة للحدود</title>
 
-<!-- الخط الرسمي والأيقونات -->
+<!-- الخط الرسمي -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
 
@@ -25,7 +25,7 @@
   --text-muted: #829ea8;
   --accent: #00b4d8;
 
-  /* مستويات الإنذار المعتمدة رسمياً */
+  /* مستويات الإنذار المعتمدة */
   --c-green: #10b981;
   --c-yellow: #f59e0b;
   --c-orange: #f97316;
@@ -37,7 +37,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: var(--bg-base); color: var(--text-main); min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; }
 
-/* الشريط العلوي للتحكم */
+/* الشريط العلوي */
 header {
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
@@ -53,9 +53,9 @@ header {
   background: rgba(0, 180, 216, 0.15);
   color: var(--accent);
   border: 1px solid var(--accent);
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 6px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -129,14 +129,14 @@ h1 { font-size: 1.15rem; font-weight: 700; }
   background: var(--bg-card);
   z-index: 1000;
 }
-#map { flex: 1; width: 100%; min-height: 480px; background: #070d10; }
+#map { flex: 1; width: 100%; min-height: 480px; background: #12191d; }
 
-/* تخصيص وسيلة إيضاح الخريطة */
+/* وسيلة إيضاح الخريطة */
 .map-legend {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background: rgba(16, 25, 30, 0.9);
+  background: rgba(16, 25, 30, 0.92);
   backdrop-filter: blur(4px);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -150,7 +150,7 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 .legend-item { display: flex; align-items: center; gap: 8px; }
 .legend-color { width: 12px; height: 12px; border-radius: 3px; }
 
-/* الشريط الجانبي للتفاصيل والبلاغات */
+/* الشريط الجانبي */
 .sidebar { display: flex; flex-direction: column; gap: 16px; }
 .card {
   background: var(--bg-surface);
@@ -178,7 +178,7 @@ h1 { font-size: 1.15rem; font-weight: 700; }
   justify-content: space-between;
   align-items: center;
 }
-.sector-item:hover, .sector-item.active {
+.sector-item:hover {
   background: var(--bg-card-hover);
   border-color: var(--accent);
 }
@@ -197,7 +197,7 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 .bg-yellow { background: var(--c-yellow); color: #000; }
 .bg-green { background: var(--c-green); }
 
-/* نافذة البلاغ الفوري للرصد (Flash Report) */
+/* نافذة البلاغ الفوري للرصد */
 .dispatch-box {
   background: rgba(239, 68, 68, 0.08);
   border-inline-start: 4px solid var(--c-red);
@@ -229,7 +229,7 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 }
 .btn-dispatch:hover { opacity: 0.9; }
 
-/* جدول الأمراض الـ 48 المعتمد */
+/* جدول الأمراض */
 .registry-section { padding: 0 24px 24px; }
 .table-box {
   background: var(--bg-surface);
@@ -254,7 +254,7 @@ h1 { font-size: 1.15rem; font-weight: 700; }
   border-radius: 6px;
   font-family: inherit;
   font-size: 0.85rem;
-  min-width: 240px;
+  min-width: 260px;
 }
 .search-input:focus { outline: 1px solid var(--accent); }
 table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
@@ -267,10 +267,10 @@ tr:hover { background: var(--bg-card-hover); }
 
 <header>
   <div class="brand">
-    <span class="brand-badge">NCDC — LIBYA</span>
+    <span class="brand-badge">منظومة رصد | RASAD</span>
     <div>
-      <h1>منظومة الإنذار المبكر والتنبؤ بالأوبئة العابرة للحدود</h1>
-      <div class="subhead">إدارة الرصد والاستجابة السريعة — دعم الأمن القومي الصحي</div>
+      <h1>الإنذار المبكر والتنبؤ بالأوبئة العابرة للحدود</h1>
+      <div class="subhead">غرفة العمليات المركزية — الاستخبارات الوبائية والأمن الصحي الوطني</div>
     </div>
   </div>
   <div class="status-pill">
@@ -282,32 +282,32 @@ tr:hover { background: var(--bg-card-hover); }
 <div class="kpi-row">
   <div class="kpi-card">
     <span class="kpi-title">مؤشر الخطر الوطني العام</span>
-    <div class="kpi-value" style="color:var(--c-orange)">58.4% <span class="badge bg-orange">تأهب</span></div>
+    <div class="kpi-value" id="kpi-national" style="color:var(--c-orange)">58.4% <span class="badge bg-orange">تأهب</span></div>
     <span class="kpi-sub">أعلى تهديد قادم من الحدود الجنوبية</span>
   </div>
   <div class="kpi-card">
     <span class="kpi-title">بؤر الخطر الحرج (المستوى الأحمر)</span>
-    <div class="kpi-value" style="color:var(--c-red)">01 <span style="font-size:0.85rem; font-weight:normal">قطاع (السودان)</span></div>
+    <div class="kpi-value" id="kpi-critical" style="color:var(--c-red)">01 <span style="font-size:0.85rem; font-weight:normal">قطاع (السودان)</span></div>
     <span class="kpi-sub">منفذ العوينات البري — بلدية الكفرة</span>
   </div>
   <div class="kpi-card">
-    <span class="kpi-title">قاعدة الأمراض المعتمدة</span>
+    <span class="kpi-title">قاعدة الأمراض المعتمدة في رصد</span>
     <div class="kpi-value">48 <span style="font-size:0.85rem; font-weight:normal">مرضاً</span></div>
     <span class="kpi-sub">19 تبليغ فوري + 29 تبليغ أسبوعي</span>
   </div>
   <div class="kpi-card">
     <span class="kpi-title">المصادر الدولية المتصلة</span>
     <div class="kpi-value" style="color:var(--c-green)">100%</div>
-    <span class="kpi-sub">WHO GHO, Africa CDC, HDX, IOM DTM</span>
+    <span class="kpi-sub">WHO GHO, Africa CDC, HDX, Open-Meteo</span>
   </div>
 </div>
 
 <div class="main-layout">
-  <!-- قسم الخريطة التفاعلية والحرارية -->
+  <!-- الخريطة المكانية -->
   <div class="map-container-box">
     <div class="map-header">
       <div style="font-weight:600; font-size:0.9rem;">الخريطة الوبائية المكانية والحرارية لمنافذ العبور</div>
-      <span style="font-size:0.75rem; color:var(--text-muted);">انقر على أي منفذ حدودي لعرض مؤشر التنبؤ والتحليل الميداني</span>
+      <span style="font-size:0.75rem; color:var(--text-muted);">انقر على أي منفذ لعرض مؤشرات التنبؤ والطقس الميداني</span>
     </div>
     <div id="map"></div>
     <div class="map-legend">
@@ -318,15 +318,13 @@ tr:hover { background: var(--bg-card-hover); }
     </div>
   </div>
 
-  <!-- الشريط الجانبي للقطاعات والبلاغات -->
+  <!-- الشريط الجانبي -->
   <div class="sidebar">
     <div class="card">
       <div class="card-title">
         <span>مؤشرات القطاعات الحدودية الست</span>
       </div>
-      <div class="sector-list" id="sectors-list">
-        <!-- يتم توليدها بالجافاسكريبت -->
-      </div>
+      <div class="sector-list" id="sectors-list"></div>
     </div>
 
     <div class="card">
@@ -334,28 +332,22 @@ tr:hover { background: var(--bg-card-hover); }
         <span>أحدث بلاغ طوارئ فوري (Flash Dispatch)</span>
       </div>
       <div class="dispatch-box">
-        <pre id="flash-text">🚨 بلاغ عاجل لإدارة الرصد والاستجابة السريعة:
-المرض: الهيضة (الكوليرا) IMM-03
-القطاع: الجنوب الشرقي (الحدود السودانية)
-المنفذ المستهدف: منفذ العوينات البري
-البلدية: الكفرة
-الاحتمالية المحسوبة: 82.4% (طوارئ قصوى)
-التوجيه: تفعيل بروتوكول الفحص الإلزامي للوافدين وتوفير أملاح التروية ومحاليل Ringer Lactate فوراً بمستشفى الكفرة العام.</pre>
+        <pre id="flash-text">جاري تحميل البلاغ اللحظي من الخادم...</pre>
       </div>
       <button class="btn-dispatch" onclick="copyDispatch()">نسخ نص البلاغ للتعميم</button>
     </div>
   </div>
 </div>
 
-<!-- جدول الأمراض الرسمي -->
+<!-- جدول الأمراض الـ 48 -->
 <div class="registry-section">
   <div class="table-box">
     <div class="table-header">
-      <div style="font-weight:600;">سجل الأمراض الرسمية المعتمدة للرصد (NCDC 48 Registry)</div>
-      <input type="text" class="search-input" id="search-disease" placeholder="ابحث باسم المرض أو الكود المرجعي..." onkeyup="filterTable()">
+      <div style="font-weight:600;">سجل الأمراض الرسمية المعتمدة في منظومة رصد (قائمة الـ 48)</div>
+      <input type="text" class="search-input" id="search-disease" placeholder="ابحث باسم المرض، الكود، أو طريقة الانتقال..." onkeyup="filterTable()">
     </div>
     <div style="overflow-x:auto;">
-      <table id="diseases-table">
+      <table>
         <thead>
           <tr>
             <th>الكود</th>
@@ -363,206 +355,215 @@ tr:hover { background: var(--bg-card-hover); }
             <th>الاسم بالإنجليزية</th>
             <th>الفئة الرسمية</th>
             <th>طبيعة الانتقال والعبور</th>
-            <th>فترة الحضانة</th>
-            <th>الخطر الحالي</th>
+            <th>فترة الحضانة القصوى</th>
+            <th>مستوى الخطورة المرجعي</th>
           </tr>
         </thead>
-        <tbody id="table-body">
-          <!-- بيانات حية من القاموس المرجعي -->
-        </tbody>
+        <tbody id="table-body"></tbody>
       </table>
     </div>
   </div>
 </div>
 
 <script>
-// 1. مصفوفة القطاعات الحدودية والمنافذ الست مع الإحداثيات الجغرافية
-const SECTORS = [
-  {
-    id: "SD",
-    name: "قطاع السودان (الجنوب الشرقي)",
-    ports: "منفذ العوينات البري — مطار الكفرة",
-    municipality: "الكفرة، تازربو، ربيانة",
-    threat: "الهيضة (الكوليرا) IMM-03",
-    score: 82.4,
-    level: "red",
-    coords: [24.18, 23.30] // الكفرة / العوينات
-  },
-  {
-    id: "TD",
-    name: "قطاع تشاد (الجنوب)",
-    ports: "منفذ التوم البري — القطرون",
-    municipality: "مرزق، القطرون، سبها",
-    threat: "البرداء (الملاريا) WKL-15",
-    score: 64.0,
-    level: "orange",
-    coords: [24.93, 14.64] // القطرون
-  },
-  {
-    id: "NE",
-    name: "قطاع النيجر (الجنوب الغربي)",
-    ports: "منفذ تومو الحدودي — غات",
-    municipality: "غات، أوباري",
-    threat: "الالتهاب السحائي الوبائي IMM-07",
-    score: 52.1,
-    level: "orange",
-    coords: [24.96, 10.18] // غات
-  },
-  {
-    id: "TN",
-    name: "قطاع تونس (الشمال الغربي)",
-    ports: "منفذ رأس جدير — منفذ وازن",
-    municipality: "زوارة، نالوت",
-    threat: "الحصبة IMM-06",
-    score: 38.5,
-    level: "yellow",
-    coords: [33.15, 11.57] // رأس جدير
-  },
-  {
-    id: "EG",
-    name: "قطاع مصر (الشرق)",
-    ports: "منفذ امساعد البري — ميناء طبرق",
-    municipality: "امساعد، طبرق، الجغبوب",
-    threat: "النزلة الوافدة (الأنفلونزا) WKL-13",
-    score: 22.0,
-    level: "green",
-    coords: [31.58, 25.05] // امساعد
-  },
-  {
-    id: "DZ",
-    name: "قطاع الجزائر (الغرب)",
-    ports: "منفذ غدامس البري — الدبداب",
-    municipality: "غدامس، درج",
-    threat: "حمى الوادي المتصدع IMM-09",
-    score: 18.2,
-    level: "green",
-    coords: [30.13, 9.50] // غدامس
-  }
+// 1. قاعدة بيانات الأمراض الـ 48 كاملة (19 فوري + 29 أسبوعي)
+const ALL_DISEASES = [
+  {code:"IMM-01", ar:"الشلل الرخو الحاد", en:"Acute Flaccid Paralysis", tier:"فوري (24h)", mode:"معوي / برازي فموي", inc:"35 يوم", bench:"5% CFR"},
+  {code:"IMM-02", ar:"الجمرة الخبيثة", en:"Anthrax", tier:"فوري (24h)", mode:"حيواني المنشأ / ماشية", inc:"7 أيام", bench:"20% CFR"},
+  {code:"IMM-03", ar:"الهيضة (الكوليرا)", en:"Cholera", tier:"فوري (24h)", mode:"مائي غذائي + نزوح", inc:"5 أيام", bench:"1.5% CFR"},
+  {code:"IMM-04", ar:"الخناق (الدفتيريا)", en:"Diphtheria", tier:"فوري (24h)", mode:"تنفسي / تلامس", inc:"5 أيام", bench:"10% CFR"},
+  {code:"IMM-05", ar:"التسمم الغذائي", en:"Food Poisoning", tier:"فوري (24h)", mode:"غذائي محلي", inc:"يومان", bench:"0.5% CFR"},
+  {code:"IMM-06", ar:"الحصبة", en:"Measles", tier:"فوري (24h)", mode:"رذاذي شديد العدوى", inc:"18 يوم", bench:"3% CFR"},
+  {code:"IMM-07", ar:"الالتهاب السحائي الوبائي", en:"Meningococcal Meningitis", tier:"فوري (24h)", mode:"تنفسي + حزام السحايا", inc:"10 أيام", bench:"12% CFR"},
+  {code:"IMM-08", ar:"التهاب السحايا بالمكورات الأخرى", en:"Meningitis Unspecified", tier:"فوري (24h)", mode:"تنفسي / تلامس", inc:"7 أيام", bench:"10% CFR"},
+  {code:"IMM-09", ar:"الحميات النزفية الفيروسية", en:"Viral Hemorrhagic Fevers", tier:"فوري (24h)", mode:"نواقل / تلامس دموي", inc:"21 يوم", bench:"40% CFR"},
+  {code:"IMM-10", ar:"الطاعون", en:"Plague", tier:"فوري (24h)", mode:"نواقل (براغيث) وقوارض", inc:"7 أيام", bench:"30% CFR"},
+  {code:"IMM-11", ar:"الحصبة الألمانية", en:"Rubella", tier:"فوري (24h)", mode:"تنفسي / رذاذ", inc:"21 يوم", bench:"0.2% CFR"},
+  {code:"IMM-12", ar:"داء الكلب", en:"Rabies", tier:"فوري (24h)", mode:"حيواني / عقر", inc:"90 يوم", bench:"99% CFR"},
+  {code:"IMM-13", ar:"لدغة الثعبان", en:"Snake Bite", tier:"فوري (24h)", mode:"بيئي محلي", inc:"يوم واحد", bench:"2% CFR"},
+  {code:"IMM-14", ar:"لدغة العقرب", en:"Scorpion Bite", tier:"فوري (24h)", mode:"بيئي محلي", inc:"يوم واحد", bench:"0.8% CFR"},
+  {code:"IMM-15", ar:"الكزاز الوليدي", en:"Tetanus Neonatorum", tier:"فوري (24h)", mode:"رعاية ولادة غير آمنة", inc:"14 يوم", bench:"70% CFR"},
+  {code:"IMM-16", ar:"التيفوس الوبائي", en:"Epidemic Typhus", tier:"فوري (24h)", mode:"نواقل (قمل) واكتظاظ", inc:"14 يوم", bench:"15% CFR"},
+  {code:"IMM-17", ar:"الشاهوق (السعال الديكي)", en:"Whooping Cough", tier:"فوري (24h)", mode:"تنفسي / رذاذ", inc:"10 أيام", bench:"1% CFR"},
+  {code:"IMM-18", ar:"الحمى الصفراء", en:"Yellow Fever", tier:"فوري (24h)", mode:"نواقل (بعوض الزاعجة)", inc:"6 أيام", bench:"25% CFR"},
+  {code:"IMM-19", ar:"طوارئ وبائية مستجدة / جدري القردة", en:"PHEIC / Mpox / Novel", tier:"فوري (24h)", mode:"مستجد / تلامس وثيق", inc:"21 يوم", bench:"10% CFR"},
+  {code:"WKL-01", ar:"الإسهالات الحادة", en:"Acute Diarrhea", tier:"أسبوعي", mode:"مائي غذائي", inc:"3 أيام", bench:"مؤشر كوليرا"},
+  {code:"WKL-02", ar:"الزحار الأميبي", en:"Amoebiasis", tier:"أسبوعي", mode:"مائي / طفيلي", inc:"28 يوم", bench:"0.3% CFR"},
+  {code:"WKL-03", ar:"عضة الحيوان", en:"Animal Bite", tier:"أسبوعي", mode:"مؤشر استباقي للسعار", inc:"يومان", bench:"استباقي"},
+  {code:"WKL-04", ar:"الحمى المالطية (البروسيلا)", en:"Brucellosis", tier:"أسبوعي", mode:"ألبان ومواشي حدودية", inc:"60 يوم", bench:"1% CFR"},
+  {code:"WKL-05", ar:"الجديري المائي", en:"Chickenpox", tier:"أسبوعي", mode:"تنفسي / تلامس", inc:"21 يوم", bench:"0.05% CFR"},
+  {code:"WKL-06", ar:"الليشمانيا الجلدية", en:"Cutaneous Leishmaniasis", tier:"أسبوعي", mode:"نواقل (ذبابة الرمل)", inc:"180 يوم", bench:"قرحة شرقية"},
+  {code:"WKL-07", ar:"الأكياس العدارية المائية", en:"Echinococcosis", tier:"أسبوعي", mode:"طفيلي حيواني المنشأ", inc:"10 سنوات", bench:"مزمن"},
+  {code:"WKL-08", ar:"السيلان", en:"Gonococcal Infection", tier:"أسبوعي", mode:"منقول جنسياً", inc:"14 يوم", bench:"فحص سريري"},
+  {code:"WKL-09", ar:"التهاب الكبد الفيروسي أ", en:"Hepatitis A", tier:"أسبوعي", mode:"مائي غذائي في النزوح", inc:"50 يوم", bench:"0.3% CFR"},
+  {code:"WKL-10", ar:"التهاب الكبد الفيروسي ب", en:"Hepatitis B", tier:"أسبوعي", mode:"دم وسوائل الجسم", inc:"180 يوم", bench:"فحص منافذ"},
+  {code:"WKL-11", ar:"التهاب الكبد الفيروسي ج", en:"Hepatitis C", tier:"أسبوعي", mode:"دم وسوائل الجسم", inc:"180 يوم", bench:"فحص منافذ"},
+  {code:"WKL-12", ar:"متلازمة العوز المناعي (الإيدز)", en:"HIV (AIDS)", tier:"أسبوعي", mode:"دم / منقول جنسياً", inc:"10 سنوات", bench:"رصد مزمن"},
+  {code:"WKL-13", ar:"الأنفلونزا الموسمية", en:"Influenza (Seasonal)", tier:"أسبوعي", mode:"تنفسي موسمي عابر", inc:"4 أيام", bench:"0.1% CFR"},
+  {code:"WKL-14", ar:"الجذام", en:"Leprosy", tier:"أسبوعي", mode:"مخالطة لصيقة مزمنة", inc:"20 سنة", bench:"نادر وافد"},
+  {code:"WKL-15", ar:"البرداء (الملاريا)", en:"Malaria", tier:"أسبوعي", mode:"نواقل (أنوفيليس) ومناخ", inc:"30 يوم", bench:"2% CFR"},
+  {code:"WKL-16", ar:"الدرن المقاوم للأدوية (MDR-TB)", en:"MDR-TB", tier:"أسبوعي", mode:"تنفسي عالي الخطورة", inc:"180 يوم", bench:"15% CFR"},
+  {code:"WKL-17", ar:"النكاف", en:"Mumps", tier:"أسبوعي", mode:"تنفسي / رذاذ", inc:"25 يوم", bench:"0.05% CFR"},
+  {code:"WKL-18", ar:"الكزاز غير الوليدي", en:"Other Tetanus", tier:"أسبوعي", mode:"جروح وتلوث ترابي", inc:"21 يوم", bench:"20% CFR"},
+  {code:"WKL-19", ar:"الدرن الرئوي (السل)", en:"Pulmonary Tuberculosis", tier:"أسبوعي", mode:"تنفسي / نزوح سكاني", inc:"180 يوم", bench:"5% CFR"},
+  {code:"WKL-20", ar:"حمى الريكتسيا", en:"Rickettsioses", tier:"أسبوعي", mode:"نواقل (قراد وبراغيث)", inc:"14 يوم", bench:"2.5% CFR"},
+  {code:"WKL-21", ar:"البلهارسيا", en:"Schistosomiasis", tier:"أسبوعي", mode:"مائي / قواقع عذبة", inc:"60 يوم", bench:"طفيلي"},
+  {code:"WKL-22", ar:"الزهري", en:"Syphilis", tier:"أسبوعي", mode:"منقول جنسياً", inc:"90 يوم", bench:"فحص وقائي"},
+  {code:"WKL-23", ar:"الدرن خارج الرئة", en:"Extra-Pulmonary TB", tier:"أسبوعي", mode:"انتشار داخلي غير معدي", inc:"سنة", bench:"5% CFR"},
+  {code:"WKL-24", ar:"التيفويد والباراتيفويد", en:"Typhoid & Paratyphoid", tier:"أسبوعي", mode:"مائي غذائي ملوث", inc:"30 يوم", bench:"1.5% CFR"},
+  {code:"WKL-25", ar:"التهاب كبدي غير محدد (E)", en:"Hepatitis Unspecified (E)", tier:"أسبوعي", mode:"مائي وبائي بمخيمات النزوح", inc:"60 يوم", bench:"4% CFR"},
+  {code:"WKL-26", ar:"الليشمانيا الحشوية (الكالازار)", en:"Visceral Leishmaniasis", tier:"أسبوعي", mode:"نواقل (ذبابة الرمل) فتاك", inc:"240 يوم", bench:"10% CFR"},
+  {code:"WKL-27", ar:"الفيروس التنفسي المخلوي (RSV)", en:"Respiratory Syncytial Virus", tier:"أسبوعي", mode:"تنفسي رذاذي أطفال", inc:"8 أيام", bench:"0.2% CFR"},
+  {code:"WKL-28", ar:"التهاب الدماغ (غرب النيل)", en:"Encephalitis / West Nile", tier:"أسبوعي", mode:"نواقل بعوض وطيور", inc:"14 يوم", bench:"8% CFR"},
+  {code:"WKL-29", ar:"كوفيد-19", en:"COVID-19", tier:"أسبوعي", mode:"تنفسي سريع الانتشار", inc:"14 يوم", bench:"1% CFR"}
 ];
 
-// 2. عينة من قائمة الـ 48 مرضاً المعتمدة بمركز مكافحة الأمراض
-const SAMPLE_DISEASES = [
-  {code: "IMM-01", ar: "الشلل الرخو الحاد", en: "Acute Flaccid Paralysis", tier: "فوري (24h)", mode: "معوي / برازي فموي", inc: "4 - 35 يوم", risk: "12%", lvl: "green"},
-  {code: "IMM-02", ar: "الجمرة الخبيثة", en: "Anthrax", tier: "فوري (24h)", mode: "حيواني المنشأ / ماشية", inc: "1 - 7 أيام", risk: "28%", lvl: "yellow"},
-  {code: "IMM-03", ar: "الهيضة (الكوليرا)", en: "Cholera", tier: "فوري (24h)", mode: "مائي غذائي + نزوح", inc: "1 - 5 أيام", risk: "82%", lvl: "red"},
-  {code: "IMM-04", ar: "الخناق (الدفتيريا)", en: "Diphtheria", tier: "فوري (24h)", mode: "تنفسي / تلامس", inc: "2 - 5 أيام", risk: "44%", lvl: "yellow"},
-  {code: "IMM-06", ar: "الحصبة", en: "Measles", tier: "فوري (24h)", mode: "رذاذي شديد العدوى", inc: "7 - 18 يوم", risk: "38%", lvl: "yellow"},
-  {code: "IMM-07", ar: "الالتهاب السحائي الوبائي", en: "Meningococcal Meningitis", tier: "فوري (24h)", mode: "تنفسي + حزام السحايا", inc: "2 - 10 أيام", risk: "52%", lvl: "orange"},
-  {code: "IMM-09", ar: "الحميات النزفية الفيروسية", en: "Viral Hemorrhagic Fevers", tier: "فوري (24h)", mode: "نواقل بعوض / تلامس دموي", inc: "2 - 21 يوم", risk: "48%", lvl: "yellow"},
-  {code: "IMM-18", ar: "الحمى الصفراء", en: "Yellow Fever", tier: "فوري (24h)", mode: "نواقل (بعوض الزاعجة)", inc: "3 - 6 أيام", risk: "31%", lvl: "yellow"},
-  {code: "WKL-01", ar: "الإسهالات الحادة", en: "Acute Diarrhea", tier: "أسبوعي", mode: "مائي غذائي", inc: "1 - 3 أيام", risk: "60%", lvl: "orange"},
-  {code: "WKL-06", ar: "الليشمانيا الجلدية", en: "Cutaneous Leishmaniasis", tier: "أسبوعي", mode: "نواقل (ذبابة الرمل)", inc: "14 - 180 يوم", risk: "45%", lvl: "yellow"},
-  {code: "WKL-15", ar: "البرداء (الملاريا)", en: "Malaria", tier: "أسبوعي", mode: "نواقل (بعوض الأنوفيليس)", inc: "7 - 30 يوم", risk: "64%", lvl: "orange"},
-  {code: "WKL-19", ar: "الدرن الرئوي (السل)", en: "Pulmonary TB", tier: "أسبوعي", mode: "تنفسي / مخالطة", inc: "30 - 180 يوم", risk: "25%", lvl: "yellow"}
-];
-
-// 3. تهيئة الخريطة الجغرافية مع Leaflet
-const map = L.map('map', { zoomControl: false }).setView([27.5, 17.5], 5.5);
+// 2. إعداد الخريطة الليلية الرسمية (Esri Dark Canvas) بدون علامات مائية
+const map = L.map('map', { zoomControl: false }).setView([27.2, 17.5], 5.4);
 L.control.zoom({ position: 'topleft' }).addTo(map);
 
-// خريطة الأساس الداكنة الاحترافية (CartoDB Dark Matter)
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-  attribution: '&copy; OpenStreetMap &copy; CARTO',
-  maxZoom: 18
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Rasad EWS — Libya',
+  maxZoom: 16
 }).addTo(map);
 
-// تجهيز نقاط الخريطة الحرارية (Heatmap Data)
-const heatPoints = [
-  [24.18, 23.30, 0.95], // الكفرة (بؤرة حمراء قوية)
-  [24.50, 22.80, 0.70],
-  [24.93, 14.64, 0.65], // القطرون
-  [24.96, 10.18, 0.55], // غات
-  [33.15, 11.57, 0.40], // رأس جدير
-  [31.58, 25.05, 0.25], // امساعد
-  [30.13, 9.50, 0.20]   // غدامس
-];
+let heatLayer = null;
+let markersGroup = L.layerGroup().addTo(map);
 
-// تفعيل طبقة التوزيع الحراري
-L.heatLayer(heatPoints, {
-  radius: 40,
-  blur: 25,
-  maxZoom: 10,
-  gradient: { 0.2: '#10b981', 0.4: '#f59e0b', 0.6: '#f97316', 0.8: '#ef4444' }
-}).addTo(map);
+// 3. جلب البيانات وتحديث الواجهة
+async function initDashboard() {
+  renderDiseasesTable(ALL_DISEASES);
+  
+  try {
+    const res = await fetch('data/risk_data.json?' + Date.now());
+    if (res.ok) {
+      const data = await res.json();
+      applyData(data);
+      return;
+    }
+  } catch (e) {
+    console.log("استخدام البيانات المحلية");
+  }
 
-// إضافة العلامات التفاعلية للمنافذ على الخريطة
-SECTORS.forEach(sec => {
+  // الاحتياط المحلي في حال عدم توفر الاتصال
+  applyData({
+    national_score: 58.4,
+    flash_report: "🚨 بلاغ عاجل لغرفة عمليات رصد:
+المرض: الهيضة (الكوليرا) IMM-03
+القطاع: قطاع السودان (الجنوب الشرقي)
+المنافذ المستهدفة: منفذ العوينات البري — مطار الكفرة
+البلديات المهددة: الكفرة، تازربو، ربيانة
+مؤشر التهديد المحسوب: 82.4% (طوارئ قصوى)
+التوجيه: تفعيل بروتوكول الفحص الإلزامي للوافدين وتوفير أملاح التروية ومحاليل Ringer Lactate فوراً بمستشفى الكفرة العام.",
+    sectors: [
+      { id: "SD", name: "قطاع السودان (الجنوب الشرقي)", ports: "منفذ العوينات البري — مطار الكفرة", municipalities: ["الكفرة"], threat: "الهيضة (الكوليرا) IMM-03", score: 82.4, level: "red", coords: [24.18, 23.30] },
+      { id: "TD", name: "قطاع تشاد (الجنوب)", ports: "منفذ التوم البري — القطرون", municipalities: ["مرزق", "القطرون"], threat: "البرداء (الملاريا) WKL-15", score: 64.0, level: "orange", coords: [24.93, 14.64] },
+      { id: "NE", name: "قطاع النيجر (الجنوب الغربي)", ports: "منفذ تومو الحدودي — غات", municipalities: ["غات"], threat: "الالتهاب السحائي IMM-07", score: 52.1, level: "orange", coords: [24.96, 10.18] },
+      { id: "TN", name: "قطاع تونس (الشمال الغربي)", ports: "منفذ رأس جدير — منفذ وازن", municipalities: ["زوارة", "نالوت"], threat: "الحصبة IMM-06", score: 38.5, level: "yellow", coords: [33.15, 11.57] },
+      { id: "EG", name: "قطاع مصر (الشرق)", ports: "منفذ امساعد البري — طبرق", municipalities: ["امساعد", "طبرق"], threat: "الأنفلونزا WKL-13", score: 22.0, level: "green", coords: [31.58, 25.05] },
+      { id: "DZ", name: "قطاع الجزائر (الغرب)", ports: "منفذ غدامس البري — الدبداب", municipalities: ["غدامس"], threat: "الحميات النزفية IMM-09", score: 18.2, level: "green", coords: [30.13, 9.50] }
+    ]
+  });
+}
+
+function applyData(data) {
+  if (data.flash_report) {
+    document.getElementById('flash-text').textContent = data.flash_report;
+  }
+  
+  if (data.national_score) {
+    const kpi = document.getElementById('kpi-national');
+    kpi.innerHTML = `${data.national_score}% <span class="badge ${data.national_score>=50?'bg-orange':'bg-green'}">${data.national_score>=75?'طوارئ':data.national_score>=50?'تأهب':'رصد'}</span>`;
+  }
+
+  const sectorContainer = document.getElementById('sectors-list');
+  sectorContainer.innerHTML = '';
+  markersGroup.clearLayers();
+  
+  const heatPoints = [];
   const colorMap = { red: '#ef4444', orange: '#f97316', yellow: '#f59e0b', green: '#10b981' };
-  const circle = L.circleMarker(sec.coords, {
-    radius: 9,
-    fillColor: colorMap[sec.level],
-    color: '#ffffff',
-    weight: 2,
-    opacity: 1,
-    fillOpacity: 0.9
+
+  data.sectors.forEach(sec => {
+    heatPoints.push([sec.coords[0], sec.coords[1], sec.score / 100.0]);
+
+    const marker = L.circleMarker(sec.coords, {
+      radius: 10,
+      fillColor: colorMap[sec.level] || '#00b4d8',
+      color: '#ffffff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.95
+    }).addTo(markersGroup);
+
+    marker.bindPopup(`
+      <div style="direction:rtl; text-align:right; font-family:'IBM Plex Sans Arabic'; font-size:13px; color:#111;">
+        <b style="font-size:14px; color:${colorMap[sec.level]}">${sec.name}</b><br>
+        <b>المنفذ:</b> ${sec.ports}<br>
+        <b>البلديات المهددة:</b> ${Array.isArray(sec.municipalities) ? sec.municipalities.join('، ') : sec.municipalities}<br>
+        <b>التهديد الحاكم:</b> ${sec.threat}<br>
+        <b>مؤشر التهديد:</b> <b>${sec.score}%</b>
+      </div>
+    `);
+
+    const item = document.createElement('div');
+    item.className = 'sector-item';
+    item.onclick = () => map.flyTo(sec.coords, 8, { duration: 1.2 });
+    item.innerHTML = `
+      <div>
+        <div class="sector-name">${sec.name}</div>
+        <div class="sector-ports">${sec.ports}</div>
+        <div style="font-size:0.75rem; color:${sec.level==='red'?'var(--c-red)':'var(--accent)'}; margin-top:2px;">التهديد: ${sec.threat}</div>
+      </div>
+      <span class="badge bg-${sec.level}">${sec.score}%</span>
+    `;
+    sectorContainer.appendChild(item);
+  });
+
+  if (heatLayer) map.removeLayer(heatLayer);
+  heatLayer = L.heatLayer(heatPoints, {
+    radius: 45,
+    blur: 28,
+    maxZoom: 9,
+    gradient: { 0.2: '#10b981', 0.4: '#f59e0b', 0.6: '#f97316', 0.8: '#ef4444' }
   }).addTo(map);
+}
 
-  circle.bindPopup(`
-    <div style="direction:rtl; text-align:right; font-family:'IBM Plex Sans Arabic'; font-size:13px; color:#111;">
-      <b style="font-size:14px; color:${colorMap[sec.level]}">${sec.name}</b><br>
-      <b>المنفذ:</b> ${sec.ports}<br>
-      <b>البلديات المهددة:</b> ${sec.municipality}<br>
-      <b>أعلى تهديد:</b> ${sec.threat}<br>
-      <b>مؤشر الخطر المحسوب:</b> <b>${sec.score}%</b>
-    </div>
-  `);
-});
-
-// 4. تعبئة قائمة القطاعات الجانبية
-const sectorContainer = document.getElementById('sectors-list');
-SECTORS.forEach(s => {
-  const item = document.createElement('div');
-  item.className = 'sector-item';
-  item.onclick = () => {
-    map.flyTo(s.coords, 8, { duration: 1.2 });
-  };
-  item.innerHTML = `
-    <div>
-      <div class="sector-name">${s.name}</div>
-      <div class="sector-ports">${s.ports}</div>
-      <div style="font-size:0.75rem; color:${s.level==='red'?'var(--c-red)':'var(--accent)'}; margin-top:2px;">التهديد: ${s.threat}</div>
-    </div>
-    <span class="badge bg-${s.level}">${s.score}%</span>
-  `;
-  sectorContainer.appendChild(item);
-});
-
-// 5. تعبئة جدول الأمراض
-const tableBody = document.getElementById('table-body');
-function renderTable(data) {
-  tableBody.innerHTML = '';
+// 4. تعبئة وبحث جدول الأمراض
+function renderDiseasesTable(data) {
+  const tbody = document.getElementById('table-body');
+  tbody.innerHTML = '';
   data.forEach(d => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td><strong>${d.code}</strong></td>
       <td>${d.ar}</td>
       <td style="color:var(--text-muted)">${d.en}</td>
-      <td><span style="font-size:0.8rem; color:${d.tier.includes('فوري')?'var(--c-red)':'var(--c-yellow)'}">${d.tier}</span></td>
+      <td><span style="font-size:0.8rem; color:${d.tier.includes('فوري')?'var(--c-red)':'var(--c-yellow)'}; font-weight:600;">${d.tier}</span></td>
       <td>${d.mode}</td>
       <td>${d.inc}</td>
-      <td><span class="badge bg-${d.lvl}">${d.risk}</span></td>
+      <td><span style="font-size:0.8rem; color:var(--text-muted);">${d.bench}</span></td>
     `;
-    tableBody.appendChild(tr);
+    tbody.appendChild(tr);
   });
 }
-renderTable(SAMPLE_DISEASES);
 
-// وظيفة البحث السريع في جدول الأمراض
 function filterTable() {
-  const q = document.getElementById('search-disease').value.toLowerCase();
-  const filtered = SAMPLE_DISEASES.filter(d => 
-    d.ar.includes(q) || d.en.toLowerCase().includes(q) || d.code.toLowerCase().includes(q)
+  const q = document.getElementById('search-disease').value.toLowerCase().trim();
+  const filtered = ALL_DISEASES.filter(d => 
+    d.ar.includes(q) || d.en.toLowerCase().includes(q) || d.code.toLowerCase().includes(q) || d.mode.includes(q)
   );
-  renderTable(filtered);
+  renderDiseasesTable(filtered);
 }
 
-// نسخ البلاغ الفوري للتعميم
 function copyDispatch() {
   const text = document.getElementById('flash-text').innerText;
   navigator.clipboard.writeText(text).then(() => {
-    alert("تم نسخ نص البلاغ الطارئ إلى الحافظة بنجاح!");
+    alert("تم نسخ نص البلاغ الطارئ بنجاح للتعميم الميداني!");
   });
 }
+
+initDashboard();
 </script>
 </body>
 </html>
+
