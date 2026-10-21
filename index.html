@@ -548,7 +548,12 @@ function copyDispatch() {
     alert("تم نسخ نص البلاغ الطارئ بنجاح للتعميم الميداني!");
   });
 }
-
+// تفعيل التخزين المحلي للعمل بدون إنترنت
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').then(() => {
+    console.log('منظومة رصد جاهزة للعمل دون اتصال بالإنترنت (Offline Mode Ready)');
+  });
+}
 initDashboard();
 </script>
 </body>
