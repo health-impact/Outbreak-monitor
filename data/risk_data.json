@@ -1,0 +1,172 @@
+{
+  "updated_at": "2026-10-21T13:35:44.305516+00:00",
+  "national_score": 24.8,
+  "sectors": [
+    {
+      "id": "SD",
+      "name": "قطاع السودان (الجنوب الشرقي)",
+      "ports": "منفذ العوينات البري — مطار الكفرة",
+      "municipalities": [
+        "الكفرة",
+        "تازربو",
+        "ربيانة"
+      ],
+      "threat": "الهيضة (الكوليرا) (IMM-03)",
+      "threat_code": "IMM-03",
+      "score": 42.0,
+      "level": "yellow",
+      "coords": [
+        24.18,
+        23.3
+      ],
+      "weather": {
+        "temp_c": 28.9,
+        "humidity": 24,
+        "rain_mm": 0.0
+      },
+      "epi": {
+        "cases_14d": 420,
+        "cfr_percent": 6.7,
+        "climate_suitability": 0.4
+      }
+    },
+    {
+      "id": "TD",
+      "name": "قطاع تشاد (الجنوب)",
+      "ports": "منفذ التوم البري — القطرون",
+      "municipalities": [
+        "مرزق",
+        "القطرون",
+        "سبها"
+      ],
+      "threat": "البرداء (الملاريا) (WKL-15)",
+      "threat_code": "WKL-15",
+      "score": 30.3,
+      "level": "yellow",
+      "coords": [
+        24.93,
+        14.64
+      ],
+      "weather": {
+        "temp_c": 28.0,
+        "humidity": 35.0,
+        "rain_mm": 0.0
+      },
+      "epi": {
+        "cases_14d": 180,
+        "cfr_percent": 2.2,
+        "climate_suitability": 0.74
+      }
+    },
+    {
+      "id": "NE",
+      "name": "قطاع النيجر (الجنوب الغربي)",
+      "ports": "منفذ تومو الحدودي — غات",
+      "municipalities": [
+        "غات",
+        "أوباري"
+      ],
+      "threat": "الالتهاب السحائي الوبائي (IMM-07)",
+      "threat_code": "IMM-07",
+      "score": 23.0,
+      "level": "green",
+      "coords": [
+        24.96,
+        10.18
+      ],
+      "weather": {
+        "temp_c": 34.9,
+        "humidity": 14,
+        "rain_mm": 0.0
+      },
+      "epi": {
+        "cases_14d": 95,
+        "cfr_percent": 6.3,
+        "climate_suitability": 0.95
+      }
+    },
+    {
+      "id": "TN",
+      "name": "قطاع تونس (الشمال الغربي)",
+      "ports": "منفذ رأس جدير — منفذ وازن",
+      "municipalities": [
+        "زوارة",
+        "نالوت"
+      ],
+      "threat": "الحصبة (IMM-06)",
+      "threat_code": "IMM-06",
+      "score": 15.5,
+      "level": "green",
+      "coords": [
+        33.15,
+        11.57
+      ],
+      "weather": {
+        "temp_c": 26.6,
+        "humidity": 69,
+        "rain_mm": 0.0
+      },
+      "epi": {
+        "cases_14d": 60,
+        "cfr_percent": 0.0,
+        "climate_suitability": 0.15
+      }
+    },
+    {
+      "id": "EG",
+      "name": "قطاع مصر (الشرق)",
+      "ports": "منفذ امساعد البري — ميناء طبرق",
+      "municipalities": [
+        "امساعد",
+        "طبرق",
+        "الجغبوب"
+      ],
+      "threat": "الأنفلونزا الموسمية (WKL-13)",
+      "threat_code": "WKL-13",
+      "score": 22.0,
+      "level": "green",
+      "coords": [
+        31.58,
+        25.05
+      ],
+      "weather": {
+        "temp_c": 23.6,
+        "humidity": 58,
+        "rain_mm": 0.0
+      },
+      "epi": {
+        "cases_14d": 45,
+        "cfr_percent": 2.2,
+        "climate_suitability": 0.25
+      }
+    },
+    {
+      "id": "DZ",
+      "name": "قطاع الجزائر (الغرب)",
+      "ports": "منفذ غدامس البري — الدبداب",
+      "municipalities": [
+        "غدامس",
+        "درج"
+      ],
+      "threat": "الحميات النزفية الفيروسية (IMM-09)",
+      "threat_code": "IMM-09",
+      "score": 15.7,
+      "level": "green",
+      "coords": [
+        30.13,
+        9.5
+      ],
+      "weather": {
+        "temp_c": 32.5,
+        "humidity": 19,
+        "rain_mm": 0.0
+      },
+      "epi": {
+        "cases_14d": 20,
+        "cfr_percent": 0.0,
+        "climate_suitability": 0.68
+      }
+    }
+  ],
+  "flash_report": "🚨 بلاغ عاجل لإدارة الرصد والاستجابة السريعة:\nالمرض: الهيضة (الكوليرا) (IMM-03)\nالقطاع: قطاع السودان (الجنوب الشرقي)\nالمنافذ المستهدفة: منفذ العوينات البري — مطار الكفرة\nالبلديات المهددة: الكفرة, تازربو, ربيانة\nمؤشر التهديد المحسوب: 42.0% (المستوى: YELLOW)\nالطقس الميداني بالمنفذ: 28.9°C، رطوبة 24%\nالتوجيه: تفعيل الرصد النشط وفحص الوافدين فوراً، وتأمين المخزون الوقائي بمستشفى القطاع."
+}
