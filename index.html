@@ -449,7 +449,21 @@ function applyData(data) {
     const kpi = document.getElementById('kpi-national');
     kpi.innerHTML = `${data.national_score}% <span class="badge ${data.national_score>=50?'bg-orange':'bg-green'}">${data.national_score>=75?'طوارئ':data.national_score>=50?'تأهب':'رصد'}</span>`;
   }
+  // تحديث بطاقة الخطر الحرج ديناميكياً بناءً على الحسابات الفعلية
+  const redSectors = data.sectors.filter(s => s.level === 'red');
+  const criticalEl = document.getElementById('kpi-critical');
+  const criticalSub = document.getElementById('kpi-critical-sub');
 
+  if (redSectors.length > 0) {
+    criticalEl.style.color = 'var(--c-red)';
+    criticalEl.innerHTML = `${String(redSectors.length).padStart(2, '0')} <span style="font-size:0.85rem; font-weight:normal">قطاع (${redSectors.map(s => s.name.split(' ')[1] || s.name).join('، ')})</span>`;
+    criticalSub.textContent = `المنافذ: ${redSectors.map(s => s.ports).join(' — ')}`;
+  } else {
+    // في حال عدم وجود أي قطاع بالمستوى الأحمر
+    criticalEl.style.color = 'var(--c-green)';
+    criticalEl.innerHTML = `00 <span style="font-size:0.85rem; font-weight:normal">لا توجد بؤر حرجة</span>`;
+    criticalSub.textContent = `أعلى قطاع حالياً: ${data.sectors[0].name} (${data.sectors[0].score}%)`;
+  }
   const sectorContainer = document.getElementById('sectors-list');
   sectorContainer.innerHTML = '';
   markersGroup.clearLayers();
