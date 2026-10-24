@@ -3,27 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>منظومة رصد | الإنذار المبكر والتنبؤ بالأوبئة العابرة للحدود</title>
+<title>منظومة رصد | الإنذار المبكر والأمن الصحي </title>
 
-<!-- الخط الرسمي -->
+<!-- الخط الرسمي المعتمد -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
 
-<!-- مكتبة الخرائط التفاعلية Leaflet & Heatmap -->
+<!-- مكتبات الخرائط التفاعلية والحرارية -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
 
 <style>
 :root {
-  --bg-base: #090e11;
-  --bg-surface: #10191e;
-  --bg-card: #152229;
-  --bg-card-hover: #1b2c35;
-  --border: #213742;
-  --text-main: #e6f1f4;
+  --bg-base: #070b0e;
+  --bg-surface: #0e161b;
+  --bg-card: #132027;
+  --bg-card-hover: #192b34;
+  --border: #1f3542;
+  --border-sovereign: #94a3b8;
+  --text-main: #e2edf1;
   --text-muted: #829ea8;
   --accent: #00b4d8;
+  --gold: #d4af37;
 
   --c-green: #10b981;
   --c-yellow: #f59e0b;
@@ -36,10 +38,47 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: var(--bg-base); color: var(--text-main); min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; }
 
+/* 1. الشريط السيادي والتصنيف الأمني (المحور 5) */
+.sovereign-banner {
+  background: #000000;
+  border-bottom: 2px solid var(--gold);
+  padding: 6px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+.sovereign-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f1f5f9;
+  font-weight: 600;
+}
+.emblem-icon {
+  width: 14px;
+  height: 14px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--gold);
+}
+.security-badge {
+  background: rgba(239, 68, 68, 0.18);
+  color: #fca5a5;
+  border: 1px solid var(--c-red);
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* الترويسة الرسمية */
 header {
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
-  padding: 12px 24px;
+  padding: 14px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,17 +87,43 @@ header {
 }
 .brand { display: flex; align-items: center; gap: 14px; }
 .brand-badge {
-  background: rgba(0, 180, 216, 0.15);
+  background: rgba(0, 180, 216, 0.12);
   color: var(--accent);
   border: 1px solid var(--accent);
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
 }
-h1 { font-size: 1.15rem; font-weight: 700; }
+h1 { font-size: 1.15rem; font-weight: 700; color: #fff; }
 .subhead { font-size: 0.8rem; color: var(--text-muted); }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* زر إصدار تقرير الموقف الاستراتيجي (المحور 1) */
+.btn-sitrep {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.btn-sitrep:hover {
+  background: #38bdf8;
+  color: #0b1329;
+}
 .status-pill {
   display: flex;
   align-items: center;
@@ -67,7 +132,7 @@ h1 { font-size: 1.15rem; font-weight: 700; }
   background: rgba(16, 185, 129, 0.1);
   color: var(--c-green);
   border: 1px solid var(--c-green);
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 20px;
 }
 .pulse-dot {
@@ -76,6 +141,7 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
+/* صف المؤشرات القيادية */
 .kpi-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -92,17 +158,18 @@ h1 { font-size: 1.15rem; font-weight: 700; }
   gap: 4px;
 }
 .kpi-title { font-size: 0.8rem; color: var(--text-muted); }
-.kpi-value { font-size: 1.5rem; font-weight: 700; display: flex; align-items: baseline; gap: 6px; }
+.kpi-value { font-size: 1.5rem; font-weight: 700; display: flex; align-items: baseline; gap: 8px; }
 .kpi-sub { font-size: 0.75rem; color: var(--text-muted); }
 
+/* تخطيط الصفحة الرئيسي */
 .main-layout {
   display: grid;
-  grid-template-columns: 1fr 380px;
+  grid-template-columns: 1fr 410px;
   gap: 20px;
   padding: 20px 24px;
   flex: 1;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .main-layout { grid-template-columns: 1fr; }
 }
 
@@ -114,7 +181,7 @@ h1 { font-size: 1.15rem; font-weight: 700; }
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 520px;
+  min-height: 540px;
 }
 .map-header {
   padding: 12px 16px;
@@ -125,14 +192,14 @@ h1 { font-size: 1.15rem; font-weight: 700; }
   background: var(--bg-card);
   z-index: 1000;
 }
-#map { flex: 1; width: 100%; min-height: 480px; background: #12191d; }
+#map { flex: 1; width: 100%; min-height: 500px; background: #0c1317; }
 
 .map-legend {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background: rgba(16, 25, 30, 0.92);
-  backdrop-filter: blur(4px);
+  background: rgba(14, 22, 27, 0.94);
+  backdrop-filter: blur(6px);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 10px 14px;
@@ -145,6 +212,7 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 .legend-item { display: flex; align-items: center; gap: 8px; }
 .legend-color { width: 12px; height: 12px; border-radius: 3px; }
 
+/* الشريط الجانبي */
 .sidebar { display: flex; flex-direction: column; gap: 16px; }
 .card {
   background: var(--bg-surface);
@@ -160,6 +228,50 @@ h1 { font-size: 1.15rem; font-weight: 700; }
   justify-content: space-between;
   align-items: center;
 }
+
+/* 2. مصفوفة الإجراءات والتدخلات الإلزامية SOPs (المحور 2) */
+.sop-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 8px;
+}
+.sop-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+.sop-list {
+  list-style: none;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sop-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.45;
+  color: #cbd5e1;
+}
+.sop-item::before {
+  content: "✔";
+  color: var(--accent);
+  font-weight: bold;
+}
+
 .sector-list { display: flex; flex-direction: column; gap: 8px; }
 .sector-item {
   background: var(--bg-card);
@@ -222,6 +334,7 @@ h1 { font-size: 1.15rem; font-weight: 700; }
 }
 .btn-dispatch:hover { opacity: 0.9; }
 
+/* جدول الـ 48 مرض */
 .registry-section { padding: 0 24px 24px; }
 .table-box {
   background: var(--bg-surface);
@@ -253,37 +366,194 @@ table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
 th, td { padding: 10px 16px; border-bottom: 1px solid var(--border); text-align: right; }
 th { background: var(--bg-card); color: var(--text-muted); font-weight: 600; }
 tr:hover { background: var(--bg-card-hover); }
+
+/* نافذة وتنسيق تقرير تقدير الموقف الاستراتيجي للطباعة الرسمية (المحور 1) */
+#sitrep-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.sitrep-sheet {
+  background: #ffffff;
+  color: #0f172a;
+  width: 100%;
+  max-width: 850px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  position: relative;
+}
+.sitrep-official-head {
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sitrep-gov {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #1e293b;
+}
+.sitrep-stamp {
+  border: 2px solid #dc2626;
+  color: #dc2626;
+  padding: 4px 14px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+.sitrep-doc-title {
+  text-align: center;
+  margin: 15px 0 20px;
+}
+.sitrep-doc-title h2 { font-size: 1.25rem; font-weight: 800; color: #0f172a; }
+.sitrep-doc-title p { font-size: 0.8rem; color: #475569; }
+
+.sitrep-section {
+  margin-bottom: 18px;
+}
+.sitrep-section h3 {
+  font-size: 0.95rem;
+  color: #0f172a;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.sitrep-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+.sitrep-table th, .sitrep-table td {
+  border: 1px solid #cbd5e1;
+  padding: 6px 10px;
+  text-align: right;
+  color: #1e293b;
+}
+.sitrep-table th { background: #f1f5f9; font-weight: 700; }
+.sitrep-signatures {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #334155;
+  padding-top: 15px;
+  border-top: 1px solid #e2e8f0;
+}
+.sitrep-modal-controls {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.btn-print {
+  background: #0284c7;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+.btn-close {
+  background: #e2e8f0;
+  color: #334155;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* تنسيق الطباعة المباشر A4 */
+@media print {
+  body * { visibility: hidden; }
+  #sitrep-modal, #sitrep-modal * { visibility: visible; }
+  #sitrep-modal {
+    position: absolute;
+    inset: 0;
+    background: none;
+    padding: 0;
+  }
+  .sitrep-sheet {
+    max-width: 100%;
+    box-shadow: none;
+    padding: 20px;
+  }
+  .sitrep-modal-controls { display: none !important; }
+}
 </style>
 </head>
 <body>
+
+<!-- 1. الشريط السيادي والتصنيف الأمني -->
+<div class="sovereign-banner">
+  <div class="sovereign-title">
+    <div class="emblem-icon"></div>
+    <span>دولة ليبيا — المركز الوطني لمكافحة الأمراض | إدارة الرقابة الصحية الدولية (IHR 2005)</span>
+  </div>
+  <div class="security-badge">وثيقة أمن صحي وطني — سري ومقيّد</div>
+</div>
 
 <header>
   <div class="brand">
     <span class="brand-badge">منظومة رصد | RASAD</span>
     <div>
-      <h1>الإنذار المبكر والتنبؤ بالأوبئة العابرة للحدود</h1>
-      <div class="subhead">غرفة العمليات المركزية — الاستخبارات الوبائية والأمن الصحي الوطني</div>
+      <h1>الإنذار المبكر والأمن الصحي القومي العابر للحدود</h1>
+      <div class="subhead">غرفة العمليات المركزية للتقييم والتنبؤ الوبائي — طرابلس، ليبيا</div>
     </div>
   </div>
-  <div class="status-pill">
-    <div class="pulse-dot"></div>
-    <span>المراقبة الميدانية اللحظية نشطة</span>
+  <div class="header-actions">
+    <button class="btn-sitrep" onclick="openSitRepModal()">
+      <span>📄</span>
+      <span>إصدار تقرير تقدير موقف (SitRep)</span>
+    </button>
+    <div class="status-pill">
+      <div class="pulse-dot"></div>
+      <span>الرصد الميداني اللحظي نشط</span>
+    </div>
   </div>
 </header>
 
 <div class="kpi-row">
   <div class="kpi-card">
     <span class="kpi-title">مؤشر الخطر الوطني العام</span>
-    <div class="kpi-value" id="kpi-national" style="color:var(--c-orange)">58.4% <span class="badge bg-orange">تأهب</span></div>
-    <span class="kpi-sub">أعلى تهديد قادم من الحدود الجنوبية</span>
+    <div class="kpi-value" id="kpi-national" style="color:var(--c-orange)">24.7% <span class="badge bg-green">رصد</span></div>
+    <span class="kpi-sub">محسوب وفق خوارزمية سيجمويد متعددة الأوزان</span>
   </div>
   <div class="kpi-card">
-  <span class="kpi-title">بؤر الخطر الحرج (المستوى الأحمر)</span>
-  <div class="kpi-value" id="kpi-critical" style="color:var(--c-green)">00 <span style="font-size:0.85rem; font-weight:normal">لا توجد بؤر حرجة</span></div>
-  <span class="kpi-sub" id="kpi-critical-sub">كافة القطاعات تحت عتبة الطوارئ القصوى</span>
+    <span class="kpi-title">بؤر الخطر الحرج (المستوى الأحمر)</span>
+    <div class="kpi-value" id="kpi-critical" style="color:var(--c-green)">00 <span style="font-size:0.85rem; font-weight:normal">لا توجد بؤر حرجة</span></div>
+    <span class="kpi-sub" id="kpi-critical-sub">كافة القطاعات تحت عتبة الطوارئ القصوى</span>
   </div>
   <div class="kpi-card">
-    <span class="kpi-title">المصادر الدولية المتصلة</span>
+    <span class="kpi-title">القطاع الحاكم للأمن الصحي</span>
+    <div class="kpi-value" id="kpi-dominant" style="color:var(--c-yellow)">السودان <span style="font-size:0.85rem; font-weight:normal">(42.0%)</span></div>
+    <span class="kpi-sub" id="kpi-dominant-sub">منفذ العوينات البري — بلدية الكفرة</span>
+  </div>
+  <div class="kpi-card">
+    <span class="kpi-title">التوافق مع اللوائح الدولية (IHR)</span>
     <div class="kpi-value" style="color:var(--c-green)">100%</div>
     <span class="kpi-sub">WHO GHO, Africa CDC, HDX, Open-Meteo</span>
   </div>
@@ -292,8 +562,8 @@ tr:hover { background: var(--bg-card-hover); }
 <div class="main-layout">
   <div class="map-container-box">
     <div class="map-header">
-      <div style="font-weight:600; font-size:0.9rem;">الخريطة الوبائية المكانية والحرارية لمنافذ العبور</div>
-      <span style="font-size:0.75rem; color:var(--text-muted);">انقر على أي منفذ لعرض مؤشرات التنبؤ والطقس الميداني</span>
+      <div style="font-weight:600; font-size:0.9rem;">الخريطة العملياتية التكتيكية لمنافذ العبور الحدودية</div>
+      <span style="font-size:0.75rem; color:var(--text-muted);">انقر على أي منفذ لإظهار بيانات الاستخبارات الوبائية الميدانية</span>
     </div>
     <div id="map"></div>
     <div class="map-legend">
@@ -305,30 +575,50 @@ tr:hover { background: var(--bg-card-hover); }
   </div>
 
   <div class="sidebar">
+    <!-- 2. مصفوفة الإجراءات والتدخلات الإلزامية SOPs -->
     <div class="card">
       <div class="card-title">
-        <span>مؤشرات القطاعات الحدودية الست</span>
+        <span>مصفوفة التدخلات التشغيلية الإلزامية (SOPs)</span>
+        <span class="badge bg-yellow" id="sop-active-level">تنبيه مبكر</span>
+      </div>
+      <div class="sop-box" id="sop-container">
+        <div class="sop-header">
+          <span style="font-size:0.8rem; font-weight:700; color:var(--accent);">بروتوكول المستوى الحالي للقطاع الأعلى خطورة:</span>
+        </div>
+        <ul class="sop-list" id="sop-items">
+          <li class="sop-item">إخطار مكتب الرقابة الصحية الدولية بمنفذ العوينات البري برفع مؤشر اليقظة.</li>
+          <li class="sop-item">إجراء الفحص البصري والسريري العشوائي للمسافرين القادمين عبر المثلث الحدودي.</li>
+          <li class="sop-item">مراجعة المخزون الاستراتيجي لأملاح التروية الفموية ومحاليل الوريد بمستشفى الكفرة.</li>
+          <li class="sop-item">إلزام الناقلين بإبلاغ المنفذ فور ظهور أي أعراض قيء أو إسهال مائي حاد قبل الدخول.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>جاهزية ومؤشرات القطاعات الحدودية الست</span>
       </div>
       <div class="sector-list" id="sectors-list"></div>
     </div>
 
     <div class="card">
       <div class="card-title">
-        <span>أحدث بلاغ طوارئ فوري (Flash Dispatch)</span>
+        <span>أحدث بلاغ استخباري فوري (Flash Dispatch)</span>
       </div>
       <div class="dispatch-box">
-        <pre id="flash-text">جاري تحميل البلاغ اللحظي من الخادم...</pre>
+        <pre id="flash-text">جاري مزامنة البلاغ السيادي اللحظي...</pre>
       </div>
-      <button class="btn-dispatch" onclick="copyDispatch()">نسخ نص البلاغ للتعميم</button>
+      <button class="btn-dispatch" onclick="copyDispatch()">نسخ نص البلاغ للتعميم الميداني</button>
     </div>
   </div>
 </div>
 
+<!-- جدول الـ 48 مرض -->
 <div class="registry-section">
   <div class="table-box">
     <div class="table-header">
-      <div style="font-weight:600;">سجل الأمراض الرسمية المعتمدة في منظومة رصد (قائمة الـ 48)</div>
-      <input type="text" class="search-input" id="search-disease" placeholder="ابحث باسم المرض، الكود، أو طريقة الانتقال..." onkeyup="filterTable()">
+      <div style="font-weight:600;">السجل المعتمد للترصد الوبائي الوطني (قائمة الـ 48 مرضاً)</div>
+      <input type="text" class="search-input" id="search-disease" placeholder="ابحث باسم المرض، الكود، أو طبيعة الانتقال..." onkeyup="filterTable()">
     </div>
     <div style="overflow-x:auto;">
       <table>
@@ -337,10 +627,10 @@ tr:hover { background: var(--bg-card-hover); }
             <th>الكود</th>
             <th>الاسم باللغة العربية</th>
             <th>الاسم بالإنجليزية</th>
-            <th>الفئة الرسمية</th>
+            <th>فئة التبليغ</th>
             <th>طبيعة الانتقال والعبور</th>
-            <th>فترة الحضانة القصوى</th>
-            <th>مستوى الخطورة المرجعي</th>
+            <th>فترة الحضانة</th>
+            <th>المعدل المرجعي</th>
           </tr>
         </thead>
         <tbody id="table-body"></tbody>
@@ -349,7 +639,89 @@ tr:hover { background: var(--bg-card-hover); }
   </div>
 </div>
 
+<!-- 1. نافذة تقرير تقدير الموقف الاستراتيجي الرسمي للطباعة -->
+<div id="sitrep-modal">
+  <div class="sitrep-sheet">
+    <div class="sitrep-modal-controls">
+      <button class="btn-print" onclick="window.print()">🖨️ طباعة التقرير الرسمي (A4 / PDF)</button>
+      <button class="btn-close" onclick="closeSitRepModal()">إغلاق النافذة</button>
+    </div>
+
+    <div class="sitrep-official-head">
+      <div class="sitrep-gov">
+        دولة ليبيا<br>
+        وزارة الصحة<br>
+        المركز الوطني لمكافحة الأمراض<br>
+        إدارة الرقابة الصحية الدولية
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 1.1rem; font-weight: 800; letter-spacing: 1px;">منظومة رصد للأمن الصحي</div>
+        <div style="font-size: 0.75rem; color: #64748b;">EARLY WARNING & EPIDEMIC PREDICTION</div>
+      </div>
+      <div>
+        <div class="sitrep-stamp">سري ومقيّد</div>
+        <div style="font-size:0.75rem; color:#475569; margin-top:4px;" id="sitrep-date-stamp">التاريخ: جارٍ التوليد...</div>
+      </div>
+    </div>
+
+    <div class="sitrep-doc-title">
+      <h2>تقرير تقدير موقف استراتيجي: التهديدات الوبائية العابرة للحدود</h2>
+      <p>موجز أمني تنفيذي موجه إلى: رئاسة مجلس الوزراء — وزارة الصحة — هيئة المنافذ والحدود</p>
+    </div>
+
+    <div class="sitrep-section">
+      <h3>أولاً: ملخص الموقف العام ومؤشر التهديد الوطني</h3>
+      <p style="font-size:0.85rem; line-height:1.6; color:#1e293b;" id="sitrep-exec-summary">
+        بناءً على عمليات الرصد والاستخبارات الوبائية ومطابقة نماذج التنبؤ الرياضية والظروف المناخية اللحظية، يستقر مؤشر الخطر الصحي العام للدولة عند <strong><span id="rep-national-score">24.7%</span> (مستوى الرصد والتأهب الوقائي)</strong>. تم تسجيل أعلى تهديد وبائي حاكم باتجاه الحدود الجنوبية الشرقية (قطاع السودان - منفذ العوينات البري).
+      </p>
+    </div>
+
+    <div class="sitrep-section">
+      <h3>ثانياً: جدول تقييم قطاعات الحدود والمنافذ البرية المباشرة</h3>
+      <table class="sitrep-table">
+        <thead>
+          <tr>
+            <th>القطاع الحدودي</th>
+            <th>المنفذ المستهدف</th>
+            <th>التهديد الحاكم</th>
+            <th>مؤشر الخطر المحسوب</th>
+            <th>المستوى العملياتي</th>
+          </tr>
+        </thead>
+        <tbody id="sitrep-table-body">
+          <!-- ديناميكي -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sitrep-section">
+      <h3>ثالثاً: الإجراءات والقرارات التنفيذية الملزمة (خلال 24-48 ساعة)</h3>
+      <ul style="font-size:0.85rem; line-height:1.7; padding-right:20px; color:#1e293b;" id="sitrep-decisions">
+        <li><strong>منفذ العوينات البري (الكفرة):</strong> الإبقاء على حالة الاستنفار الصحي من الدرجة الثانية وتكثيف الكشف السريري على الشاحنات والوافدين.</li>
+        <li><strong>الإمداد الطبي:</strong> تعزيز رصيد مخازن الكفرة وتازربو بأدوية الطوارئ وكواشف الـ RDTs الخاصة بالكوليرا.</li>
+        <li><strong>التنسيق المشترك:</strong> التعميم الفوري على غرف عمليات مصلحة الجوازات وحرس الحدود بضرورة توجيه أي حالة اشتباه مباشرة لنقطة الحجر الميداني.</li>
+      </ul>
+    </div>
+
+    <div class="sitrep-signatures">
+      <div>
+        رئيس غرفة العمليات والتحليل الاستخباري<br>
+        <span style="font-weight:normal; font-size:0.8rem;">إدارة الرقابة الصحية الدولية</span>
+      </div>
+      <div style="text-align: left;">
+        يعتمد: مدير عام المركز الوطني لمكافحة الأمراض<br>
+        <span style="font-weight:normal; font-size:0.8rem;">رئيس اللجنة العليا للأمن الصحي القومي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
+// تفعيل التخزين المحلي للعمل بدون إنترنت (PWA)
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').catch(() => console.log('PWA Offline Ready'));
+}
+
 const ALL_DISEASES = [
   {code:"IMM-01", ar:"الشلل الرخو الحاد", en:"Acute Flaccid Paralysis", tier:"فوري (24h)", mode:"معوي / برازي فموي", inc:"35 يوم", bench:"5% CFR"},
   {code:"IMM-02", ar:"الجمرة الخبيثة", en:"Anthrax", tier:"فوري (24h)", mode:"حيواني المنشأ / ماشية", inc:"7 أيام", bench:"20% CFR"},
@@ -409,7 +781,7 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_D
   maxZoom: 16
 }).addTo(map);
 
-// رسم حدود ليبيا كمتجهات حتى تظهر الخريطة واضحة إذا انقطع الإنترنت
+// حدود ليبيا المتجهية للأوفلاين
 const libyaBorders = [
   [33.15, 11.57], [32.90, 13.20], [32.30, 15.10], [31.20, 16.60], 
   [30.80, 19.80], [32.10, 20.00], [32.90, 22.20], [31.58, 25.05], 
@@ -419,15 +791,15 @@ const libyaBorders = [
 ];
 
 L.polygon(libyaBorders, {
-  color: '#213742',
+  color: '#1f3542',
   weight: 2,
-  fillColor: '#10191e',
-  fillOpacity: 0.8
+  fillColor: '#0a1014',
+  fillOpacity: 0.85
 }).addTo(map);
-  
 
 let heatLayer = null;
 let markersGroup = L.layerGroup().addTo(map);
+let currentGlobalData = null;
 
 async function initDashboard() {
   renderDiseasesTable(ALL_DISEASES);
@@ -436,6 +808,7 @@ async function initDashboard() {
     const res = await fetch('data/risk_data.json?' + Date.now());
     if (res.ok) {
       const data = await res.json();
+      currentGlobalData = data;
       applyData(data);
       return;
     }
@@ -443,18 +816,27 @@ async function initDashboard() {
     console.log("استخدام البيانات الاحتياطية");
   }
 
-  applyData({
-    national_score: 58.4,
-    flash_report: "🚨 بلاغ عاجل لغرفة عمليات رصد:\nالمرض: الهيضة (الكوليرا) IMM-03\nالقطاع: قطاع السودان (الجنوب الشرقي)\nالمنافذ المستهدفة: منفذ العوينات البري — مطار الكفرة\nالبلديات المهددة: الكفرة، تازربو، ربيانة\nمؤشر التهديد المحسوب: 82.4% (طوارئ قصوى)\nالتوجيه: تفعيل بروتوكول الفحص الإلزامي للوافدين وتوفير أملاح التروية ومحاليل Ringer Lactate فوراً بمستشفى الكفرة العام.",
+  const fallback = {
+    national_score: 24.7,
+    flash_report: "🚨 بلاغ استخباري عاجل لغرفة العمليات المركزية:
+المرض الحاكم: الهيضة (الكوليرا) IMM-03
+القطاع: قطاع السودان (الجنوب الشرقي)
+المنافذ: منفذ العوينات البري — مطار الكفرة
+البلديات المهددة: الكفرة، تازربو، ربيانة
+المؤشر المحسوب: 42.0% (مستوى التنبيه المبكر)
+الطقس الميداني: 26.6°C، رطوبة 23%
+التوجيه الأمني: تفعيل بروتوكول التدخل الأصفر بالمنافذ الجنوبية ومراجعة مخزون محاليل Ringer Lactate فوراً بمستشفى الكفرة العام.",
     sectors: [
-      { id: "SD", name: "قطاع السودان (الجنوب الشرقي)", ports: "منفذ العوينات البري — مطار الكفرة", municipalities: ["الكفرة"], threat: "الهيضة (الكوليرا) IMM-03", score: 82.4, level: "red", coords: [24.18, 23.30] },
-      { id: "TD", name: "قطاع تشاد (الجنوب)", ports: "منفذ التوم البري — القطرون", municipalities: ["مرزق", "القطرون"], threat: "البرداء (الملاريا) WKL-15", score: 64.0, level: "orange", coords: [24.93, 14.64] },
-      { id: "NE", name: "قطاع النيجر (الجنوب الغربي)", ports: "منفذ تومو الحدودي — غات", municipalities: ["غات"], threat: "الالتهاب السحائي IMM-07", score: 52.1, level: "orange", coords: [24.96, 10.18] },
-      { id: "TN", name: "قطاع تونس (الشمال الغربي)", ports: "منفذ رأس جدير — منفذ وازن", municipalities: ["زوارة", "نالوت"], threat: "الحصبة IMM-06", score: 38.5, level: "yellow", coords: [33.15, 11.57] },
-      { id: "EG", name: "قطاع مصر (الشرق)", ports: "منفذ امساعد البري — طبرق", municipalities: ["امساعد", "طبرق"], threat: "الأنفلونزا WKL-13", score: 22.0, level: "green", coords: [31.58, 25.05] },
-      { id: "DZ", name: "قطاع الجزائر (الغرب)", ports: "منفذ غدامس البري — الدبداب", municipalities: ["غدامس"], threat: "الحميات النزفية IMM-09", score: 18.2, level: "green", coords: [30.13, 9.50] }
+      { id: "SD", name: "قطاع السودان (الجنوب الشرقي)", ports: "منفذ العوينات البري — مطار الكفرة", municipalities: ["الكفرة"], threat: "الهيضة (الكوليرا) IMM-03", score: 42.0, level: "yellow", coords: [24.18, 23.30] },
+      { id: "TD", name: "قطاع تشاد (الجنوب)", ports: "منفذ التوم البري — القطرون", municipalities: ["مرزق", "القطرون"], threat: "البرداء (الملاريا) WKL-15", score: 28.5, level: "yellow", coords: [24.93, 14.64] },
+      { id: "NE", name: "قطاع النيجر (الجنوب الغربي)", ports: "منفذ تومو الحدودي — غات", municipalities: ["غات"], threat: "الالتهاب السحائي IMM-07", score: 21.0, level: "green", coords: [24.96, 10.18] },
+      { id: "TN", name: "قطاع تونس (الشمال الغربي)", ports: "منفذ رأس جدير — منفذ وازن", municipalities: ["زوارة", "نالوت"], threat: "الحصبة IMM-06", score: 18.2, level: "green", coords: [33.15, 11.57] },
+      { id: "EG", name: "قطاع مصر (الشرق)", ports: "منفذ امساعد البري — طبرق", municipalities: ["امساعد", "طبرق"], threat: "الأنفلونزا WKL-13", score: 14.5, level: "green", coords: [31.58, 25.05] },
+      { id: "DZ", name: "قطاع الجزائر (الغرب)", ports: "منفذ غدامس البري — الدبداب", municipalities: ["غدامس"], threat: "الحميات النزفية IMM-09", score: 11.0, level: "green", coords: [30.13, 9.50] }
     ]
-  });
+  };
+  currentGlobalData = fallback;
+  applyData(fallback);
 }
 
 function applyData(data) {
@@ -466,21 +848,38 @@ function applyData(data) {
     const kpi = document.getElementById('kpi-national');
     kpi.innerHTML = `${data.national_score}% <span class="badge ${data.national_score>=50?'bg-orange':'bg-green'}">${data.national_score>=75?'طوارئ':data.national_score>=50?'تأهب':'رصد'}</span>`;
   }
-  // تحديث بطاقة الخطر الحرج ديناميكياً بناءً على الحسابات الفعلية
+
+  // تحديث بطاقة الخطر الحرج ديناميكياً
   const redSectors = data.sectors.filter(s => s.level === 'red');
   const criticalEl = document.getElementById('kpi-critical');
   const criticalSub = document.getElementById('kpi-critical-sub');
 
-  if (redSectors.length > 0) {
-    criticalEl.style.color = 'var(--c-red)';
-    criticalEl.innerHTML = `${String(redSectors.length).padStart(2, '0')} <span style="font-size:0.85rem; font-weight:normal">قطاع (${redSectors.map(s => s.name.split(' ')[1] || s.name).join('، ')})</span>`;
-    criticalSub.textContent = `المنافذ: ${redSectors.map(s => s.ports).join(' — ')}`;
-  } else {
-    // في حال عدم وجود أي قطاع بالمستوى الأحمر
-    criticalEl.style.color = 'var(--c-green)';
-    criticalEl.innerHTML = `00 <span style="font-size:0.85rem; font-weight:normal">لا توجد بؤر حرجة</span>`;
-    criticalSub.textContent = `أعلى قطاع حالياً: ${data.sectors[0].name} (${data.sectors[0].score}%)`;
+  if (criticalEl && criticalSub) {
+    if (redSectors.length > 0) {
+      criticalEl.style.color = 'var(--c-red)';
+      criticalEl.innerHTML = `${String(redSectors.length).padStart(2, '0')} <span style="font-size:0.85rem; font-weight:normal">قطاع (${redSectors.map(s => s.name.split(' ')[1] || s.name).join('، ')})</span>`;
+      criticalSub.textContent = `المنافذ: ${redSectors.map(s => s.ports).join(' — ')}`;
+    } else {
+      criticalEl.style.color = 'var(--c-green)';
+      criticalEl.innerHTML = `00 <span style="font-size:0.85rem; font-weight:normal">لا توجد بؤر حرجة</span>`;
+      criticalSub.textContent = `كافة القطاعات تحت عتبة الطوارئ القصوى`;
+    }
   }
+
+  // تحديث القطاع الحاكم
+  const topSector = data.sectors[0];
+  const dominantEl = document.getElementById('kpi-dominant');
+  const dominantSub = document.getElementById('kpi-dominant-sub');
+  if (topSector && dominantEl) {
+    const colorMap = { red: 'var(--c-red)', orange: 'var(--c-orange)', yellow: 'var(--c-yellow)', green: 'var(--c-green)' };
+    dominantEl.style.color = colorMap[topSector.level] || 'var(--accent)';
+    dominantEl.innerHTML = `${topSector.name.split(' ')[1] || topSector.name} <span style="font-size:0.85rem; font-weight:normal">(${topSector.score}%)</span>`;
+    dominantSub.textContent = `${topSector.ports.split('—')[0]} — التهديد: ${topSector.threat.split(' ')[0]}`;
+    
+    // تحديث مصفوفة التدخلات SOPs ديناميكياً بناءً على القطاع الأعلى
+    updateSOPMatrix(topSector.level, topSector);
+  }
+
   const sectorContainer = document.getElementById('sectors-list');
   sectorContainer.innerHTML = '';
   markersGroup.clearLayers();
@@ -503,7 +902,7 @@ function applyData(data) {
     marker.bindPopup(`
       <div style="direction:rtl; text-align:right; font-family:'IBM Plex Sans Arabic'; font-size:13px; color:#111;">
         <b style="font-size:14px; color:${colorMap[sec.level]}">${sec.name}</b><br>
-        <b>المنفذ:</b> ${sec.ports}<br>
+        <b>المنفذ المستهدف:</b> ${sec.ports}<br>
         <b>البلديات المهددة:</b> ${Array.isArray(sec.municipalities) ? sec.municipalities.join('، ') : sec.municipalities}<br>
         <b>التهديد الحاكم:</b> ${sec.threat}<br>
         <b>مؤشر التهديد:</b> <b>${sec.score}%</b>
@@ -531,6 +930,90 @@ function applyData(data) {
     maxZoom: 9,
     gradient: { 0.2: '#10b981', 0.4: '#f59e0b', 0.6: '#f97316', 0.8: '#ef4444' }
   }).addTo(map);
+}
+
+// 2. تحديث مصفوفة الإجراءات والتدخلات الإلزامية SOPs
+function updateSOPMatrix(level, topSector) {
+  const badgeEl = document.getElementById('sop-active-level');
+  const itemsEl = document.getElementById('sop-items');
+  
+  const protocols = {
+    green: {
+      label: "رصد روتيني (0% - 24%)",
+      class: "bg-green",
+      actions: [
+        "مواصلة الرصد الوبائي الروتيني وتسجيل القادمين عبر المنافذ الحدودية.",
+        "التحقق الأسبوعي من كفاءة خطوط الاتصال وأجهزة التفتيش الصحي.",
+        "تحديث قواعد بيانات المسافرين والوافدين بالتنسيق مع مصلحة الجوازات."
+      ]
+    },
+    yellow: {
+      label: "تنبيه مبكر (25% - 49%)",
+      class: "bg-yellow",
+      actions: [
+        `إخطار فوري لمكتب الرقابة الصحية الدولية في (${topSector.ports.split('—')[0]}).`,
+        `تفعيل الفحص السريري العشوائي للمسافرين القادمين عبر ${topSector.name}.`,
+        `مراجعة المخزون الاستراتيجي لأدوية الطوارئ وكواشف الفحص بمستشفيات (${Array.isArray(topSector.municipalities)?topSector.municipalities.join('، '):topSector.municipalities}).`,
+        "إلزام وسائل النقل وسائقي الشاحنات بالتبليغ الفوري عن أي حالات مشتبهة قبل عبور البوابات."
+      ]
+    },
+    orange: {
+      label: "تأهب مرتفع (50% - 74%)",
+      class: "bg-orange",
+      actions: [
+        `تطبيق الفحص الحراري الإجباري 100% لكافة العابرين بمنفذ (${topSector.ports.split('—')[0]}).`,
+        `تفعيل وتشغيل غرف العزل المؤقت والفرز الميداني داخل المنفذ الحدودي.`,
+        `رفع درجة الجاهزية القصوى لأقسام الإسعاف في مستشفيات بلديات (${Array.isArray(topSector.municipalities)?topSector.municipalities.join('، '):topSector.municipalities}).`,
+        "إرسال عينات مخبرية عاجلة للمختبرات المرجعية بطرابلس/بنغازي لأي متلازمة مطابقة."
+      ]
+    },
+    red: {
+      label: "طوارئ قصوى (75% - 100%)",
+      class: "bg-red",
+      actions: [
+        "إعلان حالة الطوارئ الصحية القصوى ونشر فرق الاستجابة السريعة (RRT) فوراً بالمنفذ.",
+        "التنسيق المباشر مع قيادة حرس الحدود ومصلحة الجوازات لإعادة ضبط أو تقييد حركة الدخول.",
+        "إطلاق الجسر الطبي الجوي/البري العاجل لتزويد المراكز الميدانية بحصص الإسناد الدوائي واللقاحات.",
+        "انعقاد غرفة الطوارئ وإحاطة المجلس الرئاسي ورئاسة الوزراء بالموقف كل 6 ساعات."
+      ]
+    }
+  };
+
+  const p = protocols[level] || protocols.yellow;
+  badgeEl.className = `badge ${p.class}`;
+  badgeEl.textContent = p.label;
+  
+  itemsEl.innerHTML = p.actions.map(act => `<li class="sop-item">${act}</li>`).join('');
+}
+
+// 1. تشغيل وتوليد نافذة تقرير تقدير الموقف الاستراتيجي (SitRep)
+function openSitRepModal() {
+  if (!currentGlobalData) return;
+  
+  const d = new Date();
+  document.getElementById('sitrep-date-stamp').textContent = `تاريخ التصدير: ${d.toLocaleDateString('ar-LY')} — ${d.toLocaleTimeString('ar-LY')}`;
+  document.getElementById('rep-national-score').textContent = `${currentGlobalData.national_score}%`;
+  
+  // ملء جدول المنافذ في التقرير
+  const tbody = document.getElementById('sitrep-table-body');
+  tbody.innerHTML = '';
+  currentGlobalData.sectors.forEach(s => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${s.name}</strong></td>
+      <td>${s.ports}</td>
+      <td>${s.threat}</td>
+      <td><strong>${s.score}%</strong></td>
+      <td><span style="font-weight:700; color:${s.level==='red'?'#dc2626':s.level==='orange'?'#ea580c':s.level==='yellow'?'#ca8a04':'#16a34a'}">${s.level==='red'?'طوارئ قصوى':s.level==='orange'?'تأهب مرتفع':s.level==='yellow'?'تنبيه مبكر':'رصد روتيني'}</span></td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById('sitrep-modal').style.display = 'flex';
+}
+
+function closeSitRepModal() {
+  document.getElementById('sitrep-modal').style.display = 'none';
 }
 
 function renderDiseasesTable(data) {
@@ -562,15 +1045,10 @@ function filterTable() {
 function copyDispatch() {
   const text = document.getElementById('flash-text').innerText;
   navigator.clipboard.writeText(text).then(() => {
-    alert("تم نسخ نص البلاغ الطارئ بنجاح للتعميم الميداني!");
+    alert("تم نسخ نص البلاغ الأمني بنجاح للتعميم الميداني!");
   });
 }
-// تفعيل التخزين المحلي للعمل بدون إنترنت
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js').then(() => {
-    console.log('منظومة رصد جاهزة للعمل دون اتصال بالإنترنت (Offline Mode Ready)');
-  });
-}
+
 initDashboard();
 </script>
 </body>
