@@ -36,6 +36,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: var(--bg-base); color: var(--text-main); min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; }
 
+/* الترويسة الرئيسية الأنيقة */
 header {
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
@@ -151,7 +152,10 @@ h1 { font-size: 1.15rem; font-weight: 700; color: #fff; }
   background: var(--bg-card);
   z-index: 1000;
 }
-#map { flex: 1; width: 100%; min-height: 480px; background: #12191d; }
+
+/* إزالة أي خلفية بيضاء للخريطة لضمان مظهر ليلي نقي بدون أي هالات */
+#map { flex: 1; width: 100%; min-height: 480px; background: #090e11 !important; }
+.leaflet-container { background: #090e11 !important; }
 
 .map-legend {
   position: absolute;
@@ -308,7 +312,7 @@ th, td { padding: 10px 16px; border-bottom: 1px solid var(--border); text-align:
 th { background: var(--bg-card); color: var(--text-muted); font-weight: 600; }
 tr:hover { background: var(--bg-card-hover); }
 
-/* نافذة تقرير الموقف الاستراتيجي الرسمي */
+/* نافذة تقرير الموقف الاستراتيجي الرسمي - مستقلة تماماً بدون تبعية مؤسسية */
 #sitrep-modal {
   display: none;
   position: fixed;
@@ -450,7 +454,7 @@ tr:hover { background: var(--bg-card-hover); }
     <span class="brand-badge">منظومة رصد | RASAD</span>
     <div>
       <h1>الإنذار المبكر والتنبؤ بالأوبئة العابرة للحدود</h1>
-      <div class="subhead">غرفة العمليات المركزية — الاستخبارات الوبائية والأمن الصحي الوطني</div>
+      <div class="subhead">غرفة العمليات المركزية — الاستخبارات الوبائية ومراقبة المنافذ</div>
     </div>
   </div>
   <div class="header-tools">
@@ -467,7 +471,7 @@ tr:hover { background: var(--bg-card-hover); }
 
 <div class="kpi-row">
   <div class="kpi-card">
-    <span class="kpi-title">مؤشر الخطر الوطني العام</span>
+    <span class="kpi-title">مؤشر الخطر العام</span>
     <div class="kpi-value" id="kpi-national" style="color:var(--c-orange)">24.7% <span class="badge bg-green">رصد</span></div>
     <span class="kpi-sub">أعلى تهديد قادم من الحدود الجنوبية</span>
   </div>
@@ -491,8 +495,8 @@ tr:hover { background: var(--bg-card-hover); }
 <div class="main-layout">
   <div class="map-container-box">
     <div class="map-header">
-      <div style="font-weight:600; font-size:0.9rem;">الخريطة الوبائية المكانية والحرارية لمنافذ العبور</div>
-      <span style="font-size:0.75rem; color:var(--text-muted);">انقر على أي منفذ لعرض مؤشرات التنبؤ والطقس الميداني</span>
+      <div style="font-weight:600; font-size:0.9rem;">الخريطة الحرارية التفاعلية للمنافذ وبؤر العبور</div>
+      <span style="font-size:0.75rem; color:var(--text-muted);">انقر على أي منفذ لعرض بيانات التنبؤ والطقس الميداني</span>
     </div>
     <div id="map"></div>
     <div class="map-legend">
@@ -511,8 +515,8 @@ tr:hover { background: var(--bg-card-hover); }
       </div>
       <div class="sop-box">
         <ul class="sop-list" id="sop-items">
-          <li class="sop-item">إخطار مكتب الرقابة الصحية الدولية بمنفذ العوينات البري برفع مؤشر اليقظة.</li>
-          <li class="sop-item">إجراء الفحص البصري والسريري العشوائي للمسافرين القادمين عبر المثلث الحدودي.</li>
+          <li class="sop-item">إخطار مكتب الرقابة الصحية الميداني بمنفذ العوينات البري برفع مؤشر اليقظة.</li>
+          <li class="sop-item">تفعيل الفحص السريري العشوائي للمسافرين القادمين عبر المثلث الحدودي.</li>
           <li class="sop-item">مراجعة المخزون الاستراتيجي لأملاح التروية الفموية ومحاليل الوريد بمستشفى الكفرة.</li>
           <li class="sop-item">إلزام الناقلين بإبلاغ المنفذ فور ظهور أي أعراض قيء أو إسهال مائي حاد قبل الدخول.</li>
         </ul>
@@ -541,7 +545,7 @@ tr:hover { background: var(--bg-card-hover); }
 <div class="registry-section">
   <div class="table-box">
     <div class="table-header">
-      <div style="font-weight:600;">سجل الأمراض الرسمية المعتمدة في منظومة رصد (قائمة الـ 48)</div>
+      <div style="font-weight:600;">سجل الأمراض المعتمدة في منظومة رصد (قائمة الـ 48)</div>
       <input type="text" class="search-input" id="search-disease" placeholder="ابحث باسم المرض، الكود، أو طريقة الانتقال..." onkeyup="filterTable()">
     </div>
     <div style="overflow-x:auto;">
@@ -563,7 +567,7 @@ tr:hover { background: var(--bg-card-hover); }
   </div>
 </div>
 
-<!-- نافذة تقرير الموقف الاستراتيجي الرسمي للطباعة -->
+<!-- نافذة تقرير الموقف الاستراتيجي الرسمي - مستقلة تماماً بدون مؤسسات -->
 <div id="sitrep-modal">
   <div class="sitrep-sheet">
     <div class="sitrep-modal-controls">
@@ -573,29 +577,29 @@ tr:hover { background: var(--bg-card-hover); }
 
     <div class="sitrep-official-head">
       <div class="sitrep-gov">
-        دولة ليبيا — وزارة الصحة<br>
-        المركز الوطني لمكافحة الأمراض<br>
-        إدارة الرقابة الصحية الدولية (IHR 2005)
+        منظومة رصد المستقلة للإنذار المبكر<br>
+        غرفة العمليات المركزية والتحليل الوبائي<br>
+        بروتوكول تقييم المخاطر العابرة للحدود
       </div>
       <div style="text-align: center;">
-        <div style="font-size: 1.1rem; font-weight: 800;">منظومة رصد للأمن الصحي</div>
-        <div style="font-size: 0.75rem; color: #64748b;">EARLY WARNING & SURVEILLANCE</div>
+        <div style="font-size: 1.15rem; font-weight: 800; letter-spacing: 0.5px;">منظومة رصد | RASAD</div>
+        <div style="font-size: 0.72rem; color: #64748b;">AUTONOMOUS EPIDEMIOLOGICAL SURVEILLANCE</div>
       </div>
       <div>
-        <div class="sitrep-stamp">سري ومقيّد</div>
+        <div class="sitrep-stamp">تقرير مقيّد</div>
         <div style="font-size:0.75rem; color:#475569; margin-top:4px;" id="sitrep-date-stamp"></div>
       </div>
     </div>
 
     <div class="sitrep-doc-title">
       <h2>تقرير تقدير موقف استراتيجي: التهديدات الوبائية العابرة للحدود</h2>
-      <p>موجز أمني تنفيذي موجه للغرف المشتركة وهيئة المنافذ والحدود</p>
+      <p>موجز فني موجه للفرق الميدانية وغرف عمليات الطوارئ الصحية</p>
     </div>
 
     <div class="sitrep-section">
-      <h3>أولاً: ملخص الموقف العام ومؤشر التهديد الوطني</h3>
+      <h3>أولاً: ملخص الموقف العام ومؤشر التهديد الحاكم</h3>
       <p style="font-size:0.85rem; line-height:1.6; color:#1e293b;">
-        بناءً على عمليات الرصد الميداني ومطابقة نماذج التنبؤ الرياضية والطقس اللحظي، يستقر مؤشر الخطر الصحي العام للدولة عند <strong><span id="rep-national-score">24.7%</span> (مستوى الرصد والتأهب الوقائي)</strong>. تم تسجيل أعلى تهديد وبائي حاكم باتجاه الحدود الجنوبية الشرقية (قطاع السودان - منفذ العوينات البري).
+        بناءً على عمليات الرصد الميداني ومطابقة نماذج التنبؤ الرياضية والطقس اللحظي، يستقر مؤشر الخطر العام عند <strong><span id="rep-national-score">24.7%</span> (مستوى الرصد والتأهب الوقائي)</strong>. تم تسجيل أعلى تهديد وبائي حاكم باتجاه الحدود الجنوبية الشرقية (قطاع السودان - منفذ العوينات البري).
       </p>
     </div>
 
@@ -616,17 +620,23 @@ tr:hover { background: var(--bg-card-hover); }
     </div>
 
     <div class="sitrep-section">
-      <h3>ثالثاً: الإجراءات والقرارات التنفيذية الملزمة</h3>
+      <h3>ثالثاً: الإجراءات والقرارات التنفيذية الموصى بها</h3>
       <ul style="font-size:0.85rem; line-height:1.7; padding-right:20px; color:#1e293b;">
         <li><strong>منفذ العوينات البري (الكفرة):</strong> الإبقاء على حالة الاستنفار الصحي من الدرجة الثانية وتكثيف الكشف السريري للوافدين.</li>
-        <li><strong>الإمداد الطبي:</strong> تعزيز مخزون الكفرة وتازربو بأدوية الطوارئ وكواشف الـ RDTs.</li>
-        <li><strong>التنسيق المشترك:</strong> التعميم الفوري على حرس الحدود بتوجيه أي حالة اشتباه مباشرة لنقطة الحجر الميداني.</li>
+        <li><strong>الإمداد الميداني:</strong> تعزيز مخزون الكفرة وتازربو بأدوية الطوارئ ومحاليل التروية وكواشف الـ RDTs.</li>
+        <li><strong>المنافذ الحدودية:</strong> توجيه أي حالة اشتباه مباشرة لنقاط العزل والفرز الميداني فور وصولها.</li>
       </ul>
     </div>
 
     <div class="sitrep-signatures">
-      <div>رئيس غرفة العمليات والتحليل الاستخباري</div>
-      <div style="text-align: left;">يعتمد: مدير عام المركز الوطني لمكافحة الأمراض</div>
+      <div>
+        إعداد: وحدة الرصد والتحليل الميداني<br>
+        <span style="font-weight:normal; font-size:0.8rem;">غرفة العمليات المركزية</span>
+      </div>
+      <div style="text-align: left;">
+        اعتماد: المشرف العام على المنظومة<br>
+        <span style="font-weight:normal; font-size:0.8rem;">منظومة رصد للأمن الصحي</span>
+      </div>
     </div>
   </div>
 </div>
@@ -687,27 +697,14 @@ var ALL_DISEASES = [
   {code:"WKL-29", ar:"كوفيد-19", en:"COVID-19", tier:"أسبوعي", mode:"تنفسي سريع الانتشار", inc:"14 يوم", bench:"1% CFR"}
 ];
 
+// تهيئة الخريطة الليلية باستخدام خادم CartoDB Dark Matter لضمان خلو الخريطة من أي بقع أو هالات بيضاء
 var map = L.map('map', { zoomControl: false }).setView([27.2, 17.5], 5.4);
 L.control.zoom({ position: 'topleft' }).addTo(map);
 
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-  attribution: 'Rasad EWS — Libya',
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: 'Rasad EWS &copy; CARTO',
+  subdomains: 'abcd',
   maxZoom: 16
-}).addTo(map);
-
-var libyaBorders = [
-  [33.15, 11.57], [32.90, 13.20], [32.30, 15.10], [31.20, 16.60], 
-  [30.80, 19.80], [32.10, 20.00], [32.90, 22.20], [31.58, 25.05], 
-  [25.00, 25.00], [22.00, 25.00], [22.00, 19.00], [23.50, 16.00], 
-  [23.00, 15.00], [23.50, 12.00], [24.96, 10.18], [26.00, 9.40], 
-  [30.13, 9.50], [30.25, 10.10], [32.00, 10.60], [33.15, 11.57]
-];
-
-L.polygon(libyaBorders, {
-  color: '#213742',
-  weight: 2,
-  fillColor: '#10191e',
-  fillOpacity: 0.8
 }).addTo(map);
 
 var heatLayer = null;
@@ -762,14 +759,14 @@ function updateSOPMatrix(level, topSector) {
       actions: [
         "مواصلة الرصد الوبائي الروتيني وتسجيل القادمين عبر المنافذ الحدودية.",
         "التحقق الدوري من كفاءة خطوط الاتصال وأجهزة التفتيش الصحي.",
-        "تحديث قواعد بيانات المسافرين والوافدين بالتنسيق مع مصلحة الجوازات."
+        "تحديث ومطابقة سجلات تدفق المسافرين والوافدين بالمنافذ."
       ]
     },
     yellow: {
       label: "تنبيه مبكر (25% - 49%)",
       cssClass: "bg-yellow",
       actions: [
-        "إخطار فوري لمكتب الرقابة الصحية الدولية في (" + topPortName + ") برفع اليقظة.",
+        "إخطار فوري لمكتب الرقابة الميداني في (" + topPortName + ") برفع اليقظة.",
         "تفعيل الفحص السريري العشوائي للمسافرين القادمين عبر " + topSector.name + ".",
         "مراجعة المخزون الاستراتيجي لأدوية الطوارئ وكواشف الفحص بمستشفيات (" + topMuni + ").",
         "إلزام وسائل النقل وسائقي الشاحنات بالتبليغ الفوري عن أي حالات مشتبهة قبل عبور البوابات."
@@ -782,17 +779,17 @@ function updateSOPMatrix(level, topSector) {
         "تطبيق الفحص الحراري الإجباري 100% لكافة العابرين بمنفذ (" + topPortName + ").",
         "تفعيل وتشغيل غرف العزل المؤقت والفرز الميداني داخل المنفذ الحدودي.",
         "رفع درجة الجاهزية القصوى لأقسام الإسعاف في مستشفيات بلديات (" + topMuni + ").",
-        "إرسال عينات مخبرية عاجلة للمختبرات المرجعية بطرابلس/بنغازي لأي متلازمة مطابقة."
+        "إرسال عينات مخبرية عاجلة للمختبرات المرجعية لأي متلازمة وبائية مطابقة."
       ]
     },
     red: {
       label: "طوارئ قصوى (75% - 100%)",
       cssClass: "bg-red",
       actions: [
-        "إعلان حالة الطوارئ الصحية القصوى ونشر فرق الاستجابة السريعة (RRT) فوراً بالمنفذ.",
-        "التنسيق المباشر مع قيادة حرس الحدود ومصلحة الجوازات لإعادة ضبط أو تقييد حركة الدخول.",
-        "إطلاق الجسر الطبي الجوي/البري العاجل لتزويد المراكز الميدانية بحصص الإسناد الدوائي واللقاحات.",
-        "انعقاد غرفة الطوارئ وإحاطة المجلس الرئاسي ورئاسة الوزراء بالموقف كل 6 ساعات."
+        "إعلان حالة الطوارئ الصحية ونشر فرق الاستجابة السريعة (RRT) فوراً بالمنفذ.",
+        "تنسيق إجراءات الحجر الميداني عند بوابات الدخول لضبط التدفق البشري.",
+        "إطلاق الجسر الطبي الإمدادي العاجل لتزويد المراكز الميدانية بحصص الإسناد الدوائي واللقاحات.",
+        "انعقاد غرفة الطوارئ وإصدار بلاغات الموقف كل 6 ساعات."
       ]
     }
   };
@@ -880,7 +877,7 @@ function applyData(data) {
     updateSOPMatrix(topSector.level, topSector);
   }
 
-  // تحديث القائمة الجانبية والخريطة
+  // تحديث القائمة الجانبية وتوليد الخريطة الحرارية التفاعلية الحقيقية
   var sectorContainer = document.getElementById('sectors-list');
   sectorContainer.innerHTML = '';
   markersGroup.clearLayers();
@@ -889,12 +886,34 @@ function applyData(data) {
   var colorMapHex = { red: '#ef4444', orange: '#f97316', yellow: '#f59e0b', green: '#10b981' };
 
   data.sectors.forEach(function(sec) {
-    heatPoints.push([sec.coords[0], sec.coords[1], sec.score / 100.0]);
+    var baseIntensity = Math.max(0.2, sec.score / 100.0);
+    var lat = sec.coords[0];
+    var lng = sec.coords[1];
 
-    var marker = L.circleMarker(sec.coords, {
-      radius: 10,
+    // نشر سحابة حرارية واقعية تحيط بالمنفذ ومسار العبور الحدودي
+    heatPoints.push([lat, lng, baseIntensity]);
+    heatPoints.push([lat + 0.35, lng + 0.25, baseIntensity * 0.85]);
+    heatPoints.push([lat - 0.35, lng - 0.25, baseIntensity * 0.85]);
+    heatPoints.push([lat + 0.25, lng - 0.35, baseIntensity * 0.75]);
+    heatPoints.push([lat - 0.25, lng + 0.35, baseIntensity * 0.75]);
+    heatPoints.push([lat, lng + 0.5, baseIntensity * 0.7]);
+    heatPoints.push([lat, lng - 0.5, baseIntensity * 0.7]);
+
+    // هالة إشعاعية تكتيكية شفافة بلون الخطر المحسوب (بدون أي لون أبيض نهائياً)
+    L.circleMarker(sec.coords, {
+      radius: 20,
       fillColor: colorMapHex[sec.level] || '#00b4d8',
-      color: '#ffffff',
+      color: colorMapHex[sec.level] || '#00b4d8',
+      weight: 1,
+      opacity: 0.4,
+      fillOpacity: 0.15
+    }).addTo(markersGroup);
+
+    // النواة التكتيكية للمنفذ الحدودي
+    var marker = L.circleMarker(sec.coords, {
+      radius: 6,
+      fillColor: colorMapHex[sec.level] || '#00b4d8',
+      color: colorMapHex[sec.level] || '#00b4d8',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.95
@@ -923,14 +942,23 @@ function applyData(data) {
     sectorContainer.appendChild(item);
   });
 
+  // رسم طبقة التأثير الحراري التوهجي (Epidemiological Heatmap Glow)
   if (heatLayer) {
     map.removeLayer(heatLayer);
   }
   heatLayer = L.heatLayer(heatPoints, {
-    radius: 45,
-    blur: 28,
+    radius: 65,
+    blur: 35,
     maxZoom: 9,
-    gradient: { 0.2: '#10b981', 0.4: '#f59e0b', 0.6: '#f97316', 0.8: '#ef4444' }
+    max: 0.65,
+    minOpacity: 0.35,
+    gradient: {
+      0.15: '#00b4d8',
+      0.30: '#10b981',
+      0.50: '#f59e0b',
+      0.70: '#f97316',
+      0.88: '#ef4444'
+    }
   }).addTo(map);
 
   map.invalidateSize();
@@ -942,7 +970,14 @@ async function initDashboard() {
   
   var fallback = {
     national_score: 24.7,
-    flash_report: "🚨 بلاغ استخباري عاجل لغرفة العمليات المركزية:\nالمرض الحاكم: الهيضة (الكوليرا) IMM-03\nالقطاع: قطاع السودان (الجنوب الشرقي)\nالمنافذ: منفذ العوينات البري — مطار الكفرة\nالبلديات المهددة: الكفرة، تازربو، ربيانة\nالمؤشر المحسوب: 42.0% (مستوى التنبيه المبكر)\nالطقس الميداني: 26.6°C، رطوبة 23%\nالتوجيه الأمني: تفعيل بروتوكول التدخل الأصفر بالمنافذ الجنوبية ومراجعة مخزون محاليل Ringer Lactate فوراً بمستشفى الكفرة العام.",
+    flash_report: "🚨 بلاغ استخباري عاجل لغرفة العمليات المركزية:
+المرض الحاكم: الهيضة (الكوليرا) IMM-03
+القطاع: قطاع السودان (الجنوب الشرقي)
+المنافذ: منفذ العوينات البري — مطار الكفرة
+البلديات المهددة: الكفرة، تازربو، ربيانة
+المؤشر المحسوب: 42.0% (مستوى التنبيه المبكر)
+الطقس الميداني: 26.6°C، رطوبة 23%
+التوجيه الميداني: تفعيل بروتوكول التدخل الأصفر بالمنافذ الجنوبية ومراجعة مخزون محاليل Ringer Lactate فوراً بمستشفى الكفرة العام.",
     sectors: [
       { id: "SD", name: "قطاع السودان (الجنوب الشرقي)", ports: "منفذ العوينات البري — مطار الكفرة", municipalities: ["الكفرة"], threat: "الهيضة (الكوليرا) IMM-03", score: 42.0, level: "yellow", coords: [24.18, 23.30] },
       { id: "TD", name: "قطاع تشاد (الجنوب)", ports: "منفذ التوم البري — القطرون", municipalities: ["مرزق", "القطرون"], threat: "البرداء (الملاريا) WKL-15", score: 28.5, level: "yellow", coords: [24.93, 14.64] },
