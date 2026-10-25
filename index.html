@@ -36,7 +36,6 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: var(--bg-base); color: var(--text-main); min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; }
 
-/* الترويسة الأنيقة الأصلية بدون زوائد */
 header {
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
@@ -58,21 +57,22 @@ header {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-h1 { font-size: 1.15rem; font-weight: 700; }
+h1 { font-size: 1.15rem; font-weight: 700; color: #fff; }
 .subhead { font-size: 0.8rem; color: var(--text-muted); }
 
 .header-tools {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 .btn-sitrep {
   background: rgba(0, 180, 216, 0.12);
   color: var(--accent);
   border: 1px solid var(--accent);
-  padding: 6px 14px;
+  padding: 7px 15px;
   border-radius: 6px;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
   font-family: inherit;
   cursor: pointer;
@@ -187,15 +187,12 @@ h1 { font-size: 1.15rem; font-weight: 700; }
   align-items: center;
 }
 
-/* مصفوفة التدخلات الإلزامية */
+/* مصفوفة الإجراءات والتدخلات الإلزامية */
 .sop-box {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 .sop-list {
   list-style: none;
@@ -311,7 +308,7 @@ th, td { padding: 10px 16px; border-bottom: 1px solid var(--border); text-align:
 th { background: var(--bg-card); color: var(--text-muted); font-weight: 600; }
 tr:hover { background: var(--bg-card-hover); }
 
-/* نافذة تقرير الموقف الاستراتيجي الرسمي للطباعة */
+/* نافذة تقرير الموقف الاستراتيجي الرسمي */
 #sitrep-modal {
   display: none;
   position: fixed;
@@ -459,11 +456,11 @@ tr:hover { background: var(--bg-card-hover); }
   <div class="header-tools">
     <button class="btn-sitrep" onclick="openSitRepModal()">
       <span>📄</span>
-      <span>إصدار تقرير موقف (SitRep)</span>
+      <span>تقرير موقف رسمي (SitRep)</span>
     </button>
     <div class="status-pill">
       <div class="pulse-dot"></div>
-      <span>المراقبة الميدانية نشطة</span>
+      <span>الرصد الميداني نشط</span>
     </div>
   </div>
 </header>
@@ -639,7 +636,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').catch(function() {});
 }
 
-const ALL_DISEASES = [
+var ALL_DISEASES = [
   {code:"IMM-01", ar:"الشلل الرخو الحاد", en:"Acute Flaccid Paralysis", tier:"فوري (24h)", mode:"معوي / برازي فموي", inc:"35 يوم", bench:"5% CFR"},
   {code:"IMM-02", ar:"الجمرة الخبيثة", en:"Anthrax", tier:"فوري (24h)", mode:"حيواني المنشأ / ماشية", inc:"7 أيام", bench:"20% CFR"},
   {code:"IMM-03", ar:"الهيضة (الكوليرا)", en:"Cholera", tier:"فوري (24h)", mode:"مائي غذائي + نزوح", inc:"5 أيام", bench:"1.5% CFR"},
@@ -690,7 +687,7 @@ const ALL_DISEASES = [
   {code:"WKL-29", ar:"كوفيد-19", en:"COVID-19", tier:"أسبوعي", mode:"تنفسي سريع الانتشار", inc:"14 يوم", bench:"1% CFR"}
 ];
 
-const map = L.map('map', { zoomControl: false }).setView([27.2, 17.5], 5.4);
+var map = L.map('map', { zoomControl: false }).setView([27.2, 17.5], 5.4);
 L.control.zoom({ position: 'topleft' }).addTo(map);
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
@@ -698,8 +695,7 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_D
   maxZoom: 16
 }).addTo(map);
 
-// مضلع حدود ليبيا للأوفلاين
-const libyaBorders = [
+var libyaBorders = [
   [33.15, 11.57], [32.90, 13.20], [32.30, 15.10], [31.20, 16.60], 
   [30.80, 19.80], [32.10, 20.00], [32.90, 22.20], [31.58, 25.05], 
   [25.00, 25.00], [22.00, 25.00], [22.00, 19.00], [23.50, 16.00], 
@@ -714,27 +710,237 @@ L.polygon(libyaBorders, {
   fillOpacity: 0.8
 }).addTo(map);
 
-let heatLayer = null;
-let markersGroup = L.layerGroup().addTo(map);
-let currentGlobalData = null;
+var heatLayer = null;
+var markersGroup = L.layerGroup().addTo(map);
+var currentGlobalData = null;
+
+function renderDiseasesTable(data) {
+  var tbody = document.getElementById('table-body');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+  data.forEach(function(d) {
+    var tr = document.createElement('tr');
+    tr.innerHTML = 
+      '<td><strong>' + d.code + '</strong></td>' +
+      '<td>' + d.ar + '</td>' +
+      '<td style="color:var(--text-muted)">' + d.en + '</td>' +
+      '<td><span style="font-size:0.8rem; color:' + (d.tier.indexOf('فوري') !== -1 ? 'var(--c-red)' : 'var(--c-yellow)') + '; font-weight:600;">' + d.tier + '</span></td>' +
+      '<td>' + d.mode + '</td>' +
+      '<td>' + d.inc + '</td>' +
+      '<td><span style="font-size:0.8rem; color:var(--text-muted);">' + d.bench + '</span></td>';
+    tbody.appendChild(tr);
+  });
+}
+
+function filterTable() {
+  var q = document.getElementById('search-disease').value.toLowerCase().trim();
+  var filtered = ALL_DISEASES.filter(function(d) { 
+    return d.ar.indexOf(q) !== -1 || d.en.toLowerCase().indexOf(q) !== -1 || d.code.toLowerCase().indexOf(q) !== -1 || d.mode.indexOf(q) !== -1;
+  });
+  renderDiseasesTable(filtered);
+}
+
+function copyDispatch() {
+  var text = document.getElementById('flash-text').innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    alert("تم نسخ نص البلاغ بنجاح للتعميم الميداني!");
+  });
+}
+
+function updateSOPMatrix(level, topSector) {
+  var badgeEl = document.getElementById('sop-active-level');
+  var itemsEl = document.getElementById('sop-items');
+  if (!badgeEl || !itemsEl) return;
+  
+  var topPortName = topSector.ports.split('—')[0].trim();
+  var topMuni = Array.isArray(topSector.municipalities) ? topSector.municipalities.join('، ') : topSector.municipalities;
+
+  var protocols = {
+    green: {
+      label: "رصد روتيني (0% - 24%)",
+      cssClass: "bg-green",
+      actions: [
+        "مواصلة الرصد الوبائي الروتيني وتسجيل القادمين عبر المنافذ الحدودية.",
+        "التحقق الدوري من كفاءة خطوط الاتصال وأجهزة التفتيش الصحي.",
+        "تحديث قواعد بيانات المسافرين والوافدين بالتنسيق مع مصلحة الجوازات."
+      ]
+    },
+    yellow: {
+      label: "تنبيه مبكر (25% - 49%)",
+      cssClass: "bg-yellow",
+      actions: [
+        "إخطار فوري لمكتب الرقابة الصحية الدولية في (" + topPortName + ") برفع اليقظة.",
+        "تفعيل الفحص السريري العشوائي للمسافرين القادمين عبر " + topSector.name + ".",
+        "مراجعة المخزون الاستراتيجي لأدوية الطوارئ وكواشف الفحص بمستشفيات (" + topMuni + ").",
+        "إلزام وسائل النقل وسائقي الشاحنات بالتبليغ الفوري عن أي حالات مشتبهة قبل عبور البوابات."
+      ]
+    },
+    orange: {
+      label: "تأهب مرتفع (50% - 74%)",
+      cssClass: "bg-orange",
+      actions: [
+        "تطبيق الفحص الحراري الإجباري 100% لكافة العابرين بمنفذ (" + topPortName + ").",
+        "تفعيل وتشغيل غرف العزل المؤقت والفرز الميداني داخل المنفذ الحدودي.",
+        "رفع درجة الجاهزية القصوى لأقسام الإسعاف في مستشفيات بلديات (" + topMuni + ").",
+        "إرسال عينات مخبرية عاجلة للمختبرات المرجعية بطرابلس/بنغازي لأي متلازمة مطابقة."
+      ]
+    },
+    red: {
+      label: "طوارئ قصوى (75% - 100%)",
+      cssClass: "bg-red",
+      actions: [
+        "إعلان حالة الطوارئ الصحية القصوى ونشر فرق الاستجابة السريعة (RRT) فوراً بالمنفذ.",
+        "التنسيق المباشر مع قيادة حرس الحدود ومصلحة الجوازات لإعادة ضبط أو تقييد حركة الدخول.",
+        "إطلاق الجسر الطبي الجوي/البري العاجل لتزويد المراكز الميدانية بحصص الإسناد الدوائي واللقاحات.",
+        "انعقاد غرفة الطوارئ وإحاطة المجلس الرئاسي ورئاسة الوزراء بالموقف كل 6 ساعات."
+      ]
+    }
+  };
+
+  var p = protocols[level] || protocols.yellow;
+  badgeEl.className = "badge " + p.cssClass;
+  badgeEl.textContent = p.label;
+  
+  itemsEl.innerHTML = p.actions.map(function(act) { 
+    return '<li class="sop-item">' + act + '</li>'; 
+  }).join('');
+}
+
+function openSitRepModal() {
+  if (!currentGlobalData) return;
+  
+  var d = new Date();
+  document.getElementById('sitrep-date-stamp').textContent = 'التاريخ: ' + d.toLocaleDateString('ar-LY') + ' — ' + d.toLocaleTimeString('ar-LY');
+  document.getElementById('rep-national-score').textContent = currentGlobalData.national_score + '%';
+  
+  var tbody = document.getElementById('sitrep-table-body');
+  tbody.innerHTML = '';
+  currentGlobalData.sectors.forEach(function(s) {
+    var tr = document.createElement('tr');
+    var lvlColor = s.level === 'red' ? '#dc2626' : (s.level === 'orange' ? '#ea580c' : (s.level === 'yellow' ? '#ca8a04' : '#16a34a'));
+    var lvlName = s.level === 'red' ? 'طوارئ قصوى' : (s.level === 'orange' ? 'تأهب مرتفع' : (s.level === 'yellow' ? 'تنبيه مبكر' : 'رصد روتيني'));
+    tr.innerHTML = 
+      '<td><strong>' + s.name + '</strong></td>' +
+      '<td>' + s.ports + '</td>' +
+      '<td>' + s.threat + '</td>' +
+      '<td><strong>' + s.score + '%</strong></td>' +
+      '<td><span style="font-weight:700; color:' + lvlColor + '">' + lvlName + '</span></td>';
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById('sitrep-modal').style.display = 'flex';
+}
+
+function closeSitRepModal() {
+  document.getElementById('sitrep-modal').style.display = 'none';
+}
+
+function applyData(data) {
+  currentGlobalData = data;
+
+  if (data.flash_report) {
+    document.getElementById('flash-text').textContent = data.flash_report;
+  }
+  
+  if (data.national_score !== undefined) {
+    var kpi = document.getElementById('kpi-national');
+    var badgeClass = data.national_score >= 50 ? 'bg-orange' : 'bg-green';
+    var badgeLabel = data.national_score >= 75 ? 'طوارئ' : (data.national_score >= 50 ? 'تأهب' : 'رصد');
+    kpi.innerHTML = data.national_score + '% <span class="badge ' + badgeClass + '">' + badgeLabel + '</span>';
+  }
+
+  // تحديث كرت الخطر الحرج
+  var redSectors = data.sectors.filter(function(s) { return s.level === 'red'; });
+  var criticalEl = document.getElementById('kpi-critical');
+  var criticalSub = document.getElementById('kpi-critical-sub');
+
+  if (criticalEl && criticalSub) {
+    if (redSectors.length > 0) {
+      criticalEl.style.color = 'var(--c-red)';
+      var sectorNames = redSectors.map(function(s) { return s.name.split(' ')[1] || s.name; }).join('، ');
+      criticalEl.innerHTML = String(redSectors.length).padStart(2, '0') + ' <span style="font-size:0.85rem; font-weight:normal">قطاع (' + sectorNames + ')</span>';
+      criticalSub.textContent = 'المنافذ: ' + redSectors.map(function(s) { return s.ports; }).join(' — ');
+    } else {
+      criticalEl.style.color = 'var(--c-green)';
+      criticalEl.innerHTML = '00 <span style="font-size:0.85rem; font-weight:normal">لا توجد بؤر حرجة</span>';
+      criticalSub.textContent = 'كافة القطاعات تحت عتبة الطوارئ القصوى';
+    }
+  }
+
+  // تحديث كرت القطاع الحاكم ومصفوفة SOPs
+  var topSector = data.sectors[0];
+  var dominantEl = document.getElementById('kpi-dominant');
+  var dominantSub = document.getElementById('kpi-dominant-sub');
+  if (topSector && dominantEl) {
+    var colorMapVar = { red: 'var(--c-red)', orange: 'var(--c-orange)', yellow: 'var(--c-yellow)', green: 'var(--c-green)' };
+    dominantEl.style.color = colorMapVar[topSector.level] || 'var(--accent)';
+    var shortName = topSector.name.split(' ')[1] || topSector.name;
+    dominantEl.innerHTML = shortName + ' <span style="font-size:0.85rem; font-weight:normal">(' + topSector.score + '%)</span>';
+    dominantSub.textContent = topSector.ports.split('—')[0] + ' — التهديد: ' + topSector.threat.split(' ')[0];
+    updateSOPMatrix(topSector.level, topSector);
+  }
+
+  // تحديث القائمة الجانبية والخريطة
+  var sectorContainer = document.getElementById('sectors-list');
+  sectorContainer.innerHTML = '';
+  markersGroup.clearLayers();
+  
+  var heatPoints = [];
+  var colorMapHex = { red: '#ef4444', orange: '#f97316', yellow: '#f59e0b', green: '#10b981' };
+
+  data.sectors.forEach(function(sec) {
+    heatPoints.push([sec.coords[0], sec.coords[1], sec.score / 100.0]);
+
+    var marker = L.circleMarker(sec.coords, {
+      radius: 10,
+      fillColor: colorMapHex[sec.level] || '#00b4d8',
+      color: '#ffffff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.95
+    }).addTo(markersGroup);
+
+    var popupContent = 
+      '<div style="direction:rtl; text-align:right; font-family:sans-serif; font-size:13px; color:#111;">' +
+        '<b style="font-size:14px; color:' + colorMapHex[sec.level] + '">' + sec.name + '</b><br>' +
+        '<b>المنفذ المستهدف:</b> ' + sec.ports + '<br>' +
+        '<b>البلديات المهددة:</b> ' + (Array.isArray(sec.municipalities) ? sec.municipalities.join('، ') : sec.municipalities) + '<br>' +
+        '<b>التهديد الحاكم:</b> ' + sec.threat + '<br>' +
+        '<b>مؤشر التهديد:</b> <b>' + sec.score + '%</b>' +
+      '</div>';
+    marker.bindPopup(popupContent);
+
+    var item = document.createElement('div');
+    item.className = 'sector-item';
+    item.onclick = function() { map.flyTo(sec.coords, 8, { duration: 1.2 }); };
+    item.innerHTML = 
+      '<div>' +
+        '<div class="sector-name">' + sec.name + '</div>' +
+        '<div class="sector-ports">' + sec.ports + '</div>' +
+        '<div style="font-size:0.75rem; color:' + (sec.level === 'red' ? 'var(--c-red)' : 'var(--accent)') + '; margin-top:2px;">التهديد: ' + sec.threat + '</div>' +
+      '</div>' +
+      '<span class="badge bg-' + sec.level + '">' + sec.score + '%</span>';
+    sectorContainer.appendChild(item);
+  });
+
+  if (heatLayer) {
+    map.removeLayer(heatLayer);
+  }
+  heatLayer = L.heatLayer(heatPoints, {
+    radius: 45,
+    blur: 28,
+    maxZoom: 9,
+    gradient: { 0.2: '#10b981', 0.4: '#f59e0b', 0.6: '#f97316', 0.8: '#ef4444' }
+  }).addTo(map);
+
+  map.invalidateSize();
+}
 
 async function initDashboard() {
   renderDiseasesTable(ALL_DISEASES);
-  setTimeout(function() { map.invalidateSize(); }, 300);
+  setTimeout(function() { map.invalidateSize(); }, 350);
   
-  try {
-    const res = await fetch('data/risk_data.json?' + Date.now());
-    if (res.ok) {
-      const data = await res.json();
-      currentGlobalData = data;
-      applyData(data);
-      return;
-    }
-  } catch (e) {
-    console.log("استخدام البيانات الاحتياطية الميدانية");
-  }
-
-  const fallback = {
+  var fallback = {
     national_score: 24.7,
     flash_report: "🚨 بلاغ استخباري عاجل لغرفة العمليات المركزية:\nالمرض الحاكم: الهيضة (الكوليرا) IMM-03\nالقطاع: قطاع السودان (الجنوب الشرقي)\nالمنافذ: منفذ العوينات البري — مطار الكفرة\nالبلديات المهددة: الكفرة، تازربو، ربيانة\nالمؤشر المحسوب: 42.0% (مستوى التنبيه المبكر)\nالطقس الميداني: 26.6°C، رطوبة 23%\nالتوجيه الأمني: تفعيل بروتوكول التدخل الأصفر بالمنافذ الجنوبية ومراجعة مخزون محاليل Ringer Lactate فوراً بمستشفى الكفرة العام.",
     sectors: [
@@ -746,212 +952,19 @@ async function initDashboard() {
       { id: "DZ", name: "قطاع الجزائر (الغرب)", ports: "منفذ غدامس البري — الدبداب", municipalities: ["غدامس"], threat: "الحميات النزفية IMM-09", score: 11.0, level: "green", coords: [30.13, 9.50] }
     ]
   };
-  currentGlobalData = fallback;
+
+  try {
+    var res = await fetch('data/risk_data.json?' + Date.now());
+    if (res.ok) {
+      var data = await res.json();
+      applyData(data);
+      return;
+    }
+  } catch (e) {
+    console.log("استخدام البيانات الاحتياطية الميدانية");
+  }
+
   applyData(fallback);
-}
-
-function applyData(data) {
-  if (data.flash_report) {
-    document.getElementById('flash-text').textContent = data.flash_report;
-  }
-  
-  if (data.national_score) {
-    const kpi = document.getElementById('kpi-national');
-    kpi.innerHTML = data.national_score + '% <span class="badge ' + (data.national_score>=50?'bg-orange':'bg-green') + '">' + (data.national_score>=75?'طوارئ':data.national_score>=50?'تأهب':'رصد') + '</span>';
-  }
-
-  // تحديث بطاقة الخطر الحرج ديناميكياً
-  const redSectors = data.sectors.filter(function(s) { return s.level === 'red'; });
-  const criticalEl = document.getElementById('kpi-critical');
-  const criticalSub = document.getElementById('kpi-critical-sub');
-
-  if (criticalEl && criticalSub) {
-    if (redSectors.length > 0) {
-      criticalEl.style.color = 'var(--c-red)';
-      criticalEl.innerHTML = String(redSectors.length).padStart(2, '0') + ' <span style="font-size:0.85rem; font-weight:normal">قطاع (' + redSectors.map(function(s){ return s.name.split(' ')[1] || s.name; }).join('، ') + ')</span>';
-      criticalSub.textContent = 'المنافذ: ' + redSectors.map(function(s){ return s.ports; }).join(' — ');
-    } else {
-      criticalEl.style.color = 'var(--c-green)';
-      criticalEl.innerHTML = '00 <span style="font-size:0.85rem; font-weight:normal">لا توجد بؤر حرجة</span>';
-      criticalSub.textContent = 'كافة القطاعات تحت عتبة الطوارئ القصوى';
-    }
-  }
-
-  // تحديث القطاع الحاكم
-  const topSector = data.sectors[0];
-  const dominantEl = document.getElementById('kpi-dominant');
-  const dominantSub = document.getElementById('kpi-dominant-sub');
-  if (topSector && dominantEl) {
-    const colorMap = { red: 'var(--c-red)', orange: 'var(--c-orange)', yellow: 'var(--c-yellow)', green: 'var(--c-green)' };
-    dominantEl.style.color = colorMap[topSector.level] || 'var(--accent)';
-    dominantEl.innerHTML = (topSector.name.split(' ')[1] || topSector.name) + ' <span style="font-size:0.85rem; font-weight:normal">(' + topSector.score + '%)</span>';
-    dominantSub.textContent = topSector.ports.split('—')[0] + ' — التهديد: ' + topSector.threat.split(' ')[0];
-    updateSOPMatrix(topSector.level, topSector);
-  }
-
-  const sectorContainer = document.getElementById('sectors-list');
-  sectorContainer.innerHTML = '';
-  markersGroup.clearLayers();
-  
-  const heatPoints = [];
-  const colorMap = { red: '#ef4444', orange: '#f97316', yellow: '#f59e0b', green: '#10b981' };
-
-  data.sectors.forEach(function(sec) {
-    heatPoints.push([sec.coords[0], sec.coords[1], sec.score / 100.0]);
-
-    const marker = L.circleMarker(sec.coords, {
-      radius: 10,
-      fillColor: colorMap[sec.level] || '#00b4d8',
-      color: '#ffffff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.95
-    }).addTo(markersGroup);
-
-    marker.bindPopup(
-      '<div style="direction:rtl; text-align:right; font-family:'IBM Plex Sans Arabic'; font-size:13px; color:#111;">' +
-      '<b style="font-size:14px; color:' + colorMap[sec.level] + '">' + sec.name + '</b><br>' +
-      '<b>المنفذ المستهدف:</b> ' + sec.ports + '<br>' +
-      '<b>البلديات المهددة:</b> ' + (Array.isArray(sec.municipalities) ? sec.municipalities.join('، ') : sec.municipalities) + '<br>' +
-      '<b>التهديد الحاكم:</b> ' + sec.threat + '<br>' +
-      '<b>مؤشر التهديد:</b> <b>' + sec.score + '%</b>' +
-      '</div>'
-    );
-
-    const item = document.createElement('div');
-    item.className = 'sector-item';
-    item.onclick = function() { map.flyTo(sec.coords, 8, { duration: 1.2 }); };
-    item.innerHTML = 
-      '<div>' +
-        '<div class="sector-name">' + sec.name + '</div>' +
-        '<div class="sector-ports">' + sec.ports + '</div>' +
-        '<div style="font-size:0.75rem; color:' + (sec.level==='red'?'var(--c-red)':'var(--accent)') + '; margin-top:2px;">التهديد: ' + sec.threat + '</div>' +
-      '</div>' +
-      '<span class="badge bg-' + sec.level + '">' + sec.score + '%</span>';
-    sectorContainer.appendChild(item);
-  });
-
-  if (heatLayer) map.removeLayer(heatLayer);
-  heatLayer = L.heatLayer(heatPoints, {
-    radius: 45,
-    blur: 28,
-    maxZoom: 9,
-    gradient: { 0.2: '#10b981', 0.4: '#f59e0b', 0.6: '#f97316', 0.8: '#ef4444' }
-  }).addTo(map);
-}
-
-function updateSOPMatrix(level, topSector) {
-  const badgeEl = document.getElementById('sop-active-level');
-  const itemsEl = document.getElementById('sop-items');
-  if (!badgeEl || !itemsEl) return;
-  
-  const protocols = {
-    green: {
-      label: "رصد روتيني (0% - 24%)",
-      class: "bg-green",
-      actions: [
-        "مواصلة الرصد الوبائي الروتيني وتسجيل القادمين عبر المنافذ الحدودية.",
-        "التحقق الدوري من كفاءة خطوط الاتصال وأجهزة التفتيش الصحي.",
-        "تحديث قواعد بيانات المسافرين والوافدين بالتنسيق مع مصلحة الجوازات."
-      ]
-    },
-    yellow: {
-      label: "تنبيه مبكر (25% - 49%)",
-      class: "bg-yellow",
-      actions: [
-        "إخطار فوري لمكتب الرقابة الصحية الدولية في (" + topSector.ports.split('—')[0] + ").",
-        "تفعيل الفحص السريري العشوائي للمسافرين القادمين عبر " + topSector.name + ".",
-        "مراجعة المخزون الاستراتيجي لأدوية الطوارئ وكواشف الفحص بمستشفيات (" + (Array.isArray(topSector.municipalities)?topSector.municipalities.join('، '):topSector.municipalities) + ").",
-        "إلزام وسائل النقل وسائقي الشاحنات بالتبليغ الفوري عن أي حالات مشتبهة قبل عبور البوابات."
-      ]
-    },
-    orange: {
-      label: "تأهب مرتفع (50% - 74%)",
-      class: "bg-orange",
-      actions: [
-        "تطبيق الفحص الحراري الإجباري 100% لكافة العابرين بمنفذ (" + topSector.ports.split('—')[0] + ").",
-        "تفعيل وتشغيل غرف العزل المؤقت والفرز الميداني داخل المنفذ الحدودي.",
-        "رفع درجة الجاهزية القصوى لأقسام الإسعاف في مستشفيات بلديات (" + (Array.isArray(topSector.municipalities)?topSector.municipalities.join('، '):topSector.municipalities) + ").",
-        "إرسال عينات مخبرية عاجلة للمختبرات المرجعية بطرابلس/بنغازي لأي متلازمة مطابقة."
-      ]
-    },
-    red: {
-      label: "طوارئ قصوى (75% - 100%)",
-      class: "bg-red",
-      actions: [
-        "إعلان حالة الطوارئ الصحية القصوى ونشر فرق الاستجابة السريعة (RRT) فوراً بالمنفذ.",
-        "التنسيق المباشر مع قيادة حرس الحدود ومصلحة الجوازات لإعادة ضبط أو تقييد حركة الدخول.",
-        "إطلاق الجسر الطبي الجوي/البري العاجل لتزويد المراكز الميدانية بحصص الإسناد الدوائي واللقاحات.",
-        "انعقاد غرفة الطوارئ وإحاطة المجلس الرئاسي ورئاسة الوزراء بالموقف كل 6 ساعات."
-      ]
-    }
-  };
-
-  const p = protocols[level] || protocols.yellow;
-  badgeEl.className = "badge " + p.class;
-  badgeEl.textContent = p.label;
-  
-  itemsEl.innerHTML = p.actions.map(function(act) { return '<li class="sop-item">' + act + '</li>'; }).join('');
-}
-
-function openSitRepModal() {
-  if (!currentGlobalData) return;
-  
-  const d = new Date();
-  document.getElementById('sitrep-date-stamp').textContent = 'التاريخ: ' + d.toLocaleDateString('ar-LY') + ' — ' + d.toLocaleTimeString('ar-LY');
-  document.getElementById('rep-national-score').textContent = currentGlobalData.national_score + '%';
-  
-  const tbody = document.getElementById('sitrep-table-body');
-  tbody.innerHTML = '';
-  currentGlobalData.sectors.forEach(function(s) {
-    const tr = document.createElement('tr');
-    tr.innerHTML = 
-      '<td><strong>' + s.name + '</strong></td>' +
-      '<td>' + s.ports + '</td>' +
-      '<td>' + s.threat + '</td>' +
-      '<td><strong>' + s.score + '%</strong></td>' +
-      '<td><span style="font-weight:700; color:' + (s.level==='red'?'#dc2626':s.level==='orange'?'#ea580c':s.level==='yellow'?'#ca8a04':'#16a34a') + '">' + (s.level==='red'?'طوارئ قصوى':s.level==='orange'?'تأهب مرتفع':s.level==='yellow'?'تنبيه مبكر':'رصد روتيني') + '</span></td>';
-    tbody.appendChild(tr);
-  });
-
-  document.getElementById('sitrep-modal').style.display = 'flex';
-}
-
-function closeSitRepModal() {
-  document.getElementById('sitrep-modal').style.display = 'none';
-}
-
-function renderDiseasesTable(data) {
-  const tbody = document.getElementById('table-body');
-  if (!tbody) return;
-  tbody.innerHTML = '';
-  data.forEach(function(d) {
-    const tr = document.createElement('tr');
-    tr.innerHTML = 
-      '<td><strong>' + d.code + '</strong></td>' +
-      '<td>' + d.ar + '</td>' +
-      '<td style="color:var(--text-muted)">' + d.en + '</td>' +
-      '<td><span style="font-size:0.8rem; color:' + (d.tier.includes('فوري')?'var(--c-red)':'var(--c-yellow)') + '; font-weight:600;">' + d.tier + '</span></td>' +
-      '<td>' + d.mode + '</td>' +
-      '<td>' + d.inc + '</td>' +
-      '<td><span style="font-size:0.8rem; color:var(--text-muted);">' + d.bench + '</span></td>';
-    tbody.appendChild(tr);
-  });
-}
-
-function filterTable() {
-  const q = document.getElementById('search-disease').value.toLowerCase().trim();
-  const filtered = ALL_DISEASES.filter(function(d) { 
-    return d.ar.includes(q) || d.en.toLowerCase().includes(q) || d.code.toLowerCase().includes(q) || d.mode.includes(q);
-  });
-  renderDiseasesTable(filtered);
-}
-
-function copyDispatch() {
-  const text = document.getElementById('flash-text').innerText;
-  navigator.clipboard.writeText(text).then(function() {
-    alert("تم نسخ نص البلاغ بنجاح للتعميم الميداني!");
-  });
 }
 
 initDashboard();
