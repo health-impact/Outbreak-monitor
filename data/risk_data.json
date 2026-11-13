@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-13T02:12:05.962106+00:00",
-  "national_score": 24.1,
+  "updated_at": "2026-11-13T10:08:27.896588+00:00",
+  "national_score": 24.0,
   "sectors": [
     {
       "id": "SD",
@@ -130,8 +130,8 @@
         25.05
       ],
       "weather": {
-        "temp_c": 28.0,
-        "humidity": 35.0,
+        "temp_c": 21.9,
+        "humidity": 41,
         "rain_mm": 0.0
       },
       "epi": {
@@ -150,21 +150,21 @@
       ],
       "threat": "الحميات النزفية الفيروسية (IMM-09)",
       "threat_code": "IMM-09",
-      "score": 16.0,
+      "score": 15.6,
       "level": "green",
       "coords": [
         30.13,
         9.5
       ],
       "weather": {
-        "temp_c": 28.0,
-        "humidity": 35.0,
+        "temp_c": 29.4,
+        "humidity": 18,
         "rain_mm": 0.0
       },
       "epi": {
         "cases_14d": 20,
         "cfr_percent": 0.0,
-        "climate_suitability": 0.74
+        "climate_suitability": 0.67
       }
     }
   ],
